@@ -32,7 +32,7 @@ themes/*
 !themes/catching-the-spirit/
 # Ignore npm packages #
 # =================== #
-themes/[YOUR-THEME-NAME]/node_modules/*
+themes/catching-the-spirit/node_modules/*
 # Ignore build files #
 # ================== #
 themes/catching-the-spirit/gulpfile.js
