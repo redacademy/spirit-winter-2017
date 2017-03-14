@@ -300,11 +300,27 @@ th {
   font-style: normal; }
 
 /*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "montserrat";
+  font-size: 14px; }
+  @media (min-width: 600px) {
+    body {
+      font-size: 16px; } }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.5rem; }
+
+p {
+  font-size: 1rem; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -382,6 +398,28 @@ textarea {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.green-box {
+  background-color: #52AA8A;
+  text-align: center;
+  color: white; }
+
+.red-btn, .blue-btn {
+  text-decoration: none;
+  background: #F82C3F;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  transition: box-shadow 0.2s;
+  border: none;
+  outline: none; }
+  .red-btn:hover, .blue-btn:hover {
+    box-shadow: 2px 2px 2px #888888; }
+  .red-btn:active, .blue-btn:active {
+    box-shadow: none; }
+
+.blue-btn {
+  background: #006BBC; }
+
 /* Posts and pages */
 /*--------------------------------------------------------------
 # Media
