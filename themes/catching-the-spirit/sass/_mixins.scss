@@ -10,3 +10,20 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+// Desktop media query
+@mixin desktop {
+ @media (min-width: $desktop-width) {
+   @content;
+ 	}
+}
+
+// container
+@mixin container {
+	width: 550px;
+	margin: 0 auto;
+	@include desktop {
+		width: 1200px;
+	}
+}
+
