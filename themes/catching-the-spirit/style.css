@@ -428,3 +428,27 @@ textarea {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-footer {
+  text-align: center;
+  height: 145px;
+  background-color: #78AEE1; }
+  .site-footer .site-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .site-footer .site-info a {
+      color: white;
+      font-weight: lighter;
+      width: 30%; }
+  .site-footer p {
+    color: white;
+    font-family: "montserrat";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500; }
+  .site-footer .social-icon-footer {
+    color: white;
+    font-size: 50px; }
