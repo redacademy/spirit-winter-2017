@@ -428,7 +428,8 @@ textarea {
   border-radius: 5px;
   transition: box-shadow 0.2s;
   border: none;
-  outline: none; }
+  outline: none;
+  cursor: pointer; }
   .red-btn:hover, .blue-btn:hover {
     box-shadow: 2px 2px 2px #888888; }
   .red-btn:active, .blue-btn:active {
@@ -616,8 +617,8 @@ textarea {
   .faq-page .btn-container .blue-btn {
     margin: 0 10px; }
 
-.faq-page .faq-parents {
+.faq-page .faq-parents-hide {
   display: none; }
 
-.faq-page .faq-youth {
+.faq-page .faq-youth-hide {
   display: none; }

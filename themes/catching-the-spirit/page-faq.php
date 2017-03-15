@@ -11,13 +11,11 @@ get_header(); ?>
 	<p class="we-have-answers">You Have Question We Have Answers</p>
 
 	<div class="btn-container">
-	<a class="blue-btn">For Parents</a>
-	<a class="blue-btn">For Youth</a>
+	<a class="blue-btn faq-btn-parents">For Parents</a>
+	<a class="blue-btn faq-btn-youth">For Youth</a>
 	</div>
 
-
-
-<div class="faq-parents">
+<div class="faq-parents faq-parents-hide">
 <?php	$fields = CFS()->get( 'faq_parents_loop' ); ?>
 <?php foreach ( $fields as $field ): ?>
     <p class="strong"><?php echo $field['faq_question']; ?></p>
@@ -25,7 +23,7 @@ get_header(); ?>
 <?php endforeach ?>
 </div>
 
-<div class="faq-youth">
+<div class="faq-youth faq-youth-hide">
 <?php	$fields = CFS()->get( 'faq_youth_loop' );?>
 <?php foreach ( $fields as $field ): ?>
     <p class="strong"><?php echo $field['faq_question']; ?></p>

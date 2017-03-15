@@ -22,6 +22,7 @@
         transition: box-shadow 0.2s;
         border:none;
         outline:none;
+        cursor:pointer;
         &:hover {
 	        box-shadow: 2px 2px 2px #888888 ;
 	    }
