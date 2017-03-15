@@ -476,18 +476,20 @@ textarea {
           margin: 0.7rem 0 0 3rem; } }
       @media (min-width: 600px) {
         .site-header .header-desktop .container-desk .title-desktop {
+          text-align: left;
           font-family: "capriola";
           margin-top: 0.7rem; } }
       @media (min-width: 600px) {
         .site-header .header-desktop .container-desk .title-desktop h1 {
           color: white;
-          font-size: 40px;
+          font-size: 37px;
           font-weight: 100;
           margin-bottom: 0.5rem;
           padding: 0; } }
       @media (min-width: 600px) {
         .site-header .header-desktop .container-desk .title-desktop span {
-          font-size: 24px; } }
+          font-size: 24px;
+          font-weight: 100; } }
     .site-header .header-desktop .info-text {
       margin: 2.5rem 3rem 0 0; }
       .site-header .header-desktop .info-text p {
@@ -496,6 +498,7 @@ textarea {
         margin-bottom: 1rem;
         padding: 0; }
       .site-header .header-desktop .info-text i {
+        font-size: 24px;
         margin-left: 1rem; }
   .site-header .main-navigation {
     background-color: #78AEE1; }
@@ -569,6 +572,7 @@ textarea {
               flex: 0 1 auto;
           margin: 0.2rem 0.8rem 0; } }
   .site-footer .footer-contact-mobile p, .site-footer .footer-contact-mobile a {
+    text-align: center;
     color: white;
     font-family: "montserrat";
     font-size: 12px;
@@ -588,6 +592,7 @@ textarea {
         margin-right: 2rem;
         color: white; }
         .site-footer .footer-contact-desk p {
+          text-align: center;
           padding: 0;
           color: white; }
         .site-footer .footer-contact-desk a {

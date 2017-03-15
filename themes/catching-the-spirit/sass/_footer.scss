@@ -33,15 +33,16 @@
     }
     .footer-contact-mobile{
         p,a{
-        color: white;
-        font-family: $font__main;
-        font-size: 12px;
-        line-height: 16px;
-        text-decoration: none;
-        padding:0;
-        @include desktop {
-            display: none;
-        }
+            text-align: center;
+            color: white;
+            font-family: $font__main;
+            font-size: 12px;
+            line-height: 16px;
+            text-decoration: none;
+            padding:0;
+            @include desktop {
+                display: none;
+            }
         }
     }
     .footer-contact-desk{
@@ -53,6 +54,7 @@
             margin-right: 2rem;
             color: white;
             p{
+                text-align: center;
                 padding: 0;
                 color: white;
             }
