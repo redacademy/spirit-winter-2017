@@ -26,19 +26,23 @@
         }
         .title-desktop{
             @include desktop{
+                text-align: left;
                 font-family: $font__subheader;
                 margin-top: 0.7rem;
             }
             h1{
                 @include desktop{
-                    font-size: 40px;
+                    color: white;
+                    font-size: 37px;
                     font-weight: 100;
                     margin-bottom: 0.5rem;
+                    padding: 0;
                 }
             }
             span{
                 @include desktop{
                     font-size: 24px;
+                    font-weight: 100;
                 }
             }
 
@@ -48,10 +52,13 @@
         .info-text{
             margin: 2.5rem 3rem 0 0;
             p{
+                color: white;
                 font-size: 18px;
                 margin-bottom: 1rem;
+                padding: 0;
             }
             i{
+                font-size: 24px;
                 margin-left: 1rem;
             }
             
