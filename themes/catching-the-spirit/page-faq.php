@@ -9,4 +9,8 @@ get_header(); ?>
 
 	this is FAQ
 
+	<h1>This is for Parents</h1>
+
+	<?php echo CFS()->get( 'faq_for_parentsgulp' ); ?>
+
 <?php get_footer(); ?>
