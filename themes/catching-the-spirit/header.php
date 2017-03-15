@@ -48,10 +48,35 @@
 					<!--<button class="hamburger-button" arial-label="Navigation Menu">
 						<span class="hamburger"></span>
 					</button>-->
-					<div class="header-mobile">
+					<div class="nav-mobile">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><img src ="<?php echo get_template_directory_uri();?>/images/logo/logo.png" class ="header-logo"/> </a>
 						<a href="tel:6045441622"><i class="fa fa-phone" aria-hidden="true"></i></a>
+					</div>
+					<div class="nav-desktop">
+						<div class="nav-menu-desk">
+							<ul class="header-nav-list">
+								<li class="header-nav-item">
+									<a class="nav-item-home" href="/">Home</a>  
+								</li>
+								<li class="header-nav-item">
+									<a class="nav-item-about" href="/">About Us</a> 
+								</li>
+								<li class="header-nav-item">
+									<a class="nav-item-programs" href="/">Programs</a>  
+								</li>
+								<li class="header-nav-item">
+									<a class="nav-item-calendar" href="/">Calendar</a>  
+								</li>
+								<li class="header-nav-item">
+									<a class="nav-item-testimonials" href="/">Testimonials</a>  
+								</li>
+								<li class="header-nav-item">
+									<a class="nav-item-resources" href="/">Resources</a>  
+								</li>
+                        	</ul>
+						</div>
+						<a href="/give" class="give-btn"><span>Give</span></a>
 					</div>
 					
 					<!--<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>-->
