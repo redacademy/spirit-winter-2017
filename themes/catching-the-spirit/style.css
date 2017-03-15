@@ -332,6 +332,10 @@ p {
   color: #52AA8A;
   text-align: left; }
 
+.green-box p,
+.green-box h2 {
+  color: white; }
+
 .strong {
   font-weight: bold; }
 
@@ -445,6 +449,26 @@ textarea {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.page-template-front-page div {
+  padding: 2rem 0; }
+
+.page-template-front-page h2 {
+  text-transform: capitalize; }
+
+.page-template-front-page span.uppercase {
+  text-transform: uppercase; }
+
+.page-template-front-page .for-youth-yellow {
+  background: #52AA8A url("../../images/foryouthbyyouth_yellow.svg") no-repeat center top;
+  background-size: contain;
+  height: 200px;
+  width: auto; }
+
+.page-template-front-page .front-page-social-media {
+  background: #F9F296;
+  color: white;
+  font-size: 3rem; }
+
 .site-header {
   height: 60px; }
   @media (min-width: 600px) {
