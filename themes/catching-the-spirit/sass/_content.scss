@@ -13,15 +13,16 @@
 .red-btn {
         display:inline-block;
         text-align:center;
-        width:150px;
+        width:200px;
         text-decoration: none;
         background: $color__red;
-        padding:10px 20px;
+        padding:15px 25px;
         color:white;
-        border-radius:5px;
+        border-radius:10px;
         transition: box-shadow 0.2s;
         border:none;
         outline:none;
+        cursor:pointer;
         &:hover {
 	        box-shadow: 2px 2px 2px #888888 ;
 	    }

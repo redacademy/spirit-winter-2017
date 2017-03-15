@@ -311,7 +311,11 @@ body {
   text-align: center; }
   @media (min-width: 600px) {
     body {
-      font-size: 16px; } }
+      font-size: 18px; } }
+
+a {
+  font-weight: bold;
+  color: #52AA8A; }
 
 h1 {
   font-size: 2rem;
@@ -326,7 +330,7 @@ h2 {
   padding: 10px 20px; }
 
 p {
-  font-size: 1rem;
+  line-height: 1.4;
   font-weight: 100;
   padding: 10px 20px;
   color: #52AA8A;
@@ -424,15 +428,16 @@ textarea {
 .red-btn, .blue-btn {
   display: inline-block;
   text-align: center;
-  width: 150px;
+  width: 200px;
   text-decoration: none;
   background: #F82C3F;
-  padding: 10px 20px;
+  padding: 15px 25px;
   color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: box-shadow 0.2s;
   border: none;
-  outline: none; }
+  outline: none;
+  cursor: pointer; }
   .red-btn:hover, .blue-btn:hover {
     box-shadow: 2px 2px 2px #888888; }
   .red-btn:active, .blue-btn:active {
@@ -500,22 +505,29 @@ textarea {
           margin: 0.7rem 0 0 3rem; } }
       @media (min-width: 600px) {
         .site-header .header-desktop .container-desk .title-desktop {
+          text-align: left;
           font-family: "capriola";
           margin-top: 0.7rem; } }
       @media (min-width: 600px) {
         .site-header .header-desktop .container-desk .title-desktop h1 {
-          font-size: 40px;
+          color: white;
+          font-size: 37px;
           font-weight: 100;
-          margin-bottom: 0.5rem; } }
+          margin-bottom: 0.5rem;
+          padding: 0; } }
       @media (min-width: 600px) {
         .site-header .header-desktop .container-desk .title-desktop span {
-          font-size: 24px; } }
+          font-size: 24px;
+          font-weight: 100; } }
     .site-header .header-desktop .info-text {
       margin: 2.5rem 3rem 0 0; }
       .site-header .header-desktop .info-text p {
+        color: white;
         font-size: 18px;
-        margin-bottom: 1rem; }
+        margin-bottom: 1rem;
+        padding: 0; }
       .site-header .header-desktop .info-text i {
+        font-size: 24px;
         margin-left: 1rem; }
   .site-header .main-navigation {
     background-color: #78AEE1; }
@@ -589,11 +601,13 @@ textarea {
               flex: 0 1 auto;
           margin: 0.2rem 0.8rem 0; } }
   .site-footer .footer-contact-mobile p, .site-footer .footer-contact-mobile a {
+    text-align: center;
     color: white;
     font-family: "montserrat";
     font-size: 12px;
     line-height: 16px;
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 0; }
     @media (min-width: 600px) {
       .site-footer .footer-contact-mobile p, .site-footer .footer-contact-mobile a {
         display: none; } }
@@ -606,6 +620,10 @@ textarea {
         margin-top: 1rem;
         margin-right: 2rem;
         color: white; }
+        .site-footer .footer-contact-desk p {
+          text-align: center;
+          padding: 0;
+          color: white; }
         .site-footer .footer-contact-desk a {
           color: white;
           text-decoration: none; } }
@@ -627,21 +645,34 @@ textarea {
         .site-footer .social-icon-footer .fa-twitter {
           margin-right: 1rem; } }
 
+.body-fill {
+  height: 100vh;
+  position: relative; }
+
+.footer-drop {
+  position: absolute;
+  bottom: 0; }
+
+@media (min-width: 600px) {
+  .faq-page {
+    width: 500px;
+    margin: 0 auto; } }
+
 .faq-page .we-have-answers {
-  display: none;
-  background: blue; }
+  display: none; }
   @media (min-width: 600px) {
     .faq-page .we-have-answers {
-      display: block; } }
+      display: block;
+      text-align: center; } }
 
 .faq-page .btn-container {
   min-width: 400px;
   padding: 40px 0 10px 0; }
   .faq-page .btn-container .blue-btn {
-    margin: 0 10px; }
+    margin: 0 15px; }
 
-.faq-page .faq-parents {
+.faq-page .faq-parents-hide {
   display: none; }
 
-.faq-page .faq-youth {
+.faq-page .faq-youth-hide {
   display: none; }
