@@ -9,6 +9,7 @@
 body {
     font-family: $font__main;
     font-size: 14px;
+    text-align:center;
     @include desktop {
         font-size: 16px;
     }
@@ -33,6 +34,7 @@ p {
     font-weight:100;
     padding:10px 20px;
     color:$color__green;
+    text-align:left;
 }
 
 .strong{

@@ -307,7 +307,8 @@ th {
 
 body {
   font-family: "montserrat";
-  font-size: 14px; }
+  font-size: 14px;
+  text-align: center; }
   @media (min-width: 600px) {
     body {
       font-size: 16px; } }
@@ -328,7 +329,8 @@ p {
   font-size: 1rem;
   font-weight: 100;
   padding: 10px 20px;
-  color: #52AA8A; }
+  color: #52AA8A;
+  text-align: left; }
 
 .strong {
   font-weight: bold; }
@@ -609,7 +611,6 @@ textarea {
       display: block; } }
 
 .faq-page .btn-container {
-  text-align: center;
   min-width: 400px;
   padding: 40px 0 10px 0; }
   .faq-page .btn-container .blue-btn {
