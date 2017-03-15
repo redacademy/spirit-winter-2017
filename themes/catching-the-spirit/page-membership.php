@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Membership Page Template
+ * Template Name: Membership Template
  *
  * @package RED_Starter_Theme
  */
