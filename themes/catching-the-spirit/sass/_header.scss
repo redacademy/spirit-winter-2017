@@ -1,12 +1,69 @@
 .site-header{
     height: 60px;
-    background-color: $color__lightblue;
+    @include desktop {
+            height: 230px;
+    }
     .site-branding{
         display: none;
     }
+    .header-desktop{
+        display: none;
+        @include desktop {
+            background-color: $color__lightblue;
+            height: 150px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-logo{
+            @include desktop{
+                height: 140px;
+                width: 140px;
+                margin: 0.7rem 0 0 3rem;
+            }
+        }
+        .title-desktop{
+            @include desktop{
+                font-family: $font__subheader;
+                margin-top: 0.7rem;
+            }
+            h1{
+                @include desktop{
+                    font-size: 40px;
+                    font-weight: 100;
+                    margin-bottom: 0.5rem;
+                }
+            }
+            span{
+                @include desktop{
+                    font-size: 24px;
+                }
+            }
+        }
+        .info-text{
+            margin: 2.5rem 3rem 0 0;
+            p{
+                font-size: 18px;
+                margin-bottom: 1rem;
+            }
+            i{
+                margin-left: 1rem;
+            }
+            
+        }
+    }
     .main-navigation{
+        @include desktop {
+            height: 80px;
+            background-color: $color__blue;
+        }
+        .header-mobile{
+        background-color: $color__lightblue;
         display: flex;
         justify-content: space-between;
+        @include desktop {
+            display: none;
+        }
         .menu-toggle{
             margin: 0.5rem 0 0.2rem 0.5rem;
         }
@@ -23,5 +80,8 @@
         }
     
     }
+
+    }
+    
     
 }
