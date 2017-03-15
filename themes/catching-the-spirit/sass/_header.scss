@@ -1,0 +1,93 @@
+.site-header{
+    height: 60px;
+    @include desktop {
+            height: 230px;
+    }
+    .site-branding{
+        display: none;
+    }
+    .header-desktop{
+        background-color: $color__lightblue;
+        .container-desk{
+            display: none;
+            @include container;
+        @include desktop {
+            height: 150px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-logo{
+            @include desktop{
+                height: 140px;
+                width: 140px;
+                margin: 0.7rem 0 0 3rem;
+            }
+        }
+        .title-desktop{
+            @include desktop{
+                font-family: $font__subheader;
+                margin-top: 0.7rem;
+            }
+            h1{
+                @include desktop{
+                    font-size: 40px;
+                    font-weight: 100;
+                    margin-bottom: 0.5rem;
+                }
+            }
+            span{
+                @include desktop{
+                    font-size: 24px;
+                }
+            }
+
+        }
+        
+    }
+        .info-text{
+            margin: 2.5rem 3rem 0 0;
+            p{
+                font-size: 18px;
+                margin-bottom: 1rem;
+            }
+            i{
+                margin-left: 1rem;
+            }
+            
+        }
+    }
+    .main-navigation{
+        background-color: $color__lightblue;
+        @include desktop {
+            height: 80px;
+            background-color: $color__blue;
+        }
+        .header-mobile{
+            @include container;
+            display: flex;
+            justify-content: space-between;
+            @include desktop {
+                display: none;
+            }
+            .menu-toggle{
+                margin: 0.3rem 0 0.3rem 0.5rem;
+            }
+            .header-logo{
+                margin-top: 0.3rem;
+                height: 50px;
+                width: 50px;
+                color: white;
+            }
+            .fa-phone{
+                transform: rotate(-90deg);
+                margin-top: 0.6rem;
+                font-size: 35px;
+                color: white;
+            }
+    }
+
+    }
+    
+    
+}
