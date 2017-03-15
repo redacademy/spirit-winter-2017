@@ -38,6 +38,7 @@
         font-size: 12px;
         line-height: 16px;
         text-decoration: none;
+        padding:0;
         @include desktop {
             display: none;
         }
@@ -51,6 +52,10 @@
             margin-top: 1rem;
             margin-right: 2rem;
             color: white;
+            p{
+                padding: 0;
+                color: white;
+            }
             a{
                 color: white;
                 text-decoration: none;
