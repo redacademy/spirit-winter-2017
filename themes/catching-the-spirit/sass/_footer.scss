@@ -3,7 +3,11 @@
     height: 145px;
     width: 100%;
     background-color: $color__lightblue;
+    font-weight: 100;
     margin-top: 2rem;
+    @include desktop{
+        height: 200px;
+    }
     .site-info{
         display: flex;
         justify-content: center;
@@ -11,29 +15,61 @@
         height: 30%;
         padding-top: 0.5rem;
         margin-bottom: 1.2rem;
+        @include desktop{
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            height: auto;
+        }
         a{
             color: white;
-            font-weight: 100;
             flex: 1 1 33%;
             margin-bottom: 0.8rem;
+            @include desktop{
+                flex: 0 1 auto;
+                margin: 0.2rem 0.8rem 0;
+            }
         }
     }
-    p{
+    .footer-contact-mobile{
+        p{
         color: white;
         font-family: $font__main;
         font-size: 12px;
         line-height: 16px;
-        font-weight: 100;
+        @include desktop {
+            display: none;
+        }
+        }
+    }
+    .footer-contact-desk{
+        display: none;
+        @include desktop{
+            display: block;
+            line-height: 24px;
+            margin-top: 1rem;
+            margin-right: 2rem;
+            color: white;
+        }
     }
     .social-icon-footer{
         margin: 0.5rem;
         color: white;
         font-size: 32px;
+        @include desktop{
+            font-size: 50px;
+        }
         .fa-facebook{
             margin-right: 0.7rem;
+            @include desktop{
+                margin-right: 1rem;
+            }
         }
         .fa-twitter{
             margin-left: 0.7rem;
+            @include desktop{
+                margin-right: 1rem;
+            }
         }
     }
 }
