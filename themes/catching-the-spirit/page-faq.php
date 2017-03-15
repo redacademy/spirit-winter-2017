@@ -4,13 +4,35 @@
  *
  * @package RED_Starter_Theme
  */
-
 get_header(); ?>
 
-	this is FAQ
+<section class="faq-page">
+	<h1>FAQ's</h1>
+	<p class="we-have-answers">You Have Question We Have Answers</p>
 
-	<h1>This is for Parents</h1>
+	<div class="btn-container">
+	<a class="blue-btn">For Parents</a>
+	<a class="blue-btn">For Youth</a>
+	</div>
 
-	<?php echo CFS()->get( 'faq_for_parentsgulp' ); ?>
 
+
+<div class="faq-parents">
+<?php	$fields = CFS()->get( 'faq_parents_loop' ); ?>
+<?php foreach ( $fields as $field ): ?>
+    <p class="strong"><?php echo $field['faq_question']; ?></p>
+    <p><?php echo $field['faq_answer']; ?></p>
+<?php endforeach ?>
+</div>
+
+<div class="faq-youth">
+<?php	$fields = CFS()->get( 'faq_youth_loop' );?>
+<?php foreach ( $fields as $field ): ?>
+    <p class="strong"><?php echo $field['faq_question']; ?></p>
+    <p><?php echo $field['faq_answer']; ?></p>
+<?php endforeach ?>
+</div>
+
+
+<section>
 <?php get_footer(); ?>

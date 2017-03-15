@@ -313,13 +313,21 @@ body {
       font-size: 16px; } }
 
 h1 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  color: #52AA8A;
+  text-align: center; }
 
 h2 {
   font-size: 1.5rem; }
 
 p {
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 10px 20px;
+  color: #52AA8A; }
+
+.strong {
+  font-weight: bold; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -404,6 +412,9 @@ textarea {
   color: white; }
 
 .red-btn, .blue-btn {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
   text-decoration: none;
   background: #F82C3F;
   padding: 10px 20px;
@@ -585,3 +596,16 @@ textarea {
       @media (min-width: 600px) {
         .site-footer .social-icon-footer .fa-twitter {
           margin-right: 1rem; } }
+
+.faq-page .we-have-answers {
+  display: none;
+  background: blue; }
+  @media (min-width: 600px) {
+    .faq-page .we-have-answers {
+      display: block; } }
+
+.faq-page .btn-container {
+  text-align: center;
+  min-width: 400px; }
+  .faq-page .btn-container .blue-btn {
+    margin: 0 10px; }

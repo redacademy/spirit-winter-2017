@@ -1,0 +1,33 @@
+
+.faq-page{
+
+.we-have-answers{
+
+    display:none;
+    background:blue;
+
+ @include desktop {
+       display:block;
+    }
+
+}
+
+
+.btn-container{
+    text-align:center;
+    min-width: 400px;
+   .blue-btn{
+    margin: 0 10px;
+   }
+}
+
+
+.faq-parents{
+
+}
+
+.faq-youth{
+
+}
+
+}
