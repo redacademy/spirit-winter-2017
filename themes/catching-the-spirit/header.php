@@ -27,8 +27,13 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<!--<button class="hamburger-button" arial-label="Navigation Menu">
+						<span class="hamburger"></span>
+					</button>-->
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><img src ="<?php echo get_template_directory_uri();?>/images/logo/logo.png" class ="header-logo"/> </a>
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<!--<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>-->
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
