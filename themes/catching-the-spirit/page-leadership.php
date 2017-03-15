@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Give Template
+ * Template Name: Leadership Template
  *
  * @package RED_Starter_Theme
  */
