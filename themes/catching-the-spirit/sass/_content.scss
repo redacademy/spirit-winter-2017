@@ -11,6 +11,9 @@
 
 // Red button styling
 .red-btn {
+        display:inline-block;
+        text-align:center;
+        width:150px;
         text-decoration: none;
         background: $color__red;
         padding:10px 20px;
