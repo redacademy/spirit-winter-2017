@@ -26,19 +26,22 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 				<div class="header-desktop">
-					<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><img src ="<?php echo get_template_directory_uri();?>/images/logo/logo.png" class ="header-logo"/> </a>
-					<div class="title-desktop">
-						<h1>Catching the Spirit Youth Society</h1>
-						<span>For Youth By Youth</span>
+					<div class="container-desk">
+						<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><img src ="<?php echo get_template_directory_uri();?>/images/logo/logo.png" class ="header-logo"/> </a>
+						<div class="title-desktop">
+							<h1>Catching the Spirit Youth Society</h1>
+							<span>For Youth By Youth</span>
+						</div>
+						<div class="info-text">
+							<p class="contact-us">Contact Us: 604-544-1622</p>
+							<p class="follow-us">Follow Us:
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</p>
+						</div>
 					</div>
-					<div class="info-text">
-						<p class="contact-us">Contact Us: 604-544-1622</p>
-						<p class="follow-us">Follow Us:
-							<i class="fa fa-facebook" aria-hidden="true"></i>
-							<i class="fa fa-instagram" aria-hidden="true"></i>
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</p>
-					</div>
+					
 				</div>
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
@@ -48,7 +51,7 @@
 					<div class="header-mobile">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><img src ="<?php echo get_template_directory_uri();?>/images/logo/logo.png" class ="header-logo"/> </a>
-						<i class="fa fa-phone" aria-hidden="true"></i>
+						<a href="tel:6045441622"><i class="fa fa-phone" aria-hidden="true"></i></a>
 					</div>
 					
 					<!--<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>-->

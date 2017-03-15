@@ -19,7 +19,7 @@
 					<a href="<?php echo esc_url( '/' ); ?>"><?php printf( esc_html( 'Privacy Policy' ) ); ?></a>
 				</div>
 				<div class="footer-contact-mobile">
-					<p>Ph: (604) 544-1622 // info@catchingthespirit.com</p>
+					<p><a href="tel:6045441622">(604) 544-1622</a> - <a href="mailto:info@catchingthespirit.com">info@catchingthespirit.com</a></p>
 					<p>6825 Cariboo Rd, Burnaby, BC</p>
 				</div>
 				<div class="social-icon-footer">
@@ -28,8 +28,8 @@
 					<i class="fa fa-twitter" aria-hidden="true"></i>
 				</div>
 				<div class="footer-contact-desk">
-					<p>(604) 544-1622</p>
-					<p>info@catchingthespirit.com</p>
+					<p><a href="tel:6045441622">(604) 544-1622</a></p>
+					<a href="mailto:info@catchingthespirit.com">info@catchingthespirit.com</a>
 					<p>6825 Cariboo Rd, Burnaby</p>
 				</div>
 			</footer><!-- #colophon -->

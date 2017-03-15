@@ -32,11 +32,12 @@
         }
     }
     .footer-contact-mobile{
-        p{
+        p,a{
         color: white;
         font-family: $font__main;
         font-size: 12px;
         line-height: 16px;
+        text-decoration: none;
         @include desktop {
             display: none;
         }
@@ -50,6 +51,10 @@
             margin-top: 1rem;
             margin-right: 2rem;
             color: white;
+            a{
+                color: white;
+                text-decoration: none;
+            }
         }
     }
     .social-icon-footer{
