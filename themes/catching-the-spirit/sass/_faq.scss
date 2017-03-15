@@ -1,36 +1,26 @@
 
 .faq-page{
-    // padding-top:10px;
-
 .we-have-answers{
-
     display:none;
     background:blue;
-
  @include desktop {
        display:block;
     }
-
 }
-
-
 .btn-container{
     text-align:center;
     min-width: 400px;
     padding: 40px 0 10px 0;
-
    .blue-btn{
     margin: 0 10px;
    }
 }
-
-
 .faq-parents{
-
+    display:none;
 }
 
 .faq-youth{
-
+    display:none;
 }
 
 }
