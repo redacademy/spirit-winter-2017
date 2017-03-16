@@ -51,28 +51,7 @@
 						<a href="tel:6045441622"><i class="fa fa-phone" aria-hidden="true"></i></a>
 					</div>
 					<div class="nav-desktop">
-						<div class="nav-menu-desk">
-							<ul class="header-nav-list">
-								<li class="header-nav-item">
-									<a class="nav-item-home" href="/">Home</a>  
-								</li>
-								<li class="header-nav-item">
-									<a class="nav-item-about" href="/">About Us</a> 
-								</li>
-								<li class="header-nav-item">
-									<a class="nav-item-programs" href="/">Programs</a>  
-								</li>
-								<li class="header-nav-item">
-									<a class="nav-item-calendar" href="/">Calendar</a>  
-								</li>
-								<li class="header-nav-item">
-									<a class="nav-item-testimonials" href="/">Testimonials</a>  
-								</li>
-								<li class="header-nav-item">
-									<a class="nav-item-resources" href="/">Resources</a>  
-								</li>
-                        	</ul>
-						</div>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container' => 'div', 'container_class' => 'menu-header', 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>', ) ); ?>
 						<a href="/give" class="give-btn"><span>Give</span></a>
 					</div>
 					<div class="responsive-menu">

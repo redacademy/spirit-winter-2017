@@ -430,13 +430,13 @@ textarea {
         display: flex;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-        .main-navigation .nav-desktop .header-nav-list {
+        .main-navigation .nav-desktop .menu {
           display: -ms-flexbox;
           display: flex;
           padding-left: 4rem; }
-          .main-navigation .nav-desktop .header-nav-list .header-nav-item {
+          .main-navigation .nav-desktop .menu .menu-item {
             margin: 2rem 1rem; }
-            .main-navigation .nav-desktop .header-nav-list .header-nav-item a {
+            .main-navigation .nav-desktop .menu .menu-item a {
               text-decoration: none;
               font-size: 18px;
               font-weight: 100;

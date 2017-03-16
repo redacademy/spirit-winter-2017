@@ -16,10 +16,10 @@
             @include desktop{
                 display: flex;
                 justify-content: space-between;
-                .header-nav-list{
+                .menu{
                     display: flex;
                     padding-left: 4rem;
-                    .header-nav-item{
+                    .menu-item{
                         margin: 2rem 1rem;
                         a{
                             text-decoration: none;
@@ -27,6 +27,7 @@
                             font-weight: 100;
                             color: white;
                         }
+                        // when give will be in the menu need to style it as last child class instead of give-btn.
                     }
                 }
                 .give-btn{
