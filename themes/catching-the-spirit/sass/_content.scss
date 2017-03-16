@@ -2,6 +2,10 @@
 # Content
 --------------------------------------------------------------*/
 
+.page-title{
+    font-family:$font__subheader;
+}
+
 .site-content{
      @include desktop{
         width:500px;

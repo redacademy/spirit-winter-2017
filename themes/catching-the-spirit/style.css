@@ -502,6 +502,9 @@ textarea {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.page-title {
+  font-family: "capriola"; }
+
 @media (min-width: 600px) {
   .site-content {
     width: 500px;
@@ -568,8 +571,10 @@ img {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.page-template-front-page .site-content div {
-  padding: 3rem 0; }
+.page-template-front-page .site-content {
+  width: 1200px; }
+  .page-template-front-page .site-content div {
+    padding: 3rem 0; }
 
 .page-template-front-page h2 {
   text-transform: capitalize; }
@@ -757,3 +762,22 @@ img {
 
 .faq-page .faq-youth-hide {
   display: none; }
+
+.sponsors-page-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .sponsors-page-list li {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 5px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+    .sponsors-page-list li:first-child {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      margin-bottom: 30px; }
