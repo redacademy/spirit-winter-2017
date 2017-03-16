@@ -45,9 +45,6 @@
 				</div>
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<!--<button class="hamburger-button" arial-label="Navigation Menu">
-						<span class="hamburger"></span>
-					</button>-->
 					<div class="nav-mobile">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><img src ="<?php echo get_template_directory_uri();?>/images/logo/logo.png" class ="header-logo"/> </a>
@@ -83,4 +80,4 @@
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
-			<div id="content" class="site-content">
+			<div id="content" class="site-content"></div>
