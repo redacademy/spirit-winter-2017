@@ -75,8 +75,12 @@
 						</div>
 						<a href="/give" class="give-btn"><span>Give</span></a>
 					</div>
-					
-					<?php // wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<div class="responsive-menu">
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container' => 'div', 'container_class' => 'menu-header', 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>', ) ); ?>
+						<i class="fa fa-facebook-square" aria-hidden="true"></i>
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+						<i class="fa fa-twitter-square" aria-hidden="true"></i>
+					</div>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

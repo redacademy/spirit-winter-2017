@@ -492,6 +492,33 @@ textarea {
     margin-top: 0.6rem;
     font-size: 35px;
     color: white; }
+  .main-navigation .responsive-menu {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all  ease;
+    z-index: 2;
+    background-color: #78AEE1; }
+    @media (min-width: 600px) {
+      .main-navigation .responsive-menu {
+        display: none; } }
+    .main-navigation .responsive-menu .menu-header {
+      padding-top: 1rem;
+      padding-left: 2.5rem; }
+      .main-navigation .responsive-menu .menu-header .menu-item {
+        text-align: left;
+        margin-top: 2rem; }
+        .main-navigation .responsive-menu .menu-header .menu-item a {
+          color: white;
+          text-decoration: none; }
+    .main-navigation .responsive-menu .fa {
+      margin-top: 2rem;
+      color: white;
+      font-size: 50px; }
+  .main-navigation .open {
+    opacity: 1;
+    visibility: visible; }
 
 /*--------------------------------------------------------------
 # Accessibility
