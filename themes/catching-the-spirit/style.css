@@ -433,9 +433,21 @@ textarea {
         .main-navigation .nav-desktop .menu {
           display: -ms-flexbox;
           display: flex;
-          padding-left: 4rem; }
+          padding-left: 3rem; }
           .main-navigation .nav-desktop .menu .menu-item {
-            margin: 2rem 1rem; }
+            margin: 2rem 0;
+            width: 8.2rem; }
+            .main-navigation .nav-desktop .menu .menu-item .sub-menu {
+              background-color: #006BBC;
+              position: absolute;
+              text-align: left;
+              margin-top: 0.1rem; }
+              .main-navigation .nav-desktop .menu .menu-item .sub-menu a {
+                display: block;
+                font-size: 14px;
+                font-weight: 100;
+                margin-left: 1rem;
+                line-height: 1rem; }
             .main-navigation .nav-desktop .menu .menu-item a {
               text-decoration: none;
               font-size: 18px;
@@ -447,7 +459,7 @@ textarea {
             height: 80px;
             width: 180px;
             display: table;
-            margin: 0 0 0 12rem; }
+            margin: 0 0 0 7rem; }
             .main-navigation .nav-desktop .menu .menu-item-132 a {
               font-size: 26px;
               font-weight: 100;
