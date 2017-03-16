@@ -7,6 +7,6 @@
 
 get_header(); ?>
 
-	this is Privacy Policy
+
 
 <?php get_footer(); ?>
