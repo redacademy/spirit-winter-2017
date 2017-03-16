@@ -27,11 +27,14 @@
                             position: absolute;
                             text-align: left;
                             margin-top: 0.1rem;
+                            :last-child{
+                                margin-bottom: 0.7rem;
+                            }
                             a{
                                 display: block;
                                 font-size: 14px;
                                 font-weight: 100;
-                                margin-left: 1rem;
+                                margin-left: 1.4rem;
                                 line-height: 1rem;
                                 
                             }
