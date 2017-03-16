@@ -7,11 +7,11 @@
 
 get_header(); ?>
 
-<h1 class="page-title">Board Members</h1>
+<h1 class="page-title board-title">Board Members</h1>
 
-<h2 class="strong">Meet Our Board</h2>
+<h2 class="strong meet-board">Meet Our Board</h2>
 
-<ul class="Board-members-list">
+<ul class="board-members-list">
 
     <?php $fields = CFS()->get('board_members_list'); ?>
     <?php foreach ( $fields as $field ): ?>
@@ -29,7 +29,7 @@ get_header(); ?>
  </div>
 
  <div class="get-involved">
-     <h2 class="strong">Want to get involved? Become a CTS Member!</h2>
+     <h2 class="strong get-involved-title">Want to get involved? Become a CTS Member!</h2>
     <p>  <?php echo CFS()->get('board_get_involved'); ?> </p>
 </div>
 
