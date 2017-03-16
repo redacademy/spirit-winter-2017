@@ -28,8 +28,10 @@ get_header(); ?>
 			<div class="front-page-programs-free green-box">
 				<h2>Our programs are <span class="uppercase">free</span></h2>
 				<p><?php echo CFS()->get('front_page_programs_free'); ?></p>
+				<div class="btn-container">
 				<a href="" class="red-btn">Volunteer</a>
 				<a href="" class="red-btn">Give</a>
+				</div>
 			</div>
 			<div class="front-page-social-media">
 				<h2>Follow us on social media!</h2>

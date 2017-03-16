@@ -23,28 +23,7 @@
        text-align:center;
     }
 }
-.btn-container{
-    // min-width: 400px;
-    // padding: 40px 0 10px 0;
-    display:flex;
-    justify-content: space-around;
-    padding: 30px 10px 30px 10px;
 
-    // 390
-    @media (max-width: 399px) {
-
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
- 	}
-
-   .blue-btn{
-     @media (max-width: 399px) {
-        margin: 10px 0;
-        width: 250px;
- 	}
-   }
-}
 .faq-parents-hide{
     display:none;
 }

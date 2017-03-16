@@ -10,10 +10,12 @@
 }
 
 // Red button styling
+
 .red-btn {
         display:inline-block;
         text-align:center;
-        width:180px;
+         width: 250px;
+       
         text-decoration: none;
         background: $color__red;
         padding:15px 25px;
@@ -23,18 +25,56 @@
         border:none;
         outline:none;
         cursor:pointer;
+
+         @media (min-width: $desktop-width) {
+        width:180px;
+ 	    }
+
         &:hover {
 	        box-shadow: 2px 2px 2px #888888 ;
 	    }
 	    &:active {
 	        box-shadow: none;  
 	}
+
+   
 }
 
 .blue-btn {
 	@extend .red-btn;
 	background: $color__blue;
 }
+
+
+.btn-container{
+    
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width:400px;
+        margin:0 auto;
+
+        .blue-btn, .red-btn{
+            margin: 5px 0;
+        }
+
+    @media (min-width: $desktop-width) {
+
+       
+         display:flex;
+         flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 10px 30px 10px;
+
+        
+
+ 	}
+
+     
+
+   
+}
+
 
 /* Posts and pages */
 
