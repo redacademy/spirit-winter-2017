@@ -522,7 +522,7 @@ textarea {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.page-template-front-page div {
+.page-template-front-page .site-content div {
   padding: 3rem 0; }
 
 .page-template-front-page h2 {
