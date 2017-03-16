@@ -307,7 +307,7 @@ th {
 
 body {
   font-family: "montserrat";
-  font-size: 14px;
+  font-size: 20px;
   text-align: center; }
   @media (min-width: 600px) {
     body {
@@ -502,6 +502,14 @@ textarea {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+@media (min-width: 600px) {
+  .site-content {
+    width: 500px;
+    margin: 0 auto; } }
+
+img {
+  max-width: 100%; }
+
 .green-box {
   background-color: #52AA8A;
   text-align: center;
@@ -510,7 +518,7 @@ textarea {
 .red-btn, .blue-btn {
   display: inline-block;
   text-align: center;
-  width: 180px;
+  width: 250px;
   text-decoration: none;
   background: #F82C3F;
   padding: 15px 25px;
@@ -520,6 +528,9 @@ textarea {
   border: none;
   outline: none;
   cursor: pointer; }
+  @media (min-width: 600px) {
+    .red-btn, .blue-btn {
+      width: 180px; } }
   .red-btn:hover, .blue-btn:hover {
     box-shadow: 2px 2px 2px #888888; }
   .red-btn:active, .blue-btn:active {
@@ -527,6 +538,27 @@ textarea {
 
 .blue-btn {
   background: #006BBC; }
+
+.btn-container {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  max-width: 400px;
+  margin: 0 auto; }
+  .btn-container .blue-btn, .btn-container .red-btn, .btn-container .blue-btn {
+    margin: 5px 0; }
+  @media (min-width: 600px) {
+    .btn-container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      padding: 30px 10px 30px 10px; } }
 
 /* Posts and pages */
 /*--------------------------------------------------------------
@@ -645,7 +677,8 @@ textarea {
       color: white;
       -ms-flex: 1 1 33%;
           flex: 1 1 33%;
-      margin-bottom: 0.8rem; }
+      margin-bottom: 0.8rem;
+      font-size: 0.9rem; }
       @media (min-width: 600px) {
         .site-footer .site-info a {
           -ms-flex: 0 1 auto;
@@ -714,13 +747,6 @@ textarea {
     .faq-page .we-have-answers {
       display: block;
       text-align: center; } }
-
-.faq-page .btn-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 30px 10px 30px 10px; }
 
 .faq-page .faq-parents-hide {
   display: none; }
