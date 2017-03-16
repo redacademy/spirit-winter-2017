@@ -1,0 +1,9 @@
+.programs-template {
+    .site-main {
+        @include desktop {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
