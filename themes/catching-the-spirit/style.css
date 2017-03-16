@@ -709,6 +709,17 @@ textarea {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 30px 10px 30px 10px; }
+  @media (max-width: 399px) {
+    .faq-page .btn-container {
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; } }
+  @media (max-width: 399px) {
+    .faq-page .btn-container .blue-btn {
+      margin: 10px 0; } }
 
 .faq-page .faq-parents-hide {
   display: none; }
