@@ -62,4 +62,4 @@
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
-			<div id="content" class="site-content"></div>
+			<div id="content" class="site-content">
