@@ -719,7 +719,8 @@ textarea {
           align-items: center; } }
   @media (max-width: 399px) {
     .faq-page .btn-container .blue-btn {
-      margin: 10px 0; } }
+      margin: 10px 0;
+      width: 250px; } }
 
 .faq-page .faq-parents-hide {
   display: none; }
