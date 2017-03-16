@@ -69,8 +69,10 @@
     }
     .social-icon-footer{
         margin: 0.5rem;
-        color: white;
         font-size: 32px;
+        a{
+            color: white;
+        }
         @include desktop{
             font-size: 50px;
         }

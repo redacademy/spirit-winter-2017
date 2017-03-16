@@ -684,7 +684,7 @@ img {
           font-weight: 100; } }
     .site-header .header-desktop .info-text {
       margin: 2.5rem 3rem 0 0; }
-      .site-header .header-desktop .info-text p {
+      .site-header .header-desktop .info-text p, .site-header .header-desktop .info-text a {
         color: white;
         font-size: 18px;
         margin-bottom: 1rem;
@@ -765,8 +765,9 @@ img {
           font-size: 16px; } }
   .site-footer .social-icon-footer {
     margin: 0.5rem;
-    color: white;
     font-size: 32px; }
+    .site-footer .social-icon-footer a {
+      color: white; }
     @media (min-width: 600px) {
       .site-footer .social-icon-footer {
         font-size: 50px; } }

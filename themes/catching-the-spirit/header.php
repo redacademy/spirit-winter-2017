@@ -35,9 +35,9 @@
 						<div class="info-text">
 							<p class="contact-us">Contact Us: 604-544-1622</p>
 							<p class="follow-us">Follow Us:
-								<i class="fa fa-facebook-square" aria-hidden="true"></i>
-								<i class="fa fa-instagram" aria-hidden="true"></i>
-								<i class="fa fa-twitter-square" aria-hidden="true"></i>
+								<a href="https://www.facebook.com/Catching-the-Spirit-Youth-Society-54652314785/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+								<a href="https://www.instagram.com/catchingthespirit"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								<a href="https://twitter.com/CTSProgram"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
 							</p>
 						</div>
 					</div>
@@ -77,9 +77,9 @@
 					</div>
 					<div class="responsive-menu">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container' => 'div', 'container_class' => 'menu-header', 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>', ) ); ?>
-						<i class="fa fa-facebook-square" aria-hidden="true"></i>
-						<i class="fa fa-instagram" aria-hidden="true"></i>
-						<i class="fa fa-twitter-square" aria-hidden="true"></i>
+						<a href="https://www.facebook.com/Catching-the-Spirit-Youth-Society-54652314785/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/catchingthespirit"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/CTSProgram"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
 					</div>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
