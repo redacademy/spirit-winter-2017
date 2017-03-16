@@ -488,6 +488,14 @@ textarea {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+@media (min-width: 600px) {
+  .site-content {
+    width: 500px;
+    margin: 0 auto; } }
+
+img {
+  max-width: 100%; }
+
 .green-box {
   background-color: #52AA8A;
   text-align: center;

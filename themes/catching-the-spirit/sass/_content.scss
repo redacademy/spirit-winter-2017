@@ -2,6 +2,17 @@
 # Content
 --------------------------------------------------------------*/
 
+.site-content{
+     @include desktop{
+        width:500px;
+        margin: 0 auto;
+    }
+}
+
+img{
+    max-width:100%;
+}
+
 // Green box container
 .green-box {	
     background-color: $color__green;
