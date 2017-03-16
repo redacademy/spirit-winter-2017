@@ -23,9 +23,9 @@
 					<p>6825 Cariboo Rd, Burnaby, BC</p>
 				</div>
 				<div class="social-icon-footer">
-					<i class="fa fa-facebook" aria-hidden="true"></i>
+					<i class="fa fa-facebook-square" aria-hidden="true"></i>
 					<i class="fa fa-instagram" aria-hidden="true"></i>
-					<i class="fa fa-twitter" aria-hidden="true"></i>
+					<i class="fa fa-twitter-square" aria-hidden="true"></i>
 				</div>
 				<div class="footer-contact-desk">
 					<p><a href="tel:6045441622">(604) 544-1622</a></p>

@@ -46,7 +46,7 @@
             }
         }
         .nav-mobile{
-            @include container;
+            padding: 0 2rem 0 2rem;
             display: flex;
             justify-content: space-between;
             @include desktop {
@@ -54,6 +54,28 @@
             }
             .menu-toggle{
                 margin: 0.3rem 0 0.3rem 0.5rem;
+                position: relative;
+                background-color: transparent;
+                background-repeat:no-repeat;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                box-shadow: none;
+            }
+            .menu-toggle:before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0.8em;
+                width: 100%;
+                height: 0.37em;
+                background: white;
+                border-radius: 5px;
+                box-shadow: 
+                0 1em 0 0 white,
+                0 2em 0 0 white;
+            }
             }
             .header-logo{
                 margin-top: 0.3rem;
@@ -68,4 +90,3 @@
                 color: white;
             }
         }
-}
