@@ -45,9 +45,6 @@
 				</div>
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<!--<button class="hamburger-button" arial-label="Navigation Menu">
-						<span class="hamburger"></span>
-					</button>-->
 					<div class="nav-mobile">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><img src ="<?php echo get_template_directory_uri();?>/images/logo/logo.png" class ="header-logo"/> </a>
@@ -78,9 +75,13 @@
 						</div>
 						<a href="/give" class="give-btn"><span>Give</span></a>
 					</div>
-					
-					<?php // wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<div class="responsive-menu">
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container' => 'div', 'container_class' => 'menu-header', 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>', ) ); ?>
+						<i class="fa fa-facebook-square" aria-hidden="true"></i>
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+						<i class="fa fa-twitter-square" aria-hidden="true"></i>
+					</div>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
-			<div id="content" class="site-content">
+			<div id="content" class="site-content"></div>
