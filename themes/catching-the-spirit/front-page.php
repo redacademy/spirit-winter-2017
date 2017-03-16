@@ -45,6 +45,15 @@ get_header(); ?>
 			</div>
 			<div class="front-page-sponsors">
 				<h2>A big thanks to our sponsors</h2>
+
+			<ul class="front-page-sponsors-list">
+				<?php $fields = CFS()->get('sponsors_list', get_page_by_path('sponsors')->ID); ?>
+				<?php foreach ( $fields as $field ): ?>
+					<li>
+						<img src="<?php echo $field['sponsor_logo']; ?>"/>
+					</li>
+				<?php endforeach ?>
+			</ul>
 			</div>
 
 		<!--<?php if ( have_posts() ) : ?>

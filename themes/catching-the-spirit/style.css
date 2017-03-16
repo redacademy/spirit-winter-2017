@@ -593,6 +593,23 @@ img {
   color: white;
   font-size: 3rem; }
 
+.page-template-front-page .front-page-sponsors-list {
+  width: 600px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .page-template-front-page .front-page-sponsors-list li {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+    padding: 20px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+
 .site-header {
   height: 60px; }
   @media (min-width: 600px) {
