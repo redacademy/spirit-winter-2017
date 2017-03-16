@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Leadership Template
+ * Template Name: Leadership Program Template
  *
  * @package RED_Starter_Theme
  */

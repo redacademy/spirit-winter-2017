@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Summer Program
+ * Template Name: Summer Program Template
  *
  * @package RED_Starter_Theme
  */
