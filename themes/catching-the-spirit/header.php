@@ -35,9 +35,9 @@
 						<div class="info-text">
 							<p class="contact-us">Contact Us: 604-544-1622</p>
 							<p class="follow-us">Follow Us:
-								<i class="fa fa-facebook" aria-hidden="true"></i>
+								<i class="fa fa-facebook-square" aria-hidden="true"></i>
 								<i class="fa fa-instagram" aria-hidden="true"></i>
-								<i class="fa fa-twitter" aria-hidden="true"></i>
+								<i class="fa fa-twitter-square" aria-hidden="true"></i>
 							</p>
 						</div>
 					</div>
@@ -79,7 +79,7 @@
 						<a href="/give" class="give-btn"><span>Give</span></a>
 					</div>
 					
-					<!--<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>-->
+					<?php // wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
