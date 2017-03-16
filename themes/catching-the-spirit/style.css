@@ -631,7 +631,8 @@ textarea {
       color: white;
       -ms-flex: 1 1 33%;
           flex: 1 1 33%;
-      margin-bottom: 0.8rem; }
+      margin-bottom: 0.8rem;
+      font-size: 0.9rem; }
       @media (min-width: 600px) {
         .site-footer .site-info a {
           -ms-flex: 0 1 auto;
