@@ -1,6 +1,7 @@
 <?php
 /**
  * Template Name: Summer Program Template
+ * Template Post Type: post, page, programs
  *
  * @package RED_Starter_Theme
  */

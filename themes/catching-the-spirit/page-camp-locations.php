@@ -1,6 +1,7 @@
 <?php
 /**
  * Template Name: Camp Locations Template
+ * Template Post Type: post, page, programs
  *
  * @package RED_Starter_Theme
  */
