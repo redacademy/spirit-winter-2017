@@ -496,7 +496,7 @@ textarea {
 .red-btn, .blue-btn {
   display: inline-block;
   text-align: center;
-  width: 120px;
+  width: 180px;
   text-decoration: none;
   background: #F82C3F;
   padding: 15px 25px;
@@ -703,10 +703,11 @@ textarea {
       text-align: center; } }
 
 .faq-page .btn-container {
-  min-width: 400px;
-  padding: 40px 0 10px 0; }
-  .faq-page .btn-container .blue-btn {
-    margin: 0 15px; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px 10px 30px 10px; }
 
 .faq-page .faq-parents-hide {
   display: none; }

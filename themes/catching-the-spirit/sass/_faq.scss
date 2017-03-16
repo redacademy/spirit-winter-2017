@@ -24,10 +24,14 @@
     }
 }
 .btn-container{
-    min-width: 400px;
-    padding: 40px 0 10px 0;
+    // min-width: 400px;
+    // padding: 40px 0 10px 0;
+    display:flex;
+    justify-content: space-around;
+    padding: 30px 10px 30px 10px;
+
    .blue-btn{
-    margin: 0 15px;
+    // margin: 10px 15px;
    }
 }
 .faq-parents-hide{
