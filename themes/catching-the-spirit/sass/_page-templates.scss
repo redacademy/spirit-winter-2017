@@ -4,8 +4,10 @@
 
 /* Front page */
 .page-template-front-page {
-    div {
-        padding: 2rem 0;
+    .site-content {
+        div {
+            padding: 3rem 0;
+        }
     }
     h2 {
         text-transform: capitalize;
