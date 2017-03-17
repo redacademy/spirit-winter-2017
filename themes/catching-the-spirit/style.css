@@ -835,7 +835,7 @@ img {
   margin-top: 40px; }
 
 .meet-board {
-  padding-bottom: 20px; }
+  padding-bottom: 50px; }
 
 .board-members-list li {
   padding-bottom: 50px; }
@@ -849,3 +849,30 @@ img {
 .get-involved-title {
   text-align: left;
   margin-bottom: -15px; }
+
+.privacy-jump-to {
+  border: 2px solid #006BBC;
+  border-radius: 15px;
+  padding: 30px 0;
+  display: inline-block;
+  width: 700px; }
+  .privacy-jump-to h2 {
+    padding-bottom: 20px; }
+  .privacy-jump-to a {
+    text-decoration: none; }
+  .privacy-jump-to .jump-to-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 50px; }
+    .privacy-jump-to .jump-to-list li {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      text-align: left;
+      color: #52AA8A;
+      margin: 8px 0px 8px 0;
+      white-space: nowrap;
+      overflow: hidden; }
