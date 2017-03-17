@@ -52,7 +52,6 @@
 					</div>
 					<div class="nav-desktop">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container' => 'div', 'container_class' => 'menu-header', 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>', ) ); ?>
-						<a href="/give" class="give-btn"><span>Give</span></a>
 					</div>
 					<div class="responsive-menu">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container' => 'div', 'container_class' => 'menu-header', 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>', ) ); ?>
@@ -63,4 +62,4 @@
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
-			<div id="content" class="site-content"></div>
+			<div id="content" class="site-content">
