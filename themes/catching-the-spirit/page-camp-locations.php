@@ -1,24 +1,14 @@
 <?php
 /**
  * Template Name: Camp Locations Template
- * Template Post Type: post, page, programs
  *
  * @package RED_Starter_Theme
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+this is camp locations
 
-			<?php while ( have_posts() ) : the_post(); ?>
+<?php echo do_shortcode('[put_wpgm id=1]') ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

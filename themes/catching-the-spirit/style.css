@@ -614,6 +614,9 @@ img {
           justify-content: space-around;
       padding: 30px 10px 30px 10px; } }
 
+.emphasis {
+  text-transform: uppercase; }
+
 /* Posts and pages */
 /*--------------------------------------------------------------
 # Media
@@ -629,9 +632,6 @@ img {
 
 .page-template-front-page h2 {
   text-transform: capitalize; }
-
-.page-template-front-page span.emphasis {
-  text-transform: uppercase; }
 
 .page-template-front-page .for-youth-yellow {
   background: #52AA8A url("../../images/foryouthbyyouth_yellow.svg") no-repeat center center;
