@@ -33,8 +33,8 @@ get_header(); ?>
 
 <ul class="privacy-content-list">
     <?php foreach ( $fields as $field ): ?>
-        <li id="<?php echo str_replace(' ', '-', strtolower($field['privacy_policy_section_title'])) ?>">
-          <p><?php echo $field['privacy_policy_section_title'];?></p>
+        <li class="privacy-policy-entry" id="<?php echo str_replace(' ', '-', strtolower($field['privacy_policy_section_title'])) ?>">
+          <p class="privacy-policy-title"><?php echo $field['privacy_policy_section_title'];?></p>
 		  <p><?php echo $field['privacy_policy_section_content'];?></p>
 		  <a href="#page" class="back-to-top">Back to Top</a>
         </li>
