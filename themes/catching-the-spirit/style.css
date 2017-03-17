@@ -48,7 +48,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
    License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1,
+.page-template-page-program-seasonal .site-main .subtitle, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -144,7 +145,7 @@ strong {
 dfn {
   font-style: italic; }
 
-h1 {
+h1, .page-template-page-program-seasonal .site-main .subtitle {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -317,7 +318,7 @@ a {
   font-weight: bold;
   color: #52AA8A; }
 
-h1 {
+h1, .page-template-page-program-seasonal .site-main .subtitle {
   font-size: 2rem;
   color: #52AA8A;
   text-align: center;
@@ -569,13 +570,14 @@ img {
   padding: 15px;
   margin: 20px 0; }
 
-.red-btn, .blue-btn {
+.red-btn, .blue-btn, .page-template-page-program-seasonal .site-main .register-btn {
   display: inline-block;
   text-align: center;
   width: 250px;
+  font-weight: 100;
   text-decoration: none;
   background: #F82C3F;
-  padding: 15px 25px;
+  padding: 15px 0;
   color: white;
   border-radius: 10px;
   transition: box-shadow 0.2s;
@@ -583,11 +585,11 @@ img {
   outline: none;
   cursor: pointer; }
   @media (min-width: 600px) {
-    .red-btn, .blue-btn {
+    .red-btn, .blue-btn, .page-template-page-program-seasonal .site-main .register-btn {
       width: 180px; } }
-  .red-btn:hover, .blue-btn:hover {
+  .red-btn:hover, .blue-btn:hover, .page-template-page-program-seasonal .site-main .register-btn:hover {
     box-shadow: 2px 2px 2px #888888; }
-  .red-btn:active, .blue-btn:active {
+  .red-btn:active, .blue-btn:active, .page-template-page-program-seasonal .site-main .register-btn:active {
     box-shadow: none; }
 
 .blue-btn {
@@ -602,7 +604,7 @@ img {
       align-items: center;
   max-width: 400px;
   margin: 0 auto; }
-  .btn-container .blue-btn, .btn-container .red-btn, .btn-container .blue-btn {
+  .btn-container .blue-btn, .btn-container .red-btn, .btn-container .blue-btn, .btn-container .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .btn-container .register-btn {
     margin: 5px 0; }
   @media (min-width: 600px) {
     .btn-container {
@@ -613,6 +615,9 @@ img {
       -ms-flex-pack: distribute;
           justify-content: space-around;
       padding: 30px 10px 30px 10px; } }
+
+.emphasis {
+  text-transform: uppercase; }
 
 /* Posts and pages */
 /*--------------------------------------------------------------
@@ -629,9 +634,6 @@ img {
 
 .page-template-front-page h2 {
   text-transform: capitalize; }
-
-.page-template-front-page span.emphasis {
-  text-transform: uppercase; }
 
 .page-template-front-page .for-youth-yellow {
   background: #52AA8A url("../../images/foryouthbyyouth_yellow.svg") no-repeat center center;
@@ -696,7 +698,7 @@ img {
           font-family: "capriola";
           margin-top: 0.7rem; } }
       @media (min-width: 600px) {
-        .site-header .header-desktop .container-desk .title-desktop h1 {
+        .site-header .header-desktop .container-desk .title-desktop h1, .site-header .header-desktop .container-desk .title-desktop .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .site-header .header-desktop .container-desk .title-desktop .subtitle {
           color: white;
           font-size: 37px;
           font-weight: 100;
@@ -853,15 +855,61 @@ img {
 
 @media (min-width: 600px) {
   .page-template-page-program-seasonal .site-main {
-    width: 500px;
+    width: 550px;
     margin: 0 auto;
-    text-align: center; } }
+    text-align: center;
+    margin: 3rem 0; } }
+
+.page-template-page-program-seasonal .site-main h1, .page-template-page-program-seasonal .site-main .subtitle {
+  padding-bottom: 0;
+  margin-bottom: .8rem; }
+
+.page-template-page-program-seasonal .site-main .program-header-image {
+  margin: 3rem 0; }
+
+.page-template-page-program-seasonal .site-main .subheading {
+  margin-bottom: 1.5rem; }
 
 .page-template-page-program-seasonal .site-main ul {
   list-style: disc inside none;
   color: #52AA8A;
   font-weight: 100;
-  margin: 0 auto; }
+  text-align: left;
+  line-height: 1.4;
+  padding: 0 15px; }
+
+.page-template-page-program-seasonal .site-main .for-youth-green {
+  background: url("../../images/foryouthbyyouth_green.svg") no-repeat center center;
+  background-size: contain;
+  width: 500px;
+  height: 150px; }
+
+.page-template-page-program-seasonal .site-main .green-box {
+  padding: 2rem 2rem;
+  margin: 3rem 0; }
+  .page-template-page-program-seasonal .site-main .green-box p {
+    text-align: center; }
+
+.page-template-page-program-seasonal .site-main .program-leaders-wrapper,
+.page-template-page-program-seasonal .site-main .program-details-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem 2rem 0 2rem; }
+  .page-template-page-program-seasonal .site-main .program-leaders-wrapper .program-details-when,
+  .page-template-page-program-seasonal .site-main .program-leaders-wrapper .program-details-where,
+  .page-template-page-program-seasonal .site-main .program-details-wrapper .program-details-when,
+  .page-template-page-program-seasonal .site-main .program-details-wrapper .program-details-where {
+    -ms-flex: 1 1 50%;
+        flex: 1 1 50%; }
+
+.page-template-page-program-seasonal .site-main a {
+  margin: 1.5rem; }
+
+.page-template-page-program-seasonal .site-main .register-btn {
+  text-transform: uppercase;
+  width: 50%; }
 
 .board-title {
   margin-top: 40px; }
