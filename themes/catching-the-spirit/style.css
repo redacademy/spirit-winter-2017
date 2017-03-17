@@ -851,6 +851,12 @@ img {
           flex-basis: 100%;
       margin-bottom: 30px; }
 
+@media (min-width: 600px) {
+  .programs-template .site-main {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center; } }
+
 .board-title {
   margin-top: 40px; }
 
