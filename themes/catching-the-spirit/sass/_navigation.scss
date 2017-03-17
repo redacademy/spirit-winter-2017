@@ -23,7 +23,7 @@
                     .menu-item{
                         margin: 2rem 0;
                         width: 8.2rem;
-// sub navigation
+// sub navigation desktop
                         .sub-menu{
                             background-color: $color__blue;
                             position: absolute;
@@ -135,6 +135,9 @@
                 }
 // sub navigation mobile
                 .sub-menu{
+                    @include desktop {
+                    display: none;
+                    }
                     .menu-item{
                         margin-left: 2rem;
                         line-height: 0.5rem;
@@ -150,11 +153,5 @@
                 color: white;
                 font-size: 55px;
             }
-            
          }
-        .open {
-            opacity: 1;
-            visibility: visible;
-        }
-        
 }

@@ -527,6 +527,9 @@ textarea {
         .main-navigation .responsive-menu .menu-header .menu-item a {
           color: white;
           text-decoration: none; }
+        @media (min-width: 600px) {
+          .main-navigation .responsive-menu .menu-header .menu-item .sub-menu {
+            display: none; } }
         .main-navigation .responsive-menu .menu-header .menu-item .sub-menu .menu-item {
           margin-left: 2rem;
           line-height: 0.5rem; }
@@ -536,9 +539,6 @@ textarea {
       margin: 2rem 1rem;
       color: white;
       font-size: 55px; }
-  .main-navigation .open {
-    opacity: 1;
-    visibility: visible; }
 
 /*--------------------------------------------------------------
 # Accessibility
