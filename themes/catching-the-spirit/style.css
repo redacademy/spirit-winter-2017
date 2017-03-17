@@ -433,9 +433,23 @@ textarea {
         .main-navigation .nav-desktop .menu {
           display: -ms-flexbox;
           display: flex;
-          padding-left: 4rem; }
+          padding-left: 3rem; }
           .main-navigation .nav-desktop .menu .menu-item {
-            margin: 2rem 1rem; }
+            margin: 2rem 0;
+            width: 8.2rem; }
+            .main-navigation .nav-desktop .menu .menu-item .sub-menu {
+              background-color: #006BBC;
+              position: absolute;
+              text-align: left;
+              margin-top: 0.1rem; }
+              .main-navigation .nav-desktop .menu .menu-item .sub-menu :last-child {
+                margin-bottom: 0.7rem; }
+              .main-navigation .nav-desktop .menu .menu-item .sub-menu a {
+                display: block;
+                font-size: 14px;
+                font-weight: 100;
+                margin-left: 1.4rem;
+                line-height: 1rem; }
             .main-navigation .nav-desktop .menu .menu-item a {
               text-decoration: none;
               font-size: 18px;
@@ -447,7 +461,7 @@ textarea {
             height: 80px;
             width: 180px;
             display: table;
-            margin: 0 0 0 12rem; }
+            margin: 0 0 0 7rem; }
             .main-navigation .nav-desktop .menu .menu-item-132 a {
               font-size: 26px;
               font-weight: 100;
@@ -464,6 +478,7 @@ textarea {
       .main-navigation .nav-mobile {
         display: none; } }
     .main-navigation .nav-mobile .menu-toggle {
+      height: 57px;
       margin: 0.3rem 0 0.3rem 0.5rem;
       position: relative;
       background-color: transparent;
@@ -498,7 +513,7 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    transition: all  ease;
+    transition: all ease;
     z-index: 2;
     background-color: #78AEE1; }
     @media (min-width: 600px) {
@@ -513,13 +528,18 @@ textarea {
         .main-navigation .responsive-menu .menu-header .menu-item a {
           color: white;
           text-decoration: none; }
+        @media (min-width: 600px) {
+          .main-navigation .responsive-menu .menu-header .menu-item .sub-menu {
+            display: none; } }
+        .main-navigation .responsive-menu .menu-header .menu-item .sub-menu .menu-item {
+          margin-left: 2rem;
+          line-height: 0.5rem; }
+          .main-navigation .responsive-menu .menu-header .menu-item .sub-menu .menu-item a {
+            font-weight: 100; }
     .main-navigation .responsive-menu .fa {
-      margin-top: 2rem;
+      margin: 2rem 1rem;
       color: white;
-      font-size: 50px; }
-  .main-navigation .open {
-    opacity: 1;
-    visibility: visible; }
+      font-size: 55px; }
 
 /*--------------------------------------------------------------
 # Accessibility
