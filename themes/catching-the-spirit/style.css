@@ -512,7 +512,7 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    transition: all  ease;
+    transition: all ease;
     z-index: 2;
     background-color: #78AEE1; }
     @media (min-width: 600px) {
@@ -527,10 +527,15 @@ textarea {
         .main-navigation .responsive-menu .menu-header .menu-item a {
           color: white;
           text-decoration: none; }
+        .main-navigation .responsive-menu .menu-header .menu-item .sub-menu .menu-item {
+          margin-left: 2rem;
+          line-height: 0.5rem; }
+          .main-navigation .responsive-menu .menu-header .menu-item .sub-menu .menu-item a {
+            font-weight: 100; }
     .main-navigation .responsive-menu .fa {
-      margin-top: 2rem;
+      margin: 2rem 1rem;
       color: white;
-      font-size: 50px; }
+      font-size: 55px; }
   .main-navigation .open {
     opacity: 1;
     visibility: visible; }
