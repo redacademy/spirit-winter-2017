@@ -1,7 +1,6 @@
 <?php
 /**
- * Template Name: Summer Program Template
- * Template Post Type: post, page
+ * Template Name: Program Template
  *
  * @package RED_Starter_Theme
  */
@@ -20,7 +19,7 @@ get_header(); ?>
 			<section class="program-description-wrapper">
 				<div>
 					<h2 class="capitalize">In a nutshell</h2>
-					<?php echo CFS()->get('program_description'); ?>
+					<span class="program-name"><?php echo CFS()->get('program_description'); ?></span>
 				</div>
 
 				<div class="program-price green-box">
@@ -51,11 +50,11 @@ get_header(); ?>
 				<div class="program-location-time">
 					<div class="program-details-when">
 						<h2>When?</h2>
-						<?php echo CFS()->get('program_details_when'); ?>
+						<p><?php echo CFS()->get('program_details_when'); ?></p>
 					</div>
 					<div class="program-details-where">
 						<h2>Where?</h2>
-						<?php echo CFS()->get('program_details_where'); ?>
+						<p><?php echo CFS()->get('program_details_where'); ?></p>
 					</div>
 					<p>We have events throughout Metro Vancouver. Check our Calendar page for events information.</p>
 					<a href="" class="blue-btn">Calendar</a>
