@@ -1,9 +1,16 @@
-.programs-template {
+.page-template-page-program-seasonal {
     .site-main {
         @include desktop {
             width: 500px;
             margin: 0 auto;
             text-align: center;
         }
+        ul {
+            list-style: disc inside none;
+            color: $color__green;
+            font-weight: 100;
+            margin: 0 auto;
+        }
     }
+    
 }

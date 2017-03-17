@@ -26,7 +26,7 @@ get_header(); ?>
 				<h2>What do we offer?</h2>
 			</div>
 			<div class="front-page-programs-free green-box">
-				<h2>Our programs are <span class="uppercase">free</span></h2>
+				<h2>Our programs are <span class="emphasis">free</span></h2>
 				<p><?php echo CFS()->get('front_page_programs_free'); ?></p>
 				<div class="btn-container">
 				<a href="" class="red-btn">Volunteer</a>

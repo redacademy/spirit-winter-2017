@@ -630,7 +630,7 @@ img {
 .page-template-front-page h2 {
   text-transform: capitalize; }
 
-.page-template-front-page span.uppercase {
+.page-template-front-page span.emphasis {
   text-transform: uppercase; }
 
 .page-template-front-page .for-youth-yellow {
@@ -852,10 +852,16 @@ img {
       margin-bottom: 30px; }
 
 @media (min-width: 600px) {
-  .programs-template .site-main {
+  .page-template-page-program-seasonal .site-main {
     width: 500px;
     margin: 0 auto;
     text-align: center; } }
+
+.page-template-page-program-seasonal .site-main ul {
+  list-style: disc inside none;
+  color: #52AA8A;
+  font-weight: 100;
+  margin: 0 auto; }
 
 .board-title {
   margin-top: 40px; }
