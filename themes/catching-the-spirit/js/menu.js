@@ -6,6 +6,7 @@
         $('.fa-phone').toggle(); // hide and show phone
         $('.responsive-menu').toggle(); //hide and show nav
     });
+    
     // nav desktop
     $('.sub-menu').hide();
     $('.menu-item').hover(function() {
