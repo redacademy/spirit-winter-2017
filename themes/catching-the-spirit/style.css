@@ -938,6 +938,7 @@ img {
 .privacy-policy-entry {
   padding-bottom: 30px; }
 
+<<<<<<< HEAD
 .page-id-135 p {
   text-align: center; }
 
@@ -952,3 +953,7 @@ img {
   background: #52aa8a url(../../images/foryouthbyyouth_yellow.svg) no-repeat 50%;
   margin-top: 0;
   height: 220px; }
+=======
+.google-map {
+  height: 250px; }
+>>>>>>> 62d79eb76824fa03626a98fc9bc25baee8ca346a

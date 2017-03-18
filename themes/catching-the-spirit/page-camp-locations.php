@@ -1,24 +1,49 @@
 <?php
 /**
  * Template Name: Camp Locations Template
- * Template Post Type: post, page, programs
  *
  * @package RED_Starter_Theme
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<h1 class="page-title">Camp Locations</h1>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+<div class="multi-map">
+<?php echo do_shortcode('[put_wpgm id=1]') ?>
+</div>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+<?php $fields = CFS()->get('camp_locations_loop'); ?>
 
-			<?php endwhile; // End of the loop. ?>
+<div class="camp-list-jump-to">
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	<h2 class="strong">Jump to a Camp</h2>
 
-<?php get_sidebar(); ?>
+<ul class="jump-to-list-camp">
+    <?php foreach ( $fields as $field ): ?>
+        <li>
+            <a href="#<?php echo str_replace(' ', '-', strtolower($field['camp_location_name'])) ?>">
+	        &bull; <?php echo $field['camp_location_name']; ?>
+			</a>
+        </li>
+    <?php endforeach ?>
+</ul>
+
+
+</div>
+
+<ul class="camp-locations-list">
+    <?php foreach ( $fields as $field ): ?>
+        <li class="camp-location-entry" id="<?php echo str_replace(' ', '-', strtolower($field['camp_location_name'])) ?>">
+          <p class="camp-location-name"><?php echo $field['privacy_policy_section_title'];?></p>
+		  <p><?php echo $field['camp_location_description'];?></p>
+		  <div class="google-map"><?php echo $field['camp_location_map'];?></div>
+		  <a href="#page" class="back-to-top">Back to Top</a>
+        </li>
+    <?php endforeach ?>
+</ul>
+
+
+
+
 <?php get_footer(); ?>
