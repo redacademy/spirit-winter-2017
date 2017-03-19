@@ -337,7 +337,8 @@ p {
   text-align: left; }
 
 .green-box p,
-.green-box h2 {
+.green-box h2,
+.green-box a {
   color: white; }
 
 .strong {
@@ -961,3 +962,39 @@ img {
 
 .page-id-135 .how-we-run .red-btn, .page-id-135 .how-we-run .blue-btn {
   margin: 0.5rem; }
+
+.camp-location-map {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 20px  0 40px 0; }
+
+.camp-list-jump-to {
+  text-align: left;
+  margin: 60px 0;
+  padding: 20px 0; }
+  @media (min-width: 600px) {
+    .camp-list-jump-to {
+      border: 2px solid #006BBC;
+      border-radius: 15px; } }
+  .camp-list-jump-to li {
+    width: 160px;
+    margin: 0 auto;
+    padding: 5px 0 5px 10px; }
+    .camp-list-jump-to li a {
+      text-decoration: none; }
+
+.camp-locations-list h2 {
+  padding-bottom: 20px; }
+
+.camp-locations-list p {
+  padding-bottom: 20px;
+  text-align: center; }
+
+.camp-locations-list li {
+  padding: 40px 0;
+  border-radius: 0; }
+  @media (min-width: 600px) {
+    .camp-locations-list li {
+      border-radius: 15px; } }
