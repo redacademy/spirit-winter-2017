@@ -36,10 +36,6 @@
             justify-content: space-around;
             & p {
                 text-align: center;
-                font-size: 1rem;
-                @include desktop {
-                    font-size: 1.3rem;
-                }
             }
             & img {
                 width: 125px;

@@ -12,7 +12,7 @@ get_header(); ?>
 
 			<header class="program-header">
 				<h1 class="page-title"><?php echo CFS()->get('program_type'); ?></h1>
-				<span class="program-name"><?php echo CFS()->get('program_description'); ?></span>
+				<span class="program-description"><?php echo CFS()->get('program_description'); ?></span>
 				<a href="" class="blue-btn">Peer Leaders</a> <a href="" class="blue-btn">Supervisors</a>
 			</header>
 

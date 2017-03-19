@@ -949,11 +949,7 @@ img {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
   .page-template-page-program-leadership .site-main .program-leaders-wrapper p {
-    text-align: center;
-    font-size: 1rem; }
-    @media (min-width: 600px) {
-      .page-template-page-program-leadership .site-main .program-leaders-wrapper p {
-        font-size: 1.3rem; } }
+    text-align: center; }
   .page-template-page-program-leadership .site-main .program-leaders-wrapper img {
     width: 125px;
     height: 125px;
