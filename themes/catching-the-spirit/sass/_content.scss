@@ -32,11 +32,11 @@ img{
 .red-btn {
         display:inline-block;
         text-align:center;
-         width: 250px;
-       
+        width: 250px;
+        font-weight: 100;       
         text-decoration: none;
         background: $color__red;
-        padding:15px 25px;
+        padding:15px 0;
         color:white;
         border-radius:10px;
         transition: box-shadow 0.2s;

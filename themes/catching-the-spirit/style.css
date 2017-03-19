@@ -48,7 +48,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
    License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1,
+.page-template-page-program-seasonal .site-main .subtitle, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -144,7 +145,7 @@ strong {
 dfn {
   font-style: italic; }
 
-h1 {
+h1, .page-template-page-program-seasonal .site-main .subtitle {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -317,7 +318,7 @@ a {
   font-weight: bold;
   color: #52AA8A; }
 
-h1 {
+h1, .page-template-page-program-seasonal .site-main .subtitle {
   font-size: 2rem;
   color: #52AA8A;
   text-align: center;
@@ -337,7 +338,8 @@ p {
   text-align: left; }
 
 .green-box p,
-.green-box h2 {
+.green-box h2,
+.green-box a {
   color: white; }
 
 .strong {
@@ -569,13 +571,14 @@ img {
   padding: 15px;
   margin: 20px 0; }
 
-.red-btn, .blue-btn {
+.red-btn, .blue-btn, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
   display: inline-block;
   text-align: center;
   width: 250px;
+  font-weight: 100;
   text-decoration: none;
   background: #F82C3F;
-  padding: 15px 25px;
+  padding: 15px 0;
   color: white;
   border-radius: 10px;
   transition: box-shadow 0.2s;
@@ -583,11 +586,11 @@ img {
   outline: none;
   cursor: pointer; }
   @media (min-width: 600px) {
-    .red-btn, .blue-btn {
+    .red-btn, .blue-btn, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
       width: 180px; } }
-  .red-btn:hover, .blue-btn:hover {
+  .red-btn:hover, .blue-btn:hover, .page-template-page-program-seasonal .site-main .register-btn:hover, .page-template-page-program-leadership .site-main .apply-btn:hover {
     box-shadow: 2px 2px 2px #888888; }
-  .red-btn:active, .blue-btn:active {
+  .red-btn:active, .blue-btn:active, .page-template-page-program-seasonal .site-main .register-btn:active, .page-template-page-program-leadership .site-main .apply-btn:active {
     box-shadow: none; }
 
 .blue-btn {
@@ -602,7 +605,7 @@ img {
       align-items: center;
   max-width: 400px;
   margin: 0 auto; }
-  .btn-container .blue-btn, .btn-container .red-btn, .btn-container .blue-btn {
+  .btn-container .blue-btn, .btn-container .red-btn, .btn-container .blue-btn, .btn-container .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .btn-container .register-btn, .btn-container .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .btn-container .apply-btn {
     margin: 5px 0; }
   @media (min-width: 600px) {
     .btn-container {
@@ -696,7 +699,7 @@ img {
           font-family: "capriola";
           margin-top: 0.7rem; } }
       @media (min-width: 600px) {
-        .site-header .header-desktop .container-desk .title-desktop h1 {
+        .site-header .header-desktop .container-desk .title-desktop h1, .site-header .header-desktop .container-desk .title-desktop .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .site-header .header-desktop .container-desk .title-desktop .subtitle {
           color: white;
           font-size: 37px;
           font-weight: 100;
@@ -855,15 +858,114 @@ img {
 
 @media (min-width: 600px) {
   .page-template-page-program-seasonal .site-main {
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
-    text-align: center; } }
+    text-align: center;
+    margin: 3rem 0; } }
+
+.page-template-page-program-seasonal .site-main h1, .page-template-page-program-seasonal .site-main .subtitle {
+  padding-bottom: 0;
+  margin-bottom: .8rem; }
+
+.page-template-page-program-seasonal .site-main .program-header-image {
+  margin: 3rem 0; }
+
+.page-template-page-program-seasonal .site-main .subheading {
+  margin-bottom: 1.5rem; }
 
 .page-template-page-program-seasonal .site-main ul {
   list-style: disc inside none;
   color: #52AA8A;
   font-weight: 100;
-  margin: 0 auto; }
+  text-align: left;
+  line-height: 1.4;
+  padding: 0 15px; }
+
+.page-template-page-program-seasonal .site-main .for-youth-green {
+  background: url("../../images/foryouthbyyouth_green.svg") no-repeat center center;
+  background-size: contain;
+  width: 500px;
+  height: 150px; }
+
+.page-template-page-program-seasonal .site-main .green-box {
+  padding: 2rem 2rem;
+  margin: 3rem 0; }
+  .page-template-page-program-seasonal .site-main .green-box p {
+    text-align: center; }
+
+.page-template-page-program-seasonal .site-main .program-leaders-wrapper,
+.page-template-page-program-seasonal .site-main .program-details-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem 2rem 0 2rem; }
+  .page-template-page-program-seasonal .site-main .program-leaders-wrapper .program-details-when,
+  .page-template-page-program-seasonal .site-main .program-leaders-wrapper .program-details-where,
+  .page-template-page-program-seasonal .site-main .program-details-wrapper .program-details-when,
+  .page-template-page-program-seasonal .site-main .program-details-wrapper .program-details-where {
+    -ms-flex: 1 1 50%;
+        flex: 1 1 50%; }
+
+.page-template-page-program-seasonal .site-main a {
+  margin: 1.5rem; }
+
+.page-template-page-program-seasonal .site-main .register-btn {
+  text-transform: uppercase;
+  width: 50%; }
+
+@media (min-width: 600px) {
+  .page-template-page-program-leadership .site-main {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin: 3rem 0; } }
+
+.page-template-page-program-leadership .site-main h1, .page-template-page-program-leadership .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .page-template-page-program-leadership .site-main .subtitle {
+  padding-bottom: 0;
+  margin-bottom: .8rem; }
+
+.page-template-page-program-leadership .site-main .subheading {
+  margin-bottom: 1.5rem; }
+
+.page-template-page-program-leadership .site-main ul {
+  list-style: disc inside none;
+  color: #52AA8A;
+  font-weight: 100;
+  text-align: left;
+  line-height: 1.4;
+  padding: 0 15px; }
+
+.page-template-page-program-leadership .site-main .for-youth-green {
+  background: url("../../images/foryouthbyyouth_green.svg") no-repeat center center;
+  background-size: contain;
+  width: 100%;
+  height: 150px; }
+
+.page-template-page-program-leadership .site-main .green-box {
+  padding: 2rem 2rem;
+  margin: 3rem 0; }
+
+.page-template-page-program-leadership .site-main .program-leaders-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .page-template-page-program-leadership .site-main .program-leaders-wrapper p {
+    text-align: center; }
+  .page-template-page-program-leadership .site-main .program-leaders-wrapper img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 100px; }
+
+.page-template-page-program-leadership .site-main .blue-btn {
+  margin: 1.5rem 1.5rem 0 1.5rem; }
+
+.page-template-page-program-leadership .site-main .apply-btn {
+  text-transform: uppercase;
+  width: 95%;
+  margin: 1.5rem 0; }
 
 .board-title {
   margin-top: 40px; }
@@ -959,8 +1061,44 @@ img {
   margin-top: 0;
   height: 220px; }
 
-.page-id-135 .how-we-run .red-btn, .page-id-135 .how-we-run .blue-btn {
+.page-id-135 .how-we-run .red-btn, .page-id-135 .how-we-run .blue-btn, .page-id-135 .how-we-run .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .page-id-135 .how-we-run .register-btn, .page-id-135 .how-we-run .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .page-id-135 .how-we-run .apply-btn {
   margin: 0.5rem; }
+
+.camp-location-map {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 20px  0 40px 0; }
+
+.camp-list-jump-to {
+  text-align: left;
+  margin: 60px 0;
+  padding: 20px 0; }
+  @media (min-width: 600px) {
+    .camp-list-jump-to {
+      border: 2px solid #006BBC;
+      border-radius: 15px; } }
+  .camp-list-jump-to li {
+    width: 160px;
+    margin: 0 auto;
+    padding: 5px 0 5px 10px; }
+    .camp-list-jump-to li a {
+      text-decoration: none; }
+
+.camp-locations-list h2 {
+  padding-bottom: 20px; }
+
+.camp-locations-list p {
+  padding-bottom: 20px;
+  text-align: center; }
+
+.camp-locations-list li {
+  padding: 40px 0;
+  border-radius: 0; }
+  @media (min-width: 600px) {
+    .camp-locations-list li {
+      border-radius: 15px; } }
 
 .page-id-139 h2 {
   text-align: left; }
@@ -1003,3 +1141,12 @@ img {
       padding-left: 5rem; }
     .page-id-139 .mentorvisors img {
       width: 80%; } }
+
+.error-404 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-top: 100px; }
