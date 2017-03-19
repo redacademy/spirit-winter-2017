@@ -49,8 +49,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 html, body, div, span, applet, object, iframe,
 h1,
-.page-template-page-program-seasonal .site-main .subtitle,
-.page-template-page-program-leadership .site-main .subtitle, h2, h3, h4, h5, h6, p, blockquote, pre,
+.page-template-page-program-seasonal .site-main .subtitle, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -146,7 +145,7 @@ strong {
 dfn {
   font-style: italic; }
 
-h1, .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-leadership .site-main .subtitle {
+h1, .page-template-page-program-seasonal .site-main .subtitle {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -319,7 +318,7 @@ a {
   font-weight: bold;
   color: #52AA8A; }
 
-h1, .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-leadership .site-main .subtitle {
+h1, .page-template-page-program-seasonal .site-main .subtitle {
   font-size: 2rem;
   color: #52AA8A;
   text-align: center;
@@ -699,7 +698,7 @@ img {
           font-family: "capriola";
           margin-top: 0.7rem; } }
       @media (min-width: 600px) {
-        .site-header .header-desktop .container-desk .title-desktop h1, .site-header .header-desktop .container-desk .title-desktop .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .site-header .header-desktop .container-desk .title-desktop .subtitle, .site-header .header-desktop .container-desk .title-desktop .page-template-page-program-leadership .site-main .subtitle, .page-template-page-program-leadership .site-main .site-header .header-desktop .container-desk .title-desktop .subtitle {
+        .site-header .header-desktop .container-desk .title-desktop h1, .site-header .header-desktop .container-desk .title-desktop .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .site-header .header-desktop .container-desk .title-desktop .subtitle {
           color: white;
           font-size: 37px;
           font-weight: 100;
@@ -919,12 +918,9 @@ img {
     text-align: center;
     margin: 3rem 0; } }
 
-.page-template-page-program-leadership .site-main h1, .page-template-page-program-leadership .site-main .subtitle {
+.page-template-page-program-leadership .site-main h1, .page-template-page-program-leadership .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .page-template-page-program-leadership .site-main .subtitle {
   padding-bottom: 0;
   margin-bottom: .8rem; }
-
-.page-template-page-program-leadership .site-main .program-header-image {
-  margin: 3rem 0; }
 
 .page-template-page-program-leadership .site-main .subheading {
   margin-bottom: 1.5rem; }
@@ -940,7 +936,7 @@ img {
 .page-template-page-program-leadership .site-main .for-youth-green {
   background: url("../../images/foryouthbyyouth_green.svg") no-repeat center center;
   background-size: contain;
-  width: 500px;
+  width: 100%;
   height: 150px; }
 
 .page-template-page-program-leadership .site-main .green-box {
@@ -951,12 +947,20 @@ img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 2rem 2rem 0 2rem; }
+      justify-content: space-around; }
   .page-template-page-program-leadership .site-main .program-leaders-wrapper p {
-    text-align: center; }
+    text-align: center;
+    font-size: 1rem; }
+    @media (min-width: 600px) {
+      .page-template-page-program-leadership .site-main .program-leaders-wrapper p {
+        font-size: 1.3rem; } }
+  .page-template-page-program-leadership .site-main .program-leaders-wrapper img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 100px; }
 
-.page-template-page-program-leadership .site-main .leadership-description-link {
+.page-template-page-program-leadership .site-main .blue-btn {
   margin: 1.5rem 1.5rem 0 1.5rem; }
 
 .page-template-page-program-leadership .site-main .apply-btn {

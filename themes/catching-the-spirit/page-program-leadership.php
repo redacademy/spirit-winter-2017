@@ -13,22 +13,22 @@ get_header(); ?>
 			<header class="program-header">
 				<h1 class="page-title"><?php echo CFS()->get('program_type'); ?></h1>
 				<span class="program-name"><?php echo CFS()->get('program_description'); ?></span>
-				<a href="" class="blue-btn leadership-description-link">Peer Leaders</a> <a href="" class="blue-btn leadership-description-link">Supervisors</a>
+				<a href="" class="blue-btn">Peer Leaders</a> <a href="" class="blue-btn">Supervisors</a>
 			</header>
 
 			<section class="program-description-wrapper">
 
 				<div class="green-box">
-					<h2 class="subheading">Who we are?</h2>
+					<h2 class="subheading">Who We Are?</h2>
 					<div class="program-leaders-wrapper">
 						<div class="peer-leaders">
 							<p>Peer Leaders</p>
-							<img src="<?php echo CFS()->get('peer_leaders_image'); ?>"/>
+							<div class="leaders-image"><img src="<?php echo CFS()->get('peer_leaders_image'); ?>"/></div>
 							<p>Age: 15-18</p>
 						</div>
 						<div class="supervisors">
 							<p>Supervisors</p>
-							<img src="<?php echo CFS()->get('supervisors_image'); ?>"/>
+							<div class="leaders-image"><img src="<?php echo CFS()->get('supervisors_image'); ?>"/></div>
 							<p>Age: 19+</p>
 						</div>
 					</div>
