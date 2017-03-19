@@ -27,11 +27,14 @@ get_header(); ?>
                 <p><?php echo CFS()->get('our_story_what_is_cts'); ?></p>
             </div>
             <dv class="how-we-run">
-                <h2>How we run</h2>
-                <p><?php echo CFS()->get('our_story_how_we_run'); ?></p>
-                <a href="" class="blue-btn">See Our Sponsors</a>
-                <p><?php echo CFS()->get('our_story_how_we_run_2'); ?></p>
-                <a href="" class="red-btn">Volunteer</a><a href="" class="red-btn">Give</a>
+                <div class="green-box">
+                    <h2>How we run</h2>
+                    <p><?php echo CFS()->get('our_story_how_we_run'); ?></p>
+                    <a href="" class="blue-btn">See Our Sponsors</a>
+                    <p><?php echo CFS()->get('our_story_how_we_run_2'); ?></p>
+                    <a href="" class="red-btn">Volunteer</a><a href="" class="red-btn">Give</a>
+                </div>
+                
 
             </dv>
             

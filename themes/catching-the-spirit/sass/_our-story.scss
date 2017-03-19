@@ -8,13 +8,22 @@
         img{
             height: 220px;
             width: 100%;
+            object-fit: cover;
         }
     }
-    .green-box{
-        background: #52aa8a url(../../images/foryouthbyyouth_yellow.svg) no-repeat 50%;
+    .our-story-green-box{
+        .green-box{
+        background: #52aa8a url(../../images/foryouthbyyouth_yellow.svg);
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center center;
         margin-top: 0;
         height: 220px;
     }
-
-    
+    }
+    .how-we-run{
+        .red-btn{
+            margin: 0.5rem;
+        }
+    }
 }
