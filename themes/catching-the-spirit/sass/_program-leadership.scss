@@ -1,4 +1,4 @@
-.page-template-page-program-seasonal {
+.page-template-page-program-leadership {
     .site-main {
         @include desktop {
             width: 600px;
@@ -36,28 +36,23 @@
         .green-box {
             padding: 2rem 2rem;
             margin: 3rem 0;
-            & p {
-            text-align: center;
-            }
         }
-        
-        .program-leaders-wrapper,
-        .program-details-wrapper {
+        .program-leaders-wrapper {
             display: flex;
             justify-content: space-around;
             margin: 2rem 2rem 0 2rem;
-            .program-details-when,
-            .program-details-where {
-                flex: 1 1 50%;
+            & p {
+                text-align: center;
             }
         }
-        a {
-            margin: 1.5rem;
+        .leadership-description-link {
+            margin: 1.5rem 1.5rem 0 1.5rem;
         }
-        .register-btn {
+        .apply-btn {
             @extend .red-btn;
             text-transform: uppercase;
-            width: 50%;
+            width: 95%;
+            margin: 1.5rem 0;
         }
     }
 }
