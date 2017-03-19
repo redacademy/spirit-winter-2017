@@ -33,7 +33,7 @@
 							<span>For Youth By Youth</span>
 						</div>
 						<div class="info-text">
-							<p class="contact-us">Contact Us: 604-544-1622</p>
+							<p class="contact-us">Contact Us: <a href="tel:6045441622">604-544-1622</a></p>
 							<p class="follow-us">Follow Us:
 								<a href="https://www.facebook.com/Catching-the-Spirit-Youth-Society-54652314785/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 								<a href="https://www.instagram.com/catchingthespirit"><i class="fa fa-instagram" aria-hidden="true"></i></a>
