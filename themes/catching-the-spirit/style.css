@@ -961,3 +961,46 @@ img {
 
 .page-id-135 .how-we-run .red-btn, .page-id-135 .how-we-run .blue-btn {
   margin: 0.5rem; }
+
+.page-id-139 h2 {
+  text-align: left; }
+
+.page-id-139 .volunteering-for-cts {
+  margin-top: 2rem; }
+
+.page-id-139 .the-board {
+  background-color: #52AA8A; }
+  .page-id-139 .the-board h2, .page-id-139 .the-board p {
+    color: white; }
+  .page-id-139 .the-board h2 {
+    padding-top: 2rem; }
+
+.page-id-139 .blue-btn {
+  margin: 2rem; }
+
+@media (min-width: 600px) {
+  .page-id-139 .site-content {
+    width: 800px; }
+  .page-id-139 .volunteering-for-cts {
+    margin: 2rem 7rem;
+    width: 600px; }
+    .page-id-139 .volunteering-for-cts h2 {
+      font-size: 2rem; }
+    .page-id-139 .volunteering-for-cts p {
+      font-size: 1.3rem; }
+  .page-id-139 .the-board {
+    width: 800px;
+    border-radius: 2rem; }
+    .page-id-139 .the-board h2, .page-id-139 .the-board p {
+      padding-left: 5rem; }
+    .page-id-139 .the-board h2 {
+      padding-top: 3rem; }
+    .page-id-139 .the-board img {
+      width: 80%; }
+  .page-id-139 .mentorvisors {
+    width: 800px;
+    margin-top: 2rem; }
+    .page-id-139 .mentorvisors h2, .page-id-139 .mentorvisors p {
+      padding-left: 5rem; }
+    .page-id-139 .mentorvisors img {
+      width: 80%; } }
