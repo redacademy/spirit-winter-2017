@@ -1,0 +1,60 @@
+.page-id-139{
+    h2{
+        text-align: left;
+    }
+    .volunteering-for-cts{
+        margin-top: 2rem;
+    }
+    .the-board{
+        background-color: $color__green;
+        h2,p{
+                color: white;
+        }
+        h2{
+            padding-top: 2rem;
+        }
+    }
+    .blue-btn{
+                margin: 2rem;
+            }
+    @include desktop{
+        .site-content{
+        width: 800px;
+        }
+        .volunteering-for-cts{
+            margin: 2rem 7rem;
+            width: 600px;
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+        }
+        .the-board{
+            width: 800px;
+            border-radius: 2rem;
+            h2,p{
+                padding-left: 5rem;
+            }
+            h2{
+                padding-top: 3rem;
+            }
+            img{
+                width: 80%;
+            }
+        }
+        .mentorvisors{
+            width: 800px;
+            margin-top: 2rem;
+            h2,p{
+                padding-left: 5rem;
+            }
+            img{
+                width: 80%;
+            }
+        }
+
+        }
+    
+}
