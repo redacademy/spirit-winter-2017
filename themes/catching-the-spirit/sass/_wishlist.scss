@@ -1,0 +1,29 @@
+.wishlist-loop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include desktop{
+        width:800px;
+        flex-wrap: nowrap;
+        transform: translateX(-160px);
+    }
+
+    .wishlist-entry {
+        flex-basis: 45%;
+        padding: 5px;
+        margin: 10px 5px;
+
+        @include desktop{
+         
+    }
+
+        .wishlist-heading {
+            text-align: center;
+        }
+        p {
+            padding: 2px;
+        }
+    }
+}
