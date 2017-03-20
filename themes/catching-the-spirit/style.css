@@ -1194,6 +1194,7 @@ img {
 .what-to-bring-img {
   margin-bottom: 40px; }
 
+<<<<<<< HEAD
 .page-id-78 .main h3, .page-id-78 .main h4, .page-id-78 .main p, .page-id-78 .main span, .page-id-78 .main div, .page-id-78 .main nav, .page-id-78 .main i {
   font-family: "montserrat" !important;
   color: #52AA8A !important; }
@@ -1229,3 +1230,32 @@ img {
     color: #006BBC !important; }
   .page-id-78 .fc-content span {
     color: white !important; }
+=======
+.wishlist-contact-us {
+  text-align: center; }
+
+.wishlist-loop {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  @media (min-width: 600px) {
+    .wishlist-loop {
+      width: 800px;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      transform: translateX(-160px); } }
+  .wishlist-loop .wishlist-entry {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    padding: 5px;
+    margin: 10px 5px; }
+    .wishlist-loop .wishlist-entry .wishlist-heading {
+      text-align: center; }
+    .wishlist-loop .wishlist-entry p {
+      padding: 2px; }
+>>>>>>> ddf1478e76df83bfeb20387f9d5b0746d5ef3fc6
