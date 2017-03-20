@@ -1194,22 +1194,23 @@ img {
 .what-to-bring-img {
   margin-bottom: 40px; }
 
-.wishlist-contact-us {
-  text-align: center; }
-
-<<<<<<< HEAD
 @media (min-width: 600px) {
-  .page-template-page-resources-learning .site-main, .page-template-page-resources-opportunities .site-main {
+  .page-template-page-resources-learning .site-main, .page-template-page-resources-opportunities .site-main,
+  .page-template-page-resources-conversations .site-main {
     width: 600px;
     margin: 0 auto;
     text-align: center;
     margin: 3rem 0; } }
 
-.page-template-page-resources-learning .site-main h1, .page-template-page-resources-opportunities .site-main h1, .page-template-page-resources-learning .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .page-template-page-resources-learning .site-main .subtitle, .page-template-page-resources-opportunities .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .page-template-page-resources-opportunities .site-main .subtitle {
+.page-template-page-resources-learning .site-main h1, .page-template-page-resources-opportunities .site-main h1,
+.page-template-page-resources-conversations .site-main h1, .page-template-page-resources-learning .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .page-template-page-resources-learning .site-main .subtitle, .page-template-page-resources-opportunities .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .page-template-page-resources-opportunities .site-main .subtitle,
+.page-template-page-resources-conversations .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal
+.page-template-page-resources-conversations .site-main .subtitle {
   padding-bottom: 1.5rem;
   margin: 0; }
 
-.page-template-page-resources-learning .site-main ul, .page-template-page-resources-opportunities .site-main ul {
+.page-template-page-resources-learning .site-main ul, .page-template-page-resources-opportunities .site-main ul,
+.page-template-page-resources-conversations .site-main ul {
   list-style: none;
   color: #52AA8A;
   font-weight: 100;
@@ -1217,15 +1218,21 @@ img {
   line-height: 1.4;
   padding: 1.5rem 15px 0 1.5rem; }
 
-.page-template-page-resources-opportunities h2 {
+.page-template-page-resources-opportunities h2,
+.page-template-page-resources-conversations h2 {
   text-align: left;
   padding: 1.1rem 0 0 0; }
 
 .page-template-page-resources-opportunities ul p,
-.page-template-page-resources-opportunities ul h2 {
+.page-template-page-resources-opportunities ul h2,
+.page-template-page-resources-conversations ul p,
+.page-template-page-resources-conversations ul h2 {
   padding-left: 0;
   padding-right: 0; }
-=======
+
+.wishlist-contact-us {
+  text-align: center; }
+
 .wishlist-loop {
   display: -ms-flexbox;
   display: flex;
@@ -1250,9 +1257,3 @@ img {
       text-align: center; }
     .wishlist-loop .wishlist-entry p {
       padding: 2px; }
-<<<<<<< HEAD
->>>>>>> 65835f3634ac0dbd84a0d18bb6608dee37f876f7
-=======
->>>>>>> 2f061e37ed07e73ed3c10d0693b5120ccd71b8d6
-=======
->>>>>>> ddf1478e76df83bfeb20387f9d5b0746d5ef3fc6

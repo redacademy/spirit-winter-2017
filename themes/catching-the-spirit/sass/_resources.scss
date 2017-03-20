@@ -21,7 +21,8 @@
     }
 }
 
-.page-template-page-resources-opportunities {
+.page-template-page-resources-opportunities,
+.page-template-page-resources-conversations {
     @extend .page-template-page-resources-learning;
     h2 {
         text-align: left;
