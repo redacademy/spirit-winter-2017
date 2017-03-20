@@ -22,6 +22,9 @@
     }
     .youth-council, .peer-leaders{
         background-color: $color__green;
+        @include desktop{
+            border-radius: 10px;
+        }
         h2,p{
                 color: white;
         }

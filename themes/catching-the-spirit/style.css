@@ -1127,7 +1127,12 @@ img {
     .page-id-139 .volunteering-for-cts p {
       font-size: 1.3rem; }
   .page-id-139 .the-board {
+<<<<<<< HEAD
     width: 800px; }
+=======
+    width: 800px;
+    border-radius: 10px; }
+>>>>>>> 2f061e37ed07e73ed3c10d0693b5120ccd71b8d6
     .page-id-139 .the-board h2, .page-id-139 .the-board p {
       padding-left: 5rem; }
     .page-id-139 .the-board h2 {
@@ -1163,6 +1168,12 @@ img {
 
 .page-id-137 .youth-council, .page-id-137 .peer-leaders {
   background-color: #52AA8A; }
+<<<<<<< HEAD
+=======
+  @media (min-width: 600px) {
+    .page-id-137 .youth-council, .page-id-137 .peer-leaders {
+      border-radius: 10px; } }
+>>>>>>> 2f061e37ed07e73ed3c10d0693b5120ccd71b8d6
   .page-id-137 .youth-council h2, .page-id-137 .youth-council p, .page-id-137 .peer-leaders h2, .page-id-137 .peer-leaders p {
     color: white; }
   .page-id-137 .youth-council h2, .page-id-137 .peer-leaders h2 {
@@ -1189,6 +1200,7 @@ img {
 
 .what-to-bring-img {
   margin-bottom: 40px; }
+<<<<<<< HEAD
 
 .wishlist-loop {
   display: -ms-flexbox;
@@ -1214,3 +1226,5 @@ img {
       text-align: center; }
     .wishlist-loop .wishlist-entry p {
       padding: 2px; }
+=======
+>>>>>>> 2f061e37ed07e73ed3c10d0693b5120ccd71b8d6
