@@ -88,7 +88,7 @@ function red_starter_scripts() {
 
 	wp_enqueue_script('jquery');
 
-	if(is_page( 'faq' )){
+	if(is_page( 'faq' ) || is_404()){
 	wp_enqueue_script('faq-scripts', get_template_directory_uri() . '/build/js/faq-scripts.min.js', array('jquery'), '1', true);
 
 	}
