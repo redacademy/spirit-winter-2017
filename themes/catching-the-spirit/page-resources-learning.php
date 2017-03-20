@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Conversations Resource Template
+ * Template Name: Learning Resource Template
  *
  * @package RED_Starter_Theme
  */

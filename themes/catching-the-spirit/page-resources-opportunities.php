@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Conversations Resource Template
+ * Template Name: Opportunities Resource Template
  *
  * @package RED_Starter_Theme
  */

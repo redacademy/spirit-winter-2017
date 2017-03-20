@@ -1069,7 +1069,7 @@ img {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  margin: 20px  0 40px 0; }
+  margin: 20px 0 40px 0; }
 
 .camp-list-jump-to {
   text-align: left;
