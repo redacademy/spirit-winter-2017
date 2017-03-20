@@ -5,29 +5,44 @@
 /* Front page */
 .page-template-front-page {
 
-    .site-content {
-        width:1200px;
-        div {
-            padding: 3rem 0;
+    .site-main {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .front-page-hero {
+        height: 300px;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 3rem;
+        & img {
+            height: 450px;
+            object-fit: cover;
+            position: relative;
+            top: -50px;
         }
     }
     h2 {
         text-transform: capitalize;
     }
+    h3 {
+        color: $color__green;
+    }
+    .green-box {
+        margin: 3rem 0;
+        padding: 1rem 0;
+    }
     .for-youth-yellow {
         background: $color__green url('../../images/foryouthbyyouth_yellow.svg') no-repeat center center;
-        background-size: contain;
-        height: 250px;
-        width: auto;
+        background-size: 95vw;
+        height: 200px;
     }
     .front-page-social-media {
-        background: $color__yellow;
-        color: white;
+        color: $color__yellow;
         font-size: 3rem;
     }
 
     .front-page-sponsors-list{
-        width:600px;
+        width: 100%;
         margin:0 auto;
 
         display:flex;

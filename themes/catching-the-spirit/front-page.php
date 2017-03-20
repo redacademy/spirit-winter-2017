@@ -10,6 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<div class="front-page-hero">
+				<img src="<?php echo CFS()->get('front_page_hero_image'); ?>"/>
 			</div>
 			<div class="front-page-mission">
 				<h2>Our mission</h2>
@@ -24,6 +25,18 @@ get_header(); ?>
 			</div>
 			<div class="front-page-programs">
 				<h2>What do we offer?</h2>
+				<div class="program-summer">
+					<h3>Summer</h3>
+					<img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/summer')->ID); ?>"/>
+				</div>
+				<div class="program-fallwinter">
+					<h3>Fall/Winter</h3>
+					<img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/fallwinter')->ID); ?>"/>
+				</div>
+				<div class="program-leadership">
+					<h3>Leadership</h3>
+					<img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/summer')->ID); ?>"/>
+				</div>
 			</div>
 			<div class="front-page-programs-free green-box">
 				<h2>Our programs are <span class="emphasis">free</span></h2>
