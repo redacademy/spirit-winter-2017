@@ -1,0 +1,59 @@
+.page-id-78{
+    .main{
+        h3, h4, p, span, div, nav, i{
+        font-family: $font__main !important;
+        color: $color__green !important;
+    }
+
+    }
+    
+    .custom-header{
+        background-color: white;
+        i:before{
+            color: $color__green !important;
+        }
+        .totalsoft-caret-right:before{
+            content: ">";
+        }
+        .totalsoft-caret-left:before{
+            content: "<";
+        }
+        h3{
+            font-family: $font__main !important;
+            color: $color__green !important;
+        }
+    }
+    .fc-head{
+        div{
+            background-color: white;
+        }
+    }
+    .fc-body{
+        border: none !important;
+        .fc-row{
+            border: none !important;
+            div{
+                border: none !important;
+            }
+            .fc-today{
+                    background: white !important;
+            }
+            }
+    }
+    
+    .fc-content{
+        background: $color__blue !important;
+        border-radius: 5rem;
+        :after{
+            div{
+                color: $color__blue !important;
+            }
+        }
+        span{
+            color: white !important;
+        }
+        }
+    .custom-content-reveal{
+        // background-color: $color__blue !important;
+    }
+}

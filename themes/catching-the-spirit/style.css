@@ -1193,3 +1193,39 @@ img {
 
 .what-to-bring-img {
   margin-bottom: 40px; }
+
+.page-id-78 .main h3, .page-id-78 .main h4, .page-id-78 .main p, .page-id-78 .main span, .page-id-78 .main div, .page-id-78 .main nav, .page-id-78 .main i {
+  font-family: "montserrat" !important;
+  color: #52AA8A !important; }
+
+.page-id-78 .custom-header {
+  background-color: white; }
+  .page-id-78 .custom-header i:before {
+    color: #52AA8A !important; }
+  .page-id-78 .custom-header .totalsoft-caret-right:before {
+    content: ">"; }
+  .page-id-78 .custom-header .totalsoft-caret-left:before {
+    content: "<"; }
+  .page-id-78 .custom-header h3 {
+    font-family: "montserrat" !important;
+    color: #52AA8A !important; }
+
+.page-id-78 .fc-head div {
+  background-color: white; }
+
+.page-id-78 .fc-body {
+  border: none !important; }
+  .page-id-78 .fc-body .fc-row {
+    border: none !important; }
+    .page-id-78 .fc-body .fc-row div {
+      border: none !important; }
+    .page-id-78 .fc-body .fc-row .fc-today {
+      background: white !important; }
+
+.page-id-78 .fc-content {
+  background: #006BBC !important;
+  border-radius: 5rem; }
+  .page-id-78 .fc-content :after div {
+    color: #006BBC !important; }
+  .page-id-78 .fc-content span {
+    color: white !important; }
