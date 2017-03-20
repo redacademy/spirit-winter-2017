@@ -1194,6 +1194,7 @@ img {
 .what-to-bring-img {
   margin-bottom: 40px; }
 
+<<<<<<< HEAD
 @media (min-width: 600px) {
   .page-template-page-resources-learning .site-main, .page-template-page-resources-opportunities .site-main,
   .page-template-page-resources-conversations .site-main {
@@ -1230,6 +1231,8 @@ img {
   padding-left: 0;
   padding-right: 0; }
 
+=======
+>>>>>>> ddf1478e76df83bfeb20387f9d5b0746d5ef3fc6
 .wishlist-contact-us {
   text-align: center; }
 
