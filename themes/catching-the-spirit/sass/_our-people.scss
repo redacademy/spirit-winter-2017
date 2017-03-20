@@ -1,0 +1,40 @@
+.page-id-137{
+    .bloc{
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+    .blue-btn,.btns{
+        margin: 2rem;
+    }
+    h1{
+        margin-bottom: 3rem;
+    }
+    h2{
+        text-align: left;
+    }
+    .youth-council{
+        margin-top: 2rem;
+    }
+    .youth-council-image, .board-directors-image{
+        img{
+            margin-bottom: 1rem;
+        }
+    }
+    .youth-council, .peer-leaders{
+        background-color: $color__green;
+        h2,p{
+                color: white;
+        }
+        h2{
+            padding-top: 2rem;
+        }
+    }
+    @include desktop{
+        .site-content{
+        width: 800px;
+        img{
+            width: 80%;
+        }
+        }
+    }
+}

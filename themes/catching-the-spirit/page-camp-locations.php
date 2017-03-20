@@ -45,7 +45,4 @@ get_header(); ?>
     <?php endforeach ?>
 </ul>
 
-
-
-
 <?php get_footer(); ?>
