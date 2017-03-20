@@ -26,6 +26,7 @@ get_header(); ?>
     <?php endforeach ?>
 </ul>
 
+<p class="wishlist-contact-us"> <?php echo CFS()->get('wishlist_contact_us')?> </p>
 <p> <?php echo CFS()->get('wishlist_closing_text')?> </p>
 
 <?php get_footer(); ?>
