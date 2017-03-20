@@ -1202,6 +1202,7 @@ img {
   margin-bottom: 40px; }
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 @media (min-width: 600px) {
   .page-template-page-resources-learning .site-main, .page-template-page-resources-opportunities .site-main {
     width: 600px;
@@ -1229,5 +1230,31 @@ img {
 .page-template-page-resources-opportunities ul h2 {
   padding-left: 0;
   padding-right: 0; }
+=======
+.wishlist-loop {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  @media (min-width: 600px) {
+    .wishlist-loop {
+      width: 800px;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      transform: translateX(-160px); } }
+  .wishlist-loop .wishlist-entry {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    padding: 5px;
+    margin: 10px 5px; }
+    .wishlist-loop .wishlist-entry .wishlist-heading {
+      text-align: center; }
+    .wishlist-loop .wishlist-entry p {
+      padding: 2px; }
+>>>>>>> 65835f3634ac0dbd84a0d18bb6608dee37f876f7
 =======
 >>>>>>> 2f061e37ed07e73ed3c10d0693b5120ccd71b8d6
