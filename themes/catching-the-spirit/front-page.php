@@ -9,6 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<h1 class="page-title">Catching the Spirit</h1>
 			<div class="front-page-hero">
 				<img src="<?php echo CFS()->get('front_page_hero_image'); ?>"/>
 			</div>
@@ -25,17 +26,19 @@ get_header(); ?>
 			</div>
 			<div class="front-page-programs">
 				<h2>What do we offer?</h2>
-				<div class="program-summer">
-					<h3>Summer</h3>
-					<img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/summer')->ID); ?>"/>
-				</div>
-				<div class="program-fallwinter">
-					<h3>Fall/Winter</h3>
-					<img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/fallwinter')->ID); ?>"/>
-				</div>
-				<div class="program-leadership">
-					<h3>Leadership</h3>
-					<img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/summer')->ID); ?>"/>
+				<div class="programs-wrapper">
+					<div class="program-summer">
+						<img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/summer')->ID); ?>"/>
+						<h3>Summer</h3>
+					</div>
+					<div class="program-fallwinter">
+						<img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/fallwinter')->ID); ?>"/>
+						<h3>Fall/Winter</h3>
+					</div>
+					<div class="program-leadership">
+						<img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/summer')->ID); ?>"/>
+						<h3>Leadership</h3>
+					</div>
 				</div>
 			</div>
 			<div class="front-page-programs-free green-box">
@@ -48,9 +51,9 @@ get_header(); ?>
 			</div>
 			<div class="front-page-social-media">
 				<h2>Follow us on social media!</h2>
-				<i class="fa fa-facebook" aria-hidden="true"></i>
+				<i class="fa fa-facebook-square" aria-hidden="true"></i>
 				<i class="fa fa-instagram" aria-hidden="true"></i>
-				<i class="fa fa-twitter" aria-hidden="true"></i>
+				<i class="fa fa-twitter-square" aria-hidden="true"></i>
 			</div>
 			<div class="front-page-testimonials green-box">
 				<h2>Testimonials</h2>
