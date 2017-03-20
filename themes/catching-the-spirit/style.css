@@ -1150,3 +1150,10 @@ img {
   -ms-flex-line-pack: center;
       align-content: center;
   padding-top: 100px; }
+
+.what-to-bring-entry {
+  list-style: none;
+  margin-top: 50px; }
+
+.what-to-bring-img {
+  margin-bottom: 40px; }
