@@ -1142,6 +1142,38 @@ img {
     .page-id-139 .mentorvisors img {
       width: 80%; } }
 
+.page-id-137 .bloc {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem; }
+
+.page-id-137 .blue-btn, .page-id-137 .btns {
+  margin: 2rem; }
+
+.page-id-137 h1, .page-id-137 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .page-id-137 .subtitle {
+  margin-bottom: 3rem; }
+
+.page-id-137 h2 {
+  text-align: left; }
+
+.page-id-137 .youth-council {
+  margin-top: 2rem; }
+
+.page-id-137 .youth-council-image img, .page-id-137 .board-directors-image img {
+  margin-bottom: 1rem; }
+
+.page-id-137 .youth-council, .page-id-137 .peer-leaders {
+  background-color: #52AA8A; }
+  .page-id-137 .youth-council h2, .page-id-137 .youth-council p, .page-id-137 .peer-leaders h2, .page-id-137 .peer-leaders p {
+    color: white; }
+  .page-id-137 .youth-council h2, .page-id-137 .peer-leaders h2 {
+    padding-top: 2rem; }
+
+@media (min-width: 600px) {
+  .page-id-137 .site-content {
+    width: 800px; }
+    .page-id-137 .site-content img {
+      width: 80%; } }
+
 .error-404 {
   display: -ms-flexbox;
   display: flex;
