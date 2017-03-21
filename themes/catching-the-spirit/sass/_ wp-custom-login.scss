@@ -39,13 +39,21 @@
             #backtoblog{
                 display: none;
             }
+            #user_login, #user_pass{
+                width: 25rem;
+            }
+            .input, #rememberme{
+                border: 2px solid $color__blue;
+                border-radius: 5px;
+                background-color: white;
+                }
             .button {
-                background-color: $color__green;
+                background-color: $color__blue;
                 border-radius: 10px;
                 margin: 20px 0;
                 color: white;
                 font-size: 1rem;
-                padding: 1rem 3rem;
+                padding: 1rem 5rem;
                 box-shadow: none;
                 text-shadow: none;
                 border: none;

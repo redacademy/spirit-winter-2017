@@ -956,7 +956,7 @@ img {
 .page-template-page-program-seasonal .site-main .for-youth-green {
   background: url("../../images/foryouthbyyouth_green.svg") no-repeat center center;
   background-size: contain;
-  width: 500px;
+  width: 95%;
   height: 150px; }
 
 .page-template-page-program-seasonal .site-main .green-box {
@@ -964,6 +964,19 @@ img {
   margin: 3rem 0; }
   .page-template-page-program-seasonal .site-main .green-box p {
     text-align: center; }
+
+.page-template-page-program-seasonal .site-main .program-leaders-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .page-template-page-program-seasonal .site-main .program-leaders-wrapper p {
+    text-align: center; }
+  .page-template-page-program-seasonal .site-main .program-leaders-wrapper img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 100px; }
 
 .page-template-page-program-seasonal .site-main .program-leaders-wrapper,
 .page-template-page-program-seasonal .site-main .program-details-wrapper {
@@ -1425,13 +1438,19 @@ img {
       font-weight: 100; }
     .logged-in .site-content #login #backtoblog {
       display: none; }
+    .logged-in .site-content #login #user_login, .logged-in .site-content #login #user_pass {
+      width: 25rem; }
+    .logged-in .site-content #login .input, .logged-in .site-content #login #rememberme {
+      border: 2px solid #006BBC;
+      border-radius: 5px;
+      background-color: white; }
     .logged-in .site-content #login .button {
-      background-color: #52AA8A;
+      background-color: #006BBC;
       border-radius: 10px;
       margin: 20px 0;
       color: white;
       font-size: 1rem;
-      padding: 1rem 3rem;
+      padding: 1rem 5rem;
       box-shadow: none;
       text-shadow: none;
       border: none; }
