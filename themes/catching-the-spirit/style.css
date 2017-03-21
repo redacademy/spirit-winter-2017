@@ -1417,17 +1417,23 @@ img {
       text-decoration: none; }
   .logged-in .site-content #login {
     width: 100%;
-    padding: 0; }
+    padding: 0;
+    margin-top: 2rem; }
     .logged-in .site-content #login h1, .logged-in .site-content #login .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .logged-in .site-content #login .subtitle {
-      margin: 0 auto;
-      width: 100%;
-      height: 60px;
-      background-color: #006BBC;
-      color: white;
+      display: none; }
+    .logged-in .site-content #login p a {
       font-weight: 100; }
-      @media (min-width: 600px) {
-        .logged-in .site-content #login h1, .logged-in .site-content #login .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .logged-in .site-content #login .subtitle {
-          padding-top: 2rem;
-          padding-bottom: 4rem;
-          background-color: white;
-          color: #52AA8A; } }
+    .logged-in .site-content #login #backtoblog {
+      display: none; }
+    .logged-in .site-content #login .button {
+      background-color: #52AA8A;
+      border-radius: 10px;
+      margin: 20px 0;
+      color: white;
+      font-size: 1rem;
+      padding: 1rem 3rem;
+      box-shadow: none;
+      text-shadow: none;
+      border: none; }
+      .logged-in .site-content #login .button:hover {
+        box-shadow: 2px 2px 2px #888888; }
