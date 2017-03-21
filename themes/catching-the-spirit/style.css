@@ -1192,6 +1192,10 @@ img {
 .what-to-bring-img {
   margin-bottom: 40px; }
 
+.page-id-78 nav {
+  position: relative !important;
+  z-index: 9999 !important; }
+
 .page-id-78 .main h3, .page-id-78 .main h4, .page-id-78 .main p, .page-id-78 .main span, .page-id-78 .main div, .page-id-78 .main nav, .page-id-78 .main i {
   font-family: "montserrat" !important;
   color: #52AA8A !important; }
@@ -1227,6 +1231,17 @@ img {
     color: #006BBC !important; }
   .page-id-78 .fc-content span {
     color: white !important; }
+
+.page-id-78 .custom-content-reveal {
+  border: 3px solid #006BBC;
+  border-radius: 10px; }
+  .page-id-78 .custom-content-reveal h4 {
+    background-color: white;
+    border: none; }
+  .page-id-78 .custom-content-reveal .TotalSoftcalEvent_Title {
+    background-color: white !important; }
+  .page-id-78 .custom-content-reveal .totalsoft-times:before {
+    content: "x"; }
 
 .wishlist-contact-us {
   text-align: center; }

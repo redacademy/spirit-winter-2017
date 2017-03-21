@@ -1,10 +1,12 @@
 .page-id-78{
+    nav {
+        position: relative !important; z-index: 9999 !important;
+        }
     .main{
         h3, h4, p, span, div, nav, i{
         font-family: $font__main !important;
         color: $color__green !important;
     }
-
     }
     
     .custom-header{
@@ -54,6 +56,17 @@
         }
         }
     .custom-content-reveal{
-        // background-color: $color__blue !important;
+        border: 3px solid $color__blue;
+        border-radius: 10px;
+        h4{
+            background-color: white;
+            border: none;
+        }
+        .TotalSoftcalEvent_Title{
+            background-color: white !important;
+        }
+        .totalsoft-times:before{
+                content: "x";
+        }
     }
 }
