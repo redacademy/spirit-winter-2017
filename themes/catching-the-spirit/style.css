@@ -443,7 +443,8 @@ textarea {
               background-color: #006BBC;
               position: absolute;
               text-align: left;
-              margin-top: 0.1rem; }
+              margin-top: 0.1rem;
+              display: none; }
               .main-navigation .nav-desktop .menu .menu-item .sub-menu :last-child {
                 margin-bottom: 0.7rem; }
               .main-navigation .nav-desktop .menu .menu-item .sub-menu a {

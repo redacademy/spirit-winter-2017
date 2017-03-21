@@ -10,7 +10,6 @@
     });
     }
     else{
-        $('.sub-menu').hide();
         $('.menu-item').hover(function() {
         //show its submenu
         $('ul', this).fadeIn(100);
