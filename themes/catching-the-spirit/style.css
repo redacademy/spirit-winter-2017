@@ -628,41 +628,109 @@ img {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.page-template-front-page .site-content {
-  width: 1200px; }
-  .page-template-front-page .site-content div {
-    padding: 3rem 0; }
+@media (min-width: 600px) {
+  .page-template-front-page .site-content {
+    width: 1120px; } }
 
-.page-template-front-page h2 {
-  text-transform: capitalize; }
-
-.page-template-front-page .for-youth-yellow {
-  background: #52AA8A url("../../images/foryouthbyyouth_yellow.svg") no-repeat center center;
-  background-size: contain;
-  height: 250px;
-  width: auto; }
-
-.page-template-front-page .front-page-social-media {
-  background: #F9F296;
-  color: white;
-  font-size: 3rem; }
-
-.page-template-front-page .front-page-sponsors-list {
-  width: 600px;
-  margin: 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .page-template-front-page .front-page-sponsors-list li {
-    -ms-flex-preferred-size: 33%;
-        flex-basis: 33%;
-    padding: 20px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center; }
+.page-template-front-page .site-main {
+  width: 100%;
+  margin: 3rem auto; }
+  @media (min-width: 600px) {
+    .page-template-front-page .site-main h1, .page-template-front-page .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .page-template-front-page .site-main .subtitle {
+      display: none; } }
+  .page-template-front-page .site-main .front-page-hero {
+    height: 300px;
+    width: 100%;
+    overflow: hidden; }
+    @media (min-width: 600px) {
+      .page-template-front-page .site-main .front-page-hero {
+        height: 400px; } }
+    .page-template-front-page .site-main .front-page-hero img {
+      height: 450px;
+      object-fit: cover;
+      position: relative;
+      top: -50px; }
+      @media (min-width: 600px) {
+        .page-template-front-page .site-main .front-page-hero img {
+          height: 800px;
+          top: -150px; } }
+  @media (min-width: 600px) {
+    .page-template-front-page .site-main .about-section-wrapper {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .page-template-front-page .site-main .about-section-wrapper .front-page-about, .page-template-front-page .site-main .about-section-wrapper .front-page-mission {
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+        padding: 0 3%;
+        margin: 3% 0; }
+        .page-template-front-page .site-main .about-section-wrapper .front-page-about p, .page-template-front-page .site-main .about-section-wrapper .front-page-mission p {
+          text-align: center; }
+      .page-template-front-page .site-main .about-section-wrapper .front-page-mission {
+        border-right: 1px solid #52AA8A; }
+      .page-template-front-page .site-main .about-section-wrapper .btn-container {
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+        padding: 0; } }
+  .page-template-front-page .site-main h2 {
+    text-transform: capitalize; }
+    @media (min-width: 600px) {
+      .page-template-front-page .site-main h2 {
+        margin-bottom: 2rem;
+        padding-bottom: 0; } }
+  .page-template-front-page .site-main h3 {
+    color: #52AA8A; }
+  .page-template-front-page .site-main .green-box {
+    margin: 3rem 0;
+    padding: 1rem 0;
+    border-radius: 0; }
+  .page-template-front-page .site-main .for-youth-yellow {
+    background: #52AA8A url("../../images/foryouthbyyouth_yellow.svg") no-repeat center center;
+    background-size: 95vw;
+    height: 200px; }
+    @media (min-width: 600px) {
+      .page-template-front-page .site-main .for-youth-yellow {
+        height: 400px;
+        background-size: 80%; } }
+  @media (min-width: 600px) {
+    .page-template-front-page .site-main .front-page-programs-list .programs-wrapper {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      width: 650px;
+      margin: 0 auto; } }
+  .page-template-front-page .site-main .front-page-programs-list h3 {
+    margin: .5rem 0 3rem 0; }
+    @media (min-width: 600px) {
+      .page-template-front-page .site-main .front-page-programs-list h3 {
+        margin-bottom: 1rem; } }
+  .page-template-front-page .site-main .front-page-programs-list img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100px; }
+  @media (min-width: 600px) {
+    .page-template-front-page .site-main .front-page-programs-free .text-container {
+      width: 650px;
+      margin: 0 auto; } }
+  .page-template-front-page .site-main .front-page-social-media {
+    color: #F9F296;
+    font-size: 3rem; }
+    .page-template-front-page .site-main .front-page-social-media i {
+      width: 3.5rem; }
+  .page-template-front-page .site-main .front-page-sponsors-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .page-template-front-page .site-main .front-page-sponsors-list li {
+      -ms-flex-preferred-size: 33%;
+          flex-basis: 33%;
+      padding: 20px; }
+      .page-template-front-page .site-main .front-page-sponsors-list li img {
+        height: 80px; }
 
 .site-header {
   height: 60px; }
@@ -1194,7 +1262,6 @@ img {
 .what-to-bring-img {
   margin-bottom: 40px; }
 
-<<<<<<< HEAD
 @media (min-width: 600px) {
   .page-template-page-resources-learning .site-main, .page-template-page-resources-opportunities .site-main,
   .page-template-page-resources-conversations .site-main {
@@ -1231,8 +1298,6 @@ img {
   padding-left: 0;
   padding-right: 0; }
 
-=======
->>>>>>> ddf1478e76df83bfeb20387f9d5b0746d5ef3fc6
 .wishlist-contact-us {
   text-align: center; }
 

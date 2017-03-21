@@ -5,72 +5,131 @@
 /* Front page */
 .page-template-front-page {
 
+    @include desktop {
+        .site-content {
+            width: 1120px;
+        }
+    }
     .site-main {
         width: 100%;
         margin: 3rem auto;
-    }
-    .front-page-hero {
-        height: 300px;
-        width: 100%;
-        overflow: hidden;
-        margin: 2rem 0;
-        & img {
-            height: 450px;
-            object-fit: cover;
-            position: relative;
-            top: -50px;
+        h1 {
+            @include desktop {
+            display: none;
+            }
         }
-    }
-    h2 {
-        text-transform: capitalize;
-    }
-    h3 {
-        color: $color__green;
-    }
-    .green-box {
-        margin: 3rem 0;
-        padding: 1rem 0;
-    }
-    .for-youth-yellow {
-        background: $color__green url('../../images/foryouthbyyouth_yellow.svg') no-repeat center center;
-        background-size: 95vw;
-        height: 200px;
-    }
-    .front-page-programs {
-        .programs-wrapper {
-            margin-top: 2rem;
-        }
-        & h3 {
-            margin: .5rem 0 3rem 0;
-        }
-        & img {
-                width: 150px;
-                height: 150px;
+        .front-page-hero {
+            height: 300px;
+            width: 100%;
+            overflow: hidden;
+            @include desktop {
+                height: 400px;
+            }
+            & img {
+                height: 450px;
                 object-fit: cover;
-                border-radius: 100px;
+                position: relative;
+                top: -50px;
+                @include desktop {
+                    height: 800px;
+                    top: -150px;
+                }
+            }
         }
-    }
-    .front-page-social-media {
-        color: $color__yellow;
-        font-size: 3rem;
-        & i {
-            width: 3.5rem;
-            height: 4rem;
+        .about-section-wrapper {
+            @include desktop {
+                display: flex;
+                flex-wrap: wrap;
+                .front-page-about {
+                    flex: 1 1 50%;
+                    padding: 0 3%; 
+                    margin: 3% 0;
+                    & p {
+                        text-align: center;
+                    }
+                }
+                .front-page-mission {
+                    @extend .front-page-about;
+                    border-right: 1px solid $color__green;
+                }
+            .btn-container {
+                    flex: 1 1 100%;
+                    padding: 0;
+                }
+            }
         }
-    }
+        h2 {
+            text-transform: capitalize;
+            @include desktop {
+                margin-bottom: 2rem;
+                padding-bottom: 0;
+            }
+        }
+        h3 {
+            color: $color__green;
+        }
+        .green-box {
+            margin: 3rem 0;
+            padding: 1rem 0;
+            border-radius: 0;
+        }
+        .for-youth-yellow {
+            background: $color__green url('../../images/foryouthbyyouth_yellow.svg') no-repeat center center;
+            background-size: 95vw;
+            height: 200px;
+            @include desktop {
+                height: 400px;
+                background-size: 80%;
+            }
+        }
+        .front-page-programs-list {
+            .programs-wrapper {
+                @include desktop {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 650px;
+                    margin: 0 auto;
+                }
+            }
+            & h3 {
+                margin: .5rem 0 3rem 0;
+                @include desktop {
+                    margin-bottom: 1rem;
+                }
+            }
+            & img {
+                    width: 150px;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 100px;
+            }
+        }
+        .front-page-programs-free {
+            .text-container {
+                @include desktop {
+                    width: 650px;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .front-page-social-media {
+            color: $color__yellow;
+            font-size: 3rem;
+            & i {
+                width: 3.5rem;
+            }
+        }
 
-    .front-page-sponsors-list{
-        width: 100%;
-        margin:0 auto;
-
-        display:flex;
-        flex-direction: row;
-        flex-wrap:wrap;
-
-        li{
-            flex-basis: 33%;
-            padding:20px;
-            align-self:center;
+        .front-page-sponsors-list{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                flex-basis: 33%;
+                padding:20px;
+                img {
+                    height: 80px;
+                }
+            }
         }
     }
 }

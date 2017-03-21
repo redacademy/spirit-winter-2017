@@ -13,18 +13,22 @@ get_header(); ?>
 			<div class="front-page-hero">
 				<img src="<?php echo CFS()->get('front_page_hero_image'); ?>"/>
 			</div>
-			<div class="front-page-mission">
-				<h2>Our mission</h2>
-				<p><?php echo CFS()->get('front_page_our_mission'); ?></p>
-			</div>
-			<div class="front-page-about">
-				<h2>Who we are?</h2>
-				<p><?php echo CFS()->get('front_page_who_we_are'); ?></p>
-				<a href="" class="blue-btn">Learn More</a>
+			<div class="about-section-wrapper">
+				<div class="front-page-mission">
+					<h2>Our mission</h2>
+					<div><?php echo CFS()->get('front_page_our_mission'); ?></div>
+				</div>
+				<div class="front-page-about">
+					<h2>Who we are?</h2>
+					<div><?php echo CFS()->get('front_page_who_we_are'); ?></div>
+				</div>
+				<div class="btn-container">
+					<a href="" class="blue-btn">Learn More</a>
+				</div>
 			</div>
 			<div class="green-box for-youth-yellow">
 			</div>
-			<div class="front-page-programs">
+			<div class="front-page-programs-list">
 				<h2>What do we offer?</h2>
 				<div class="programs-wrapper">
 					<div class="program-summer">
@@ -43,10 +47,11 @@ get_header(); ?>
 			</div>
 			<div class="front-page-programs-free green-box">
 				<h2>Our programs are <span class="emphasis">free</span></h2>
-				<p><?php echo CFS()->get('front_page_programs_free'); ?></p>
-				<div class="btn-container">
-				<a href="" class="red-btn">Volunteer</a>
-				<a href="" class="red-btn">Give</a>
+				<div class="text-container"><?php echo CFS()->get('front_page_programs_free'); ?>
+					<div class="btn-container">
+						<a href="" class="red-btn">Volunteer</a>
+						<a href="" class="red-btn">Give</a>
+					</div>
 				</div>
 			</div>
 			<div class="front-page-social-media">
@@ -71,29 +76,6 @@ get_header(); ?>
 				<?php endforeach ?>
 			</ul>
 			</div>
-
-		<!--<?php if ( have_posts() ) : ?>
-
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content' ); ?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>-->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
