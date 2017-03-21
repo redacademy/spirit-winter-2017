@@ -119,6 +119,9 @@
                 transition: all ease;
                 z-index: 2;
                 background-color: $color__lightblue;
+                content: "";
+                clear: both;
+                display: table;
                 @include desktop {
                 display: none;
                 }
