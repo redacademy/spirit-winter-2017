@@ -3,7 +3,6 @@
     if(('ontouchstart' in window)){//check for touch device
         $('.sub-menu').hide();
         $('.menu-item').click(function() { 
-            event.preventPropagation();
             if ($(this).children('ul,p').is(':hidden') == true) {
             $(this).find('ul').toggle();
             return false
