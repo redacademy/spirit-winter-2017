@@ -39,12 +39,12 @@ get_header(); ?>
                     <div class="program-leaders-wrapper">
                         <div class="peer-leaders">
                             <p>Peer Leaders</p>
-                            <img src="<?php echo CFS()->get('peer_leaders_image'); ?>"/>
+                            <img src="<?php echo CFS()->get('peer_leaders_image', get_page_by_path('programs/leadership')->ID); ?>"/>
                             <p>Age: 15-18</p>
                         </div>
                         <div class="supervisors">
                             <p>Supervisors</p>
-                            <img src="<?php echo CFS()->get('supervisors_image'); ?>"/>
+                            <img src="<?php echo CFS()->get('supervisors_image', get_page_by_path('programs/leadership')->ID); ?>"/>
                             <p>Age: 19+</p>
                         </div>
                     </div>
