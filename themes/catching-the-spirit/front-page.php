@@ -40,7 +40,7 @@ get_header(); ?>
 						<h3>Fall/Winter</h3>
 					</div>
 					<div class="program-leadership">
-						<img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/summer')->ID); ?>"/>
+						<img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/leadership')->ID); ?>"/>
 						<h3>Leadership</h3>
 					</div>
 				</div>
