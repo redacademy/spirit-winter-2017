@@ -5,9 +5,8 @@
         $('.sub-menu').hide();
         // remove parent link
         $('.sub-menu').parent().find('a:first').removeAttr('href').css('cursor','default');
-
-        $('.menu-item').on('click', function (e) {
-        e.preventDefault();
+        // show hide submenu when click on parent
+        $('.menu-item').on('click', function () {
         $('.sub-menu', this).toggle();
 });
 
