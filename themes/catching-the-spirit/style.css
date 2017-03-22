@@ -1439,7 +1439,7 @@ img {
     .logged-in .site-content #login #backtoblog {
       display: none; }
     .logged-in .site-content #login #user_login, .logged-in .site-content #login #user_pass {
-      width: 25rem; }
+      width: 20rem; }
     .logged-in .site-content #login .input, .logged-in .site-content #login #rememberme {
       border: 2px solid #006BBC;
       border-radius: 5px;
