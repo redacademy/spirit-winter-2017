@@ -26,7 +26,7 @@ get_header(); ?>
                 <div class="board-directors-image">
                 <img src="<?php echo CFS()->get( 'our_people_board_of_directors_image' ); ?>"/>
                 </div>
-                <a href="" class="blue-btn">Learn More</a>
+                <a href="<?php echo home_url( '/board' ); ?>" class="blue-btn">Learn More</a>
             </div>
 
             <div class="peer-leaders bloc">
