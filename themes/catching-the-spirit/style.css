@@ -577,7 +577,7 @@ img {
   padding: 15px;
   margin: 20px 0; }
 
-.red-btn, .blue-btn, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
+.red-btn, .blue-btn, #gform_2 input[type=button], .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
   display: inline-block;
   text-align: center;
   width: 250px;
@@ -592,14 +592,14 @@ img {
   outline: none;
   cursor: pointer; }
   @media (min-width: 600px) {
-    .red-btn, .blue-btn, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
+    .red-btn, .blue-btn, #gform_2 input[type=button], .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
       width: 180px; } }
-  .red-btn:hover, .blue-btn:hover, .page-template-page-program-seasonal .site-main .register-btn:hover, .page-template-page-program-leadership .site-main .apply-btn:hover {
+  .red-btn:hover, .blue-btn:hover, #gform_2 input[type=button]:hover, .page-template-page-program-seasonal .site-main .register-btn:hover, .page-template-page-program-leadership .site-main .apply-btn:hover {
     box-shadow: 2px 2px 2px #888888; }
-  .red-btn:active, .blue-btn:active, .page-template-page-program-seasonal .site-main .register-btn:active, .page-template-page-program-leadership .site-main .apply-btn:active {
+  .red-btn:active, .blue-btn:active, #gform_2 input[type=button]:active, .page-template-page-program-seasonal .site-main .register-btn:active, .page-template-page-program-leadership .site-main .apply-btn:active {
     box-shadow: none; }
 
-.blue-btn {
+.blue-btn, #gform_2 input[type=button] {
   background: #006BBC; }
 
 .btn-container {
@@ -611,7 +611,7 @@ img {
       align-items: center;
   max-width: 400px;
   margin: 0 auto; }
-  .btn-container .blue-btn, .btn-container .red-btn, .btn-container .blue-btn, .btn-container .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .btn-container .register-btn, .btn-container .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .btn-container .apply-btn {
+  .btn-container .blue-btn, .btn-container #gform_2 input[type=button], #gform_2 .btn-container input[type=button], .btn-container .red-btn, .btn-container .blue-btn, .btn-container #gform_2 input[type=button], #gform_2 .btn-container input[type=button], .btn-container .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .btn-container .register-btn, .btn-container .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .btn-container .apply-btn {
     margin: 5px 0; }
   @media (min-width: 600px) {
     .btn-container {
@@ -1048,7 +1048,7 @@ img {
     object-fit: cover;
     border-radius: 100px; }
 
-.page-template-page-program-leadership .site-main .blue-btn {
+.page-template-page-program-leadership .site-main .blue-btn, .page-template-page-program-leadership .site-main #gform_2 input[type=button], #gform_2 .page-template-page-program-leadership .site-main input[type=button] {
   margin: 1.5rem 1.5rem 0 1.5rem; }
 
 .page-template-page-program-leadership .site-main .apply-btn {
@@ -1150,7 +1150,7 @@ img {
   margin-top: 0;
   height: 220px; }
 
-.page-id-135 .how-we-run .red-btn, .page-id-135 .how-we-run .blue-btn, .page-id-135 .how-we-run .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .page-id-135 .how-we-run .register-btn, .page-id-135 .how-we-run .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .page-id-135 .how-we-run .apply-btn {
+.page-id-135 .how-we-run .red-btn, .page-id-135 .how-we-run .blue-btn, .page-id-135 .how-we-run #gform_2 input[type=button], #gform_2 .page-id-135 .how-we-run input[type=button], .page-id-135 .how-we-run .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .page-id-135 .how-we-run .register-btn, .page-id-135 .how-we-run .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .page-id-135 .how-we-run .apply-btn {
   margin: 0.5rem; }
 
 .camp-location-map {
@@ -1202,7 +1202,7 @@ img {
   .page-id-139 .the-board h2 {
     padding-top: 2rem; }
 
-.page-id-139 .blue-btn {
+.page-id-139 .blue-btn, .page-id-139 #gform_2 input[type=button], #gform_2 .page-id-139 input[type=button] {
   margin: 2rem; }
 
 @media (min-width: 600px) {
@@ -1236,7 +1236,7 @@ img {
   padding-bottom: 2rem;
   margin-bottom: 2rem; }
 
-.page-id-137 .blue-btn, .page-id-137 .btns {
+.page-id-137 .blue-btn, .page-id-137 #gform_2 input[type=button], #gform_2 .page-id-137 input[type=button], .page-id-137 .btns {
   margin: 2rem; }
 
 .page-id-137 h1, .page-id-137 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .page-id-137 .subtitle {
@@ -1481,3 +1481,42 @@ img {
       border: none; }
       .logged-in .site-content #login .button:hover {
         box-shadow: 2px 2px 2px #888888; }
+
+#gform_2 {
+  position: relative;
+  margin-top: 120px; }
+  #gform_2 ::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #a9a9a9;
+    font-size: 1.1rem; }
+  #gform_2 :-ms-input-placeholder {
+    font-weight: 100;
+    color: #a9a9a9;
+    font-size: 1.1rem; }
+  #gform_2 ::placeholder {
+    font-weight: 100;
+    color: #a9a9a9;
+    font-size: 1.1rem; }
+  #gform_2 .gf_progressbar_title {
+    display: none; }
+  #gform_2 .gf_progressbar_wrapper {
+    padding: 0 20px; }
+  #gform_2 li:not(:first-child) {
+    padding: 0 20px; }
+  #gform_2 label {
+    display: none; }
+  #gform_2 h1, #gform_2 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main #gform_2 .subtitle {
+    height: auto;
+    background: none;
+    color: #52AA8A;
+    position: absolute;
+    top: -100px;
+    left: 0; }
+  #gform_2 input {
+    border-radius: 10px;
+    padding: 0 5px; }
+  #gform_2 input[type=button] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    box-shadow: none; }

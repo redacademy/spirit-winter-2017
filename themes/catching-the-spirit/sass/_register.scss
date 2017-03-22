@@ -1,0 +1,46 @@
+ #gform_2 {
+     position: relative;
+     margin-top: 120px;
+      ::placeholder {
+         font-weight: 100;
+         color:$color__lightgrey;
+         font-size:1.1rem;
+     }
+     .gf_progressbar_title {
+         display: none;
+     }
+     .gf_progressbar_wrapper {
+         padding: 0 20px;
+     }
+     li {
+         &:not(:first-child) {
+             padding: 0 20px;
+         }
+     }
+     label {
+         display: none;
+     }
+     h1 {
+         height: auto;
+         background: none;
+         color: $color__green;
+         position: absolute;
+         top: -100px;
+         left: 0;
+     }
+
+     input{
+         border-radius:10px;
+         padding: 0 5px;
+     }
+     input[type=button]{
+        //  display:inline;
+        //   padding: 0;
+        //  margin:0 auto;
+        //  width:250px;
+         appearance:none;
+
+            box-shadow:none;
+             @extend .blue-btn;
+         }
+ }
