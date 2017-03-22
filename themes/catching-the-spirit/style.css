@@ -554,6 +554,10 @@ textarea {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+nav {
+  position: relative !important;
+  z-index: 9999 !important; }
+
 .page-title {
   font-family: "capriola"; }
 
@@ -1372,8 +1376,6 @@ img {
     border: none !important; }
     .page-id-78 .fc-body .fc-row div {
       border: none !important; }
-    .page-id-78 .fc-body .fc-row .fc-today {
-      background: white !important; }
 
 .page-id-78 .fc-content {
   background: #006BBC !important;
@@ -1424,6 +1426,27 @@ img {
 
 .logged-in {
   background-color: white; }
+  .logged-in .site-content h1, .logged-in .site-content .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .logged-in .site-content .subtitle {
+    margin-top: 0;
+    padding-top: 0.8rem;
+    width: 100%;
+    height: 60px;
+    background-color: #006BBC;
+    color: white;
+    font-weight: 100; }
+    .logged-in .site-content h1 a, .logged-in .site-content .page-template-page-program-seasonal .site-main .subtitle a, .page-template-page-program-seasonal .site-main .logged-in .site-content .subtitle a {
+      text-decoration: none;
+      color: white;
+      font-weight: 100; }
+      @media (min-width: 600px) {
+        .logged-in .site-content h1 a, .logged-in .site-content .page-template-page-program-seasonal .site-main .subtitle a, .page-template-page-program-seasonal .site-main .logged-in .site-content .subtitle a {
+          color: #52AA8A; } }
+    @media (min-width: 600px) {
+      .logged-in .site-content h1, .logged-in .site-content .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .logged-in .site-content .subtitle {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        background-color: white;
+        color: #52AA8A; } }
   .logged-in .site-content p {
     text-align: center; }
     .logged-in .site-content p a {
@@ -1439,11 +1462,13 @@ img {
     .logged-in .site-content #login #backtoblog {
       display: none; }
     .logged-in .site-content #login #user_login, .logged-in .site-content #login #user_pass {
-      width: 25rem; }
+      width: 20rem; }
     .logged-in .site-content #login .input, .logged-in .site-content #login #rememberme {
       border: 2px solid #006BBC;
       border-radius: 5px;
       background-color: white; }
+    .logged-in .site-content #login input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 1000px white inset; }
     .logged-in .site-content #login .button {
       background-color: #006BBC;
       border-radius: 10px;

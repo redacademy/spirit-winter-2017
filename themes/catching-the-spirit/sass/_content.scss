@@ -1,6 +1,9 @@
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+nav {
+        position: relative !important; z-index: 9999 !important;
+        }
 
 .page-title{
     font-family:$font__subheader;

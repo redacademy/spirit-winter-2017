@@ -1,13 +1,15 @@
 (function($) {
+    
 
     if(('ontouchstart' in window)){//check for touch device
         $('.sub-menu').hide();
-        $('.menu-item').click(function() { 
-            if ($(this).children('ul,p').is(':hidden') == true) {
-            $(this).find('ul').toggle();
-            return false
-            } 
-    });
+        // remove parent link
+        $('.sub-menu').parent().find('a:first').removeAttr('href').css('cursor','default');
+        // show hide submenu when click on parent
+        $('.menu-item').on('click', function () {
+        $('.sub-menu', this).toggle();
+});
+
     }
     else{
         $('.menu-item').hover(function() {

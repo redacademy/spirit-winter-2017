@@ -20,3 +20,8 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+function custom_login_title(){
+    echo '<h1>Sign In</h1> <p>Hello Board Members, Peer Leaders, Mentorvisors and Administrators, please sign in below</p>';
+}
+add_filter('login_headertitle','custom_login_title');
