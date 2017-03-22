@@ -8,7 +8,7 @@
 get_header(); ?>
 
 
-<?php do_shortcode('[gravityform id="2" title="true" description="true"]')?>
+<?php gravity_form( 2, false, false, false, '', false );?>
 
 
 
