@@ -1468,7 +1468,7 @@ img {
       border-radius: 5px;
       background-color: white; }
     .logged-in .site-content #login input:-webkit-autofill {
-      -webkit-box-shadow: 0 0 0px 1000px white inset; }
+      box-shadow: 0 0 0px 1000px white inset; }
     .logged-in .site-content #login .button {
       background-color: #006BBC;
       border-radius: 10px;
