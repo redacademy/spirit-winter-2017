@@ -1501,8 +1501,10 @@ img {
     display: none; }
   #gform_2 .gf_progressbar_wrapper, #gform_wrapper_2 .gf_progressbar_wrapper {
     padding: 0 20px; }
-  #gform_2 li:not(:first-child), #gform_wrapper_2 li:not(:first-child) {
-    padding: 0 20px; }
+  #gform_2 li, #gform_wrapper_2 li {
+    margin-top: 40px; }
+    #gform_2 li:not(:first-child), #gform_wrapper_2 li:not(:first-child) {
+      padding: 0 20px; }
   #gform_2 label, #gform_wrapper_2 label {
     display: none; }
   #gform_2 h1, #gform_2 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main #gform_2 .subtitle, #gform_wrapper_2 h1, #gform_wrapper_2 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main #gform_wrapper_2 .subtitle {
@@ -1538,3 +1540,59 @@ img {
     margin: 16px 0; }
   #gform_2 .gfield_radio label, #gform_2 .gfield_checkbox label, #gform_wrapper_2 .gfield_radio label, #gform_wrapper_2 .gfield_checkbox label {
     display: inline-block; }
+  #gform_2 p, #gform_wrapper_2 p {
+    color: black;
+    font-size: 1rem;
+    text-align: left; }
+  #gform_2 .show-medical-consent,
+  #gform_2 .show-participation-consent,
+  #gform_2 .show-transportation-consent, #gform_wrapper_2 .show-medical-consent,
+  #gform_wrapper_2 .show-participation-consent,
+  #gform_wrapper_2 .show-transportation-consent {
+    text-align: right;
+    font-size: 0.6rem;
+    text-decoration: underline;
+    padding-top: 0;
+    margin-top: -30px; }
+  #gform_2 .participation-consent-info,
+  #gform_2 .transportation-consent-info,
+  #gform_2 .medical-consent-info, #gform_wrapper_2 .participation-consent-info,
+  #gform_wrapper_2 .transportation-consent-info,
+  #gform_wrapper_2 .medical-consent-info {
+    text-align: left; }
+  #gform_2 .consent-hide, #gform_wrapper_2 .consent-hide {
+    display: none; }
+
+select {
+  margin: 0;
+  border-radius: 10px;
+  /*Removes border*/
+  -webkit-appearance: none;
+  /*Removes default chrome and safari style*/
+  -moz-appearance: none;
+  /*Removes default style Firefox*/
+  background: none;
+  border-color: #cccccc;
+  margin-left: 0 !important;
+  font-size: 1.1rem !important;
+  padding: 8px 2px !important;
+  font-weight: 100; }
+
+#field_2_15 {
+  width: 75%; }
+
+#input_2_16 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 100px;
+  position: absolute;
+  top: 340px;
+  right: 10px; }
+  #input_2_16 li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    margin: 0 10px; }
