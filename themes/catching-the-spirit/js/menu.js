@@ -1,4 +1,13 @@
 (function($) {
+
+    $(window).scroll(function() {
+        var distanceFromTop = $(this).scrollTop();
+        if (distanceFromTop >= $('.header-desktop').height()) {
+            $('.nav-desktop').addClass('fixed');
+        } else {
+            $('.nav-desktop').removeClass('fixed');
+        }
+    });
     
 
     if(('ontouchstart' in window)){//check for touch device
@@ -8,7 +17,7 @@
         // show hide submenu when click on parent
         $('.menu-item').on('click', function () {
         $('.sub-menu', this).toggle();
-});
+    });
 
     }
     else{
