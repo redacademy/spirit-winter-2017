@@ -577,7 +577,11 @@ img {
   padding: 15px;
   margin: 20px 0; }
 
-.red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 input[type=button], #gform_wrapper_2 input[type=submit], #gform_wrapper_2 input[type=button], .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
+.red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 input[type=file]:before,
+#gform_2 input[type=button],
+#gform_wrapper_2 input[type=submit],
+#gform_wrapper_2 input[type=file]:before,
+#gform_wrapper_2 input[type=button], .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
   display: inline-block;
   text-align: center;
   width: 250px;
@@ -592,14 +596,30 @@ img {
   outline: none;
   cursor: pointer; }
   @media (min-width: 600px) {
-    .red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 input[type=button], #gform_wrapper_2 input[type=submit], #gform_wrapper_2 input[type=button], .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
+    .red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 input[type=file]:before,
+    #gform_2 input[type=button],
+    #gform_wrapper_2 input[type=submit],
+    #gform_wrapper_2 input[type=file]:before,
+    #gform_wrapper_2 input[type=button], .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
       width: 180px; } }
-  .red-btn:hover, .blue-btn:hover, #gform_2 input[type=submit]:hover, #gform_2 input[type=button]:hover, #gform_wrapper_2 input[type=submit]:hover, #gform_wrapper_2 input[type=button]:hover, .page-template-page-program-seasonal .site-main .register-btn:hover, .page-template-page-program-leadership .site-main .apply-btn:hover {
+  .red-btn:hover, .blue-btn:hover, #gform_2 input[type=submit]:hover, #gform_2 input[type=file]:hover:before,
+  #gform_2 input[type=button]:hover,
+  #gform_wrapper_2 input[type=submit]:hover,
+  #gform_wrapper_2 input[type=file]:hover:before,
+  #gform_wrapper_2 input[type=button]:hover, .page-template-page-program-seasonal .site-main .register-btn:hover, .page-template-page-program-leadership .site-main .apply-btn:hover {
     box-shadow: 2px 2px 2px #888888; }
-  .red-btn:active, .blue-btn:active, #gform_2 input[type=submit]:active, #gform_2 input[type=button]:active, #gform_wrapper_2 input[type=submit]:active, #gform_wrapper_2 input[type=button]:active, .page-template-page-program-seasonal .site-main .register-btn:active, .page-template-page-program-leadership .site-main .apply-btn:active {
+  .red-btn:active, .blue-btn:active, #gform_2 input[type=submit]:active, #gform_2 input[type=file]:active:before,
+  #gform_2 input[type=button]:active,
+  #gform_wrapper_2 input[type=submit]:active,
+  #gform_wrapper_2 input[type=file]:active:before,
+  #gform_wrapper_2 input[type=button]:active, .page-template-page-program-seasonal .site-main .register-btn:active, .page-template-page-program-leadership .site-main .apply-btn:active {
     box-shadow: none; }
 
-.blue-btn, #gform_2 input[type=submit], #gform_2 input[type=button], #gform_wrapper_2 input[type=submit], #gform_wrapper_2 input[type=button] {
+.blue-btn, #gform_2 input[type=submit], #gform_2 input[type=file]:before,
+#gform_2 input[type=button],
+#gform_wrapper_2 input[type=submit],
+#gform_wrapper_2 input[type=file]:before,
+#gform_wrapper_2 input[type=button] {
   background: #006BBC; }
 
 .btn-container {
@@ -611,7 +631,23 @@ img {
       align-items: center;
   max-width: 400px;
   margin: 0 auto; }
-  .btn-container .blue-btn, .btn-container #gform_2 input[type=submit], #gform_2 .btn-container input[type=submit], .btn-container #gform_2 input[type=button], #gform_2 .btn-container input[type=button], .btn-container #gform_wrapper_2 input[type=submit], #gform_wrapper_2 .btn-container input[type=submit], .btn-container #gform_wrapper_2 input[type=button], #gform_wrapper_2 .btn-container input[type=button], .btn-container .red-btn, .btn-container .blue-btn, .btn-container #gform_2 input[type=submit], #gform_2 .btn-container input[type=submit], .btn-container #gform_2 input[type=button], #gform_2 .btn-container input[type=button], .btn-container #gform_wrapper_2 input[type=submit], #gform_wrapper_2 .btn-container input[type=submit], .btn-container #gform_wrapper_2 input[type=button], #gform_wrapper_2 .btn-container input[type=button], .btn-container .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .btn-container .register-btn, .btn-container .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .btn-container .apply-btn {
+  .btn-container .blue-btn, .btn-container #gform_2 input[type=submit], #gform_2 .btn-container input[type=submit], .btn-container #gform_2 input[type=file]:before, #gform_2 .btn-container input[type=file]:before, .btn-container
+  #gform_2 input[type=button],
+  #gform_2 .btn-container input[type=button], .btn-container
+  #gform_wrapper_2 input[type=submit],
+  #gform_wrapper_2 .btn-container input[type=submit], .btn-container
+  #gform_wrapper_2 input[type=file]:before,
+  #gform_wrapper_2 .btn-container input[type=file]:before, .btn-container
+  #gform_wrapper_2 input[type=button],
+  #gform_wrapper_2 .btn-container input[type=button], .btn-container .red-btn, .btn-container .blue-btn, .btn-container #gform_2 input[type=submit], #gform_2 .btn-container input[type=submit], .btn-container #gform_2 input[type=file]:before, #gform_2 .btn-container input[type=file]:before, .btn-container
+  #gform_2 input[type=button],
+  #gform_2 .btn-container input[type=button], .btn-container
+  #gform_wrapper_2 input[type=submit],
+  #gform_wrapper_2 .btn-container input[type=submit], .btn-container
+  #gform_wrapper_2 input[type=file]:before,
+  #gform_wrapper_2 .btn-container input[type=file]:before, .btn-container
+  #gform_wrapper_2 input[type=button],
+  #gform_wrapper_2 .btn-container input[type=button], .btn-container .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .btn-container .register-btn, .btn-container .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .btn-container .apply-btn {
     margin: 5px 0; }
   @media (min-width: 600px) {
     .btn-container {
@@ -1048,7 +1084,15 @@ img {
     object-fit: cover;
     border-radius: 100px; }
 
-.page-template-page-program-leadership .site-main .blue-btn, .page-template-page-program-leadership .site-main #gform_2 input[type=submit], #gform_2 .page-template-page-program-leadership .site-main input[type=submit], .page-template-page-program-leadership .site-main #gform_2 input[type=button], #gform_2 .page-template-page-program-leadership .site-main input[type=button], .page-template-page-program-leadership .site-main #gform_wrapper_2 input[type=submit], #gform_wrapper_2 .page-template-page-program-leadership .site-main input[type=submit], .page-template-page-program-leadership .site-main #gform_wrapper_2 input[type=button], #gform_wrapper_2 .page-template-page-program-leadership .site-main input[type=button] {
+.page-template-page-program-leadership .site-main .blue-btn, .page-template-page-program-leadership .site-main #gform_2 input[type=submit], #gform_2 .page-template-page-program-leadership .site-main input[type=submit], .page-template-page-program-leadership .site-main #gform_2 input[type=file]:before, #gform_2 .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .site-main
+#gform_2 input[type=button],
+#gform_2 .page-template-page-program-leadership .site-main input[type=button], .page-template-page-program-leadership .site-main
+#gform_wrapper_2 input[type=submit],
+#gform_wrapper_2 .page-template-page-program-leadership .site-main input[type=submit], .page-template-page-program-leadership .site-main
+#gform_wrapper_2 input[type=file]:before,
+#gform_wrapper_2 .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .site-main
+#gform_wrapper_2 input[type=button],
+#gform_wrapper_2 .page-template-page-program-leadership .site-main input[type=button] {
   margin: 1.5rem 1.5rem 0 1.5rem; }
 
 .page-template-page-program-leadership .site-main .apply-btn {
@@ -1150,7 +1194,15 @@ img {
   margin-top: 0;
   height: 220px; }
 
-.page-id-135 .how-we-run .red-btn, .page-id-135 .how-we-run .blue-btn, .page-id-135 .how-we-run #gform_2 input[type=submit], #gform_2 .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run #gform_2 input[type=button], #gform_2 .page-id-135 .how-we-run input[type=button], .page-id-135 .how-we-run #gform_wrapper_2 input[type=submit], #gform_wrapper_2 .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run #gform_wrapper_2 input[type=button], #gform_wrapper_2 .page-id-135 .how-we-run input[type=button], .page-id-135 .how-we-run .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .page-id-135 .how-we-run .register-btn, .page-id-135 .how-we-run .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .page-id-135 .how-we-run .apply-btn {
+.page-id-135 .how-we-run .red-btn, .page-id-135 .how-we-run .blue-btn, .page-id-135 .how-we-run #gform_2 input[type=submit], #gform_2 .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run #gform_2 input[type=file]:before, #gform_2 .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run
+#gform_2 input[type=button],
+#gform_2 .page-id-135 .how-we-run input[type=button], .page-id-135 .how-we-run
+#gform_wrapper_2 input[type=submit],
+#gform_wrapper_2 .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run
+#gform_wrapper_2 input[type=file]:before,
+#gform_wrapper_2 .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run
+#gform_wrapper_2 input[type=button],
+#gform_wrapper_2 .page-id-135 .how-we-run input[type=button], .page-id-135 .how-we-run .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .page-id-135 .how-we-run .register-btn, .page-id-135 .how-we-run .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .page-id-135 .how-we-run .apply-btn {
   margin: 0.5rem; }
 
 .camp-location-map {
@@ -1202,7 +1254,15 @@ img {
   .page-id-139 .the-board h2 {
     padding-top: 2rem; }
 
-.page-id-139 .blue-btn, .page-id-139 #gform_2 input[type=submit], #gform_2 .page-id-139 input[type=submit], .page-id-139 #gform_2 input[type=button], #gform_2 .page-id-139 input[type=button], .page-id-139 #gform_wrapper_2 input[type=submit], #gform_wrapper_2 .page-id-139 input[type=submit], .page-id-139 #gform_wrapper_2 input[type=button], #gform_wrapper_2 .page-id-139 input[type=button] {
+.page-id-139 .blue-btn, .page-id-139 #gform_2 input[type=submit], #gform_2 .page-id-139 input[type=submit], .page-id-139 #gform_2 input[type=file]:before, #gform_2 .page-id-139 input[type=file]:before, .page-id-139
+#gform_2 input[type=button],
+#gform_2 .page-id-139 input[type=button], .page-id-139
+#gform_wrapper_2 input[type=submit],
+#gform_wrapper_2 .page-id-139 input[type=submit], .page-id-139
+#gform_wrapper_2 input[type=file]:before,
+#gform_wrapper_2 .page-id-139 input[type=file]:before, .page-id-139
+#gform_wrapper_2 input[type=button],
+#gform_wrapper_2 .page-id-139 input[type=button] {
   margin: 2rem; }
 
 @media (min-width: 600px) {
@@ -1236,7 +1296,15 @@ img {
   padding-bottom: 2rem;
   margin-bottom: 2rem; }
 
-.page-id-137 .blue-btn, .page-id-137 #gform_2 input[type=submit], #gform_2 .page-id-137 input[type=submit], .page-id-137 #gform_2 input[type=button], #gform_2 .page-id-137 input[type=button], .page-id-137 #gform_wrapper_2 input[type=submit], #gform_wrapper_2 .page-id-137 input[type=submit], .page-id-137 #gform_wrapper_2 input[type=button], #gform_wrapper_2 .page-id-137 input[type=button], .page-id-137 .btns {
+.page-id-137 .blue-btn, .page-id-137 #gform_2 input[type=submit], #gform_2 .page-id-137 input[type=submit], .page-id-137 #gform_2 input[type=file]:before, #gform_2 .page-id-137 input[type=file]:before, .page-id-137
+#gform_2 input[type=button],
+#gform_2 .page-id-137 input[type=button], .page-id-137
+#gform_wrapper_2 input[type=submit],
+#gform_wrapper_2 .page-id-137 input[type=submit], .page-id-137
+#gform_wrapper_2 input[type=file]:before,
+#gform_wrapper_2 .page-id-137 input[type=file]:before, .page-id-137
+#gform_wrapper_2 input[type=button],
+#gform_wrapper_2 .page-id-137 input[type=button], .page-id-137 .btns {
   margin: 2rem; }
 
 .page-id-137 h1, .page-id-137 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .page-id-137 .subtitle {
@@ -1482,47 +1550,65 @@ img {
       .logged-in .site-content #login .button:hover {
         box-shadow: 2px 2px 2px #888888; }
 
-#gform_2, #gform_wrapper_2 {
+#gform_2,
+#gform_wrapper_2 {
   position: relative;
   margin-top: 120px; }
-  #gform_2 ::-webkit-input-placeholder, #gform_wrapper_2 ::-webkit-input-placeholder {
+  #gform_2 ::-webkit-input-placeholder,
+  #gform_wrapper_2 ::-webkit-input-placeholder {
     font-weight: 100;
     color: #a9a9a9;
     font-size: 1.1rem; }
-  #gform_2 :-ms-input-placeholder, #gform_wrapper_2 :-ms-input-placeholder {
+  #gform_2 :-ms-input-placeholder,
+  #gform_wrapper_2 :-ms-input-placeholder {
     font-weight: 100;
     color: #a9a9a9;
     font-size: 1.1rem; }
-  #gform_2 ::placeholder, #gform_wrapper_2 ::placeholder {
+  #gform_2 ::placeholder,
+  #gform_wrapper_2 ::placeholder {
     font-weight: 100;
     color: #a9a9a9;
     font-size: 1.1rem; }
-  #gform_2 .gf_progressbar_title, #gform_wrapper_2 .gf_progressbar_title {
+  #gform_2 .gf_progressbar_title,
+  #gform_wrapper_2 .gf_progressbar_title {
     display: none; }
-  #gform_2 .gf_progressbar_wrapper, #gform_wrapper_2 .gf_progressbar_wrapper {
+  #gform_2 .gf_progressbar_wrapper,
+  #gform_wrapper_2 .gf_progressbar_wrapper {
     padding: 0 20px; }
-  #gform_2 li, #gform_wrapper_2 li {
+  #gform_2 li,
+  #gform_wrapper_2 li {
     margin-top: 40px; }
-    #gform_2 li:not(:first-child), #gform_wrapper_2 li:not(:first-child) {
+    #gform_2 li:not(:first-child),
+    #gform_wrapper_2 li:not(:first-child) {
       padding: 0 20px; }
-  #gform_2 label, #gform_wrapper_2 label {
+  #gform_2 label,
+  #gform_wrapper_2 label {
     display: none; }
-  #gform_2 h1, #gform_2 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main #gform_2 .subtitle, #gform_wrapper_2 h1, #gform_wrapper_2 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main #gform_wrapper_2 .subtitle {
+  #gform_2 h1, #gform_2 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main #gform_2 .subtitle,
+  #gform_wrapper_2 h1,
+  #gform_wrapper_2 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main
+  #gform_wrapper_2 .subtitle {
     height: auto;
     background: none;
     color: #52AA8A;
     position: absolute;
     top: -100px;
     left: 0; }
-  #gform_2 input, #gform_wrapper_2 input {
+  #gform_2 input,
+  #gform_wrapper_2 input {
     border-radius: 10px;
     padding: 0 5px; }
-  #gform_2 .gf_progressbar, #gform_wrapper_2 .gf_progressbar {
+  #gform_2 .gf_progressbar,
+  #gform_wrapper_2 .gf_progressbar {
     background: none;
     border: 2px solid #52AA8A; }
-    #gform_2 .gf_progressbar .gf_progressbar_percentage, #gform_2 .gf_progressbar .percentbar_100, #gform_wrapper_2 .gf_progressbar .gf_progressbar_percentage, #gform_wrapper_2 .gf_progressbar .percentbar_100 {
+    #gform_2 .gf_progressbar .gf_progressbar_percentage,
+    #gform_2 .gf_progressbar .percentbar_100,
+    #gform_wrapper_2 .gf_progressbar .gf_progressbar_percentage,
+    #gform_wrapper_2 .gf_progressbar .percentbar_100 {
       background: #52AA8A; }
-  #gform_2 .gform_page_footer, #gform_wrapper_2 .gform_page_footer {
+  #gform_2 .gform_page_footer,
+  #gform_wrapper_2 .gform_page_footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -1532,21 +1618,30 @@ img {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     border: none; }
-  #gform_2 input[type=submit], #gform_2 input[type=button], #gform_wrapper_2 input[type=submit], #gform_wrapper_2 input[type=button] {
+  #gform_2 input[type=submit], #gform_2 input[type=file]:before,
+  #gform_2 input[type=button],
+  #gform_wrapper_2 input[type=submit],
+  #gform_wrapper_2 input[type=file]:before,
+  #gform_wrapper_2 input[type=button] {
     box-shadow: none;
     text-shadow: none;
-    padding: 0;
     width: 170px;
+    padding: 0;
     margin: 16px 0; }
-  #gform_2 .gfield_radio label, #gform_2 .gfield_checkbox label, #gform_wrapper_2 .gfield_radio label, #gform_wrapper_2 .gfield_checkbox label {
+  #gform_2 .gfield_radio label,
+  #gform_2 .gfield_checkbox label,
+  #gform_wrapper_2 .gfield_radio label,
+  #gform_wrapper_2 .gfield_checkbox label {
     display: inline-block; }
-  #gform_2 p, #gform_wrapper_2 p {
+  #gform_2 p,
+  #gform_wrapper_2 p {
     color: black;
     font-size: 1rem;
     text-align: left; }
   #gform_2 .show-medical-consent,
   #gform_2 .show-participation-consent,
-  #gform_2 .show-transportation-consent, #gform_wrapper_2 .show-medical-consent,
+  #gform_2 .show-transportation-consent,
+  #gform_wrapper_2 .show-medical-consent,
   #gform_wrapper_2 .show-participation-consent,
   #gform_wrapper_2 .show-transportation-consent {
     text-align: right;
@@ -1554,13 +1649,22 @@ img {
     text-decoration: underline;
     padding-top: 0;
     margin-top: -30px; }
+    #gform_2 .show-medical-consent:hover,
+    #gform_2 .show-participation-consent:hover,
+    #gform_2 .show-transportation-consent:hover,
+    #gform_wrapper_2 .show-medical-consent:hover,
+    #gform_wrapper_2 .show-participation-consent:hover,
+    #gform_wrapper_2 .show-transportation-consent:hover {
+      cursor: pointer; }
   #gform_2 .participation-consent-info,
   #gform_2 .transportation-consent-info,
-  #gform_2 .medical-consent-info, #gform_wrapper_2 .participation-consent-info,
+  #gform_2 .medical-consent-info,
+  #gform_wrapper_2 .participation-consent-info,
   #gform_wrapper_2 .transportation-consent-info,
   #gform_wrapper_2 .medical-consent-info {
     text-align: left; }
-  #gform_2 .consent-hide, #gform_wrapper_2 .consent-hide {
+  #gform_2 .consent-hide,
+  #gform_wrapper_2 .consent-hide {
     display: none; }
 
 select {
@@ -1588,7 +1692,7 @@ select {
       flex-direction: row;
   width: 100px;
   position: absolute;
-  top: 340px;
+  top: 425px;
   right: 10px; }
   #input_2_16 li {
     display: -ms-flexbox;
@@ -1596,3 +1700,24 @@ select {
     -ms-flex-direction: row;
         flex-direction: row;
     margin: 0 10px; }
+
+.ginput_container_fileupload {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-left: -10px; }
+
+input[type=file] {
+  width: 300px !important;
+  margin: 0 auto !important;
+  height: 50px !important;
+  box-sizing: border-box !important;
+  outline: none; }
+  input[type=file]:before {
+    content: "Upload a Photo";
+    position: relative;
+    top: 10px;
+    margin-left: 20px !important;
+    width: 100% !important;
+    height: 40px !important; }
