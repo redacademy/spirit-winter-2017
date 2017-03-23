@@ -54,8 +54,6 @@
      }
      }
 
-     
-
      .gform_page_footer{
          display:flex;
          flex-direction:row;
@@ -71,6 +69,14 @@
             width:170px;
              margin: 16px 0;
              @extend .blue-btn;
+         }
+
+         .gfield_radio, .gfield_checkbox{
+             
+             label{
+                display:inline-block;
+             }
+             
          }
 
        

@@ -88,14 +88,13 @@ function red_starter_scripts() {
 
 	wp_enqueue_script('jquery');
 
-	if(is_page( 'faq' ) || is_404()){
+	if(is_page( 'faq' ) || is_404() || is_page('registration')){
 	wp_enqueue_script('faq-scripts', get_template_directory_uri() . '/build/js/faq-scripts.min.js', array('jquery'), '1', true);
 
 	}
 
 	if(is_page( 'privacy-policy' )){
 	wp_enqueue_script('smooth-scroll', get_template_directory_uri() . '/build/js/smooth-scroll.min.js', array('jquery'), '1', true);
-
 	}
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );

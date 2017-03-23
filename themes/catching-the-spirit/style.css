@@ -1536,3 +1536,5 @@ img {
     padding: 0;
     width: 170px;
     margin: 16px 0; }
+  #gform_2 .gfield_radio label, #gform_2 .gfield_checkbox label, #gform_wrapper_2 .gfield_radio label, #gform_wrapper_2 .gfield_checkbox label {
+    display: inline-block; }
