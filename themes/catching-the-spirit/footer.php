@@ -11,12 +11,12 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( '/' ); ?>"><?php printf( esc_html( 'Board Members' ) ); ?></a>
-					<a href="<?php echo esc_url( '/' ); ?>"><?php printf( esc_html( 'Portal' ) ); ?></a>
-					<a href="<?php echo esc_url( '/' ); ?>"><?php printf( esc_html( 'Sponsors' ) ); ?></a>
-					<a href="<?php echo esc_url( '/' ); ?>"><?php printf( esc_html( 'CTS Membership' ) ); ?></a>
-					<a href="<?php echo esc_url( '/' ); ?>"><?php printf( esc_html( 'FAQ’s' ) ); ?></a>
-					<a href="<?php echo esc_url( '/' ); ?>"><?php printf( esc_html( 'Privacy Policy' ) ); ?></a>
+					<a href="<?php echo home_url( '/board' ); ?>"><?php printf( esc_html( 'Board Members' ) ); ?></a>
+					<a href="<?php echo esc_url( 'wp-login.php' ); ?>"><?php printf( esc_html( 'Portal' ) ); ?></a>
+					<a href="<?php echo home_url( '/sponsors' ); ?>"><?php printf( esc_html( 'Sponsors' ) ); ?></a>
+					<a href="<?php echo home_url( '/membership' ); ?>"><?php printf( esc_html( 'CTS Membership' ) ); ?></a>
+					<a href="<?php echo home_url( '/faq' ); ?>"><?php printf( esc_html( 'FAQ’s' ) ); ?></a>
+					<a href="<?php echo home_url( '/privacy-policy' ); ?>"><?php printf( esc_html( 'Privacy Policy' ) ); ?></a>
 				</div>
 				<div class="footer-contact-mobile">
 					<p><a href="tel:6045441622">(604) 544-1622</a> - <a href="mailto:info@catchingthespirit.com">info@catchingthespirit.com</a></p>

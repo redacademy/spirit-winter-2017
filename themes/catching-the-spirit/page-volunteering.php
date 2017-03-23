@@ -20,7 +20,7 @@ get_header(); ?>
                 <div class="the-board-image">
                 <img src="<?php echo CFS()->get( 'volunteer_the_board_image' ); ?>"/>
                 </div>
-                <a href="" class="blue-btn">Learn More</a>
+                <a href="<?php echo home_url( '/board' ); ?>" class="blue-btn">Learn More</a>
             </div>
 
             <div class="mentorvisors">
