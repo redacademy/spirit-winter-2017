@@ -1604,6 +1604,10 @@ img {
     #gform_2 li:not(:first-child),
     #gform_wrapper_2 li:not(:first-child) {
       padding: 0 20px; }
+    @media (min-width: 600px) {
+      #gform_2 li,
+      #gform_wrapper_2 li {
+        display: inline; } }
   #gform_2 label,
   #gform_wrapper_2 label {
     display: none; }
@@ -1621,6 +1625,11 @@ img {
   #gform_wrapper_2 input {
     border-radius: 10px;
     padding: 0 5px; }
+    @media (min-width: 600px) {
+      #gform_2 input,
+      #gform_wrapper_2 input {
+        padding: 5px 4px;
+        margin-top: 8px; } }
   #gform_2 .gf_progressbar,
   #gform_wrapper_2 .gf_progressbar {
     background: none;
@@ -1658,6 +1667,20 @@ img {
       #gform_wrapper_2 input[type=file]:before,
       #gform_wrapper_2 input[type=button] {
         padding: 10px; } }
+  #gform_2 .camp-dates ul,
+  #gform_wrapper_2 .camp-dates ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    #gform_2 .camp-dates ul li,
+    #gform_wrapper_2 .camp-dates ul li {
+      width: 50%;
+      margin: 10px 0; }
   #gform_2 .gfield_radio label,
   #gform_2 .gfield_checkbox label,
   #gform_wrapper_2 .gfield_radio label,
@@ -1711,6 +1734,10 @@ select {
   font-size: 1.1rem !important;
   padding: 8px 2px !important;
   font-weight: 100; }
+  @media (min-width: 600px) {
+    select {
+      margin-top: 7.5px !important;
+      padding: 5.5px 2px !important; } }
 
 #field_2_15 {
   width: 75%; }
@@ -1724,6 +1751,10 @@ select {
   position: absolute;
   top: 425px;
   right: 10px; }
+  @media (min-width: 600px) {
+    #input_2_16 {
+      top: 405px;
+      right: 150px; } }
   #input_2_16 li {
     display: -ms-flexbox;
     display: flex;
@@ -1751,3 +1782,13 @@ input[type=file] {
     margin-left: 20px !important;
     width: 100% !important;
     height: 40px !important; }
+
+.gfield_course_option_wrapper ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .gfield_course_option_wrapper ul li input {
+    width: 200px !important; }
