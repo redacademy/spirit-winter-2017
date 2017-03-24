@@ -45,7 +45,7 @@ get_header(); ?>
                             </li> <!-- latest-posts-->
                 <?php endforeach; wp_reset_postdata(); ?>
                 </ul>
-            </div> <!-- testimonials -->
+            </section> <!-- testimonials -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
