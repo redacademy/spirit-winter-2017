@@ -9,6 +9,7 @@
     var $body = $('body');
     var $footer = $('footer');
 
+   
 //set color of first drop select item
   $('select').css('color','#a9a9a9');
    $('select').change(function() {
@@ -33,7 +34,10 @@
         $('.transportation-consent-info').toggleClass('consent-hide');
     });
 
+
     window.onload = function () {
+
+
         var form = $('#gform_2');
         var formHeight = form.height();
 

@@ -1651,6 +1651,13 @@ img {
     width: 170px;
     padding: 0;
     margin: 16px 0; }
+    @media (min-width: 600px) {
+      #gform_2 input[type=submit], #gform_2 input[type=file]:before,
+      #gform_2 input[type=button],
+      #gform_wrapper_2 input[type=submit],
+      #gform_wrapper_2 input[type=file]:before,
+      #gform_wrapper_2 input[type=button] {
+        padding: 10px; } }
   #gform_2 .gfield_radio label,
   #gform_2 .gfield_checkbox label,
   #gform_wrapper_2 .gfield_radio label,
@@ -1733,7 +1740,7 @@ select {
 
 input[type=file] {
   width: 300px !important;
-  margin: 0 auto !important;
+  margin-left: -30px !important;
   height: 50px !important;
   box-sizing: border-box !important;
   outline: none; }
