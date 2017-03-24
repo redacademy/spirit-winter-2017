@@ -22,18 +22,37 @@
      }
      li {
          &:not(:first-child) {
-             padding: 0 20px;
+            padding: 0 30px;
          }
+        li{
+            padding:0;
+        }
          margin-top:40px;
 
          @include desktop{
-            //  float:left;
              display:inline;
          }
      }
      label {
-         display: none;
+        //  visibility:hidden;
+        // margin-top:-40px;
+         width:0.1;
+         height:0.1;
+         margin:0.1;
+         padding:0.1;
+         position:relative;
+         
      }
+
+     label>.gfield_required{
+         position:absolute;
+          right:-85vw;
+         top:40px;
+
+         visibility:visible;
+     }
+
+    
      h1 {
          height: auto;
          background: none;
@@ -151,7 +170,7 @@
 
      @include desktop{
          margin-top:7.5px !important;
-          padding: 5.5px 2px !important;
+          padding: 5px 2px !important;
      }
  }
  
@@ -216,41 +235,69 @@
        
 .gfield_course_option_wrapper{
 
-    ul{
-        display:flex;
-        flex-direction:row;
-        flex-wrap:wrap;
+    // ul{
+    //     display:flex;
+    //     flex-direction:row;
+    //     flex-wrap:wrap;
+    //     background:blue;
 
-        li{
-            input{
-            width:200px !important;
-            }
-        }
-    }
+    //     li{
+    //         width:100%;
+    //         background:red;
+    //         input{
+    //         // width:200px !important;
+    //         // width:100%;
+    //         padding-left:0;
+    //         display:block;
+    //         .gfield{
+    //             padding:0;
+    //         }
+    //         }
+    //     }
+    // }
 
 }
 
 .gform_page_fields{
+    @include desktop{
     display:flex;
     flex-direction:row;
     flex-direction:wrap;
+    }
 }
 
 .flex-wrap{
+
+    @include desktop{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content: space-between;
+    }
 }
 
 .flex50{
+
+    @include desktop{
+    padding:0;
     width:50%;
+   
+    }
 }
 
 .flex100{
+    @include desktop{
     width:100%;
+    }
 }
 
-.thing{
-    width:50px;
+.gfield_error{
+    background:none !important;
+    border-top:none !important;
+    border-bottom:none !important;
 }
+
+// input.medium{
+//     width:50%;
+// }
+

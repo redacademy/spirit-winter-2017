@@ -27,7 +27,7 @@
 				</div><!-- .site-branding -->
 				<div class="header-desktop">
 					<div class="container-desk">
-						<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><img src ="<?php echo get_template_directory_uri();?>/images/logo/logo_omg.svg" class ="header-logo"/> </a>
+						<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><img src ="<?php echo get_template_directory_uri();?>/images/logo/cts_logo.svg" class ="header-logo"/> </a>
 						<div class="title-desktop">
 							<h1>Catching the Spirit Youth Society</h1>
 							<span>For Youth By Youth</span>
@@ -47,7 +47,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="nav-mobile">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-						<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><img src ="<?php echo get_template_directory_uri();?>/images/logo/logo_omg.svg" class ="header-logo"/> </a>
+						<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><img src ="<?php echo get_template_directory_uri();?>/images/logo/cts_logo.svg" class ="header-logo"/> </a>
 						<a href="tel:6045441622"><i class="fa fa-phone" aria-hidden="true"></i></a>
 					</div>
 					<div class="nav-desktop">
