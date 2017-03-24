@@ -318,10 +318,6 @@ body {
     body {
       font-size: 18px; } }
 
-.site-content {
-  height: 100vh;
-  max-height: 100%; }
-
 a {
   font-weight: bold;
   color: #52AA8A; }
@@ -546,7 +542,7 @@ textarea {
     background-color: #78AEE1;
     content: "";
     clear: both;
-    display: table; }
+    display: none; }
     @media (min-width: 600px) {
       .main-navigation .responsive-menu {
         display: none; } }
