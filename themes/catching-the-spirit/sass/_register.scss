@@ -229,3 +229,24 @@
     }
 
 }
+
+.gform_page_fields{
+    display:flex;
+    flex-direction:row;
+    flex-direction:wrap;
+}
+
+.flex-wrap{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.flex50{
+    width:50%;
+}
+
+.flex100{
+    width:100%;
+}

@@ -1792,3 +1792,26 @@ input[type=file] {
       flex-wrap: wrap; }
   .gfield_course_option_wrapper ul li input {
     width: 200px !important; }
+
+.gform_page_fields {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  flex-direction: wrap; }
+
+.flex-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.flex50 {
+  width: 50%; }
+
+.flex100 {
+  width: 100%; }
