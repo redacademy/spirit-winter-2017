@@ -73,4 +73,47 @@
         }
     }
 }
+// logged-out page
+#login{
+            width: 100%;
+            padding: 0;
+            margin-top: 2rem;
+            h1{
+                display: none;
+            }
+            p{
+                text-align: center;
+                a{
+                    font-weight: 100;
+                }
+            }
+            #backtoblog{
+                display: none;
+            }
+            #user_login, #user_pass{
+                width: 20rem;
+            }
+            .input, #rememberme{
+                border: 2px solid $color__blue;
+                border-radius: 5px;
+                background-color: white;
+                }
+            input:-webkit-autofill {
+            box-shadow: 0 0 0px 1000px white inset;
+}
+            .button {
+                background-color: $color__blue;
+                border-radius: 10px;
+                margin: 20px 0;
+                color: white;
+                font-size: 1rem;
+                padding: 1rem 5rem;
+                box-shadow: none;
+                text-shadow: none;
+                border: none;
+                &:hover {
+                    box-shadow: 2px 2px 2px #888888 ;
+                }
+            }
+        }
 
