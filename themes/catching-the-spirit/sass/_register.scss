@@ -1,3 +1,4 @@
+
  #gform_2,
  #gform_wrapper_2 {
      position: relative;
@@ -13,11 +14,22 @@
      .gf_progressbar_wrapper {
          padding: 0 20px;
      }
+
+     ul{
+        //  display:flex;
+        //  flex-direction:row;
+        //  flex-wrap:wrap;
+     }
      li {
          &:not(:first-child) {
              padding: 0 20px;
          }
          margin-top:40px;
+
+         @include desktop{
+            //  float:left;
+             display:inline;
+         }
      }
      label {
          display: none;
@@ -33,6 +45,11 @@
      input {
          border-radius: 10px;
          padding: 0 5px;
+
+         @include desktop{
+              padding:5px 4px;
+              margin-top:8px;
+         }
      }
      .gf_progressbar {
          background: none;
@@ -42,6 +59,8 @@
              background: $color__green;
          }
      }
+
+     
      .gform_page_footer {
          display: flex;
          flex-direction: row;
@@ -66,10 +85,24 @@
          }
      }
 
+     .camp-dates{
+         ul{
+              display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-around;
 
+        li{
+            width:50%;
+            margin: 10px 0;
+        }
+         }
+       
+     }
 
      .gfield_radio,
      .gfield_checkbox {
+
          label {
              display: inline-block;
          }
@@ -115,6 +148,11 @@
      font-size: 1.1rem !important;
      padding: 8px 2px !important;
      font-weight: 100;
+
+     @include desktop{
+         margin-top:7.5px !important;
+          padding: 5.5px 2px !important;
+     }
  }
  
  #field_2_15 {
@@ -128,10 +166,22 @@
      position: absolute;
      top: 425px;
      right: 10px;
+       @include desktop{
+         top: 405px;
+     right: 150px;
+     }
      li {
          display: flex;
          flex-direction: row;
          margin: 0 10px;
+     }
+ }
+
+
+ .ginput_container{
+      @include desktop{
+        //  padding:0;
+        // display:inline;
      }
  }
  
@@ -139,6 +189,7 @@
         display:flex;
         justify-content: center;
         margin-left:-10px;
+
     }
 
         input[type=file] {
@@ -163,3 +214,18 @@
         }
 
        
+.gfield_course_option_wrapper{
+
+    ul{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+
+        li{
+            input{
+            width:200px !important;
+            }
+        }
+    }
+
+}
