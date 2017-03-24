@@ -650,6 +650,7 @@ img {
     overflow: hidden; }
     @media (min-width: 600px) {
       .page-template-front-page .site-main .front-page-hero {
+        width: 1120px;
         height: 500px; } }
     .page-template-front-page .site-main .front-page-hero img {
       height: 450px;
@@ -658,8 +659,8 @@ img {
       top: -50px; }
       @media (min-width: 600px) {
         .page-template-front-page .site-main .front-page-hero img {
-          height: 800px;
-          top: -175px; } }
+          height: 850px;
+          top: -200px; } }
   @media (min-width: 600px) {
     .page-template-front-page .site-main .about-section-wrapper {
       display: -ms-flexbox;
@@ -691,7 +692,7 @@ img {
     color: #52AA8A; }
   .page-template-front-page .site-main .green-box {
     margin: 3rem 0;
-    padding: 1rem 0;
+    padding: 2rem;
     border-radius: 0; }
   .page-template-front-page .site-main .for-youth-yellow {
     background: #52AA8A url("../../images/foryouthbyyouth_yellow.svg") no-repeat center center;
@@ -728,6 +729,29 @@ img {
     font-size: 3rem; }
     .page-template-front-page .site-main .front-page-social-media i {
       width: 3.5rem; }
+  .page-template-front-page .site-main .front-page-latest-testimonials {
+    margin-top: 3rem; }
+    @media (min-width: 600px) {
+      .page-template-front-page .site-main .front-page-latest-testimonials {
+        display: -ms-flexbox;
+        display: flex; }
+        .page-template-front-page .site-main .front-page-latest-testimonials li {
+          -ms-flex: 1 1 25%;
+              flex: 1 1 25%; } }
+    .page-template-front-page .site-main .front-page-latest-testimonials img {
+      width: 150px;
+      height: 150px;
+      border-radius: 100px;
+      object-fit: cover;
+      margin-bottom: .8rem; }
+    .page-template-front-page .site-main .front-page-latest-testimonials .post-name {
+      color: white; }
+    .page-template-front-page .site-main .front-page-latest-testimonials p {
+      text-align: left; }
+    .page-template-front-page .site-main .front-page-latest-testimonials .entry-content {
+      margin-bottom: 2rem; }
+  .page-template-front-page .site-main a.blue-btn {
+    margin-bottom: 2rem; }
   .page-template-front-page .site-main .front-page-sponsors-list {
     display: -ms-flexbox;
     display: flex;

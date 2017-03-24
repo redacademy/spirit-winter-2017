@@ -62,8 +62,7 @@ get_header(); ?>
 			</div>
 			<div class="front-page-testimonials green-box">
 				<h2>Testimonials</h2>
-				<div class="testimonials">
-					<ul>
+					<ul class="front-page-latest-testimonials">
 					<?php
 						//global $post;
 						$args = array( 
@@ -85,12 +84,11 @@ get_header(); ?>
 										<h3 class="post-name"><?php the_title(); ?></h3>
 									</div>                                    
 									<div class="entry-content">
-									<?php the_content(); ?>
+									<?php the_excerpt(); ?>
 									</div><!-- .entry-content -->              
 								</li> <!-- latest-posts-->
 					<?php endforeach; wp_reset_postdata(); ?>
-					</ul>
-				</div> <!-- testimonials -->
+					</ul> <!-- latest-testimonials -->
 				<a href="" class="blue-btn">See More</a>
 			</div>
 			<div class="front-page-sponsors">
