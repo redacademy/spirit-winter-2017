@@ -16,8 +16,8 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
-            <div class="testimonials">
-                <h2>Here's what people are saying about us:</h2>
+            <section class="testimonials">
+                <h2>Here's what other people are saying about us:</h2>
                 <ul>
                 <?php
                     //global $post;
@@ -40,7 +40,7 @@ get_header(); ?>
                                     <h3 class="post-name"><?php the_title(); ?></h3>
                                 </div>                                    
                                 <div class="entry-content">
-                                <?php the_excerpt(); ?>
+                                <?php the_content(); ?>
                                 </div><!-- .entry-content -->              
                             </li> <!-- latest-posts-->
                 <?php endforeach; wp_reset_postdata(); ?>
