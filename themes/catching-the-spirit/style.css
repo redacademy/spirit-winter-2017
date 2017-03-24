@@ -462,14 +462,14 @@ textarea {
               font-size: 18px;
               font-weight: 100;
               color: white; }
-          .main-navigation .nav-desktop .menu .menu-item-132 {
+          .main-navigation .nav-desktop .menu .menu-item:last-child {
             background-color: #F82C3F;
             color: white;
             height: 80px;
             width: 180px;
             display: table;
             margin: 0 0 0 7rem; }
-            .main-navigation .nav-desktop .menu .menu-item-132 a {
+            .main-navigation .nav-desktop .menu .menu-item:last-child a {
               font-size: 26px;
               font-weight: 100;
               display: table-cell;
