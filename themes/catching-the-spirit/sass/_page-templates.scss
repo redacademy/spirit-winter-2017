@@ -154,10 +154,16 @@
             display: flex;
             flex-wrap: wrap;
             li{
-                flex-basis: 33%;
+                flex: 1 1 50%;
+                @include desktop {
+                    flex: 1 1 33%;
+                }
                 padding:20px;
                 img {
-                    height: 80px;
+                    height: 60px;
+                    @include desktop {
+                        height: 80px;
+                    }
                 }
             }
         }
