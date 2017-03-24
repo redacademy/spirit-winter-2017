@@ -21,6 +21,7 @@
 
     }
     else{
+        $('.sub-menu').parent().find('a:first').removeAttr('href').css('cursor','default');
         $('.menu-item').hover(function() {
         //show its submenu
         $('ul', this).fadeIn(100);

@@ -9,7 +9,7 @@ get_header(); ?>
 
     <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-            <h1>Our People</h2>
+            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
             <div class="youth-council bloc">
                 <h2>Youth Council</h2>

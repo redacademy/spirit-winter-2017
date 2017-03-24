@@ -49,7 +49,7 @@
                             color: white;
                         }
                     }
-                    .menu-item-132{
+                    .give{
                         background-color: $color__red;
                         color: white;
                         height: 80px;
@@ -142,7 +142,7 @@
                 background-color: $color__lightblue;
                 content: "";
                 clear: both;
-                display: table;
+                display: none;
                 @include desktop {
                 display: none;
                 }

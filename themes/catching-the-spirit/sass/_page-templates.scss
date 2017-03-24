@@ -23,6 +23,7 @@
             width: 100%;
             overflow: hidden;
             @include desktop {
+                width: 1120px;
                 height: 500px;
             }
             & img {
@@ -31,8 +32,8 @@
                 position: relative;
                 top: -50px;
                 @include desktop {
-                    height: 800px;
-                    top: -175px;
+                    height: 850px;
+                    top: -200px;
                 }
             }
         }
@@ -72,7 +73,7 @@
         }
         .green-box {
             margin: 3rem 0;
-            padding: 1rem 0;
+            padding: 2rem;
             border-radius: 0;
         }
         .for-youth-yellow {
@@ -121,15 +122,48 @@
                 width: 3.5rem;
             }
         }
-
+        .front-page-latest-testimonials {
+            margin-top: 3rem;
+            @include desktop {
+                display: flex;
+                li {
+                flex: 1 1 25%;
+            }
+            }
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 100px;
+                object-fit: cover;
+                margin-bottom: .8rem;
+            }
+            .post-name {
+                color: white;
+            }
+            p {
+                text-align: left;
+            }
+            .entry-content {
+                margin-bottom: 2rem;
+            }
+        }
+        a.blue-btn {
+                margin-bottom: 2rem;
+            }
         .front-page-sponsors-list{
             display: flex;
             flex-wrap: wrap;
             li{
-                flex-basis: 33%;
+                flex: 1 1 50%;
+                @include desktop {
+                    flex: 1 1 33%;
+                }
                 padding:20px;
                 img {
-                    height: 80px;
+                    height: 60px;
+                    @include desktop {
+                        height: 80px;
+                    }
                 }
             }
         }

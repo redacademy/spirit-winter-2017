@@ -62,6 +62,33 @@ get_header(); ?>
 			</div>
 			<div class="front-page-testimonials green-box">
 				<h2>Testimonials</h2>
+					<ul class="front-page-latest-testimonials">
+					<?php
+						//global $post;
+						$args = array( 
+							'post_type' => 'testimonial',
+							'posts_per_page' => 4, 
+							'order'=> 'DSC', 
+							'orderby' => 'post_date' 
+						);
+						$postslist = get_posts( $args );
+						foreach ( $postslist as $post ):
+							setup_postdata( $post ); ?> 
+								<li class="latest-posts">
+									<div class="post-thumbnail">
+									<?php if ( has_post_thumbnail() ) {
+										the_post_thumbnail('large');
+										} else { ?>
+										<img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/leadership')->ID); ?>" alt="Image of testimonial writer" />
+										<?php } ?>
+										<h3 class="post-name"><?php the_title(); ?></h3>
+									</div>                                    
+									<div class="entry-content">
+									<?php the_excerpt(); ?>
+									</div><!-- .entry-content -->              
+								</li> <!-- latest-posts-->
+					<?php endforeach; wp_reset_postdata(); ?>
+					</ul> <!-- latest-testimonials -->
 				<a href="" class="blue-btn">See More</a>
 			</div>
 			<div class="front-page-sponsors">
