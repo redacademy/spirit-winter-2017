@@ -30,9 +30,9 @@ get_header(); ?>
                 <div class="green-box">
                     <h2>How we run</h2>
                     <p><?php echo CFS()->get('our_story_how_we_run'); ?></p>
-                    <a href="" class="blue-btn">See Our Sponsors</a>
+                    <a href="<?php echo home_url( '/sponsors' ); ?>" class="blue-btn">See Our Sponsors</a>
                     <p><?php echo CFS()->get('our_story_how_we_run_2'); ?></p>
-                    <a href="" class="red-btn">Volunteer</a><a href="" class="red-btn">Give</a>
+                    <a href="<?php echo home_url( '/volunteer' ); ?>" class="red-btn">Volunteer</a><a href="<?php echo home_url( '/give' ); ?>" class="red-btn">Give</a>
                 </div>
                 
 

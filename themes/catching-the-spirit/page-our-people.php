@@ -9,7 +9,7 @@ get_header(); ?>
 
     <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-            <h1>Our People</h2>
+            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
             <div class="youth-council bloc">
                 <h2>Youth Council</h2>
@@ -26,7 +26,7 @@ get_header(); ?>
                 <div class="board-directors-image">
                 <img src="<?php echo CFS()->get( 'our_people_board_of_directors_image' ); ?>"/>
                 </div>
-                <a href="" class="blue-btn">Learn More</a>
+                <a href="<?php echo home_url( '/board' ); ?>" class="blue-btn">Learn More</a>
             </div>
 
             <div class="peer-leaders bloc">
@@ -35,7 +35,7 @@ get_header(); ?>
                 <div class="peer-leaders-image">
                 <img src="<?php echo CFS()->get( 'our_people_peer_leaders_image' ); ?>"/>
                 </div>
-                <div class= "btns"><a href="" class="blue-btn">Learn More</a><a href="" class="red-btn">Apply</a></div>
+                <div class= "btns"><a href="<?php echo home_url( '/leadership' ); ?>" class="blue-btn">Learn More</a><a href="" class="red-btn">Apply</a></div>
             </div>
 
             <div class="supervisors bloc">
@@ -44,7 +44,7 @@ get_header(); ?>
                 <div class="supervisors-image">
                 <img src="<?php echo CFS()->get( 'our_people_supervisors_image' ); ?>"/>
                 </div>
-                <div class="btns"><a href="" class="blue-btn">Learn More</a><a href="" class="red-btn">Apply</a></div>
+                <div class="btns"><a href="<?php echo home_url( '/leadership' ); ?>" class="blue-btn">Learn More</a><a href="" class="red-btn">Apply</a></div>
             </div>
             
 	

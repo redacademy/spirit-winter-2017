@@ -37,6 +37,11 @@
             div{
                 border: none !important;
             }
+            .fc-today{
+                border: 3px solid $color__green !important;
+                border-radius: 5rem;
+                background-color: transparent;
+            }
             }
     }
     

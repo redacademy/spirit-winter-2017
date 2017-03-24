@@ -303,13 +303,17 @@ th {
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+html {
+  height: 100%; }
+
 * {
   box-sizing: border-box; }
 
 body {
   font-family: "montserrat";
   font-size: 20px;
-  text-align: center; }
+  text-align: center;
+  height: 100%; }
   @media (min-width: 600px) {
     body {
       font-size: 18px; } }
@@ -471,12 +475,30 @@ textarea {
               display: table-cell;
               vertical-align: middle;
               text-decoration: none; } }
+  .main-navigation .nav-desktop.fixed {
+    position: fixed;
+    background-color: #006BBC;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    width: 100%;
+    padding-left: 2.4rem;
+    -webkit-transform: translate3d(0, 0, 0); }
   .main-navigation .nav-mobile {
     padding: 0 2rem 0 2rem;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
-        justify-content: space-between; }
+        justify-content: space-between;
+    position: fixed;
+    background-color: #78AEE1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    width: 100%;
+    -webkit-transform: translate3d(0, 0, 0); }
     @media (min-width: 600px) {
       .main-navigation .nav-mobile {
         display: none; } }
@@ -510,7 +532,8 @@ textarea {
     font-size: 35px;
     color: white; }
   .main-navigation .responsive-menu {
-    position: absolute;
+    position: fixed;
+    top: 3rem;
     left: 0;
     width: 100%;
     height: 100%;
@@ -519,7 +542,7 @@ textarea {
     background-color: #78AEE1;
     content: "";
     clear: both;
-    display: table; }
+    display: none; }
     @media (min-width: 600px) {
       .main-navigation .responsive-menu {
         display: none; } }
@@ -577,7 +600,15 @@ img {
   padding: 15px;
   margin: 20px 0; }
 
+<<<<<<< HEAD
 .red-btn, .blue-btn, .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main input[type=file]:active, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
+=======
+.red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 input[type=file]:before,
+#gform_2 input[type=button],
+#gform_wrapper_2 input[type=submit],
+#gform_wrapper_2 input[type=file]:before,
+#gform_wrapper_2 input[type=button], .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
+>>>>>>> 0e3159eab739aa8ba9f9bc02e69b76d232e76fa8
   display: inline-block;
   text-align: center;
   width: 250px;
@@ -592,6 +623,7 @@ img {
   outline: none;
   cursor: pointer; }
   @media (min-width: 600px) {
+<<<<<<< HEAD
     .red-btn, .blue-btn, .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main input[type=file]:active, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
       width: 180px; } }
   .red-btn:hover, .blue-btn:hover, .page-id-80 .site-main .gform_footer input[type=submit]:hover, .page-id-80 .site-main input[type=file]:hover:before, .page-id-80 .site-main input[type=file]:hover:active, .page-template-page-program-seasonal .site-main .register-btn:hover, .page-template-page-program-leadership .site-main .apply-btn:hover {
@@ -600,6 +632,32 @@ img {
     box-shadow: none; }
 
 .blue-btn, .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main input[type=file]:active {
+=======
+    .red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 input[type=file]:before,
+    #gform_2 input[type=button],
+    #gform_wrapper_2 input[type=submit],
+    #gform_wrapper_2 input[type=file]:before,
+    #gform_wrapper_2 input[type=button], .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
+      width: 180px; } }
+  .red-btn:hover, .blue-btn:hover, #gform_2 input[type=submit]:hover, #gform_2 input[type=file]:hover:before,
+  #gform_2 input[type=button]:hover,
+  #gform_wrapper_2 input[type=submit]:hover,
+  #gform_wrapper_2 input[type=file]:hover:before,
+  #gform_wrapper_2 input[type=button]:hover, .page-template-page-program-seasonal .site-main .register-btn:hover, .page-template-page-program-leadership .site-main .apply-btn:hover {
+    box-shadow: 2px 2px 2px #888888; }
+  .red-btn:active, .blue-btn:active, #gform_2 input[type=submit]:active, #gform_2 input[type=file]:active:before,
+  #gform_2 input[type=button]:active,
+  #gform_wrapper_2 input[type=submit]:active,
+  #gform_wrapper_2 input[type=file]:active:before,
+  #gform_wrapper_2 input[type=button]:active, .page-template-page-program-seasonal .site-main .register-btn:active, .page-template-page-program-leadership .site-main .apply-btn:active {
+    box-shadow: none; }
+
+.blue-btn, #gform_2 input[type=submit], #gform_2 input[type=file]:before,
+#gform_2 input[type=button],
+#gform_wrapper_2 input[type=submit],
+#gform_wrapper_2 input[type=file]:before,
+#gform_wrapper_2 input[type=button] {
+>>>>>>> 0e3159eab739aa8ba9f9bc02e69b76d232e76fa8
   background: #006BBC; }
 
 .btn-container {
@@ -611,7 +669,27 @@ img {
       align-items: center;
   max-width: 400px;
   margin: 0 auto; }
+<<<<<<< HEAD
   .btn-container .blue-btn, .btn-container .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .btn-container input[type=submit], .btn-container .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .btn-container input[type=file]:before, .btn-container .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .btn-container input[type=file]:active, .btn-container .red-btn, .btn-container .blue-btn, .btn-container .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .btn-container input[type=submit], .btn-container .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .btn-container input[type=file]:before, .btn-container .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .btn-container input[type=file]:active, .btn-container .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .btn-container .register-btn, .btn-container .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .btn-container .apply-btn {
+=======
+  .btn-container .blue-btn, .btn-container #gform_2 input[type=submit], #gform_2 .btn-container input[type=submit], .btn-container #gform_2 input[type=file]:before, #gform_2 .btn-container input[type=file]:before, .btn-container
+  #gform_2 input[type=button],
+  #gform_2 .btn-container input[type=button], .btn-container
+  #gform_wrapper_2 input[type=submit],
+  #gform_wrapper_2 .btn-container input[type=submit], .btn-container
+  #gform_wrapper_2 input[type=file]:before,
+  #gform_wrapper_2 .btn-container input[type=file]:before, .btn-container
+  #gform_wrapper_2 input[type=button],
+  #gform_wrapper_2 .btn-container input[type=button], .btn-container .red-btn, .btn-container .blue-btn, .btn-container #gform_2 input[type=submit], #gform_2 .btn-container input[type=submit], .btn-container #gform_2 input[type=file]:before, #gform_2 .btn-container input[type=file]:before, .btn-container
+  #gform_2 input[type=button],
+  #gform_2 .btn-container input[type=button], .btn-container
+  #gform_wrapper_2 input[type=submit],
+  #gform_wrapper_2 .btn-container input[type=submit], .btn-container
+  #gform_wrapper_2 input[type=file]:before,
+  #gform_wrapper_2 .btn-container input[type=file]:before, .btn-container
+  #gform_wrapper_2 input[type=button],
+  #gform_wrapper_2 .btn-container input[type=button], .btn-container .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .btn-container .register-btn, .btn-container .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .btn-container .apply-btn {
+>>>>>>> 0e3159eab739aa8ba9f9bc02e69b76d232e76fa8
     margin: 5px 0; }
   @media (min-width: 600px) {
     .btn-container {
@@ -1079,7 +1157,19 @@ img {
     object-fit: cover;
     border-radius: 100px; }
 
+<<<<<<< HEAD
 .page-template-page-program-leadership .site-main .blue-btn, .page-template-page-program-leadership .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .page-template-page-program-leadership .site-main .gform_footer input[type=submit], .page-template-page-program-leadership .page-id-80 .site-main input[type=file]:before, .page-id-80 .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .page-id-80 .site-main input[type=file]:active, .page-id-80 .page-template-page-program-leadership .site-main input[type=file]:active {
+=======
+.page-template-page-program-leadership .site-main .blue-btn, .page-template-page-program-leadership .site-main #gform_2 input[type=submit], #gform_2 .page-template-page-program-leadership .site-main input[type=submit], .page-template-page-program-leadership .site-main #gform_2 input[type=file]:before, #gform_2 .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .site-main
+#gform_2 input[type=button],
+#gform_2 .page-template-page-program-leadership .site-main input[type=button], .page-template-page-program-leadership .site-main
+#gform_wrapper_2 input[type=submit],
+#gform_wrapper_2 .page-template-page-program-leadership .site-main input[type=submit], .page-template-page-program-leadership .site-main
+#gform_wrapper_2 input[type=file]:before,
+#gform_wrapper_2 .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .site-main
+#gform_wrapper_2 input[type=button],
+#gform_wrapper_2 .page-template-page-program-leadership .site-main input[type=button] {
+>>>>>>> 0e3159eab739aa8ba9f9bc02e69b76d232e76fa8
   margin: 1.5rem 1.5rem 0 1.5rem; }
 
 .page-template-page-program-leadership .site-main .apply-btn {
@@ -1181,7 +1271,19 @@ img {
   margin-top: 0;
   height: 220px; }
 
+<<<<<<< HEAD
 .page-id-135 .how-we-run .red-btn, .page-id-135 .how-we-run .blue-btn, .page-id-135 .how-we-run .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .page-id-135 .how-we-run input[type=file]:active, .page-id-135 .how-we-run .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .page-id-135 .how-we-run .register-btn, .page-id-135 .how-we-run .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .page-id-135 .how-we-run .apply-btn {
+=======
+.page-id-135 .how-we-run .red-btn, .page-id-135 .how-we-run .blue-btn, .page-id-135 .how-we-run #gform_2 input[type=submit], #gform_2 .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run #gform_2 input[type=file]:before, #gform_2 .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run
+#gform_2 input[type=button],
+#gform_2 .page-id-135 .how-we-run input[type=button], .page-id-135 .how-we-run
+#gform_wrapper_2 input[type=submit],
+#gform_wrapper_2 .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run
+#gform_wrapper_2 input[type=file]:before,
+#gform_wrapper_2 .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run
+#gform_wrapper_2 input[type=button],
+#gform_wrapper_2 .page-id-135 .how-we-run input[type=button], .page-id-135 .how-we-run .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .page-id-135 .how-we-run .register-btn, .page-id-135 .how-we-run .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .page-id-135 .how-we-run .apply-btn {
+>>>>>>> 0e3159eab739aa8ba9f9bc02e69b76d232e76fa8
   margin: 0.5rem; }
 
 .camp-location-map {
@@ -1233,7 +1335,19 @@ img {
   .page-id-139 .the-board h2 {
     padding-top: 2rem; }
 
+<<<<<<< HEAD
 .page-id-139 .blue-btn, .page-id-139 .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .page-id-139 input[type=submit], .page-id-139 .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .page-id-139 input[type=file]:before, .page-id-139 .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .page-id-139 input[type=file]:active {
+=======
+.page-id-139 .blue-btn, .page-id-139 #gform_2 input[type=submit], #gform_2 .page-id-139 input[type=submit], .page-id-139 #gform_2 input[type=file]:before, #gform_2 .page-id-139 input[type=file]:before, .page-id-139
+#gform_2 input[type=button],
+#gform_2 .page-id-139 input[type=button], .page-id-139
+#gform_wrapper_2 input[type=submit],
+#gform_wrapper_2 .page-id-139 input[type=submit], .page-id-139
+#gform_wrapper_2 input[type=file]:before,
+#gform_wrapper_2 .page-id-139 input[type=file]:before, .page-id-139
+#gform_wrapper_2 input[type=button],
+#gform_wrapper_2 .page-id-139 input[type=button] {
+>>>>>>> 0e3159eab739aa8ba9f9bc02e69b76d232e76fa8
   margin: 2rem; }
 
 @media (min-width: 600px) {
@@ -1267,7 +1381,19 @@ img {
   padding-bottom: 2rem;
   margin-bottom: 2rem; }
 
+<<<<<<< HEAD
 .page-id-137 .blue-btn, .page-id-137 .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .page-id-137 input[type=submit], .page-id-137 .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .page-id-137 input[type=file]:before, .page-id-137 .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .page-id-137 input[type=file]:active, .page-id-137 .btns {
+=======
+.page-id-137 .blue-btn, .page-id-137 #gform_2 input[type=submit], #gform_2 .page-id-137 input[type=submit], .page-id-137 #gform_2 input[type=file]:before, #gform_2 .page-id-137 input[type=file]:before, .page-id-137
+#gform_2 input[type=button],
+#gform_2 .page-id-137 input[type=button], .page-id-137
+#gform_wrapper_2 input[type=submit],
+#gform_wrapper_2 .page-id-137 input[type=submit], .page-id-137
+#gform_wrapper_2 input[type=file]:before,
+#gform_wrapper_2 .page-id-137 input[type=file]:before, .page-id-137
+#gform_wrapper_2 input[type=button],
+#gform_wrapper_2 .page-id-137 input[type=button], .page-id-137 .btns {
+>>>>>>> 0e3159eab739aa8ba9f9bc02e69b76d232e76fa8
   margin: 2rem; }
 
 .page-id-137 h1, .page-id-137 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .page-id-137 .subtitle {
@@ -1407,6 +1533,10 @@ img {
     border: none !important; }
     .page-id-78 .fc-body .fc-row div {
       border: none !important; }
+    .page-id-78 .fc-body .fc-row .fc-today {
+      border: 3px solid #52AA8A !important;
+      border-radius: 5rem;
+      background-color: transparent; }
 
 .page-id-78 .fc-content {
   background: #006BBC !important;
@@ -1513,6 +1643,7 @@ img {
       .logged-in .site-content #login .button:hover {
         box-shadow: 2px 2px 2px #888888; }
 
+<<<<<<< HEAD
 .page-id-80 .site-main form {
   padding: 5%; }
 
@@ -1581,3 +1712,224 @@ img {
 
 .page-id-80 .site-main .latest-posts .entry-content {
   margin-bottom: 2rem; }
+=======
+#gform_2,
+#gform_wrapper_2 {
+  position: relative;
+  margin-top: 120px; }
+  #gform_2 ::-webkit-input-placeholder,
+  #gform_wrapper_2 ::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #a9a9a9;
+    font-size: 1.1rem; }
+  #gform_2 :-ms-input-placeholder,
+  #gform_wrapper_2 :-ms-input-placeholder {
+    font-weight: 100;
+    color: #a9a9a9;
+    font-size: 1.1rem; }
+  #gform_2 ::placeholder,
+  #gform_wrapper_2 ::placeholder {
+    font-weight: 100;
+    color: #a9a9a9;
+    font-size: 1.1rem; }
+  #gform_2 .gf_progressbar_title,
+  #gform_wrapper_2 .gf_progressbar_title {
+    display: none; }
+  #gform_2 .gf_progressbar_wrapper,
+  #gform_wrapper_2 .gf_progressbar_wrapper {
+    padding: 0 20px; }
+  #gform_2 li,
+  #gform_wrapper_2 li {
+    margin-top: 40px; }
+    #gform_2 li:not(:first-child),
+    #gform_wrapper_2 li:not(:first-child) {
+      padding: 0 20px; }
+    @media (min-width: 600px) {
+      #gform_2 li,
+      #gform_wrapper_2 li {
+        display: inline; } }
+  #gform_2 label,
+  #gform_wrapper_2 label {
+    display: none; }
+  #gform_2 h1, #gform_2 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main #gform_2 .subtitle,
+  #gform_wrapper_2 h1,
+  #gform_wrapper_2 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main
+  #gform_wrapper_2 .subtitle {
+    height: auto;
+    background: none;
+    color: #52AA8A;
+    position: absolute;
+    top: -100px;
+    left: 0; }
+  #gform_2 input,
+  #gform_wrapper_2 input {
+    border-radius: 10px;
+    padding: 0 5px; }
+    @media (min-width: 600px) {
+      #gform_2 input,
+      #gform_wrapper_2 input {
+        padding: 5px 4px;
+        margin-top: 8px; } }
+  #gform_2 .gf_progressbar,
+  #gform_wrapper_2 .gf_progressbar {
+    background: none;
+    border: 2px solid #52AA8A; }
+    #gform_2 .gf_progressbar .gf_progressbar_percentage,
+    #gform_2 .gf_progressbar .percentbar_100,
+    #gform_wrapper_2 .gf_progressbar .gf_progressbar_percentage,
+    #gform_wrapper_2 .gf_progressbar .percentbar_100 {
+      background: #52AA8A; }
+  #gform_2 .gform_page_footer,
+  #gform_wrapper_2 .gform_page_footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border: none; }
+  #gform_2 input[type=submit], #gform_2 input[type=file]:before,
+  #gform_2 input[type=button],
+  #gform_wrapper_2 input[type=submit],
+  #gform_wrapper_2 input[type=file]:before,
+  #gform_wrapper_2 input[type=button] {
+    box-shadow: none;
+    text-shadow: none;
+    width: 170px;
+    padding: 0;
+    margin: 16px 0; }
+    @media (min-width: 600px) {
+      #gform_2 input[type=submit], #gform_2 input[type=file]:before,
+      #gform_2 input[type=button],
+      #gform_wrapper_2 input[type=submit],
+      #gform_wrapper_2 input[type=file]:before,
+      #gform_wrapper_2 input[type=button] {
+        padding: 10px; } }
+  #gform_2 .camp-dates ul,
+  #gform_wrapper_2 .camp-dates ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    #gform_2 .camp-dates ul li,
+    #gform_wrapper_2 .camp-dates ul li {
+      width: 50%;
+      margin: 10px 0; }
+  #gform_2 .gfield_radio label,
+  #gform_2 .gfield_checkbox label,
+  #gform_wrapper_2 .gfield_radio label,
+  #gform_wrapper_2 .gfield_checkbox label {
+    display: inline-block; }
+  #gform_2 p,
+  #gform_wrapper_2 p {
+    color: black;
+    font-size: 1rem;
+    text-align: left; }
+  #gform_2 .show-medical-consent,
+  #gform_2 .show-participation-consent,
+  #gform_2 .show-transportation-consent,
+  #gform_wrapper_2 .show-medical-consent,
+  #gform_wrapper_2 .show-participation-consent,
+  #gform_wrapper_2 .show-transportation-consent {
+    text-align: right;
+    font-size: 0.6rem;
+    text-decoration: underline;
+    padding-top: 0;
+    margin-top: -30px; }
+    #gform_2 .show-medical-consent:hover,
+    #gform_2 .show-participation-consent:hover,
+    #gform_2 .show-transportation-consent:hover,
+    #gform_wrapper_2 .show-medical-consent:hover,
+    #gform_wrapper_2 .show-participation-consent:hover,
+    #gform_wrapper_2 .show-transportation-consent:hover {
+      cursor: pointer; }
+  #gform_2 .participation-consent-info,
+  #gform_2 .transportation-consent-info,
+  #gform_2 .medical-consent-info,
+  #gform_wrapper_2 .participation-consent-info,
+  #gform_wrapper_2 .transportation-consent-info,
+  #gform_wrapper_2 .medical-consent-info {
+    text-align: left; }
+  #gform_2 .consent-hide,
+  #gform_wrapper_2 .consent-hide {
+    display: none; }
+
+select {
+  margin: 0;
+  border-radius: 10px;
+  /*Removes border*/
+  -webkit-appearance: none;
+  /*Removes default chrome and safari style*/
+  -moz-appearance: none;
+  /*Removes default style Firefox*/
+  background: none;
+  border-color: #cccccc;
+  margin-left: 0 !important;
+  font-size: 1.1rem !important;
+  padding: 8px 2px !important;
+  font-weight: 100; }
+  @media (min-width: 600px) {
+    select {
+      margin-top: 7.5px !important;
+      padding: 5.5px 2px !important; } }
+
+#field_2_15 {
+  width: 75%; }
+
+#input_2_16 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 100px;
+  position: absolute;
+  top: 425px;
+  right: 10px; }
+  @media (min-width: 600px) {
+    #input_2_16 {
+      top: 405px;
+      right: 150px; } }
+  #input_2_16 li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    margin: 0 10px; }
+
+.ginput_container_fileupload {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-left: -10px; }
+
+input[type=file] {
+  width: 300px !important;
+  margin-left: -30px !important;
+  height: 50px !important;
+  box-sizing: border-box !important;
+  outline: none; }
+  input[type=file]:before {
+    content: "Upload a Photo";
+    position: relative;
+    top: 10px;
+    margin-left: 20px !important;
+    width: 100% !important;
+    height: 40px !important; }
+
+.gfield_course_option_wrapper ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .gfield_course_option_wrapper ul li input {
+    width: 200px !important; }
+>>>>>>> 0e3159eab739aa8ba9f9bc02e69b76d232e76fa8
