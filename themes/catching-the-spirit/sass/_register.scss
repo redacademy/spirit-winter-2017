@@ -16,9 +16,9 @@
      }
 
      ul{
-        //  display:flex;
-        //  flex-direction:row;
-        //  flex-wrap:wrap;
+         display:flex;
+         flex-direction:row;
+         flex-wrap:wrap;
      }
      li {
          &:not(:first-child) {
@@ -102,6 +102,10 @@
          @include desktop{
              padding:10px;
          }
+     }
+
+     input[type=text]{
+        //  width:100% !important;
      }
 
      .camp-dates{
