@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: Catching the Spirit
 Theme URI: http://underscores.me/
@@ -605,11 +606,8 @@ img {
   padding: 15px;
   margin: 20px 0; }
 
-.red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 input[type=file]:before,
-#gform_2 input[type=button],
-#gform_wrapper_2 input[type=submit],
-#gform_wrapper_2 input[type=file]:before,
-#gform_wrapper_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer input[type=file]:before, .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main input[type=file]:active, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
+.red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
+#gform_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main .gform_footer input[type=file]:before, .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main input[type=file]:active, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
   display: inline-block;
   text-align: center;
   width: 250px;
@@ -624,30 +622,18 @@ img {
   outline: none;
   cursor: pointer; }
   @media (min-width: 642px) {
-    .red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 input[type=file]:before,
-    #gform_2 input[type=button],
-    #gform_wrapper_2 input[type=submit],
-    #gform_wrapper_2 input[type=file]:before,
-    #gform_wrapper_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer input[type=file]:before, .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main input[type=file]:active, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
+    .red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
+    #gform_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main .gform_footer input[type=file]:before, .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main input[type=file]:active, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
       width: 180px; } }
-  .red-btn:hover, .blue-btn:hover, #gform_2 input[type=submit]:hover, #gform_2 input[type=file]:hover:before,
-  #gform_2 input[type=button]:hover,
-  #gform_wrapper_2 input[type=submit]:hover,
-  #gform_wrapper_2 input[type=file]:hover:before,
-  #gform_wrapper_2 input[type=button]:hover, .page-id-80 .site-main .gform_footer input[type=submit]:hover, .page-id-80 .site-main input[type=file]:hover:before, .page-id-80 .site-main input[type=file]:hover:active, .page-template-page-program-seasonal .site-main .register-btn:hover, .page-template-page-program-leadership .site-main .apply-btn:hover {
+  .red-btn:hover, .blue-btn:hover, #gform_2 input[type=submit]:hover, #gform_2 .gform_fields input[type=file]:hover:before, .gform_fields #gform_2 input[type=file]:hover:before,
+  #gform_2 input[type=button]:hover, .page-id-80 .site-main .gform_footer input[type=submit]:hover, .page-id-80 .site-main input[type=file]:hover:before, .page-id-80 .site-main input[type=file]:hover:active, .page-template-page-program-seasonal .site-main .register-btn:hover, .page-template-page-program-leadership .site-main .apply-btn:hover {
     box-shadow: 2px 2px 2px #888888; }
-  .red-btn:active, .blue-btn:active, #gform_2 input[type=submit]:active, #gform_2 input[type=file]:active:before,
-  #gform_2 input[type=button]:active,
-  #gform_wrapper_2 input[type=submit]:active,
-  #gform_wrapper_2 input[type=file]:active:before,
-  #gform_wrapper_2 input[type=button]:active, .page-id-80 .site-main .gform_footer input[type=submit]:active, .page-id-80 .site-main input[type=file]:active:before, .page-id-80 .site-main input[type=file]:active, .page-template-page-program-seasonal .site-main .register-btn:active, .page-template-page-program-leadership .site-main .apply-btn:active {
+  .red-btn:active, .blue-btn:active, #gform_2 input[type=submit]:active, #gform_2 .gform_fields input[type=file]:active:before, .gform_fields #gform_2 input[type=file]:active:before,
+  #gform_2 input[type=button]:active, .page-id-80 .site-main .gform_footer input[type=submit]:active, .page-id-80 .site-main input[type=file]:active:before, .page-id-80 .site-main input[type=file]:active, .page-template-page-program-seasonal .site-main .register-btn:active, .page-template-page-program-leadership .site-main .apply-btn:active {
     box-shadow: none; }
 
-.blue-btn, #gform_2 input[type=submit], #gform_2 input[type=file]:before,
-#gform_2 input[type=button],
-#gform_wrapper_2 input[type=submit],
-#gform_wrapper_2 input[type=file]:before,
-#gform_wrapper_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer input[type=file]:before, .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main input[type=file]:active {
+.blue-btn, #gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
+#gform_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main .gform_footer input[type=file]:before, .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main input[type=file]:active {
   background: #006BBC; }
 
 .btn-container {
@@ -659,23 +645,11 @@ img {
       align-items: center;
   max-width: 400px;
   margin: 0 auto; }
-  .btn-container .blue-btn, .btn-container #gform_2 input[type=submit], #gform_2 .btn-container input[type=submit], .btn-container #gform_2 input[type=file]:before, #gform_2 .btn-container input[type=file]:before, .btn-container
+  .btn-container .blue-btn, .btn-container #gform_2 input[type=submit], #gform_2 .btn-container input[type=submit], .btn-container #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .btn-container input[type=file]:before, .btn-container .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .btn-container input[type=file]:before, .btn-container
   #gform_2 input[type=button],
-  #gform_2 .btn-container input[type=button], .btn-container
-  #gform_wrapper_2 input[type=submit],
-  #gform_wrapper_2 .btn-container input[type=submit], .btn-container
-  #gform_wrapper_2 input[type=file]:before,
-  #gform_wrapper_2 .btn-container input[type=file]:before, .btn-container
-  #gform_wrapper_2 input[type=button],
-  #gform_wrapper_2 .btn-container input[type=button], .btn-container .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .btn-container input[type=submit], .btn-container .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .btn-container input[type=file]:before, .btn-container .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .btn-container input[type=file]:active, .btn-container .red-btn, .btn-container .blue-btn, .btn-container #gform_2 input[type=submit], #gform_2 .btn-container input[type=submit], .btn-container #gform_2 input[type=file]:before, #gform_2 .btn-container input[type=file]:before, .btn-container
+  #gform_2 .btn-container input[type=button], .btn-container .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .btn-container input[type=submit], .btn-container .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .btn-container input[type=file]:before, .btn-container .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .btn-container input[type=file]:active, .btn-container .red-btn, .btn-container .blue-btn, .btn-container #gform_2 input[type=submit], #gform_2 .btn-container input[type=submit], .btn-container #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .btn-container input[type=file]:before, .btn-container .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .btn-container input[type=file]:before, .btn-container
   #gform_2 input[type=button],
-  #gform_2 .btn-container input[type=button], .btn-container
-  #gform_wrapper_2 input[type=submit],
-  #gform_wrapper_2 .btn-container input[type=submit], .btn-container
-  #gform_wrapper_2 input[type=file]:before,
-  #gform_wrapper_2 .btn-container input[type=file]:before, .btn-container
-  #gform_wrapper_2 input[type=button],
-  #gform_wrapper_2 .btn-container input[type=button], .btn-container .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .btn-container input[type=submit], .btn-container .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .btn-container input[type=file]:before, .btn-container .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .btn-container input[type=file]:active, .btn-container .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .btn-container .register-btn, .btn-container .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .btn-container .apply-btn {
+  #gform_2 .btn-container input[type=button], .btn-container .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .btn-container input[type=submit], .btn-container .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .btn-container input[type=file]:before, .btn-container .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .btn-container input[type=file]:active, .btn-container .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .btn-container .register-btn, .btn-container .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .btn-container .apply-btn {
     margin: 5px 0; }
   @media (min-width: 642px) {
     .btn-container {
@@ -1144,15 +1118,9 @@ img {
     object-fit: cover;
     border-radius: 100px; }
 
-.page-template-page-program-leadership .site-main .blue-btn, .page-template-page-program-leadership .site-main #gform_2 input[type=submit], #gform_2 .page-template-page-program-leadership .site-main input[type=submit], .page-template-page-program-leadership .site-main #gform_2 input[type=file]:before, #gform_2 .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .site-main
+.page-template-page-program-leadership .site-main .blue-btn, .page-template-page-program-leadership .site-main #gform_2 input[type=submit], #gform_2 .page-template-page-program-leadership .site-main input[type=submit], .page-template-page-program-leadership .site-main #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .site-main .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .site-main
 #gform_2 input[type=button],
-#gform_2 .page-template-page-program-leadership .site-main input[type=button], .page-template-page-program-leadership .site-main
-#gform_wrapper_2 input[type=submit],
-#gform_wrapper_2 .page-template-page-program-leadership .site-main input[type=submit], .page-template-page-program-leadership .site-main
-#gform_wrapper_2 input[type=file]:before,
-#gform_wrapper_2 .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .site-main
-#gform_wrapper_2 input[type=button],
-#gform_wrapper_2 .page-template-page-program-leadership .site-main input[type=button], .page-template-page-program-leadership .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .page-template-page-program-leadership .site-main .gform_footer input[type=submit], .page-template-page-program-leadership .page-id-80 .site-main input[type=file]:before, .page-id-80 .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .page-id-80 .site-main input[type=file]:active, .page-id-80 .page-template-page-program-leadership .site-main input[type=file]:active {
+#gform_2 .page-template-page-program-leadership .site-main input[type=button], .page-template-page-program-leadership .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .page-template-page-program-leadership .site-main .gform_footer input[type=submit], .page-template-page-program-leadership .page-id-80 .site-main input[type=file]:before, .page-id-80 .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .page-id-80 .site-main input[type=file]:active, .page-id-80 .page-template-page-program-leadership .site-main input[type=file]:active {
   margin: 1.5rem 1.5rem 0 1.5rem; }
 
 .page-template-page-program-leadership .site-main .apply-btn {
@@ -1254,15 +1222,9 @@ img {
   margin-top: 0;
   height: 220px; }
 
-.page-id-135 .how-we-run .red-btn, .page-id-135 .how-we-run .blue-btn, .page-id-135 .how-we-run #gform_2 input[type=submit], #gform_2 .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run #gform_2 input[type=file]:before, #gform_2 .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run
+.page-id-135 .how-we-run .red-btn, .page-id-135 .how-we-run .blue-btn, .page-id-135 .how-we-run #gform_2 input[type=submit], #gform_2 .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run
 #gform_2 input[type=button],
-#gform_2 .page-id-135 .how-we-run input[type=button], .page-id-135 .how-we-run
-#gform_wrapper_2 input[type=submit],
-#gform_wrapper_2 .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run
-#gform_wrapper_2 input[type=file]:before,
-#gform_wrapper_2 .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run
-#gform_wrapper_2 input[type=button],
-#gform_wrapper_2 .page-id-135 .how-we-run input[type=button], .page-id-135 .how-we-run .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .page-id-135 .how-we-run input[type=file]:active, .page-id-135 .how-we-run .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .page-id-135 .how-we-run .register-btn, .page-id-135 .how-we-run .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .page-id-135 .how-we-run .apply-btn {
+#gform_2 .page-id-135 .how-we-run input[type=button], .page-id-135 .how-we-run .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .page-id-135 .how-we-run input[type=file]:active, .page-id-135 .how-we-run .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .page-id-135 .how-we-run .register-btn, .page-id-135 .how-we-run .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .page-id-135 .how-we-run .apply-btn {
   margin: 0.5rem; }
 
 .camp-location-map {
@@ -1314,15 +1276,9 @@ img {
   .page-id-139 .the-board h2 {
     padding-top: 2rem; }
 
-.page-id-139 .blue-btn, .page-id-139 #gform_2 input[type=submit], #gform_2 .page-id-139 input[type=submit], .page-id-139 #gform_2 input[type=file]:before, #gform_2 .page-id-139 input[type=file]:before, .page-id-139
+.page-id-139 .blue-btn, .page-id-139 #gform_2 input[type=submit], #gform_2 .page-id-139 input[type=submit], .page-id-139 #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .page-id-139 input[type=file]:before, .page-id-139 .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .page-id-139 input[type=file]:before, .page-id-139
 #gform_2 input[type=button],
-#gform_2 .page-id-139 input[type=button], .page-id-139
-#gform_wrapper_2 input[type=submit],
-#gform_wrapper_2 .page-id-139 input[type=submit], .page-id-139
-#gform_wrapper_2 input[type=file]:before,
-#gform_wrapper_2 .page-id-139 input[type=file]:before, .page-id-139
-#gform_wrapper_2 input[type=button],
-#gform_wrapper_2 .page-id-139 input[type=button], .page-id-139 .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .page-id-139 input[type=submit], .page-id-139 .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .page-id-139 input[type=file]:before, .page-id-139 .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .page-id-139 input[type=file]:active {
+#gform_2 .page-id-139 input[type=button], .page-id-139 .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .page-id-139 input[type=submit], .page-id-139 .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .page-id-139 input[type=file]:before, .page-id-139 .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .page-id-139 input[type=file]:active {
   margin: 2rem; }
 
 @media (min-width: 642px) {
@@ -1356,15 +1312,9 @@ img {
   padding-bottom: 2rem;
   margin-bottom: 2rem; }
 
-.page-id-137 .blue-btn, .page-id-137 #gform_2 input[type=submit], #gform_2 .page-id-137 input[type=submit], .page-id-137 #gform_2 input[type=file]:before, #gform_2 .page-id-137 input[type=file]:before, .page-id-137
+.page-id-137 .blue-btn, .page-id-137 #gform_2 input[type=submit], #gform_2 .page-id-137 input[type=submit], .page-id-137 #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .page-id-137 input[type=file]:before, .page-id-137 .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .page-id-137 input[type=file]:before, .page-id-137
 #gform_2 input[type=button],
-#gform_2 .page-id-137 input[type=button], .page-id-137
-#gform_wrapper_2 input[type=submit],
-#gform_wrapper_2 .page-id-137 input[type=submit], .page-id-137
-#gform_wrapper_2 input[type=file]:before,
-#gform_wrapper_2 .page-id-137 input[type=file]:before, .page-id-137
-#gform_wrapper_2 input[type=button],
-#gform_wrapper_2 .page-id-137 input[type=button], .page-id-137 .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .page-id-137 input[type=submit], .page-id-137 .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .page-id-137 input[type=file]:before, .page-id-137 .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .page-id-137 input[type=file]:active, .page-id-137 .btns {
+#gform_2 .page-id-137 input[type=button], .page-id-137 .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .page-id-137 input[type=submit], .page-id-137 .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .page-id-137 input[type=file]:before, .page-id-137 .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .page-id-137 input[type=file]:active, .page-id-137 .btns {
   margin: 2rem; }
 
 .page-id-137 h1, .page-id-137 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .page-id-137 .subtitle {
@@ -1647,269 +1597,159 @@ img {
     #login .button:hover {
       box-shadow: 2px 2px 2px #888888; }
 
-#gform_2,
-#gform_wrapper_2 {
-  position: relative;
-  margin-top: 120px; }
-  #gform_2 ::-webkit-input-placeholder,
-  #gform_wrapper_2 ::-webkit-input-placeholder {
-    font-weight: 100;
-    color: #a9a9a9;
-    font-size: 1.1rem; }
-  #gform_2 :-ms-input-placeholder,
-  #gform_wrapper_2 :-ms-input-placeholder {
-    font-weight: 100;
-    color: #a9a9a9;
-    font-size: 1.1rem; }
-  #gform_2 ::placeholder,
-  #gform_wrapper_2 ::placeholder {
-    font-weight: 100;
-    color: #a9a9a9;
-    font-size: 1.1rem; }
-  #gform_2 .gf_progressbar_title,
-  #gform_wrapper_2 .gf_progressbar_title {
-    display: none; }
-  #gform_2 .gf_progressbar_wrapper,
-  #gform_wrapper_2 .gf_progressbar_wrapper {
-    padding: 0 20px; }
-  #gform_2 ul,
-  #gform_wrapper_2 ul {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-  #gform_2 li,
-  #gform_wrapper_2 li {
-    margin-top: 40px; }
-    #gform_2 li:not(:first-child),
-    #gform_wrapper_2 li:not(:first-child) {
-      padding: 0 30px; }
-    #gform_2 li li,
-    #gform_wrapper_2 li li {
-      padding: 0; }
-    @media (min-width: 642px) {
-      #gform_2 li,
-      #gform_wrapper_2 li {
-        display: inline; } }
-  #gform_2 label,
-  #gform_wrapper_2 label {
+.gform_fields {
+  padding: 0 20px !important; }
+  .gform_fields ::-webkit-input-placeholder {
+    color: #a9a9a9; }
+  .gform_fields :-ms-input-placeholder {
+    color: #a9a9a9; }
+  .gform_fields ::placeholder {
+    color: #a9a9a9; }
+  .gform_fields h1, .gform_fields .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .gform_fields .subtitle {
+    background: none !important;
+    color: #52AA8A !important; }
+  .gform_fields input {
+    border-radius: 10px !important; }
+  .gform_fields label {
+    visibility: hidden;
     width: 0.1;
     height: 0.1;
     margin: 0.1;
     padding: 0.1;
     position: relative; }
-  #gform_2 label > .gfield_required,
-  #gform_wrapper_2 label > .gfield_required {
+  .gform_fields label > .gfield_required {
     position: absolute;
-    right: -85vw;
+    left: calc(100vw - 60px) !important;
     top: 40px;
     visibility: visible; }
-  #gform_2 h1, #gform_2 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main #gform_2 .subtitle,
-  #gform_wrapper_2 h1,
-  #gform_wrapper_2 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main
-  #gform_wrapper_2 .subtitle {
-    height: auto;
-    background: none;
-    color: #52AA8A;
-    position: absolute;
-    top: -100px;
-    left: 0; }
-  #gform_2 input,
-  #gform_wrapper_2 input {
+  .gform_fields select {
+    margin: 0;
     border-radius: 10px;
-    padding: 0 5px; }
+    /*Removes border*/
+    -webkit-appearance: none;
+    /*Removes default chrome and safari style*/
+    -moz-appearance: none;
+    /*Removes default style Firefox*/
+    background: white;
+    border-color: #cccccc;
+    margin-left: 0 !important;
+    padding: 10px 2px !important; }
     @media (min-width: 642px) {
-      #gform_2 input,
-      #gform_wrapper_2 input {
-        padding: 5px 4px;
-        margin-top: 8px; } }
-  #gform_2 .gf_progressbar,
-  #gform_wrapper_2 .gf_progressbar {
-    background: none;
-    border: 2px solid #52AA8A; }
-    #gform_2 .gf_progressbar .gf_progressbar_percentage,
-    #gform_2 .gf_progressbar .percentbar_100,
-    #gform_wrapper_2 .gf_progressbar .gf_progressbar_percentage,
-    #gform_wrapper_2 .gf_progressbar .percentbar_100 {
-      background: #52AA8A; }
-  #gform_2 .gform_page_footer,
-  #gform_wrapper_2 .gform_page_footer {
+      .gform_fields select {
+        margin-top: 7.5px !important;
+        padding: 5px 2px !important; } }
+  .gform_fields .ginput_container_fileupload {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    border: none; }
-  #gform_2 input[type=submit], #gform_2 input[type=file]:before,
-  #gform_2 input[type=button],
-  #gform_wrapper_2 input[type=submit],
-  #gform_wrapper_2 input[type=file]:before,
-  #gform_wrapper_2 input[type=button] {
-    box-shadow: none;
-    text-shadow: none;
-    width: 170px;
-    padding: 0;
-    margin: 16px 0; }
-    @media (min-width: 642px) {
-      #gform_2 input[type=submit], #gform_2 input[type=file]:before,
-      #gform_2 input[type=button],
-      #gform_wrapper_2 input[type=submit],
-      #gform_wrapper_2 input[type=file]:before,
-      #gform_wrapper_2 input[type=button] {
-        padding: 10px; } }
-  #gform_2 .camp-dates ul,
-  #gform_wrapper_2 .camp-dates ul {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    #gform_2 .camp-dates ul li,
-    #gform_wrapper_2 .camp-dates ul li {
-      width: 50%;
-      margin: 10px 0; }
-  #gform_2 .gfield_radio label,
-  #gform_2 .gfield_checkbox label,
-  #gform_wrapper_2 .gfield_radio label,
-  #gform_wrapper_2 .gfield_checkbox label {
-    display: inline-block; }
-  #gform_2 p,
-  #gform_wrapper_2 p {
-    color: black;
-    font-size: 1rem;
-    text-align: left; }
-  #gform_2 .show-medical-consent,
-  #gform_2 .show-participation-consent,
-  #gform_2 .show-transportation-consent,
-  #gform_wrapper_2 .show-medical-consent,
-  #gform_wrapper_2 .show-participation-consent,
-  #gform_wrapper_2 .show-transportation-consent {
-    text-align: right;
-    font-size: 0.6rem;
-    text-decoration: underline;
-    padding-top: 0;
-    margin-top: -30px; }
-    #gform_2 .show-medical-consent:hover,
-    #gform_2 .show-participation-consent:hover,
-    #gform_2 .show-transportation-consent:hover,
-    #gform_wrapper_2 .show-medical-consent:hover,
-    #gform_wrapper_2 .show-participation-consent:hover,
-    #gform_wrapper_2 .show-transportation-consent:hover {
-      cursor: pointer; }
-  #gform_2 .participation-consent-info,
-  #gform_2 .transportation-consent-info,
-  #gform_2 .medical-consent-info,
-  #gform_wrapper_2 .participation-consent-info,
-  #gform_wrapper_2 .transportation-consent-info,
-  #gform_wrapper_2 .medical-consent-info {
-    text-align: left; }
-  #gform_2 .consent-hide,
-  #gform_wrapper_2 .consent-hide {
-    display: none; }
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-left: -10px; }
+  .gform_fields input[type=text] {
+    color: black; }
+  .gform_fields input[type=file] {
+    width: 300px !important;
+    margin-left: -30px !important;
+    height: 50px !important;
+    box-sizing: border-box !important;
+    outline: none; }
+    .gform_fields input[type=file]:before {
+      content: "Upload a Photo";
+      position: relative;
+      top: 10px;
+      margin-left: 20px !important;
+      width: 100% !important;
+      height: 40px !important; }
+  .gform_fields .gfield_radio label,
+  .gform_fields .gfield_checkbox label {
+    visibility: visible !important; }
 
-select {
-  margin: 0;
-  border-radius: 10px;
-  /*Removes border*/
-  -webkit-appearance: none;
-  /*Removes default chrome and safari style*/
-  -moz-appearance: none;
-  /*Removes default style Firefox*/
-  background: none;
-  border-color: #cccccc;
-  margin-left: 0 !important;
-  font-size: 1.1rem !important;
-  padding: 8px 2px !important;
-  font-weight: 100; }
-  @media (min-width: 642px) {
-    select {
-      margin-top: 7.5px !important;
-      padding: 5px 2px !important; } }
-
-#field_2_15 {
-  width: 75%; }
-
-#input_2_16 {
+.camp-dates ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  width: 100px;
-  position: absolute;
-  top: 425px;
-  right: 10px; }
-  @media (min-width: 642px) {
-    #input_2_16 {
-      top: 405px;
-      right: 150px; } }
-  #input_2_16 li {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    margin: 0 10px; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .camp-dates ul li {
+    width: 50%;
+    margin: 10px 0; }
 
-.ginput_container_fileupload {
+#gform_2 .gform_page_footer {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  margin-left: -10px; }
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-top: none; }
 
-input[type=file] {
-  width: 300px !important;
-  margin-left: -30px !important;
-  height: 50px !important;
-  box-sizing: border-box !important;
-  outline: none; }
-  input[type=file]:before {
-    content: "Upload a Photo";
-    position: relative;
-    top: 10px;
-    margin-left: 20px !important;
-    width: 100% !important;
-    height: 40px !important; }
+#gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
+#gform_2 input[type=button] {
+  box-shadow: none;
+  text-shadow: none;
+  width: 170px;
+  padding: 0;
+  margin: 16px 0; }
+  @media (min-width: 642px) {
+    #gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
+    #gform_2 input[type=button] {
+      padding: 10px; } }
 
-@media (min-width: 642px) {
-  .gform_page_fields {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    flex-direction: wrap; } }
+#gform_2 p {
+  color: black;
+  font-size: 1rem;
+  text-align: left; }
 
-@media (min-width: 642px) {
-  .flex-wrap {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: justify;
-        justify-content: space-between; } }
+#gform_2 .show-medical-consent,
+#gform_2 .show-participation-consent,
+#gform_2 .show-transportation-consent {
+  text-align: right;
+  font-size: 0.6rem;
+  text-decoration: underline;
+  padding-top: 0;
+  margin-top: -15px; }
+  #gform_2 .show-medical-consent:hover,
+  #gform_2 .show-participation-consent:hover,
+  #gform_2 .show-transportation-consent:hover {
+    cursor: pointer; }
 
-@media (min-width: 642px) {
-  .flex50 {
-    padding: 0;
-    width: 50%; } }
+#gform_2 .participation-consent-info,
+#gform_2 .transportation-consent-info,
+#gform_2 .medical-consent-info {
+  text-align: left; }
 
-@media (min-width: 642px) {
-  .flex100 {
-    width: 100%; } }
+#gform_2 .consent-hide {
+  display: none; }
 
-.gfield_error {
-  background: none !important;
-  border-top: none !important;
-  border-bottom: none !important; }
+.weight-wrapper .gfield_course_option_wrapper ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.weight-wrapper .medium {
+  width: 60vw !important; }
+
+.weight-wrapper label {
+  display: inline !important; }
+
+.weight-wrapper .gfield_radio {
+  width: 40vw !important;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+  .weight-wrapper .gfield_radio li {
+    margin: 0 10px !important; }
+
+#gform_confirmation_wrapper_2 a {
+  margin: 30px 0; }
 
 .page-id-80 .site-main form {
   padding: 5%; }
@@ -1924,13 +1764,13 @@ input[type=file] {
     border-width: 2px;
     outline: none; }
 
-.page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer input[type=file]:before {
+.page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main .gform_footer input[type=file]:before {
   box-shadow: none;
   text-shadow: none;
   border-radius: 10px;
   width: 100%; }
   @media (min-width: 642px) {
-    .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer input[type=file]:before {
+    .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main .gform_footer input[type=file]:before {
       width: 450px;
       height: 55px; } }
 

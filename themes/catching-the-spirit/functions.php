@@ -95,6 +95,10 @@ function red_starter_scripts() {
 
 	// }
 
+	if(is_page('registration')){
+		wp_enqueue_script('form-scripts', get_template_directory_uri() . '/build/js/form-scripts.min.js', array('jquery'), '1', true);
+	}
+
 	if(is_page( 'privacy-policy' )){
 	wp_enqueue_script('smooth-scroll', get_template_directory_uri() . '/build/js/smooth-scroll.min.js', array('jquery'), '1', true);
 	}

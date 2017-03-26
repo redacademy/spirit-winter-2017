@@ -1,133 +1,117 @@
-
- #gform_2,
- #gform_wrapper_2 {
-     position: relative;
-     margin-top: 120px;
+ .gform_fields {
       ::placeholder {
-         font-weight: 100;
+        //  font-weight: 100;
          color: $color__lightgrey;
-         font-size: 1.1rem;
+        //  font-size: 1.1rem;
      }
-     .gf_progressbar_title {
-         display: none;
-     }
-     .gf_progressbar_wrapper {
-         padding: 0 20px;
-     }
-
-     ul{
-         display:flex;
-         flex-direction:row;
-         flex-wrap:wrap;
-     }
-     li {
-         &:not(:first-child) {
-            padding: 0 30px;
-         }
-        li{
-            padding:0;
-        }
-         margin-top:40px;
-
-         @include desktop{
-             display:inline;
-         }
-     }
-     label {
-        //  visibility:hidden;
-        // margin-top:-40px;
-         width:0.1;
-         height:0.1;
-         margin:0.1;
-         padding:0.1;
-         position:relative;
-         
-     }
-
-     label>.gfield_required{
-         position:absolute;
-          right:-85vw;
-         top:40px;
-
-         visibility:visible;
-     }
-
-    
+     //  background: grey;
+     padding: 0 20px !important;
      h1 {
-         height: auto;
-         background: none;
-         color: $color__green;
-         position: absolute;
-         top: -100px;
-         left: 0;
+         background: none !important;
+         color: $color__green !important;
      }
      input {
+         border-radius: 10px !important;
+     }
+     label {
+         visibility: hidden;
+         // margin-top:-40px;
+         width: 0.1;
+         height: 0.1;
+         margin: 0.1;
+         padding: 0.1;
+         position: relative;
+     }
+     label>.gfield_required {
+         position: absolute;
+         left: calc(100vw - 60px) !important;
+         top: 40px;
+         visibility: visible;
+     }
+     select {
+         margin: 0;
          border-radius: 10px;
-         padding: 0 5px;
-
-         @include desktop{
-              padding:5px 4px;
-              margin-top:8px;
+         /*Removes border*/
+         -webkit-appearance: none;
+         /*Removes default chrome and safari style*/
+         -moz-appearance: none;
+         /*Removes default style Firefox*/
+         background: white;
+         border-color: #cccccc;
+         margin-left: 0 !important;
+         //  font-size: 1.1rem !important;
+         padding: 10px 2px !important;
+         //  font-weight: 100;
+         @include desktop {
+             margin-top: 7.5px !important;
+             padding: 5px 2px !important;
          }
      }
-     .gf_progressbar {
-         background: none;
-         border: 2px solid $color__green;
-         .gf_progressbar_percentage,
-         .percentbar_100 {
-             background: $color__green;
+     .ginput_container_fileupload {
+         display: flex;
+         justify-content: center;
+         margin-left: -10px;
+     }
+     input[type=text] {
+         color: black;
+     }
+     input[type=file] {
+         width: 300px !important;
+         margin-left: -30px !important;
+         height: 50px !important;
+         box-sizing: border-box !important;
+         outline: none;
+         &:before {
+             @extend input[type=submit];
+             content: "Upload a Photo";
+             position: relative;
+             top: 10px;
+             margin-left: 20px !important;
+             width: 100% !important;
+             height: 40px !important;
          }
      }
-
-     
+     .gfield_radio,
+     .gfield_checkbox {
+         //  background: red;
+         label {
+             //  display:inline !important;
+             visibility: visible !important;
+         }
+     }
+ }
+ 
+ .camp-dates {
+     ul {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-around;
+         li {
+             width: 50%;
+             margin: 10px 0;
+         }
+     }
+ }
+ 
+ #gform_2 {
      .gform_page_footer {
          display: flex;
          flex-direction: row;
          flex-wrap: nowrap;
          justify-content: space-around;
-         border: none;
+         border-top: none;
      }
-  
-
-
      input[type=submit],
      input[type=button] {
          box-shadow: none;
          text-shadow: none;
          width: 170px;
-         padding:0;
+         padding: 0;
          margin: 16px 0;
          @extend .blue-btn;
-
-         @include desktop{
-             padding:10px;
-         }
-     }
-
-     input[type=text]{
-        //  width:100% !important;
-     }
-
-     .camp-dates{
-         ul{
-              display:flex;
-        flex-direction:row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-        li{
-            width:50%;
-            margin: 10px 0;
-        }
-         }
-       
-     }
-
-     .gfield_radio,
-     .gfield_checkbox {
-
-         label {
-             display: inline-block;
+         @include desktop {
+             padding: 10px;
          }
      }
      p {
@@ -142,7 +126,7 @@
          font-size: 0.6rem;
          text-decoration: underline;
          padding-top: 0;
-         margin-top: -30px;
+         margin-top: -15px;
          &:hover {
              cursor: pointer;
          }
@@ -157,151 +141,38 @@
      }
  }
  
- select {
-     margin: 0;
-     border-radius: 10px;
-     /*Removes border*/
-     -webkit-appearance: none;
-     /*Removes default chrome and safari style*/
-     -moz-appearance: none;
-     /*Removes default style Firefox*/
-     background: none;
-     border-color: #cccccc;
-     margin-left: 0 !important;
-     font-size: 1.1rem !important;
-     padding: 8px 2px !important;
-     font-weight: 100;
-
-     @include desktop{
-         margin-top:7.5px !important;
-          padding: 5px 2px !important;
+ .weight-wrapper {
+     .gfield_course_option_wrapper {
+         ul {
+             display: flex;
+             flex-direction: row;
+             flex-wrap: nowrap;
+         }
      }
- }
- 
- #field_2_15 {
-     width: 75%;
- }
- 
- #input_2_16 {
-     display: flex;
-     flex-direction: row;
-     width: 100px;
-     position: absolute;
-     top: 425px;
-     right: 10px;
-       @include desktop{
-         top: 405px;
-     right: 150px;
+     .medium {
+         width: 60vw !important;
      }
-     li {
+     label {
+         display: inline !important;
+     }
+     .gfield_radio {
+         width: 40vw !important;
+         //  padding-left:20px !important;
          display: flex;
          flex-direction: row;
-         margin: 0 10px;
+         //  justify-content: space-around;
+         li {
+             margin: 0 10px !important;
+         }
      }
  }
 
+ #gform_confirmation_wrapper_2{
+     img{
+        //  margin-bottom:30px;
+     }
 
- .ginput_container{
-      @include desktop{
-        //  padding:0;
-        // display:inline;
+     a{
+         margin: 30px 0;
      }
  }
- 
-    .ginput_container_fileupload{
-        display:flex;
-        justify-content: center;
-        margin-left:-10px;
-
-    }
-
-        input[type=file] {
-            width:300px !important;
-            margin-left:-30px !important;
-            height: 50px !important;
-            box-sizing: border-box !important;
-            outline:none;
-           
-
-            &:before {
-                @extend input[type=submit];
-                
-                content: "Upload a Photo";
-                position: relative;
-                top: 10px;
-                margin-left:20px !important;
-                width:100% !important;
-                height:40px !important;
-               
-            }
-        }
-
-       
-.gfield_course_option_wrapper{
-
-    // ul{
-    //     display:flex;
-    //     flex-direction:row;
-    //     flex-wrap:wrap;
-    //     background:blue;
-
-    //     li{
-    //         width:100%;
-    //         background:red;
-    //         input{
-    //         // width:200px !important;
-    //         // width:100%;
-    //         padding-left:0;
-    //         display:block;
-    //         .gfield{
-    //             padding:0;
-    //         }
-    //         }
-    //     }
-    // }
-
-}
-
-.gform_page_fields{
-    @include desktop{
-    display:flex;
-    flex-direction:row;
-    flex-direction:wrap;
-    }
-}
-
-.flex-wrap{
-
-    @include desktop{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    }
-}
-
-.flex50{
-
-    @include desktop{
-    padding:0;
-    width:50%;
-   
-    }
-}
-
-.flex100{
-    @include desktop{
-    width:100%;
-    }
-}
-
-.gfield_error{
-    background:none !important;
-    border-top:none !important;
-    border-bottom:none !important;
-}
-
-// input.medium{
-//     width:50%;
-// }
-
