@@ -66,6 +66,9 @@
                         }
                     }
                 }
+            .portal{
+                display: none;
+            }
             }
         }
          .nav-desktop.fixed{
@@ -122,8 +125,9 @@
             }
             }
             .header-logo{
-                height: 60px;
-                width: 60px;
+                height: 50px;
+                width: 50px;
+                margin-top: 0.3rem;
             }
             .fa-phone{
                 transform: rotate(-90deg);
@@ -176,5 +180,8 @@
                 color: white;
                 font-size: 55px;
             }
+            .portal{
+                    display: none;
+                }
          }
 }
