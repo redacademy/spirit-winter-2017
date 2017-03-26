@@ -25,3 +25,4 @@ function custom_login_title(){
     echo '<h1>Sign In</h1> <p>Hello Board Members, Peer Leaders, Mentorvisors and Administrators, please sign in below</p>';
 }
 add_filter('login_headertitle','custom_login_title');
+
