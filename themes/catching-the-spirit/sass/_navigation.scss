@@ -66,6 +66,9 @@
                         }
                     }
                 }
+            .portal{
+                display: none;
+            }
             }
         }
          .nav-desktop.fixed{
@@ -177,5 +180,8 @@
                 color: white;
                 font-size: 55px;
             }
+            .portal{
+                    display: none;
+                }
          }
 }

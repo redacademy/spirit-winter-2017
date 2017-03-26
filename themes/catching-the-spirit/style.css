@@ -474,7 +474,9 @@ textarea {
               font-weight: 100;
               display: table-cell;
               vertical-align: middle;
-              text-decoration: none; } }
+              text-decoration: none; }
+        .main-navigation .nav-desktop .portal {
+          display: none; } }
   .main-navigation .nav-desktop.fixed {
     position: fixed;
     background-color: #006BBC;
@@ -568,6 +570,8 @@ textarea {
       margin: 2rem 1rem;
       color: white;
       font-size: 55px; }
+    .main-navigation .responsive-menu .portal {
+      display: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
