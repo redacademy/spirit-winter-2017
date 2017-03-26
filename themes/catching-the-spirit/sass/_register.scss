@@ -1,11 +1,11 @@
  .gform_fields {
+     padding: 0 20px !important;
       ::placeholder {
-        //  font-weight: 100;
+         //  font-weight: 100;
          color: $color__lightgrey;
-        //  font-size: 1.1rem;
+         //  font-size: 1.1rem;
      }
      //  background: grey;
-     padding: 0 20px !important;
      h1 {
          background: none !important;
          color: $color__green !important;
@@ -27,6 +27,10 @@
          left: calc(100vw - 60px) !important;
          top: 40px;
          visibility: visible;
+         @include desktop {
+             left: 445px !important;
+             top: 30px;
+         }
      }
      select {
          margin: 0;
@@ -43,8 +47,8 @@
          padding: 10px 2px !important;
          //  font-weight: 100;
          @include desktop {
-             margin-top: 7.5px !important;
-             padding: 5px 2px !important;
+             margin-top: 0 !important;
+             padding: 4px 2px !important;
          }
      }
      .ginput_container_fileupload {
@@ -54,6 +58,11 @@
      }
      input[type=text] {
          color: black;
+         @include desktop {
+            //  width: 200px !important;
+            //  display: inline;
+            width:100% !important;
+         }
      }
      input[type=file] {
          width: 300px !important;
@@ -151,28 +160,60 @@
      }
      .medium {
          width: 60vw !important;
+         @include desktop{
+             width:80vw !important;
+             background:blue;
+         }
      }
      label {
          display: inline !important;
      }
      .gfield_radio {
          width: 40vw !important;
-         //  padding-left:20px !important;
          display: flex;
          flex-direction: row;
-         //  justify-content: space-around;
+         @include desktop{
+            //  margin-left:100px !important;
+         }
          li {
              margin: 0 10px !important;
+             @include desktop {
+                 //  box-sizing: border-box !important;
+                 margin-top: -6px !important;
+                 height: 30px;
+             }
          }
      }
  }
-
- #gform_confirmation_wrapper_2{
-     img{
-        //  margin-bottom:30px;
+ 
+ #gform_confirmation_wrapper_2 {
+     img {
+         //  margin-bottom:30px;
      }
-
-     a{
+     a {
          margin: 30px 0;
      }
  }
+ 
+//  .gform_page_fields {
+//      @include desktop {
+//         //  ul {
+//         //      display:flex;
+//         //      flex-direction: row;
+//         //      flex-wrap:wrap;
+//         //      background: blue;
+//         //      li{
+//         //          &:first-child{ display:none;}
+//         //          &:nth-child(5){ 
+//         //              background:red;
+//         //             //  flex-basis:100%;
+//         //          }
+//         //          flex-basis:50% !important;
+//         //      }
+//         //  }
+//      }
+//  }
+
+.gfield{
+    padding-right: 0px !important;
+}
