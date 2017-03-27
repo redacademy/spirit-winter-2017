@@ -546,7 +546,7 @@ textarea {
     content: "";
     clear: both;
     display: none;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-bottom: 3rem !important; }
     @media (min-width: 642px) {
       .main-navigation .responsive-menu {
