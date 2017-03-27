@@ -35,7 +35,7 @@ get_header(); ?>
                 <div class="peer-leaders-image">
                 <img src="<?php echo CFS()->get( 'our_people_peer_leaders_image' ); ?>"/>
                 </div>
-                <div class= "btns"><a href="<?php echo home_url( '/leadership' ); ?>" class="blue-btn">Learn More</a><a href="" class="red-btn">Apply</a></div>
+                <div class= "btn-container"><a href="<?php echo home_url( '/leadership' ); ?>" class="blue-btn">Learn More</a><a href="" class="red-btn">Apply</a></div>
             </div>
 
             <div class="supervisors bloc">
@@ -44,7 +44,7 @@ get_header(); ?>
                 <div class="supervisors-image">
                 <img src="<?php echo CFS()->get( 'our_people_supervisors_image' ); ?>"/>
                 </div>
-                <div class="btns"><a href="<?php echo home_url( '/leadership' ); ?>" class="blue-btn">Learn More</a><a href="" class="red-btn">Apply</a></div>
+                <div class="btn-container"><a href="<?php echo home_url( '/leadership' ); ?>" class="blue-btn">Learn More</a><a href="" class="red-btn">Apply</a></div>
             </div>
             
 	

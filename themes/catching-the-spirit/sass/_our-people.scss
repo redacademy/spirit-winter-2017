@@ -3,9 +3,6 @@
         padding-bottom: 2rem;
         margin-bottom: 2rem;
     }
-    .blue-btn,.btns{
-        margin: 2rem;
-    }
     h1{
         margin-bottom: 3rem;
     }
@@ -15,9 +12,12 @@
     .youth-council{
         margin-top: 2rem;
     }
+    .peer-leaders.bloc{
+        padding-bottom: 0.1rem;
+    }
     .youth-council-image, .board-directors-image{
         img{
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
     }
     .youth-council, .peer-leaders{
@@ -34,7 +34,6 @@
     }
     @include desktop{
         .site-content{
-        width: 800px;
         img{
             width: 80%;
         }
