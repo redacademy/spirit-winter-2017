@@ -1348,12 +1348,9 @@ img {
 .error-404 {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding-top: 100px;
-  min-height: 70vh; }
+  -ms-flex-align: center;
+      align-items: center;
+  height: calc(100vh - 450px); }
 
 .what-to-bring-entry {
   list-style: none;

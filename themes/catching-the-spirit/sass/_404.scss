@@ -1,9 +1,9 @@
 
 
 .error-404 {
+
     display:flex;
-    justify-content: center;
-    align-content: center;
-    padding-top:100px;
-    min-height: 70vh;
+    align-items:center;
+    height:calc(100vh - 450px);
+
 }
