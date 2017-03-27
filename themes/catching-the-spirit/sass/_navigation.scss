@@ -20,10 +20,34 @@
                 .menu{
                     display: flex;
                     padding-left: 3rem;
-                    .menu-item{
+                    .give{
+                        background-color: $color__red;
+                        color: white;
+                        height: 80px;
+                        width: 180px;
+                        display:table;
+                        margin: 0 0 0 7rem;
+                        // might need to find another solution not user friendly if menu items change.
+                        a{
+                            font-size: 26px;
+                            font-weight: 100;
+                            display: table-cell;
+                            vertical-align: middle;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .menu-item{
                         margin: 2rem 0;
                         width: 8.2rem;
-// sub navigation desktop
+                        a{
+                            text-decoration: none;
+                            font-size: 18px;
+                            font-weight: 100;
+                            color: white;
+                        }
+                    }
+                // sub navigation desktop
                         .sub-menu{
                             background-color: $color__blue;
                             position: absolute;
@@ -42,30 +66,6 @@
                                 
                             }
                         }
-                        a{
-                            text-decoration: none;
-                            font-size: 18px;
-                            font-weight: 100;
-                            color: white;
-                        }
-                    }
-                    .give{
-                        background-color: $color__red;
-                        color: white;
-                        height: 80px;
-                        width: 180px;
-                        display:table;
-                        margin: 0 0 0 7rem;
-                        // might need to find another solution not user friendly if menu items change.
-                        a{
-                            font-size: 26px;
-                            font-weight: 100;
-                            display: table-cell;
-                            vertical-align: middle;
-                            text-decoration: none;
-                        }
-                    }
-                }
             .portal{
                 display: none;
             }
@@ -136,7 +136,6 @@
                 color: white;
             }
         .responsive-menu{
-           
                 position: fixed;
                 top: 3rem;
                 left: 0;
@@ -161,13 +160,10 @@
                 a{
                     color: white;
                     text-decoration: none;
-                    // padding-bottom:100px;
                 }
 // sub navigation mobile
-                .sub-menu{
-                    // @include desktop {
-                    // display: none;
-                    // }
+                }
+                 .sub-menu{
                     .menu-item{
                         margin-left: 2rem;
                         line-height: 0.5rem;
@@ -175,7 +171,6 @@
                             font-weight: 100;
                         }
                     }
-                }
                 }
             }
             .fa{
@@ -188,7 +183,6 @@
                 }
          }
 }
-
 .no-overflow{
     overflow:hidden;
 }
