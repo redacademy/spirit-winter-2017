@@ -1,11 +1,6 @@
 .page-template-page-resources-learning {
     .site-main {
-        @include desktop {
-            width: 600px;
-            margin: 0 auto;
-            text-align: center;
-            margin: 3rem 0;
-        } 
+        margin: 3rem 0;
         h1 {
             padding-bottom: 1.5rem;
             margin: 0;
@@ -14,9 +9,9 @@
             list-style: none;
             color: $color__green;
             font-weight: 100;
-            text-align: left;
+            text-align: center;
             line-height: 1.4;
-            padding: 1.5rem 15px 0 1.5rem;
+            padding-top: 1.5rem;
         }
     }
 }
