@@ -1624,16 +1624,13 @@ img {
     visibility: visible; }
     @media (min-width: 642px) {
       .gform_fields label > .gfield_required {
-        left: 445px !important;
+        left: 460px !important;
         top: 30px; } }
   .gform_fields select {
     margin: 0;
     border-radius: 10px;
-    /*Removes border*/
     -webkit-appearance: none;
-    /*Removes default chrome and safari style*/
     -moz-appearance: none;
-    /*Removes default style Firefox*/
     background: white;
     border-color: #cccccc;
     margin-left: 0 !important;
@@ -1682,6 +1679,9 @@ img {
   .camp-dates ul li {
     width: 50%;
     margin: 10px 0; }
+
+#gform_2 .gfield {
+  padding-right: 0px !important; }
 
 #gform_2 .gform_page_footer {
   display: -ms-flexbox;
@@ -1740,12 +1740,12 @@ img {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
 
+@media (min-width: 642px) {
+  .weight-wrapper input[type=text] {
+    width: 340px !important; } }
+
 .weight-wrapper .medium {
   width: 60vw !important; }
-  @media (min-width: 642px) {
-    .weight-wrapper .medium {
-      width: 80vw !important;
-      background: blue; } }
 
 .weight-wrapper label {
   display: inline !important; }
@@ -1766,8 +1766,17 @@ img {
 #gform_confirmation_wrapper_2 a {
   margin: 30px 0; }
 
-.gfield {
-  padding-right: 0px !important; }
+.form-info-heading p {
+  margin-top: 40px;
+  margin-bottom: -50px;
+  text-align: center !important;
+  font-weight: bold !important; }
+
+#gf_progressbar_wrapper_2 {
+  background: none; }
+  #gf_progressbar_wrapper_2 .gf_progressbar_percentage,
+  #gf_progressbar_wrapper_2 .percentbar_100 {
+    background: #52AA8A !important; }
 
 .page-id-80 .site-main form {
   padding: 5%; }

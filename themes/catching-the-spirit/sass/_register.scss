@@ -1,11 +1,8 @@
  .gform_fields {
      padding: 0 20px !important;
       ::placeholder {
-         //  font-weight: 100;
          color: $color__lightgrey;
-         //  font-size: 1.1rem;
      }
-     //  background: grey;
      h1 {
          background: none !important;
          color: $color__green !important;
@@ -15,7 +12,6 @@
      }
      label {
          visibility: hidden;
-         // margin-top:-40px;
          width: 0.1;
          height: 0.1;
          margin: 0.1;
@@ -28,24 +24,19 @@
          top: 40px;
          visibility: visible;
          @include desktop {
-             left: 445px !important;
+             left: 460px !important;
              top: 30px;
          }
      }
      select {
          margin: 0;
          border-radius: 10px;
-         /*Removes border*/
          -webkit-appearance: none;
-         /*Removes default chrome and safari style*/
          -moz-appearance: none;
-         /*Removes default style Firefox*/
          background: white;
          border-color: #cccccc;
          margin-left: 0 !important;
-         //  font-size: 1.1rem !important;
          padding: 10px 2px !important;
-         //  font-weight: 100;
          @include desktop {
              margin-top: 0 !important;
              padding: 4px 2px !important;
@@ -59,9 +50,7 @@
      input[type=text] {
          color: black;
          @include desktop {
-            //  width: 200px !important;
-            //  display: inline;
-            width:100% !important;
+             width: 100% !important;
          }
      }
      input[type=file] {
@@ -82,9 +71,7 @@
      }
      .gfield_radio,
      .gfield_checkbox {
-         //  background: red;
          label {
-             //  display:inline !important;
              visibility: visible !important;
          }
      }
@@ -104,6 +91,9 @@
  }
  
  #gform_2 {
+     .gfield {
+         padding-right: 0px !important;
+     }
      .gform_page_footer {
          display: flex;
          flex-direction: row;
@@ -148,6 +138,7 @@
      .consent-hide {
          display: none;
      }
+    
  }
  
  .weight-wrapper {
@@ -158,12 +149,13 @@
              flex-wrap: nowrap;
          }
      }
+     input[type=text] {
+         @include desktop {
+             width: 340px !important;
+         }
+     }
      .medium {
          width: 60vw !important;
-         @include desktop{
-             width:80vw !important;
-             background:blue;
-         }
      }
      label {
          display: inline !important;
@@ -172,13 +164,9 @@
          width: 40vw !important;
          display: flex;
          flex-direction: row;
-         @include desktop{
-            //  margin-left:100px !important;
-         }
          li {
              margin: 0 10px !important;
              @include desktop {
-                 //  box-sizing: border-box !important;
                  margin-top: -6px !important;
                  height: 30px;
              }
@@ -187,33 +175,25 @@
  }
  
  #gform_confirmation_wrapper_2 {
-     img {
-         //  margin-bottom:30px;
-     }
      a {
          margin: 30px 0;
      }
  }
- 
-//  .gform_page_fields {
-//      @include desktop {
-//         //  ul {
-//         //      display:flex;
-//         //      flex-direction: row;
-//         //      flex-wrap:wrap;
-//         //      background: blue;
-//         //      li{
-//         //          &:first-child{ display:none;}
-//         //          &:nth-child(5){ 
-//         //              background:red;
-//         //             //  flex-basis:100%;
-//         //          }
-//         //          flex-basis:50% !important;
-//         //      }
-//         //  }
-//      }
-//  }
 
-.gfield{
-    padding-right: 0px !important;
-}
+ .form-info-heading{
+     p{
+         margin-top:40px;
+         margin-bottom:-50px;
+    text-align: center !important;
+    font-weight:bold !important;
+     }
+ }
+
+  #gf_progressbar_wrapper_2{
+         background: none;
+        //  border: 2px solid $color__green;
+         .gf_progressbar_percentage,
+         .percentbar_100 {
+             background: $color__green !important;
+         }
+     }
