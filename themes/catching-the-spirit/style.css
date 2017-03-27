@@ -1352,7 +1352,8 @@ img {
       justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding-top: 100px; }
+  padding-top: 100px;
+  min-height: 70vh; }
 
 .what-to-bring-entry {
   list-style: none;
@@ -1425,9 +1426,8 @@ img {
     .wishlist-loop .wishlist-entry p {
       padding: 2px; }
 
-.page-id-78 nav {
-  position: relative !important;
-  z-index: 9999 !important; }
+.page-id-78 .site-content {
+  min-height: 65vh; }
 
 .page-id-78 .main h3, .page-id-78 .main h4, .page-id-78 .main p, .page-id-78 .main span, .page-id-78 .main div, .page-id-78 .main nav, .page-id-78 .main i {
   font-family: "montserrat" !important;
