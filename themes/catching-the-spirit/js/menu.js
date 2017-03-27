@@ -41,7 +41,7 @@
         // remove parent link
         $('.sub-menu').parent().find('a:first').removeAttr('href').css('cursor','pointer');
         // show hide submenu when click on parent
-        $('.menu-item').on('click', function () {
+        $('.menu-item').on('hover', function () {
         $('.sub-menu', this).slideToggle(200);
         });
 
