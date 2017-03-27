@@ -27,6 +27,9 @@ img {
 // Container for white background text
 .text-container {
     padding: 3%;
+    @include desktop {
+        padding: 0 2rem;
+    }
 }
 
 // Green box container

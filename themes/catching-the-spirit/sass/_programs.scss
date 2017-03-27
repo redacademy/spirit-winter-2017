@@ -1,10 +1,7 @@
 .page-template-page-program-seasonal {
     .site-main {
-        @include desktop {
-            width: 600px;
-            margin: 0 auto;
-            text-align: center;
-            margin: 3rem 0;
+        .subtitle {
+            @extend h1;
         }
         h1 {
             padding-bottom: 0;
@@ -27,10 +24,13 @@
             height: 175px;
         }
         .green-box {
-            padding: 2rem 2rem;
             margin: 3rem 0;
+            padding: 2rem 0;
             & p {
             text-align: center;
+            }
+            @include desktop {
+                padding: 2rem 2rem 1rem 2rem;
             }
         }
         .program-leaders-wrapper {

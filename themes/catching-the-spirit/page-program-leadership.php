@@ -13,7 +13,7 @@ get_header(); ?>
 			<header class="program-header">
 				<h1 class="page-title"><?php echo CFS()->get('program_type'); ?></h1>
 				<span class="program-description"><?php echo CFS()->get('program_description'); ?></span>
-				<a href="" class="blue-btn top-btn">Peer Leaders</a> <a href="" class="blue-btn">Supervisors</a>
+				<a href="" class="blue-btn">Peer Leaders</a> <a href="" class="blue-btn">Supervisors</a>
 			</header>
 
 			<section class="program-description-wrapper">
@@ -40,12 +40,13 @@ get_header(); ?>
 
 				<div class="green-box peer-leaders-description">
 					<h2>Peer Leaders</h2>
-					<p><?php echo CFS()->get('peer_leaders_description'); ?></p>
+					<div><?php echo CFS()->get('peer_leaders_description'); ?></div>
 					<a href="" class="apply-btn">Apply for peer leaders</a>
 				</div>
+
 				<div class="supervisors-description text-container">
 					<h2>Supervisors</h2>
-					<p><?php echo CFS()->get('supervisors_description'); ?></p>
+					<div><?php echo CFS()->get('supervisors_description'); ?></div>
 					<a href="" class="apply-btn">Apply for supervisors</a>
 				</div>
 			</section>
