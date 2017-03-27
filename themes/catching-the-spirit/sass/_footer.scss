@@ -69,10 +69,12 @@
         }
     }
     .social-icon-footer{
-        margin: 0.5rem;
-        font-size: 32px;
+        margin: 0.5rem 0.5rem 0 0.5rem;
+        font-size: 30px;
         a{
             color: white;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
         @include desktop{
             font-size: 50px;

@@ -2,6 +2,12 @@
     p{
         text-align: left;
     }
+    .our-story-logo{
+        img{
+            height: 200px;
+            margin-bottom: 2rem;
+        }
+    }
     .our-mission-image{
         height: 220px;
         width: 100%;
@@ -16,7 +22,14 @@
         background-size: 90%;
         background-repeat: no-repeat;
         background-position: center center;
-        margin-top: 0;
+        margin: 0 0 2rem 0;
         height: 220px;
+    }
+    .how-we-run{
+        .green-box{
+            @include desktop{
+                border-radius: 10px;
+            }
+        }
     }
 }

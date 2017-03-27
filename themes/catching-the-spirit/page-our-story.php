@@ -13,7 +13,7 @@ get_header(); ?>
                 <img src="<?php echo CFS()->get( 'our_story_logo' ); ?>"/>
             </div>
             <div class="our-story-mission">
-                <h2>Our mission</h2>
+                <h2>Our Mission</h2>
                 <p><?php echo CFS()->get('our_story_our_mission'); ?></p>
             </div>
             <div class="our-mission-image">

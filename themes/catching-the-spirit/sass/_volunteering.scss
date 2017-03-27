@@ -18,12 +18,8 @@
                 margin: 2rem;
             }
     @include desktop{
-        .site-content{
-        width: 800px;
-        }
         .volunteering-for-cts{
-            margin: 2rem 7rem;
-            width: 600px;
+            margin: 2rem 0 2rem 0;
             h2{
                 font-size: 2rem;
             }
@@ -32,7 +28,6 @@
             }
         }
         .the-board{
-            width: 800px;
             h2,p{
                 padding-left: 5rem;
             }
@@ -45,7 +40,6 @@
             border-radius: 10px;
         }
         .mentorvisors{
-            width: 800px;
             margin-top: 2rem;
             h2,p{
                 padding-left: 5rem;

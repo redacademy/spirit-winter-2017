@@ -1,6 +1,13 @@
  
 (function ($) {
 
+   
+
+    $(window).onLoad(function(){
+         $(this).scrollTop(0);
+    });
+
+
 //set color of first drop select item
   $('select').css('color','#a9a9a9');
    $('select').change(function() {
