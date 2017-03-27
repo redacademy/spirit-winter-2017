@@ -150,7 +150,7 @@
                 display: none;
                 transition: width 2s;
                 @include desktop {
-                display: none;
+                display: none !important;
                 }
             .menu-header{
                 padding-top: 1rem;

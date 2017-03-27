@@ -550,7 +550,7 @@ textarea {
     transition: width 2s; }
     @media (min-width: 642px) {
       .main-navigation .responsive-menu {
-        display: none; } }
+        display: none !important; } }
     .main-navigation .responsive-menu .menu-header {
       padding-top: 1rem;
       padding-left: 2.5rem; }

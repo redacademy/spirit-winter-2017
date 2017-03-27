@@ -19,31 +19,55 @@
     //}
     // else{
     //     $('.sub-menu').parent().find('a:first').removeAttr('href').css('cursor','pointer');
-    //     $('.menu-item').hover(function() {
-    //     //show its submenu
-    //     $('ul', this).fadeIn(100);
+        // $('.menu-item').hover(function() {
+        // //show its submenu
+        // $('ul', this).fadeIn(100);
 
-    //     }, function() {
-    //     //hide its submenu
-    //     $('ul', this).fadeOut(100);
-    //     });
+        // }, function() {
+        // //hide its submenu
+        // $('ul', this).fadeOut(100);
+        // });
     // }
 
     // nav mobile toggle 
     $('.responsive-menu').hide(); // hide nav
+    $('.sub-menu').hide();
     $('.menu-toggle').on('click', function(){
-        $('.header-logo').toggle(); //  hide and show logoç
-        $('.fa-phone').toggle(); // hide and show phone
+      //  $('.header-logo').toggle(); //  hide and show logo
+      //  $('.fa-phone').toggle(); // hide and show phone
         $('.responsive-menu').slideToggle(200); //hide and show nav
     });
 
-     $('.sub-menu').hide();
+    
         // remove parent link
         $('.sub-menu').parent().find('a:first').removeAttr('href').css('cursor','pointer');
         // show hide submenu when click on parent
-        $('.menu-item').on('hover', function () {
-        $('.sub-menu', this).slideToggle(200);
+        
+        
+        
+        // $('.menu-item').on('hover', function () {
+        //     if($(window).width() > 642){
+        //           $('.sub-menu', this).slideToggle(200);
+        //     }else{
+        //         $('.menu-item').on('click', function(){
+        //              $('.sub-menu', this).slideToggle(200);
+        //         });
+        //     }
+      
+        // });
+
+        $('.menu-item').on('hover',function(){
+            if($(window).width() > 642){
+                  $('.sub-menu', this).slideToggle(200);
+            }
         });
+
+        $('.menu-item').on('click',function(){
+             if($(window).width() <= 642){
+                  $('.sub-menu', this).slideToggle(200);
+            }
+        });
+
 
 
 })(jQuery);
