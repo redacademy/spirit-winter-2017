@@ -53,9 +53,10 @@
                     @extend .front-page-about;
                     border-right: 1px solid $color__green;
                 }
-            .btn-container {
-                    flex: 1 1 100%;
-                    padding: 0;
+            .front-page-btn-wrapper {
+                height: auto;
+                flex: 1 1 100%;
+                padding: 0;
                 }
             }
         }
@@ -116,7 +117,7 @@
             }
         }
         .front-page-social-media {
-            color: $color__yellow;
+            color: $color__blue;
             font-size: 3rem;
             & i {
                 width: 3.5rem;
@@ -147,9 +148,6 @@
                 margin-bottom: 2rem;
             }
         }
-        a.blue-btn {
-                margin-bottom: 2rem;
-            }
         .front-page-sponsors-list{
             display: flex;
             flex-wrap: wrap;

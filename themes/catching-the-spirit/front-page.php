@@ -9,6 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			
 			<h1 class="page-title">Catching the Spirit</h1>
 			<div class="front-page-hero">
 				<img src="<?php echo CFS()->get('front_page_hero_image'); ?>"/>
@@ -22,7 +23,7 @@ get_header(); ?>
 					<h2>Who we are?</h2>
 					<div><?php echo CFS()->get('front_page_who_we_are'); ?></div>
 				</div>
-				<div class="btn-container">
+				<div class="front-page-btn-wrapper">
 					<a href="" class="blue-btn">Learn More</a>
 				</div>
 			</div>
