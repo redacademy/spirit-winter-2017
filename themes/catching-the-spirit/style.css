@@ -1220,7 +1220,7 @@ img {
   padding-bottom: 30px; }
 
 .page-id-135 p {
-  text-align: center; }
+  text-align: left; }
 
 .page-id-135 .our-mission-image {
   height: 220px;
@@ -1230,18 +1230,13 @@ img {
     width: 100%;
     object-fit: cover; }
 
-.page-id-135 .our-story-green-box .green-box {
+.page-id-135 .our-story-green-box {
   background: #52aa8a url(../../images/foryouthbyyouth_yellow.svg);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center center;
   margin-top: 0;
   height: 220px; }
-
-.page-id-135 .how-we-run .red-btn, .page-id-135 .how-we-run .blue-btn, .page-id-135 .how-we-run #gform_2 input[type=submit], #gform_2 .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run
-#gform_2 input[type=button],
-#gform_2 .page-id-135 .how-we-run input[type=button], .page-id-135 .how-we-run .page-id-80 .site-main input[type=submit], .page-id-80 .site-main .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run .page-id-80 .site-main .gform_fields input[type=file]:before, .page-id-80 .site-main .gform_fields .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run .gform_fields .page-id-80 .site-main input[type=file]:before, .gform_fields .page-id-80 .site-main .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .page-id-135 .how-we-run .register-btn, .page-id-135 .how-we-run .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .page-id-135 .how-we-run .apply-btn {
-  margin: 0.5rem; }
 
 .camp-location-map {
   display: -ms-flexbox;
