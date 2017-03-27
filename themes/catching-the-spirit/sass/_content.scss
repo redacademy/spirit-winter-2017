@@ -7,9 +7,8 @@ nav {
 }
 .page-title {
     font-family:$font__subheader;
-    @include desktop{
-  margin-top:2rem;
-    margin-bottom:2rem;
+    @include desktop {
+        margin: 2rem 0;
     }
 }
 .site-content {
@@ -34,9 +33,6 @@ img {
     margin: 20px 0;
     @include desktop {
         border-radius: 10px;
-    border-radius: 0;
-    padding:15px;
-    margin: 20px 0;
     }
 }
 
