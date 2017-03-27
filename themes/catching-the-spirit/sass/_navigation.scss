@@ -141,13 +141,14 @@
                 top: 3rem;
                 left: 0;
                 width: 100%;
-                min-height: 100vh;
+                height: 100%;
                 z-index: 2;
                 background-color: $color__lightblue;
                 content: "";
                 clear: both;
                 display: none;
                 // transition: width 2s;
+                overflow:scroll;
                 @include desktop {
                 display: none !important;
                 }
