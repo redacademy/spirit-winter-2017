@@ -21,6 +21,7 @@ get_header(); ?>
     <p class="strong"><?php echo $field['faq_question']; ?></p>
     <p><?php echo $field['faq_answer']; ?></p>
 <?php endforeach ?>
+<p><?php echo CFS()->get('faq_contact_us');?></p>
 </div>
 
 <div class="faq-youth faq-youth-hide">
@@ -29,6 +30,7 @@ get_header(); ?>
     <p class="strong"><?php echo $field['faq_question']; ?></p>
     <p><?php echo $field['faq_answer']; ?></p>
 <?php endforeach ?>
+<p><?php echo CFS()->get('faq_contact_us');?></p>
 </div>
 
 

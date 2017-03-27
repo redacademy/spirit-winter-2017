@@ -14,39 +14,37 @@
                 
             }
         }
+
+        .gform_footer{
+            display:flex;
+            justify-content: center;
+            margin-top:-20px;
+        }
         .gform_footer input[type=submit] {
             @extend .blue-btn;
-            box-shadow: none;
-            text-shadow: none;
-            border-radius: 10px;
-            width: 100%;
             @include desktop {
                 width: 450px;
                 height: 55px;
             }
         }
-        input[type=file] {
-            font-size: 1rem;
-            color: transparent;
-            &:before, &:active {
-                @extend .blue-btn;
-                content: "Add Photo";
-                position: relative;
-                top: 30px;
-                width: 100%;
-                @include desktop {
-                    width: 450px;
-                }
-            }
-            &:focus {
-                outline: none;
-                color: transparent;
-            }
-        }
-        .inputfile {
-            margin: 0;
-            padding: 0;
-        }
+.ginput_container_post_image{
+         display: flex !important;
+         justify-content: center !important;
+
+         margin-top:30px !important;
+     }
+    
+     input[type=submit] {
+         box-shadow: none;
+         text-shadow: none;
+         width: 170px;
+         padding: 0;
+         margin: 16px auto;
+         @extend .blue-btn;
+         @include desktop {
+             padding: 10px;
+         }
+     }
         #field_3_1,
         #field_3_2 {
             padding: 0;
@@ -76,5 +74,11 @@
                 margin-bottom: 2rem;
             }
         }
+    }
+}
+
+#gform_3{
+    @include desktop{
+     margin-top:-80px;
     }
 }
