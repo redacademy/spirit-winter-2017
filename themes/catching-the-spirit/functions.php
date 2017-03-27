@@ -103,6 +103,7 @@ function red_starter_scripts() {
 	wp_enqueue_script('smooth-scroll', get_template_directory_uri() . '/build/js/smooth-scroll.min.js', array('jquery'), '1', true);
 	}
 
+
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	wp_enqueue_script( 'menu', get_template_directory_uri() . '/build/js/menu.min.js', array('jquery'), '2', true );

@@ -1783,7 +1783,13 @@ img {
   font-weight: bold !important; }
 
 #gf_progressbar_wrapper_2 {
-  background: none; }
+  background: none;
+  width: 94vw !important;
+  margin: 0 auto !important;
+  padding-top: 50px !important; }
+  @media (min-width: 642px) {
+    #gf_progressbar_wrapper_2 {
+      width: 80% !important; } }
   #gf_progressbar_wrapper_2 .gf_progressbar_percentage,
   #gf_progressbar_wrapper_2 .percentbar_100 {
     background: #52AA8A !important; }

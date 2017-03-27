@@ -191,9 +191,15 @@
 
   #gf_progressbar_wrapper_2{
          background: none;
-        //  border: 2px solid $color__green;
+        width: 94vw !important;
+        margin: 0 auto !important;
+        padding-top:50px !important;
+        @include desktop{
+            width:80% !important;
+        }
          .gf_progressbar_percentage,
          .percentbar_100 {
              background: $color__green !important;
+             
          }
      }
