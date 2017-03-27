@@ -424,7 +424,6 @@ textarea {
   background-color: #78AEE1; }
   @media (min-width: 642px) {
     .main-navigation {
-      height: 80px;
       background-color: #006BBC; } }
   .main-navigation .nav-desktop {
     display: none;
@@ -435,6 +434,7 @@ textarea {
         width: 1200px; } }
     @media (min-width: 642px) {
       .main-navigation .nav-desktop {
+        height: 80px;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: justify;

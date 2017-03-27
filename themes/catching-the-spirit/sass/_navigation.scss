@@ -7,7 +7,7 @@
 .main-navigation{
         background-color: $color__lightblue;
         @include desktop {
-            height: 80px;
+            // height: 80px;
             background-color: $color__blue;
         }
 // navigation desktop
@@ -15,6 +15,7 @@
             display: none;
             @include container;
             @include desktop{
+                height: 80px;
                 display: flex;
                 justify-content: space-between;
                 .menu{
