@@ -595,8 +595,7 @@ nav {
   font-family: "capriola"; }
   @media (min-width: 642px) {
     .page-title {
-      margin-top: 2rem;
-      margin-bottom: 2rem; } }
+      margin: 2rem 0; } }
 
 @media (min-width: 642px) {
   .site-content {
@@ -617,10 +616,7 @@ img {
   margin: 20px 0; }
   @media (min-width: 642px) {
     .green-box {
-      border-radius: 10px;
-      border-radius: 0;
-      padding: 15px;
-      margin: 20px 0; } }
+      border-radius: 10px; } }
 
 .red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
 #gform_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main input[type=submit], .page-id-80 .site-main .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main input[type=file]:before, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
@@ -670,8 +666,7 @@ img {
       -ms-flex-direction: row;
           flex-direction: row;
       -ms-flex-pack: distribute;
-          justify-content: space-around;
-      padding: 30px 10px 30px 10px; } }
+          justify-content: space-around; } }
 
 .emphasis {
   text-transform: uppercase; }
@@ -726,7 +721,8 @@ img {
           text-align: center; }
       .page-template-front-page .site-main .about-section-wrapper .front-page-mission {
         border-right: 1px solid #52AA8A; }
-      .page-template-front-page .site-main .about-section-wrapper .btn-container {
+      .page-template-front-page .site-main .about-section-wrapper .front-page-btn-wrapper {
+        height: auto;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
         padding: 0; } }
@@ -775,7 +771,7 @@ img {
       width: 650px;
       margin: 0 auto; } }
   .page-template-front-page .site-main .front-page-social-media {
-    color: #F9F296;
+    color: #006BBC;
     font-size: 3rem; }
     .page-template-front-page .site-main .front-page-social-media i {
       width: 3.5rem; }
@@ -800,8 +796,6 @@ img {
       text-align: left; }
     .page-template-front-page .site-main .front-page-latest-testimonials .entry-content {
       margin-bottom: 2rem; }
-  .page-template-front-page .site-main a.blue-btn {
-    margin-bottom: 2rem; }
   .page-template-front-page .site-main .front-page-sponsors-list {
     display: -ms-flexbox;
     display: flex;
@@ -1217,6 +1211,10 @@ img {
 
 .page-id-135 p {
   text-align: left; }
+
+.page-id-135 .our-story-logo img {
+  height: 200px;
+  margin-bottom: 2rem; }
 
 .page-id-135 .our-mission-image {
   height: 220px;
