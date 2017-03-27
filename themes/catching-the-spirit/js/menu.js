@@ -17,7 +17,7 @@
 
     $('.menu-toggle').on('click', function () {
         $('.responsive-menu').slideToggle(200); //hide and show nav
-        // $('.site-content').toggleCss('overflow','hidden');
+        $('.site-content').toggleClass('.no-overflow');
     });
 
     $('.menu-item').on('hover', function () {

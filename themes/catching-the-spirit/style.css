@@ -572,6 +572,9 @@ textarea {
     .main-navigation .responsive-menu .portal {
       display: none; }
 
+.no-overflow {
+  overflow: hidden; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
