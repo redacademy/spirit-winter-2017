@@ -1,37 +1,29 @@
-
-.body-fill{
-  height:100vh;
-    position:relative;
+ .body-fill {
+    height: 100vh;
+    position: relative;
 }
 
-.footer-drop{
- position:absolute;
-    bottom:0;
+.footer-drop {
+    position: absolute;
+    bottom: 0;
 }
 
-.faq-page{
-
-    @include desktop{
-        width:500px;
+.faq-page {
+    @include desktop {
+        width: 500px;
         margin: 0 auto;
     }
-    
-.we-have-answers{
-    display:none;
- @include desktop {
-       display:block;
-       text-align:center;
+    .we-have-answers {
+        display: none;
+        @include desktop {
+            display: block;
+            text-align: center;
+        }
     }
-}
-
-.faq-parents-hide{
-    display:none;
-}
-
-.faq-youth-hide{
-    display:none;
-}
-
-
-
+    .faq-parents-hide {
+        display: none;
+    }
+    .faq-youth-hide {
+        display: none;
+    }
 }

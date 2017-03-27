@@ -5,7 +5,7 @@
   $('select').css('color','#a9a9a9');
    $('select').change(function() {
       var current = $('select').val();
-      if (current != 'null') {
+      if (current !== 'null') {
           $('select').css('color','black');
       } else {
           $('select').css('color','#a9a9a9');

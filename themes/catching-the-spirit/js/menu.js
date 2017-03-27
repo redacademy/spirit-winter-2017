@@ -10,17 +10,17 @@
     });
     
 
-    if(('ontouchstart' in window)){//check for touch device
-        $('.sub-menu').hide();
-        // remove parent link
-        $('.sub-menu').parent().find('a:first').removeAttr('href').css('cursor','default');
-        // show hide submenu when click on parent
-        $('.menu-item').on('click', function () {
-        $('.sub-menu', this).toggle();
-    });
+    // if(('ontouchstart' in window)){//check for touch device
+    //     $('.sub-menu').hide();
+    //     // remove parent link
+    //     $('.sub-menu').parent().find('a:first').removeAttr('href').css('cursor','default');
+    //     // show hide submenu when click on parent
+    //     $('.menu-item').on('click', function () {
+    //     $('.sub-menu', this).toggle();
+    // });
 
-    }
-    else{
+    // }
+    // else{
         $('.sub-menu').parent().find('a:first').removeAttr('href').css('cursor','default');
         $('.menu-item').hover(function() {
         //show its submenu
@@ -30,10 +30,10 @@
         //hide its submenu
         $('ul', this).fadeOut(100);
         });
-    }
+    //}
 
     // nav mobile toggle 
-    $('.responsive-menu').hide(); // hide nav
+    // $('.responsive-menu').hide(); // hide nav
     $('.menu-toggle').on('click', function(){
         $('.header-logo').toggle(); //  hide and show logo
         $('.fa-phone').toggle(); // hide and show phone

@@ -547,9 +547,6 @@ textarea {
     content: "";
     clear: both;
     display: none; }
-    @media (min-width: 642px) {
-      .main-navigation .responsive-menu {
-        display: none; } }
     .main-navigation .responsive-menu .menu-header {
       padding-top: 1rem;
       padding-left: 2.5rem; }
@@ -559,9 +556,6 @@ textarea {
         .main-navigation .responsive-menu .menu-header .menu-item a {
           color: white;
           text-decoration: none; }
-        @media (min-width: 642px) {
-          .main-navigation .responsive-menu .menu-header .menu-item .sub-menu {
-            display: none; } }
         .main-navigation .responsive-menu .menu-header .menu-item .sub-menu .menu-item {
           margin-left: 2rem;
           line-height: 0.5rem; }
@@ -1350,7 +1344,7 @@ img {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  height: calc(100vh - 450px); }
+  min-height: calc(100vh - 450px); }
 
 .what-to-bring-entry {
   list-style: none;
