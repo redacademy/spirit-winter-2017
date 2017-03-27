@@ -18,14 +18,14 @@ get_header(); ?>
                 </div>
 			</header>
 
-			<section class="program-description-wrapper">
-				<div>
-					<h2 class="subheading">In a nutshell</h2>
+			<section>
+				<div class="program-description-wrapper text-container">
+					<h2 class="subheading">In a Nutshell</h2>
 					<span class="program-name"><?php echo CFS()->get('program_description'); ?></span>
 				</div>
 
 				<div class="program-price green-box">
-					<h2 class="subheading">What do we charge?</h2>
+					<h2 class="subheading">What Do We Charge?</h2>
 					<p class="emphasis">Nothing!</p>
 					<p>Find out how we do that:</p>
 					<a href="" class="blue-btn">Learn More</a>
@@ -35,7 +35,7 @@ get_header(); ?>
 				</div>
 
 				<div class="green-box">
-					<h2 class="subheading">Who we are?</h2>
+					<h2>Who We Are?</h2>
                     <div class="program-leaders-wrapper">
                         <div class="peer-leaders">
                             <p>Peer Leaders</p>
@@ -48,13 +48,11 @@ get_header(); ?>
                             <p>Age: 19+</p>
                         </div>
                     </div>
-                    <div>
                         <a href="" class="blue-btn">Learn More</a>
-                    </div>
 				</div>
 				
                 <div>
-                    <div class="program-details-wrapper">
+                    <div class="program-details-wrapper text-container">
                         <div class="program-details-when">
                             <h2>When?</h2>
                             <p><?php echo CFS()->get('program_details_when'); ?></p>
