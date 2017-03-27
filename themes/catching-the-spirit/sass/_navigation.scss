@@ -136,6 +136,7 @@
                 color: white;
             }
         .responsive-menu{
+           
                 position: fixed;
                 top: 3rem;
                 left: 0;
@@ -147,9 +148,10 @@
                 content: "";
                 clear: both;
                 display: none;
-                // @include desktop {
-                // display: none;
-                // }
+                transition: width 2s;
+                @include desktop {
+                display: none;
+                }
             .menu-header{
                 padding-top: 1rem;
                 padding-left: 2.5rem;
@@ -162,9 +164,9 @@
                 }
 // sub navigation mobile
                 .sub-menu{
-                    //@include desktop {
+                    // @include desktop {
                     // display: none;
-                    //}
+                    // }
                     .menu-item{
                         margin-left: 2rem;
                         line-height: 0.5rem;
