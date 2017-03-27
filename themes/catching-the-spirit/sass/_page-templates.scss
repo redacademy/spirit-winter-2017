@@ -18,150 +18,150 @@
             display: none;
             }
         }
-        .front-page-hero {
-            height: 300px;
-            width: 100%;
-            overflow: hidden;
+    }
+    .front-page-hero {
+        height: 300px;
+        width: 100%;
+        overflow: hidden;
+        @include desktop {
+            width: 1120px;
+            height: 500px;
+        }
+        & img {
+            height: 450px;
+            object-fit: cover;
+            position: relative;
+            top: -50px;
             @include desktop {
-                width: 1120px;
-                height: 500px;
-            }
-            & img {
-                height: 450px;
-                object-fit: cover;
-                position: relative;
-                top: -50px;
-                @include desktop {
-                    height: 850px;
-                    top: -200px;
-                }
+                height: 850px;
+                top: -200px;
             }
         }
-        .about-section-wrapper {
-            @include desktop {
-                display: flex;
-                flex-wrap: wrap;
-                .front-page-about {
-                    flex: 1 1 50%;
-                    padding: 0 3%; 
-                    margin: 3% 0;
-                    & p {
-                        text-align: center;
-                    }
+    }
+    .about-section-wrapper {
+        @include desktop {
+            display: flex;
+            flex-wrap: wrap;
+            .front-page-about {
+                flex: 1 1 50%;
+                padding: 0 3%; 
+                margin: 3rem 0;
+                & p {
+                    text-align: center;
                 }
-                .front-page-mission {
-                    @extend .front-page-about;
-                    border-right: 1px solid $color__green;
-                }
+            }
+            .front-page-mission {
+                @extend .front-page-about;
+                border-right: 1px solid $color__green;
+            }
             .front-page-btn-wrapper {
                 height: auto;
                 flex: 1 1 100%;
                 padding: 0;
-                }
             }
         }
-        h2 {
-            text-transform: capitalize;
-            margin-top: 1.5rem;
-            margin-bottom: 1.5rem;
-            @include desktop {
-                margin-bottom: 2rem;
-                padding-bottom: 0;
-            }
+    }
+    h2 {
+        text-transform: capitalize;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        @include desktop {
+            margin: 0 0 2rem 0;
+            padding: 0;
         }
-        h3 {
-            color: $color__green;
+    }
+    h3 {
+        color: $color__green;
+    }
+    .green-box {
+        margin: 3rem 0;
+        padding: 2rem;
+        border-radius: 0;
+    }
+    .for-youth-yellow {
+        background: $color__green url('../../images/foryouthbyyouth_yellow.svg') no-repeat center center;
+        background-size: 95vw;
+        height: 200px;
+        @include desktop {
+            height: 400px;
+            background-size: 80%;
         }
-        .green-box {
-            margin: 3rem 0;
-            padding: 2rem;
-            border-radius: 0;
-        }
-        .for-youth-yellow {
-            background: $color__green url('../../images/foryouthbyyouth_yellow.svg') no-repeat center center;
-            background-size: 95vw;
-            height: 200px;
-            @include desktop {
-                height: 400px;
-                background-size: 80%;
-            }
-        }
-        .front-page-programs-list {
-            .programs-wrapper {
-                @include desktop {
-                    display: flex;
-                    justify-content: space-between;
-                    width: 650px;
-                    margin: 0 auto;
-                }
-            }
-            & h3 {
-                margin: .5rem 0 3rem 0;
-                @include desktop {
-                    margin-bottom: 1rem;
-                }
-            }
-            & img {
-                    width: 150px;
-                    height: 150px;
-                    object-fit: cover;
-                    border-radius: 100px;
-            }
-        }
-        .front-page-programs-free {
-            .text-container {
-                @include desktop {
-                    width: 650px;
-                    margin: 0 auto;
-                }
-            }
-        }
-        .front-page-social-media {
-            color: $color__blue;
-            font-size: 3rem;
-            & i {
-                width: 3.5rem;
-            }
-        }
-        .front-page-latest-testimonials {
-            margin-top: 3rem;
+    }
+    .front-page-programs-list {
+        .programs-wrapper {
             @include desktop {
                 display: flex;
-                li {
-                flex: 1 1 25%;
-            }
-            }
-            img {
-                width: 150px;
-                height: 150px;
-                border-radius: 100px;
-                object-fit: cover;
-                margin-bottom: .8rem;
-            }
-            .post-name {
-                color: white;
-            }
-            p {
-                text-align: left;
-            }
-            .entry-content {
-                margin-bottom: 2rem;
+                justify-content: space-between;
+                width: 650px;
+                margin: 0 auto;
             }
         }
-        .front-page-sponsors-list{
+        & h3 {
+            margin: .5rem 0 3rem 0;
+            @include desktop {
+                margin-bottom: 1rem;
+            }
+        }
+        & img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 100px;
+        }
+    }
+    .front-page-programs-free {
+        .text-container {
+            @include desktop {
+                width: 650px;
+                margin: 0 auto;
+            }
+        }
+    }
+    .front-page-social-media {
+        color: $color__blue;
+        font-size: 3rem;
+        & i {
+            width: 3.5rem;
+        }
+    }
+    .front-page-latest-testimonials {
+        margin-top: 3rem;
+        @include desktop {
             display: flex;
-            flex-wrap: wrap;
-            li{
-                flex: 1 1 50%;
+            li {
+            flex: 1 1 25%;
+        }
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 100px;
+            object-fit: cover;
+            margin-bottom: .8rem;
+        }
+        .post-name {
+            color: white;
+        }
+        p {
+            text-align: left;
+        }
+        .entry-content {
+            margin-bottom: 2rem;
+        }
+    }
+    .front-page-sponsors-list{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            flex: 1 1 50%;
+            @include desktop {
+                flex: 1 1 33%;
+            }
+            padding:20px;
+            img {
+                height: 60px;
                 @include desktop {
-                    flex: 1 1 33%;
-                }
-                padding:20px;
-                img {
-                    height: 60px;
-                    @include desktop {
-                        height: 80px;
-                    }
+                    height: 80px;
                 }
             }
         }
