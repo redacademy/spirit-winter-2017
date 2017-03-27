@@ -1,57 +1,9 @@
 .page-template-page-program-leadership {
-    .site-main {
-        @include desktop {
-            width: 600px;
-            margin: 0 auto;
-            text-align: center;
-            margin: 3rem 0;
-        } 
-        h1 {
-            padding-bottom: 0;
-            margin-bottom: .8rem;
-        }
-        .subheading {
-            margin-bottom: 1.5rem;
-        }
-        ul {
-            list-style: disc inside none;
-            color: $color__green;
-            font-weight: 100;
-            text-align: left;
-            line-height: 1.4;
-            padding: 0 15px;
-        }
-        .for-youth-green {
-            background: url('../../images/foryouthbyyouth_green.svg') no-repeat center center;
-            background-size: contain;
-            width: 100%;
-            height: 150px;
-        }
-        .green-box {
-            padding: 2rem 2rem;
-            margin: 3rem 0;
-        }
-        .program-leaders-wrapper {
-            display: flex;
-            justify-content: space-around;
-            & p {
-                text-align: center;
-            }
-            & img {
-                width: 125px;
-                height: 125px;
-                object-fit: cover;
-                border-radius: 100px;
-            }
-        }
-        .blue-btn {
-            margin: 1.5rem 1.5rem 0 1.5rem;
-        }
-        .apply-btn {
-            @extend .red-btn;
-            text-transform: uppercase;
-            width: 95%;
-            margin: 1.5rem 0;
-        }
+    @extend .page-template-page-program-seasonal;
+    .apply-btn {
+        @extend .red-btn;
+        text-transform: uppercase;
+        width: 90vw;
+        text-align: center;
     }
 }

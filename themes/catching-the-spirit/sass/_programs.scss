@@ -5,9 +5,6 @@
             margin: 0 auto;
             text-align: center;
             margin: 3rem 0;
-        } 
-        .subtitle {
-            @extend h1;
         }
         h1 {
             padding-bottom: 0;
@@ -15,9 +12,6 @@
         }
         .program-header-image {
             margin: 3rem 0;
-        }
-        .subheading {
-            margin-bottom: 1.5rem;
         }
         ul {
             list-style: disc outside none;
@@ -40,6 +34,7 @@
             }
         }
         .program-leaders-wrapper {
+            margin-top: 1rem;
             display: flex;
             justify-content: space-around;
             & p {
@@ -52,10 +47,8 @@
                 border-radius: 100px;
             }
         }
-        .program-leaders-wrapper,
         .program-details-wrapper {
-            display: flex;
-            justify-content: space-around;
+            @extend .program-leaders-wrapper;
             margin: 0;
             .program-details-when,
             .program-details-where {

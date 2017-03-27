@@ -49,8 +49,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
    License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
-h1,
-.page-template-page-program-seasonal .site-main .subtitle, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -146,7 +145,7 @@ strong {
 dfn {
   font-style: italic; }
 
-h1, .page-template-page-program-seasonal .site-main .subtitle {
+h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -326,7 +325,7 @@ a {
   font-weight: bold;
   color: #52AA8A; }
 
-h1, .page-template-page-program-seasonal .site-main .subtitle {
+h1 {
   font-size: 2rem;
   color: #52AA8A;
   text-align: center;
@@ -622,7 +621,7 @@ img {
       border-radius: 10px; } }
 
 .red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
-#gform_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main input[type=submit], .page-id-80 .site-main .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main input[type=file]:before, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
+#gform_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main input[type=submit], .page-id-80 .site-main .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main input[type=file]:before, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .register-btn, .page-template-page-program-leadership .apply-btn {
   display: inline-block;
   text-align: center;
   width: 250px;
@@ -639,14 +638,14 @@ img {
   margin: 5px 0; }
   @media (min-width: 642px) {
     .red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
-    #gform_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main input[type=submit], .page-id-80 .site-main .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main input[type=file]:before, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
+    #gform_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main input[type=submit], .page-id-80 .site-main .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main input[type=file]:before, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .register-btn, .page-template-page-program-leadership .apply-btn {
       margin: 0;
       width: 180px; } }
   .red-btn:hover, .blue-btn:hover, #gform_2 input[type=submit]:hover, #gform_2 .gform_fields input[type=file]:hover:before, .gform_fields #gform_2 input[type=file]:hover:before,
-  #gform_2 input[type=button]:hover, .page-id-80 .site-main input[type=submit]:hover, .page-id-80 .site-main .gform_fields input[type=file]:hover:before, .gform_fields .page-id-80 .site-main input[type=file]:hover:before, .page-template-page-program-seasonal .site-main .register-btn:hover, .page-template-page-program-leadership .site-main .apply-btn:hover {
+  #gform_2 input[type=button]:hover, .page-id-80 .site-main input[type=submit]:hover, .page-id-80 .site-main .gform_fields input[type=file]:hover:before, .gform_fields .page-id-80 .site-main input[type=file]:hover:before, .page-template-page-program-seasonal .site-main .register-btn:hover, .page-template-page-program-leadership .site-main .register-btn:hover, .page-template-page-program-leadership .apply-btn:hover {
     box-shadow: 2px 2px 2px #888888; }
   .red-btn:active, .blue-btn:active, #gform_2 input[type=submit]:active, #gform_2 .gform_fields input[type=file]:active:before, .gform_fields #gform_2 input[type=file]:active:before,
-  #gform_2 input[type=button]:active, .page-id-80 .site-main input[type=submit]:active, .page-id-80 .site-main .gform_fields input[type=file]:active:before, .gform_fields .page-id-80 .site-main input[type=file]:active:before, .page-template-page-program-seasonal .site-main .register-btn:active, .page-template-page-program-leadership .site-main .apply-btn:active {
+  #gform_2 input[type=button]:active, .page-id-80 .site-main input[type=submit]:active, .page-id-80 .site-main .gform_fields input[type=file]:active:before, .gform_fields .page-id-80 .site-main input[type=file]:active:before, .page-template-page-program-seasonal .site-main .register-btn:active, .page-template-page-program-leadership .site-main .register-btn:active, .page-template-page-program-leadership .apply-btn:active {
     box-shadow: none; }
 
 .blue-btn, #gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
@@ -690,7 +689,7 @@ img {
   width: 100%;
   margin: 3rem auto; }
   @media (min-width: 642px) {
-    .page-template-front-page .site-main h1, .page-template-front-page .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .page-template-front-page .site-main .subtitle {
+    .page-template-front-page .site-main h1 {
       display: none; } }
 
 .page-template-front-page .front-page-hero {
@@ -866,7 +865,7 @@ img {
           font-family: "capriola";
           margin-top: 0.7rem; } }
       @media (min-width: 642px) {
-        .site-header .header-desktop .container-desk .title-desktop h1, .site-header .header-desktop .container-desk .title-desktop .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .site-header .header-desktop .container-desk .title-desktop .subtitle {
+        .site-header .header-desktop .container-desk .title-desktop h1 {
           color: white;
           font-size: 37px;
           font-weight: 100;
@@ -1025,23 +1024,20 @@ img {
       margin-bottom: 30px; }
 
 @media (min-width: 642px) {
-  .page-template-page-program-seasonal .site-main {
+  .page-template-page-program-seasonal .site-main, .page-template-page-program-leadership .site-main {
     width: 600px;
     margin: 0 auto;
     text-align: center;
     margin: 3rem 0; } }
 
-.page-template-page-program-seasonal .site-main h1, .page-template-page-program-seasonal .site-main .subtitle {
+.page-template-page-program-seasonal .site-main h1, .page-template-page-program-leadership .site-main h1 {
   padding-bottom: 0;
   margin-bottom: .8rem; }
 
-.page-template-page-program-seasonal .site-main .program-header-image {
+.page-template-page-program-seasonal .site-main .program-header-image, .page-template-page-program-leadership .site-main .program-header-image {
   margin: 3rem 0; }
 
-.page-template-page-program-seasonal .site-main .subheading {
-  margin-bottom: 1.5rem; }
-
-.page-template-page-program-seasonal .site-main ul {
+.page-template-page-program-seasonal .site-main ul, .page-template-page-program-leadership .site-main ul {
   list-style: disc outside none;
   color: #52AA8A;
   font-weight: 100;
@@ -1049,112 +1045,56 @@ img {
   line-height: 1.4;
   padding: 0 1.5rem 0 2.5rem; }
 
-.page-template-page-program-seasonal .site-main .for-youth-green {
+.page-template-page-program-seasonal .site-main .for-youth-green, .page-template-page-program-leadership .site-main .for-youth-green {
   background: url("../../images/foryouthbyyouth_green.svg") no-repeat center center;
   background-size: 80%;
   height: 175px; }
 
-.page-template-page-program-seasonal .site-main .green-box {
+.page-template-page-program-seasonal .site-main .green-box, .page-template-page-program-leadership .site-main .green-box {
   padding: 2rem 2rem;
   margin: 3rem 0; }
-  .page-template-page-program-seasonal .site-main .green-box p {
+  .page-template-page-program-seasonal .site-main .green-box p, .page-template-page-program-leadership .site-main .green-box p {
     text-align: center; }
 
-.page-template-page-program-seasonal .site-main .program-leaders-wrapper {
+.page-template-page-program-seasonal .site-main .program-leaders-wrapper, .page-template-page-program-leadership .site-main .program-leaders-wrapper, .page-template-page-program-seasonal .site-main .program-details-wrapper, .page-template-page-program-leadership .site-main .program-details-wrapper {
+  margin-top: 1rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-  .page-template-page-program-seasonal .site-main .program-leaders-wrapper p {
+  .page-template-page-program-seasonal .site-main .program-leaders-wrapper p, .page-template-page-program-leadership .site-main .program-leaders-wrapper p, .page-template-page-program-seasonal .site-main .program-details-wrapper p, .page-template-page-program-leadership .site-main .program-details-wrapper p {
     text-align: center; }
-  .page-template-page-program-seasonal .site-main .program-leaders-wrapper img {
+  .page-template-page-program-seasonal .site-main .program-leaders-wrapper img, .page-template-page-program-leadership .site-main .program-leaders-wrapper img, .page-template-page-program-seasonal .site-main .program-details-wrapper img, .page-template-page-program-leadership .site-main .program-details-wrapper img {
     width: 125px;
     height: 125px;
     object-fit: cover;
     border-radius: 100px; }
 
-.page-template-page-program-seasonal .site-main .program-leaders-wrapper,
-.page-template-page-program-seasonal .site-main .program-details-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.page-template-page-program-seasonal .site-main .program-details-wrapper, .page-template-page-program-leadership .site-main .program-details-wrapper {
   margin: 0; }
-  .page-template-page-program-seasonal .site-main .program-leaders-wrapper .program-details-when,
-  .page-template-page-program-seasonal .site-main .program-leaders-wrapper .program-details-where,
-  .page-template-page-program-seasonal .site-main .program-details-wrapper .program-details-when,
-  .page-template-page-program-seasonal .site-main .program-details-wrapper .program-details-where {
+  .page-template-page-program-seasonal .site-main .program-details-wrapper .program-details-when, .page-template-page-program-leadership .site-main .program-details-wrapper .program-details-when,
+  .page-template-page-program-seasonal .site-main .program-details-wrapper .program-details-where, .page-template-page-program-leadership .site-main .program-details-wrapper .program-details-where {
     -ms-flex: 1 1 50%;
         flex: 1 1 50%; }
 
-.page-template-page-program-seasonal .site-main a {
+.page-template-page-program-seasonal .site-main a, .page-template-page-program-leadership .site-main a {
   margin: 2rem; }
 
-.page-template-page-program-seasonal .site-main .register-btn {
+.page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .register-btn {
   text-transform: uppercase;
   margin-bottom: 2rem;
   width: 86%; }
   @media (min-width: 642px) {
-    .page-template-page-program-seasonal .site-main .register-btn {
+    .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .register-btn {
       width: 50%; } }
 
-.page-template-page-program-seasonal .site-main .faq-parents {
+.page-template-page-program-seasonal .site-main .faq-parents, .page-template-page-program-leadership .site-main .faq-parents {
   margin-bottom: 0; }
 
-@media (min-width: 642px) {
-  .page-template-page-program-leadership .site-main {
-    width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    margin: 3rem 0; } }
-
-.page-template-page-program-leadership .site-main h1, .page-template-page-program-leadership .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .page-template-page-program-leadership .site-main .subtitle {
-  padding-bottom: 0;
-  margin-bottom: .8rem; }
-
-.page-template-page-program-leadership .site-main .subheading {
-  margin-bottom: 1.5rem; }
-
-.page-template-page-program-leadership .site-main ul {
-  list-style: disc inside none;
-  color: #52AA8A;
-  font-weight: 100;
-  text-align: left;
-  line-height: 1.4;
-  padding: 0 15px; }
-
-.page-template-page-program-leadership .site-main .for-youth-green {
-  background: url("../../images/foryouthbyyouth_green.svg") no-repeat center center;
-  background-size: contain;
-  width: 100%;
-  height: 150px; }
-
-.page-template-page-program-leadership .site-main .green-box {
-  padding: 2rem 2rem;
-  margin: 3rem 0; }
-
-.page-template-page-program-leadership .site-main .program-leaders-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-  .page-template-page-program-leadership .site-main .program-leaders-wrapper p {
-    text-align: center; }
-  .page-template-page-program-leadership .site-main .program-leaders-wrapper img {
-    width: 125px;
-    height: 125px;
-    object-fit: cover;
-    border-radius: 100px; }
-
-.page-template-page-program-leadership .site-main .blue-btn, .page-template-page-program-leadership .site-main #gform_2 input[type=submit], #gform_2 .page-template-page-program-leadership .site-main input[type=submit], .page-template-page-program-leadership .site-main #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .site-main .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .site-main
-#gform_2 input[type=button],
-#gform_2 .page-template-page-program-leadership .site-main input[type=button], .page-template-page-program-leadership .page-id-80 .site-main input[type=submit], .page-id-80 .page-template-page-program-leadership .site-main input[type=submit], .page-template-page-program-leadership .page-id-80 .site-main .gform_fields input[type=file]:before, .page-id-80 .page-template-page-program-leadership .site-main .gform_fields input[type=file]:before, .page-template-page-program-leadership .gform_fields .page-id-80 .site-main input[type=file]:before, .gform_fields .page-id-80 .page-template-page-program-leadership .site-main input[type=file]:before {
-  margin: 1.5rem 1.5rem 0 1.5rem; }
-
-.page-template-page-program-leadership .site-main .apply-btn {
+.page-template-page-program-leadership .apply-btn {
   text-transform: uppercase;
-  width: 95%;
-  margin: 1.5rem 0; }
+  width: 90vw;
+  text-align: center; }
 
 .board-title {
   margin-top: 40px; }
@@ -1340,7 +1280,7 @@ img {
 #gform_2 .page-id-137 input[type=button], .page-id-137 .page-id-80 .site-main input[type=submit], .page-id-80 .site-main .page-id-137 input[type=submit], .page-id-137 .page-id-80 .site-main .gform_fields input[type=file]:before, .page-id-80 .site-main .gform_fields .page-id-137 input[type=file]:before, .page-id-137 .gform_fields .page-id-80 .site-main input[type=file]:before, .gform_fields .page-id-80 .site-main .page-id-137 input[type=file]:before, .page-id-137 .btns {
   margin: 2rem; }
 
-.page-id-137 h1, .page-id-137 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .page-id-137 .subtitle {
+.page-id-137 h1 {
   margin-bottom: 3rem; }
 
 .page-id-137 h2 {
@@ -1386,9 +1326,7 @@ img {
 .page-template-page-resources-conversations .site-main {
   margin: 3rem 0; }
   .page-template-page-resources-learning .site-main h1, .page-template-page-resources-opportunities .site-main h1,
-  .page-template-page-resources-conversations .site-main h1, .page-template-page-resources-learning .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .page-template-page-resources-learning .site-main .subtitle, .page-template-page-resources-opportunities .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .page-template-page-resources-opportunities .site-main .subtitle,
-  .page-template-page-resources-conversations .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal
-  .page-template-page-resources-conversations .site-main .subtitle {
+  .page-template-page-resources-conversations .site-main h1 {
     padding-bottom: 1.5rem;
     margin: 0; }
   .page-template-page-resources-learning .site-main ul, .page-template-page-resources-opportunities .site-main ul,
@@ -1519,7 +1457,7 @@ img {
 
 .logged-in {
   background-color: white; }
-  .logged-in .site-content h1, .logged-in .site-content .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .logged-in .site-content .subtitle {
+  .logged-in .site-content h1 {
     margin-top: 0;
     padding-top: 0.8rem;
     width: 100%;
@@ -1527,15 +1465,15 @@ img {
     background-color: #006BBC;
     color: white;
     font-weight: 100; }
-    .logged-in .site-content h1 a, .logged-in .site-content .page-template-page-program-seasonal .site-main .subtitle a, .page-template-page-program-seasonal .site-main .logged-in .site-content .subtitle a {
+    .logged-in .site-content h1 a {
       text-decoration: none;
       color: white;
       font-weight: 100; }
       @media (min-width: 642px) {
-        .logged-in .site-content h1 a, .logged-in .site-content .page-template-page-program-seasonal .site-main .subtitle a, .page-template-page-program-seasonal .site-main .logged-in .site-content .subtitle a {
+        .logged-in .site-content h1 a {
           color: #52AA8A; } }
     @media (min-width: 642px) {
-      .logged-in .site-content h1, .logged-in .site-content .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .logged-in .site-content .subtitle {
+      .logged-in .site-content h1 {
         padding-top: 2rem;
         padding-bottom: 4rem;
         background-color: white;
@@ -1548,7 +1486,7 @@ img {
     width: 100%;
     padding: 0;
     margin-top: 2rem; }
-    .logged-in .site-content #login h1, .logged-in .site-content #login .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .logged-in .site-content #login .subtitle {
+    .logged-in .site-content #login h1 {
       display: none; }
     .logged-in .site-content #login p a {
       font-weight: 100; }
@@ -1579,7 +1517,7 @@ img {
   width: 100%;
   padding: 0;
   margin-top: 2rem; }
-  #login h1, #login .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main #login .subtitle {
+  #login h1 {
     display: none; }
   #login p {
     text-align: center; }
@@ -1616,7 +1554,7 @@ img {
     color: #a9a9a9; }
   .gform_fields ::placeholder {
     color: #a9a9a9; }
-  .gform_fields h1, .gform_fields .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .gform_fields .subtitle {
+  .gform_fields h1 {
     background: none !important;
     color: #52AA8A !important; }
   .gform_fields input {
