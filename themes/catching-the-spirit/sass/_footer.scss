@@ -8,9 +8,9 @@
     @include desktop{
         height: 200px;
     }
-    .site-info{
+    .menu{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
         height: 30%;
         padding-top: 0.5rem;
@@ -24,9 +24,10 @@
         a{
             color: white;
             flex: 1 1 33%;
-            margin-bottom: 0.8rem;
+            margin: 0.8rem;
             font-size: 0.9rem;
             font-weight: 100;
+            text-decoration: none;
             @include desktop{
                 font-size: 16px;
                 flex: 0 1 auto;

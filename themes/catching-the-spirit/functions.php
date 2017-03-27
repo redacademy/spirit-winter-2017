@@ -24,6 +24,7 @@ function red_starter_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html( 'Primary Menu' ),
+		'secondary' => esc_html( 'Nav Footer' ),
 	) );
 
 	// Switch search form, comment form, and comments to output valid HTML5.
@@ -89,10 +90,14 @@ function red_starter_scripts() {
 	wp_enqueue_script('jquery');
 
 	//  if(is_page( 'faq' ) || is_404() || is_page('registration')){
-	// //	if(is_page( 'faq' ) || is_404() ){
-	// wp_enqueue_script('faq-scripts', get_template_directory_uri() . '/build/js/faq-scripts.min.js', array('jquery'), '1', true);
+	if(is_page( 'faq' )){
+	wp_enqueue_script('faq-scripts', get_template_directory_uri() . '/build/js/faq-scripts.min.js', array('jquery'), '1', true);
 
-	// }
+	}
+
+	if(is_page('registration')){
+		wp_enqueue_script('form-scripts', get_template_directory_uri() . '/build/js/form-scripts.min.js', array('jquery'), '1', true);
+	}
 
 	if(is_page( 'privacy-policy' )){
 	wp_enqueue_script('smooth-scroll', get_template_directory_uri() . '/build/js/smooth-scroll.min.js', array('jquery'), '1', true);

@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<h1 class="page-title">What to Bring</h1>
+<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
 
 <img class ="what-to-bring-img" src="<?php echo CFS()->get( 'what_to_bring_image' ); ?>"
 

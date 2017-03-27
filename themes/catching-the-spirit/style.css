@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: Catching the Spirit
 Theme URI: http://underscores.me/
@@ -314,7 +315,7 @@ body {
   font-size: 20px;
   text-align: center;
   height: 100%; }
-  @media (min-width: 600px) {
+  @media (min-width: 642px) {
     body {
       font-size: 18px; } }
 
@@ -419,7 +420,7 @@ textarea {
 /* Links */
 .main-navigation {
   background-color: #78AEE1; }
-  @media (min-width: 600px) {
+  @media (min-width: 642px) {
     .main-navigation {
       height: 80px;
       background-color: #006BBC; } }
@@ -427,10 +428,10 @@ textarea {
     display: none;
     width: 550px;
     margin: 0 auto; }
-    @media (min-width: 600px) {
+    @media (min-width: 642px) {
       .main-navigation .nav-desktop {
         width: 1200px; } }
-    @media (min-width: 600px) {
+    @media (min-width: 642px) {
       .main-navigation .nav-desktop {
         display: -ms-flexbox;
         display: flex;
@@ -462,19 +463,21 @@ textarea {
               font-size: 18px;
               font-weight: 100;
               color: white; }
-          .main-navigation .nav-desktop .menu .menu-item:last-child {
+          .main-navigation .nav-desktop .menu .give {
             background-color: #F82C3F;
             color: white;
             height: 80px;
             width: 180px;
             display: table;
             margin: 0 0 0 7rem; }
-            .main-navigation .nav-desktop .menu .menu-item:last-child a {
+            .main-navigation .nav-desktop .menu .give a {
               font-size: 26px;
               font-weight: 100;
               display: table-cell;
               vertical-align: middle;
-              text-decoration: none; } }
+              text-decoration: none; }
+        .main-navigation .nav-desktop .portal {
+          display: none; } }
   .main-navigation .nav-desktop.fixed {
     position: fixed;
     background-color: #006BBC;
@@ -499,7 +502,7 @@ textarea {
     height: 60px;
     width: 100%;
     -webkit-transform: translate3d(0, 0, 0); }
-    @media (min-width: 600px) {
+    @media (min-width: 642px) {
       .main-navigation .nav-mobile {
         display: none; } }
     .main-navigation .nav-mobile .menu-toggle {
@@ -524,8 +527,9 @@ textarea {
       border-radius: 5px;
       box-shadow: 0 1em 0 0 white, 0 2em 0 0 white; }
   .main-navigation .header-logo {
-    height: 60px;
-    width: 60px; }
+    height: 50px;
+    width: 50px;
+    margin-top: 0.3rem; }
   .main-navigation .fa-phone {
     transform: rotate(-90deg);
     margin-top: 0.6rem;
@@ -536,16 +540,17 @@ textarea {
     top: 3rem;
     left: 0;
     width: 100%;
-    height: 100%;
-    transition: all ease;
-    z-index: 2;
+    height: 100% !important;
+    z-index: -1;
     background-color: #78AEE1;
     content: "";
     clear: both;
-    display: none; }
-    @media (min-width: 600px) {
+    display: none;
+    overflow-y: auto;
+    padding-bottom: 5rem !important; }
+    @media (min-width: 642px) {
       .main-navigation .responsive-menu {
-        display: none; } }
+        display: none !important; } }
     .main-navigation .responsive-menu .menu-header {
       padding-top: 1rem;
       padding-left: 2.5rem; }
@@ -555,9 +560,6 @@ textarea {
         .main-navigation .responsive-menu .menu-header .menu-item a {
           color: white;
           text-decoration: none; }
-        @media (min-width: 600px) {
-          .main-navigation .responsive-menu .menu-header .menu-item .sub-menu {
-            display: none; } }
         .main-navigation .responsive-menu .menu-header .menu-item .sub-menu .menu-item {
           margin-left: 2rem;
           line-height: 0.5rem; }
@@ -567,6 +569,11 @@ textarea {
       margin: 2rem 1rem;
       color: white;
       font-size: 55px; }
+    .main-navigation .responsive-menu .portal {
+      display: none; }
+
+.no-overflow {
+  overflow: hidden; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -584,7 +591,7 @@ nav {
 .page-title {
   font-family: "capriola"; }
 
-@media (min-width: 600px) {
+@media (min-width: 642px) {
   .site-content {
     width: 500px;
     margin: 0 auto; } }
@@ -600,15 +607,8 @@ img {
   padding: 15px;
   margin: 20px 0; }
 
-<<<<<<< HEAD
-.red-btn, .blue-btn, .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main input[type=file]:active, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
-=======
-.red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 input[type=file]:before,
-#gform_2 input[type=button],
-#gform_wrapper_2 input[type=submit],
-#gform_wrapper_2 input[type=file]:before,
-#gform_wrapper_2 input[type=button], .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
->>>>>>> 0e3159eab739aa8ba9f9bc02e69b76d232e76fa8
+.red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
+#gform_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main .gform_footer input[type=file]:before, .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main input[type=file]:active, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
   display: inline-block;
   text-align: center;
   width: 250px;
@@ -622,42 +622,19 @@ img {
   border: none;
   outline: none;
   cursor: pointer; }
-  @media (min-width: 600px) {
-<<<<<<< HEAD
-    .red-btn, .blue-btn, .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main input[type=file]:active, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
+  @media (min-width: 642px) {
+    .red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
+    #gform_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main .gform_footer input[type=file]:before, .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main input[type=file]:active, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
       width: 180px; } }
-  .red-btn:hover, .blue-btn:hover, .page-id-80 .site-main .gform_footer input[type=submit]:hover, .page-id-80 .site-main input[type=file]:hover:before, .page-id-80 .site-main input[type=file]:hover:active, .page-template-page-program-seasonal .site-main .register-btn:hover, .page-template-page-program-leadership .site-main .apply-btn:hover {
+  .red-btn:hover, .blue-btn:hover, #gform_2 input[type=submit]:hover, #gform_2 .gform_fields input[type=file]:hover:before, .gform_fields #gform_2 input[type=file]:hover:before,
+  #gform_2 input[type=button]:hover, .page-id-80 .site-main .gform_footer input[type=submit]:hover, .page-id-80 .site-main input[type=file]:hover:before, .page-id-80 .site-main input[type=file]:hover:active, .page-template-page-program-seasonal .site-main .register-btn:hover, .page-template-page-program-leadership .site-main .apply-btn:hover {
     box-shadow: 2px 2px 2px #888888; }
-  .red-btn:active, .blue-btn:active, .page-id-80 .site-main .gform_footer input[type=submit]:active, .page-id-80 .site-main input[type=file]:active:before, .page-id-80 .site-main input[type=file]:active, .page-template-page-program-seasonal .site-main .register-btn:active, .page-template-page-program-leadership .site-main .apply-btn:active {
+  .red-btn:active, .blue-btn:active, #gform_2 input[type=submit]:active, #gform_2 .gform_fields input[type=file]:active:before, .gform_fields #gform_2 input[type=file]:active:before,
+  #gform_2 input[type=button]:active, .page-id-80 .site-main .gform_footer input[type=submit]:active, .page-id-80 .site-main input[type=file]:active:before, .page-id-80 .site-main input[type=file]:active, .page-template-page-program-seasonal .site-main .register-btn:active, .page-template-page-program-leadership .site-main .apply-btn:active {
     box-shadow: none; }
 
-.blue-btn, .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main input[type=file]:active {
-=======
-    .red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 input[type=file]:before,
-    #gform_2 input[type=button],
-    #gform_wrapper_2 input[type=submit],
-    #gform_wrapper_2 input[type=file]:before,
-    #gform_wrapper_2 input[type=button], .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .apply-btn {
-      width: 180px; } }
-  .red-btn:hover, .blue-btn:hover, #gform_2 input[type=submit]:hover, #gform_2 input[type=file]:hover:before,
-  #gform_2 input[type=button]:hover,
-  #gform_wrapper_2 input[type=submit]:hover,
-  #gform_wrapper_2 input[type=file]:hover:before,
-  #gform_wrapper_2 input[type=button]:hover, .page-template-page-program-seasonal .site-main .register-btn:hover, .page-template-page-program-leadership .site-main .apply-btn:hover {
-    box-shadow: 2px 2px 2px #888888; }
-  .red-btn:active, .blue-btn:active, #gform_2 input[type=submit]:active, #gform_2 input[type=file]:active:before,
-  #gform_2 input[type=button]:active,
-  #gform_wrapper_2 input[type=submit]:active,
-  #gform_wrapper_2 input[type=file]:active:before,
-  #gform_wrapper_2 input[type=button]:active, .page-template-page-program-seasonal .site-main .register-btn:active, .page-template-page-program-leadership .site-main .apply-btn:active {
-    box-shadow: none; }
-
-.blue-btn, #gform_2 input[type=submit], #gform_2 input[type=file]:before,
-#gform_2 input[type=button],
-#gform_wrapper_2 input[type=submit],
-#gform_wrapper_2 input[type=file]:before,
-#gform_wrapper_2 input[type=button] {
->>>>>>> 0e3159eab739aa8ba9f9bc02e69b76d232e76fa8
+.blue-btn, #gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
+#gform_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main .gform_footer input[type=file]:before, .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main input[type=file]:active {
   background: #006BBC; }
 
 .btn-container {
@@ -669,29 +646,13 @@ img {
       align-items: center;
   max-width: 400px;
   margin: 0 auto; }
-<<<<<<< HEAD
-  .btn-container .blue-btn, .btn-container .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .btn-container input[type=submit], .btn-container .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .btn-container input[type=file]:before, .btn-container .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .btn-container input[type=file]:active, .btn-container .red-btn, .btn-container .blue-btn, .btn-container .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .btn-container input[type=submit], .btn-container .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .btn-container input[type=file]:before, .btn-container .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .btn-container input[type=file]:active, .btn-container .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .btn-container .register-btn, .btn-container .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .btn-container .apply-btn {
-=======
-  .btn-container .blue-btn, .btn-container #gform_2 input[type=submit], #gform_2 .btn-container input[type=submit], .btn-container #gform_2 input[type=file]:before, #gform_2 .btn-container input[type=file]:before, .btn-container
+  .btn-container .blue-btn, .btn-container #gform_2 input[type=submit], #gform_2 .btn-container input[type=submit], .btn-container #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .btn-container input[type=file]:before, .btn-container .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .btn-container input[type=file]:before, .btn-container
   #gform_2 input[type=button],
-  #gform_2 .btn-container input[type=button], .btn-container
-  #gform_wrapper_2 input[type=submit],
-  #gform_wrapper_2 .btn-container input[type=submit], .btn-container
-  #gform_wrapper_2 input[type=file]:before,
-  #gform_wrapper_2 .btn-container input[type=file]:before, .btn-container
-  #gform_wrapper_2 input[type=button],
-  #gform_wrapper_2 .btn-container input[type=button], .btn-container .red-btn, .btn-container .blue-btn, .btn-container #gform_2 input[type=submit], #gform_2 .btn-container input[type=submit], .btn-container #gform_2 input[type=file]:before, #gform_2 .btn-container input[type=file]:before, .btn-container
+  #gform_2 .btn-container input[type=button], .btn-container .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .btn-container input[type=submit], .btn-container .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .btn-container input[type=file]:before, .btn-container .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .btn-container input[type=file]:active, .btn-container .red-btn, .btn-container .blue-btn, .btn-container #gform_2 input[type=submit], #gform_2 .btn-container input[type=submit], .btn-container #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .btn-container input[type=file]:before, .btn-container .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .btn-container input[type=file]:before, .btn-container
   #gform_2 input[type=button],
-  #gform_2 .btn-container input[type=button], .btn-container
-  #gform_wrapper_2 input[type=submit],
-  #gform_wrapper_2 .btn-container input[type=submit], .btn-container
-  #gform_wrapper_2 input[type=file]:before,
-  #gform_wrapper_2 .btn-container input[type=file]:before, .btn-container
-  #gform_wrapper_2 input[type=button],
-  #gform_wrapper_2 .btn-container input[type=button], .btn-container .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .btn-container .register-btn, .btn-container .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .btn-container .apply-btn {
->>>>>>> 0e3159eab739aa8ba9f9bc02e69b76d232e76fa8
+  #gform_2 .btn-container input[type=button], .btn-container .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .btn-container input[type=submit], .btn-container .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .btn-container input[type=file]:before, .btn-container .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .btn-container input[type=file]:active, .btn-container .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .btn-container .register-btn, .btn-container .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .btn-container .apply-btn {
     margin: 5px 0; }
-  @media (min-width: 600px) {
+  @media (min-width: 642px) {
     .btn-container {
       display: -ms-flexbox;
       display: flex;
@@ -712,21 +673,21 @@ img {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-@media (min-width: 600px) {
+@media (min-width: 642px) {
   .page-template-front-page .site-content {
     width: 1120px; } }
 
 .page-template-front-page .site-main {
   width: 100%;
   margin: 3rem auto; }
-  @media (min-width: 600px) {
+  @media (min-width: 642px) {
     .page-template-front-page .site-main h1, .page-template-front-page .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .page-template-front-page .site-main .subtitle {
       display: none; } }
   .page-template-front-page .site-main .front-page-hero {
     height: 300px;
     width: 100%;
     overflow: hidden; }
-    @media (min-width: 600px) {
+    @media (min-width: 642px) {
       .page-template-front-page .site-main .front-page-hero {
         width: 1120px;
         height: 500px; } }
@@ -735,11 +696,11 @@ img {
       object-fit: cover;
       position: relative;
       top: -50px; }
-      @media (min-width: 600px) {
+      @media (min-width: 642px) {
         .page-template-front-page .site-main .front-page-hero img {
           height: 850px;
           top: -200px; } }
-  @media (min-width: 600px) {
+  @media (min-width: 642px) {
     .page-template-front-page .site-main .about-section-wrapper {
       display: -ms-flexbox;
       display: flex;
@@ -762,7 +723,7 @@ img {
     text-transform: capitalize;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem; }
-    @media (min-width: 600px) {
+    @media (min-width: 642px) {
       .page-template-front-page .site-main h2 {
         margin-bottom: 2rem;
         padding-bottom: 0; } }
@@ -776,11 +737,11 @@ img {
     background: #52AA8A url("../../images/foryouthbyyouth_yellow.svg") no-repeat center center;
     background-size: 95vw;
     height: 200px; }
-    @media (min-width: 600px) {
+    @media (min-width: 642px) {
       .page-template-front-page .site-main .for-youth-yellow {
         height: 400px;
         background-size: 80%; } }
-  @media (min-width: 600px) {
+  @media (min-width: 642px) {
     .page-template-front-page .site-main .front-page-programs-list .programs-wrapper {
       display: -ms-flexbox;
       display: flex;
@@ -790,7 +751,7 @@ img {
       margin: 0 auto; } }
   .page-template-front-page .site-main .front-page-programs-list h3 {
     margin: .5rem 0 3rem 0; }
-    @media (min-width: 600px) {
+    @media (min-width: 642px) {
       .page-template-front-page .site-main .front-page-programs-list h3 {
         margin-bottom: 1rem; } }
   .page-template-front-page .site-main .front-page-programs-list img {
@@ -798,7 +759,7 @@ img {
     height: 150px;
     object-fit: cover;
     border-radius: 100px; }
-  @media (min-width: 600px) {
+  @media (min-width: 642px) {
     .page-template-front-page .site-main .front-page-programs-free .text-container {
       width: 650px;
       margin: 0 auto; } }
@@ -809,7 +770,7 @@ img {
       width: 3.5rem; }
   .page-template-front-page .site-main .front-page-latest-testimonials {
     margin-top: 3rem; }
-    @media (min-width: 600px) {
+    @media (min-width: 642px) {
       .page-template-front-page .site-main .front-page-latest-testimonials {
         display: -ms-flexbox;
         display: flex; }
@@ -839,19 +800,19 @@ img {
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
       padding: 20px; }
-      @media (min-width: 600px) {
+      @media (min-width: 642px) {
         .page-template-front-page .site-main .front-page-sponsors-list li {
           -ms-flex: 1 1 33%;
               flex: 1 1 33%; } }
       .page-template-front-page .site-main .front-page-sponsors-list li img {
         height: 60px; }
-        @media (min-width: 600px) {
+        @media (min-width: 642px) {
           .page-template-front-page .site-main .front-page-sponsors-list li img {
             height: 80px; } }
 
 .site-header {
   height: 60px; }
-  @media (min-width: 600px) {
+  @media (min-width: 642px) {
     .site-header {
       height: 230px; } }
   .site-header .site-branding {
@@ -862,10 +823,10 @@ img {
       display: none;
       width: 550px;
       margin: 0 auto; }
-      @media (min-width: 600px) {
+      @media (min-width: 642px) {
         .site-header .header-desktop .container-desk {
           width: 1200px; } }
-      @media (min-width: 600px) {
+      @media (min-width: 642px) {
         .site-header .header-desktop .container-desk {
           height: 150px;
           color: white;
@@ -873,24 +834,24 @@ img {
           display: flex;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
-      @media (min-width: 600px) {
+      @media (min-width: 642px) {
         .site-header .header-desktop .container-desk .header-logo {
-          height: 140px;
-          width: 140px;
-          padding-bottom: 1rem; } }
-      @media (min-width: 600px) {
+          height: 120px;
+          width: 120px;
+          margin: 1rem 0 0 2.2rem; } }
+      @media (min-width: 642px) {
         .site-header .header-desktop .container-desk .title-desktop {
           text-align: left;
           font-family: "capriola";
           margin-top: 0.7rem; } }
-      @media (min-width: 600px) {
+      @media (min-width: 642px) {
         .site-header .header-desktop .container-desk .title-desktop h1, .site-header .header-desktop .container-desk .title-desktop .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .site-header .header-desktop .container-desk .title-desktop .subtitle {
           color: white;
           font-size: 37px;
           font-weight: 100;
           margin-bottom: 0.5rem;
           padding: 0; } }
-      @media (min-width: 600px) {
+      @media (min-width: 642px) {
         .site-header .header-desktop .container-desk .title-desktop span {
           font-size: 24px;
           font-weight: 100; } }
@@ -914,21 +875,21 @@ img {
   background-color: #78AEE1;
   font-weight: 100;
   margin-top: 2rem; }
-  @media (min-width: 600px) {
+  @media (min-width: 642px) {
     .site-footer {
       height: 200px; } }
-  .site-footer .site-info {
+  .site-footer .menu {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: 30%;
     padding-top: 0.5rem;
     margin-bottom: 1.2rem; }
-    @media (min-width: 600px) {
-      .site-footer .site-info {
+    @media (min-width: 642px) {
+      .site-footer .menu {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
@@ -936,15 +897,16 @@ img {
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
         height: auto; } }
-    .site-footer .site-info a {
+    .site-footer .menu a {
       color: white;
       -ms-flex: 1 1 33%;
           flex: 1 1 33%;
-      margin-bottom: 0.8rem;
+      margin: 0.8rem;
       font-size: 0.9rem;
-      font-weight: 100; }
-      @media (min-width: 600px) {
-        .site-footer .site-info a {
+      font-weight: 100;
+      text-decoration: none; }
+      @media (min-width: 642px) {
+        .site-footer .menu a {
           font-size: 16px;
           -ms-flex: 0 1 auto;
               flex: 0 1 auto;
@@ -959,12 +921,12 @@ img {
     text-decoration: none;
     padding: 0;
     font-weight: 100; }
-    @media (min-width: 600px) {
+    @media (min-width: 642px) {
       .site-footer .footer-contact-mobile p, .site-footer .footer-contact-mobile a {
         display: none; } }
   .site-footer .footer-contact-desk {
     display: none; }
-    @media (min-width: 600px) {
+    @media (min-width: 642px) {
       .site-footer .footer-contact-desk {
         display: block;
         line-height: 24px;
@@ -982,17 +944,17 @@ img {
     font-size: 32px; }
     .site-footer .social-icon-footer a {
       color: white; }
-    @media (min-width: 600px) {
+    @media (min-width: 642px) {
       .site-footer .social-icon-footer {
         font-size: 50px; } }
     .site-footer .social-icon-footer .fa-facebook {
       margin-right: 0.7rem; }
-      @media (min-width: 600px) {
+      @media (min-width: 642px) {
         .site-footer .social-icon-footer .fa-facebook {
           margin-right: 1rem; } }
     .site-footer .social-icon-footer .fa-twitter {
       margin-left: 0.7rem; }
-      @media (min-width: 600px) {
+      @media (min-width: 642px) {
         .site-footer .social-icon-footer .fa-twitter {
           margin-right: 1rem; } }
 
@@ -1004,14 +966,14 @@ img {
   position: absolute;
   bottom: 0; }
 
-@media (min-width: 600px) {
+@media (min-width: 642px) {
   .faq-page {
     width: 500px;
     margin: 0 auto; } }
 
 .faq-page .we-have-answers {
   display: none; }
-  @media (min-width: 600px) {
+  @media (min-width: 642px) {
     .faq-page .we-have-answers {
       display: block;
       text-align: center; } }
@@ -1041,7 +1003,7 @@ img {
           flex-basis: 100%;
       margin-bottom: 30px; }
 
-@media (min-width: 600px) {
+@media (min-width: 642px) {
   .page-template-page-program-seasonal .site-main {
     width: 600px;
     margin: 0 auto;
@@ -1112,7 +1074,7 @@ img {
   text-transform: uppercase;
   width: 50%; }
 
-@media (min-width: 600px) {
+@media (min-width: 642px) {
   .page-template-page-program-leadership .site-main {
     width: 600px;
     margin: 0 auto;
@@ -1157,19 +1119,9 @@ img {
     object-fit: cover;
     border-radius: 100px; }
 
-<<<<<<< HEAD
-.page-template-page-program-leadership .site-main .blue-btn, .page-template-page-program-leadership .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .page-template-page-program-leadership .site-main .gform_footer input[type=submit], .page-template-page-program-leadership .page-id-80 .site-main input[type=file]:before, .page-id-80 .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .page-id-80 .site-main input[type=file]:active, .page-id-80 .page-template-page-program-leadership .site-main input[type=file]:active {
-=======
-.page-template-page-program-leadership .site-main .blue-btn, .page-template-page-program-leadership .site-main #gform_2 input[type=submit], #gform_2 .page-template-page-program-leadership .site-main input[type=submit], .page-template-page-program-leadership .site-main #gform_2 input[type=file]:before, #gform_2 .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .site-main
+.page-template-page-program-leadership .site-main .blue-btn, .page-template-page-program-leadership .site-main #gform_2 input[type=submit], #gform_2 .page-template-page-program-leadership .site-main input[type=submit], .page-template-page-program-leadership .site-main #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .site-main .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .site-main
 #gform_2 input[type=button],
-#gform_2 .page-template-page-program-leadership .site-main input[type=button], .page-template-page-program-leadership .site-main
-#gform_wrapper_2 input[type=submit],
-#gform_wrapper_2 .page-template-page-program-leadership .site-main input[type=submit], .page-template-page-program-leadership .site-main
-#gform_wrapper_2 input[type=file]:before,
-#gform_wrapper_2 .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .site-main
-#gform_wrapper_2 input[type=button],
-#gform_wrapper_2 .page-template-page-program-leadership .site-main input[type=button] {
->>>>>>> 0e3159eab739aa8ba9f9bc02e69b76d232e76fa8
+#gform_2 .page-template-page-program-leadership .site-main input[type=button], .page-template-page-program-leadership .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .page-template-page-program-leadership .site-main .gform_footer input[type=submit], .page-template-page-program-leadership .page-id-80 .site-main input[type=file]:before, .page-id-80 .page-template-page-program-leadership .site-main input[type=file]:before, .page-template-page-program-leadership .page-id-80 .site-main input[type=file]:active, .page-id-80 .page-template-page-program-leadership .site-main input[type=file]:active {
   margin: 1.5rem 1.5rem 0 1.5rem; }
 
 .page-template-page-program-leadership .site-main .apply-btn {
@@ -1205,7 +1157,7 @@ img {
     padding-bottom: 20px; }
   .privacy-jump-to a {
     text-decoration: none; }
-  @media (min-width: 600px) {
+  @media (min-width: 642px) {
     .privacy-jump-to {
       display: inline-block;
       width: 700px;
@@ -1216,7 +1168,7 @@ img {
     -ms-flex-direction: column;
         flex-direction: column;
     padding-left: 20px; }
-    @media (min-width: 600px) {
+    @media (min-width: 642px) {
       .privacy-jump-to .jump-to-list {
         -ms-flex-direction: row;
             flex-direction: row;
@@ -1229,7 +1181,7 @@ img {
       margin: 8px 0px 8px 0; }
       .privacy-jump-to .jump-to-list li:focus {
         outline: none; }
-      @media (min-width: 600px) {
+      @media (min-width: 642px) {
         .privacy-jump-to .jump-to-list li {
           -ms-flex-preferred-size: 50%;
               flex-basis: 50%;
@@ -1271,19 +1223,9 @@ img {
   margin-top: 0;
   height: 220px; }
 
-<<<<<<< HEAD
-.page-id-135 .how-we-run .red-btn, .page-id-135 .how-we-run .blue-btn, .page-id-135 .how-we-run .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .page-id-135 .how-we-run input[type=file]:active, .page-id-135 .how-we-run .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .page-id-135 .how-we-run .register-btn, .page-id-135 .how-we-run .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .page-id-135 .how-we-run .apply-btn {
-=======
-.page-id-135 .how-we-run .red-btn, .page-id-135 .how-we-run .blue-btn, .page-id-135 .how-we-run #gform_2 input[type=submit], #gform_2 .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run #gform_2 input[type=file]:before, #gform_2 .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run
+.page-id-135 .how-we-run .red-btn, .page-id-135 .how-we-run .blue-btn, .page-id-135 .how-we-run #gform_2 input[type=submit], #gform_2 .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run
 #gform_2 input[type=button],
-#gform_2 .page-id-135 .how-we-run input[type=button], .page-id-135 .how-we-run
-#gform_wrapper_2 input[type=submit],
-#gform_wrapper_2 .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run
-#gform_wrapper_2 input[type=file]:before,
-#gform_wrapper_2 .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run
-#gform_wrapper_2 input[type=button],
-#gform_wrapper_2 .page-id-135 .how-we-run input[type=button], .page-id-135 .how-we-run .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .page-id-135 .how-we-run .register-btn, .page-id-135 .how-we-run .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .page-id-135 .how-we-run .apply-btn {
->>>>>>> 0e3159eab739aa8ba9f9bc02e69b76d232e76fa8
+#gform_2 .page-id-135 .how-we-run input[type=button], .page-id-135 .how-we-run .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .page-id-135 .how-we-run input[type=submit], .page-id-135 .how-we-run .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .page-id-135 .how-we-run input[type=file]:before, .page-id-135 .how-we-run .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .page-id-135 .how-we-run input[type=file]:active, .page-id-135 .how-we-run .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .page-id-135 .how-we-run .register-btn, .page-id-135 .how-we-run .page-template-page-program-leadership .site-main .apply-btn, .page-template-page-program-leadership .site-main .page-id-135 .how-we-run .apply-btn {
   margin: 0.5rem; }
 
 .camp-location-map {
@@ -1297,7 +1239,7 @@ img {
   text-align: left;
   margin: 60px 0;
   padding: 20px 0; }
-  @media (min-width: 600px) {
+  @media (min-width: 642px) {
     .camp-list-jump-to {
       border: 2px solid #006BBC;
       border-radius: 15px; } }
@@ -1318,7 +1260,7 @@ img {
 .camp-locations-list li {
   padding: 40px 0;
   border-radius: 0; }
-  @media (min-width: 600px) {
+  @media (min-width: 642px) {
     .camp-locations-list li {
       border-radius: 15px; } }
 
@@ -1335,22 +1277,12 @@ img {
   .page-id-139 .the-board h2 {
     padding-top: 2rem; }
 
-<<<<<<< HEAD
-.page-id-139 .blue-btn, .page-id-139 .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .page-id-139 input[type=submit], .page-id-139 .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .page-id-139 input[type=file]:before, .page-id-139 .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .page-id-139 input[type=file]:active {
-=======
-.page-id-139 .blue-btn, .page-id-139 #gform_2 input[type=submit], #gform_2 .page-id-139 input[type=submit], .page-id-139 #gform_2 input[type=file]:before, #gform_2 .page-id-139 input[type=file]:before, .page-id-139
+.page-id-139 .blue-btn, .page-id-139 #gform_2 input[type=submit], #gform_2 .page-id-139 input[type=submit], .page-id-139 #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .page-id-139 input[type=file]:before, .page-id-139 .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .page-id-139 input[type=file]:before, .page-id-139
 #gform_2 input[type=button],
-#gform_2 .page-id-139 input[type=button], .page-id-139
-#gform_wrapper_2 input[type=submit],
-#gform_wrapper_2 .page-id-139 input[type=submit], .page-id-139
-#gform_wrapper_2 input[type=file]:before,
-#gform_wrapper_2 .page-id-139 input[type=file]:before, .page-id-139
-#gform_wrapper_2 input[type=button],
-#gform_wrapper_2 .page-id-139 input[type=button] {
->>>>>>> 0e3159eab739aa8ba9f9bc02e69b76d232e76fa8
+#gform_2 .page-id-139 input[type=button], .page-id-139 .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .page-id-139 input[type=submit], .page-id-139 .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .page-id-139 input[type=file]:before, .page-id-139 .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .page-id-139 input[type=file]:active {
   margin: 2rem; }
 
-@media (min-width: 600px) {
+@media (min-width: 642px) {
   .page-id-139 .site-content {
     width: 800px; }
   .page-id-139 .volunteering-for-cts {
@@ -1381,19 +1313,9 @@ img {
   padding-bottom: 2rem;
   margin-bottom: 2rem; }
 
-<<<<<<< HEAD
-.page-id-137 .blue-btn, .page-id-137 .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .page-id-137 input[type=submit], .page-id-137 .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .page-id-137 input[type=file]:before, .page-id-137 .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .page-id-137 input[type=file]:active, .page-id-137 .btns {
-=======
-.page-id-137 .blue-btn, .page-id-137 #gform_2 input[type=submit], #gform_2 .page-id-137 input[type=submit], .page-id-137 #gform_2 input[type=file]:before, #gform_2 .page-id-137 input[type=file]:before, .page-id-137
+.page-id-137 .blue-btn, .page-id-137 #gform_2 input[type=submit], #gform_2 .page-id-137 input[type=submit], .page-id-137 #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .page-id-137 input[type=file]:before, .page-id-137 .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .page-id-137 input[type=file]:before, .page-id-137
 #gform_2 input[type=button],
-#gform_2 .page-id-137 input[type=button], .page-id-137
-#gform_wrapper_2 input[type=submit],
-#gform_wrapper_2 .page-id-137 input[type=submit], .page-id-137
-#gform_wrapper_2 input[type=file]:before,
-#gform_wrapper_2 .page-id-137 input[type=file]:before, .page-id-137
-#gform_wrapper_2 input[type=button],
-#gform_wrapper_2 .page-id-137 input[type=button], .page-id-137 .btns {
->>>>>>> 0e3159eab739aa8ba9f9bc02e69b76d232e76fa8
+#gform_2 .page-id-137 input[type=button], .page-id-137 .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .page-id-137 input[type=submit], .page-id-137 .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main .page-id-137 input[type=file]:before, .page-id-137 .page-id-80 .site-main input[type=file]:active, .page-id-80 .site-main .page-id-137 input[type=file]:active, .page-id-137 .btns {
   margin: 2rem; }
 
 .page-id-137 h1, .page-id-137 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .page-id-137 .subtitle {
@@ -1410,7 +1332,7 @@ img {
 
 .page-id-137 .youth-council, .page-id-137 .peer-leaders {
   background-color: #52AA8A; }
-  @media (min-width: 600px) {
+  @media (min-width: 642px) {
     .page-id-137 .youth-council, .page-id-137 .peer-leaders {
       border-radius: 10px; } }
   .page-id-137 .youth-council h2, .page-id-137 .youth-council p, .page-id-137 .peer-leaders h2, .page-id-137 .peer-leaders p {
@@ -1418,7 +1340,7 @@ img {
   .page-id-137 .youth-council h2, .page-id-137 .peer-leaders h2 {
     padding-top: 2rem; }
 
-@media (min-width: 600px) {
+@media (min-width: 642px) {
   .page-id-137 .site-content {
     width: 800px; }
     .page-id-137 .site-content img {
@@ -1427,11 +1349,9 @@ img {
 .error-404 {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding-top: 100px; }
+  -ms-flex-align: center;
+      align-items: center;
+  min-height: calc(100vh - 450px); }
 
 .what-to-bring-entry {
   list-style: none;
@@ -1440,7 +1360,7 @@ img {
 .what-to-bring-img {
   margin-bottom: 40px; }
 
-@media (min-width: 600px) {
+@media (min-width: 642px) {
   .page-template-page-resources-learning .site-main, .page-template-page-resources-opportunities .site-main,
   .page-template-page-resources-conversations .site-main {
     width: 600px;
@@ -1488,7 +1408,7 @@ img {
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center; }
-  @media (min-width: 600px) {
+  @media (min-width: 642px) {
     .wishlist-loop {
       width: 800px;
       -ms-flex-wrap: nowrap;
@@ -1504,9 +1424,8 @@ img {
     .wishlist-loop .wishlist-entry p {
       padding: 2px; }
 
-.page-id-78 nav {
-  position: relative !important;
-  z-index: 9999 !important; }
+.page-id-78 .site-content {
+  min-height: 65vh; }
 
 .page-id-78 .main h3, .page-id-78 .main h4, .page-id-78 .main p, .page-id-78 .main span, .page-id-78 .main div, .page-id-78 .main nav, .page-id-78 .main i {
   font-family: "montserrat" !important;
@@ -1569,7 +1488,7 @@ img {
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center; }
-  @media (min-width: 600px) {
+  @media (min-width: 642px) {
     .wishlist-loop {
       width: 800px;
       -ms-flex-wrap: nowrap;
@@ -1599,10 +1518,10 @@ img {
       text-decoration: none;
       color: white;
       font-weight: 100; }
-      @media (min-width: 600px) {
+      @media (min-width: 642px) {
         .logged-in .site-content h1 a, .logged-in .site-content .page-template-page-program-seasonal .site-main .subtitle a, .page-template-page-program-seasonal .site-main .logged-in .site-content .subtitle a {
           color: #52AA8A; } }
-    @media (min-width: 600px) {
+    @media (min-width: 642px) {
       .logged-in .site-content h1, .logged-in .site-content .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .logged-in .site-content .subtitle {
         padding-top: 2rem;
         padding-bottom: 4rem;
@@ -1643,7 +1562,220 @@ img {
       .logged-in .site-content #login .button:hover {
         box-shadow: 2px 2px 2px #888888; }
 
-<<<<<<< HEAD
+#login {
+  width: 100%;
+  padding: 0;
+  margin-top: 2rem; }
+  #login h1, #login .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main #login .subtitle {
+    display: none; }
+  #login p {
+    text-align: center; }
+    #login p a {
+      font-weight: 100; }
+  #login #backtoblog {
+    display: none; }
+  #login #user_login, #login #user_pass {
+    width: 20rem; }
+  #login .input, #login #rememberme {
+    border: 2px solid #006BBC;
+    border-radius: 5px;
+    background-color: white; }
+  #login input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px white inset; }
+  #login .button {
+    background-color: #006BBC;
+    border-radius: 10px;
+    margin: 20px 0;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 5rem;
+    box-shadow: none;
+    text-shadow: none;
+    border: none; }
+    #login .button:hover {
+      box-shadow: 2px 2px 2px #888888; }
+
+.gform_fields {
+  padding: 0 20px !important; }
+  .gform_fields ::-webkit-input-placeholder {
+    color: #a9a9a9; }
+  .gform_fields :-ms-input-placeholder {
+    color: #a9a9a9; }
+  .gform_fields ::placeholder {
+    color: #a9a9a9; }
+  .gform_fields h1, .gform_fields .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .gform_fields .subtitle {
+    background: none !important;
+    color: #52AA8A !important; }
+  .gform_fields input {
+    border-radius: 10px !important; }
+  .gform_fields label {
+    visibility: hidden;
+    width: 0.1;
+    height: 0.1;
+    margin: 0.1;
+    padding: 0.1;
+    position: relative; }
+  .gform_fields label > .gfield_required {
+    position: absolute;
+    left: calc(100vw - 60px) !important;
+    top: 40px;
+    visibility: visible; }
+    @media (min-width: 642px) {
+      .gform_fields label > .gfield_required {
+        left: 460px !important;
+        top: 30px; } }
+  .gform_fields select {
+    margin: 0;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: white;
+    border-color: #cccccc;
+    margin-left: 0 !important;
+    padding: 10px 2px !important; }
+    @media (min-width: 642px) {
+      .gform_fields select {
+        margin-top: 0 !important;
+        padding: 4px 2px !important; } }
+  .gform_fields .ginput_container_fileupload {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-left: -10px; }
+  .gform_fields input[type=text] {
+    color: black; }
+    @media (min-width: 642px) {
+      .gform_fields input[type=text] {
+        width: 100% !important; } }
+  .gform_fields input[type=file] {
+    width: 300px !important;
+    margin-left: -30px !important;
+    height: 50px !important;
+    box-sizing: border-box !important;
+    outline: none; }
+    .gform_fields input[type=file]:before {
+      content: "Upload a Photo";
+      position: relative;
+      top: 10px;
+      margin-left: 20px !important;
+      width: 100% !important;
+      height: 40px !important; }
+  .gform_fields .gfield_radio label,
+  .gform_fields .gfield_checkbox label {
+    visibility: visible !important; }
+
+.camp-dates ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .camp-dates ul li {
+    width: 50%;
+    margin: 10px 0; }
+
+#gform_2 .gfield {
+  padding-right: 0px !important; }
+
+#gform_2 .gform_page_footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-top: none; }
+
+#gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
+#gform_2 input[type=button] {
+  box-shadow: none;
+  text-shadow: none;
+  width: 170px;
+  padding: 0;
+  margin: 16px 0; }
+  @media (min-width: 642px) {
+    #gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
+    #gform_2 input[type=button] {
+      padding: 10px; } }
+
+#gform_2 p {
+  color: black;
+  font-size: 1rem;
+  text-align: left; }
+
+#gform_2 .show-medical-consent,
+#gform_2 .show-participation-consent,
+#gform_2 .show-transportation-consent {
+  text-align: right;
+  font-size: 0.6rem;
+  text-decoration: underline;
+  padding-top: 0;
+  margin-top: -15px; }
+  #gform_2 .show-medical-consent:hover,
+  #gform_2 .show-participation-consent:hover,
+  #gform_2 .show-transportation-consent:hover {
+    cursor: pointer; }
+
+#gform_2 .participation-consent-info,
+#gform_2 .transportation-consent-info,
+#gform_2 .medical-consent-info {
+  text-align: left; }
+
+#gform_2 .consent-hide {
+  display: none; }
+
+.weight-wrapper .gfield_course_option_wrapper ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+@media (min-width: 642px) {
+  .weight-wrapper input[type=text] {
+    width: 340px !important; } }
+
+.weight-wrapper .medium {
+  width: 60vw !important; }
+
+.weight-wrapper label {
+  display: inline !important; }
+
+.weight-wrapper .gfield_radio {
+  width: 40vw !important;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+  .weight-wrapper .gfield_radio li {
+    margin: 0 10px !important; }
+    @media (min-width: 642px) {
+      .weight-wrapper .gfield_radio li {
+        margin-top: -6px !important;
+        height: 30px; } }
+
+#gform_confirmation_wrapper_2 a {
+  margin: 30px 0; }
+
+.form-info-heading p {
+  margin-top: 40px;
+  margin-bottom: -50px;
+  text-align: center !important;
+  font-weight: bold !important; }
+
+#gf_progressbar_wrapper_2 {
+  background: none; }
+  #gf_progressbar_wrapper_2 .gf_progressbar_percentage,
+  #gf_progressbar_wrapper_2 .percentbar_100 {
+    background: #52AA8A !important; }
+
 .page-id-80 .site-main form {
   padding: 5%; }
 
@@ -1657,13 +1789,13 @@ img {
     border-width: 2px;
     outline: none; }
 
-.page-id-80 .site-main .gform_footer input[type=submit] {
+.page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main .gform_footer input[type=file]:before {
   box-shadow: none;
   text-shadow: none;
   border-radius: 10px;
   width: 100%; }
-  @media (min-width: 600px) {
-    .page-id-80 .site-main .gform_footer input[type=submit] {
+  @media (min-width: 642px) {
+    .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main .gform_footer input[type=file]:before {
       width: 450px;
       height: 55px; } }
 
@@ -1675,7 +1807,7 @@ img {
     position: relative;
     top: 30px;
     width: 100%; }
-    @media (min-width: 600px) {
+    @media (min-width: 642px) {
       .page-id-80 .site-main input[type=file]:before, .page-id-80 .site-main input[type=file]:active {
         width: 450px; } }
   .page-id-80 .site-main input[type=file]:focus {
@@ -1712,224 +1844,3 @@ img {
 
 .page-id-80 .site-main .latest-posts .entry-content {
   margin-bottom: 2rem; }
-=======
-#gform_2,
-#gform_wrapper_2 {
-  position: relative;
-  margin-top: 120px; }
-  #gform_2 ::-webkit-input-placeholder,
-  #gform_wrapper_2 ::-webkit-input-placeholder {
-    font-weight: 100;
-    color: #a9a9a9;
-    font-size: 1.1rem; }
-  #gform_2 :-ms-input-placeholder,
-  #gform_wrapper_2 :-ms-input-placeholder {
-    font-weight: 100;
-    color: #a9a9a9;
-    font-size: 1.1rem; }
-  #gform_2 ::placeholder,
-  #gform_wrapper_2 ::placeholder {
-    font-weight: 100;
-    color: #a9a9a9;
-    font-size: 1.1rem; }
-  #gform_2 .gf_progressbar_title,
-  #gform_wrapper_2 .gf_progressbar_title {
-    display: none; }
-  #gform_2 .gf_progressbar_wrapper,
-  #gform_wrapper_2 .gf_progressbar_wrapper {
-    padding: 0 20px; }
-  #gform_2 li,
-  #gform_wrapper_2 li {
-    margin-top: 40px; }
-    #gform_2 li:not(:first-child),
-    #gform_wrapper_2 li:not(:first-child) {
-      padding: 0 20px; }
-    @media (min-width: 600px) {
-      #gform_2 li,
-      #gform_wrapper_2 li {
-        display: inline; } }
-  #gform_2 label,
-  #gform_wrapper_2 label {
-    display: none; }
-  #gform_2 h1, #gform_2 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main #gform_2 .subtitle,
-  #gform_wrapper_2 h1,
-  #gform_wrapper_2 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main
-  #gform_wrapper_2 .subtitle {
-    height: auto;
-    background: none;
-    color: #52AA8A;
-    position: absolute;
-    top: -100px;
-    left: 0; }
-  #gform_2 input,
-  #gform_wrapper_2 input {
-    border-radius: 10px;
-    padding: 0 5px; }
-    @media (min-width: 600px) {
-      #gform_2 input,
-      #gform_wrapper_2 input {
-        padding: 5px 4px;
-        margin-top: 8px; } }
-  #gform_2 .gf_progressbar,
-  #gform_wrapper_2 .gf_progressbar {
-    background: none;
-    border: 2px solid #52AA8A; }
-    #gform_2 .gf_progressbar .gf_progressbar_percentage,
-    #gform_2 .gf_progressbar .percentbar_100,
-    #gform_wrapper_2 .gf_progressbar .gf_progressbar_percentage,
-    #gform_wrapper_2 .gf_progressbar .percentbar_100 {
-      background: #52AA8A; }
-  #gform_2 .gform_page_footer,
-  #gform_wrapper_2 .gform_page_footer {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    border: none; }
-  #gform_2 input[type=submit], #gform_2 input[type=file]:before,
-  #gform_2 input[type=button],
-  #gform_wrapper_2 input[type=submit],
-  #gform_wrapper_2 input[type=file]:before,
-  #gform_wrapper_2 input[type=button] {
-    box-shadow: none;
-    text-shadow: none;
-    width: 170px;
-    padding: 0;
-    margin: 16px 0; }
-    @media (min-width: 600px) {
-      #gform_2 input[type=submit], #gform_2 input[type=file]:before,
-      #gform_2 input[type=button],
-      #gform_wrapper_2 input[type=submit],
-      #gform_wrapper_2 input[type=file]:before,
-      #gform_wrapper_2 input[type=button] {
-        padding: 10px; } }
-  #gform_2 .camp-dates ul,
-  #gform_wrapper_2 .camp-dates ul {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    #gform_2 .camp-dates ul li,
-    #gform_wrapper_2 .camp-dates ul li {
-      width: 50%;
-      margin: 10px 0; }
-  #gform_2 .gfield_radio label,
-  #gform_2 .gfield_checkbox label,
-  #gform_wrapper_2 .gfield_radio label,
-  #gform_wrapper_2 .gfield_checkbox label {
-    display: inline-block; }
-  #gform_2 p,
-  #gform_wrapper_2 p {
-    color: black;
-    font-size: 1rem;
-    text-align: left; }
-  #gform_2 .show-medical-consent,
-  #gform_2 .show-participation-consent,
-  #gform_2 .show-transportation-consent,
-  #gform_wrapper_2 .show-medical-consent,
-  #gform_wrapper_2 .show-participation-consent,
-  #gform_wrapper_2 .show-transportation-consent {
-    text-align: right;
-    font-size: 0.6rem;
-    text-decoration: underline;
-    padding-top: 0;
-    margin-top: -30px; }
-    #gform_2 .show-medical-consent:hover,
-    #gform_2 .show-participation-consent:hover,
-    #gform_2 .show-transportation-consent:hover,
-    #gform_wrapper_2 .show-medical-consent:hover,
-    #gform_wrapper_2 .show-participation-consent:hover,
-    #gform_wrapper_2 .show-transportation-consent:hover {
-      cursor: pointer; }
-  #gform_2 .participation-consent-info,
-  #gform_2 .transportation-consent-info,
-  #gform_2 .medical-consent-info,
-  #gform_wrapper_2 .participation-consent-info,
-  #gform_wrapper_2 .transportation-consent-info,
-  #gform_wrapper_2 .medical-consent-info {
-    text-align: left; }
-  #gform_2 .consent-hide,
-  #gform_wrapper_2 .consent-hide {
-    display: none; }
-
-select {
-  margin: 0;
-  border-radius: 10px;
-  /*Removes border*/
-  -webkit-appearance: none;
-  /*Removes default chrome and safari style*/
-  -moz-appearance: none;
-  /*Removes default style Firefox*/
-  background: none;
-  border-color: #cccccc;
-  margin-left: 0 !important;
-  font-size: 1.1rem !important;
-  padding: 8px 2px !important;
-  font-weight: 100; }
-  @media (min-width: 600px) {
-    select {
-      margin-top: 7.5px !important;
-      padding: 5.5px 2px !important; } }
-
-#field_2_15 {
-  width: 75%; }
-
-#input_2_16 {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  width: 100px;
-  position: absolute;
-  top: 425px;
-  right: 10px; }
-  @media (min-width: 600px) {
-    #input_2_16 {
-      top: 405px;
-      right: 150px; } }
-  #input_2_16 li {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    margin: 0 10px; }
-
-.ginput_container_fileupload {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  margin-left: -10px; }
-
-input[type=file] {
-  width: 300px !important;
-  margin-left: -30px !important;
-  height: 50px !important;
-  box-sizing: border-box !important;
-  outline: none; }
-  input[type=file]:before {
-    content: "Upload a Photo";
-    position: relative;
-    top: 10px;
-    margin-left: 20px !important;
-    width: 100% !important;
-    height: 40px !important; }
-
-.gfield_course_option_wrapper ul {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .gfield_course_option_wrapper ul li input {
-    width: 200px !important; }
->>>>>>> 0e3159eab739aa8ba9f9bc02e69b76d232e76fa8

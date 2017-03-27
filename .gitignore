@@ -37,3 +37,7 @@ themes/catching-the-spirit/node_modules/*
 # ================== #
 themes/catching-the-spirit/gulpfile.js
 themes/catching-the-spirit/build/*
+
+#ignore vs code settings files #
+# ================== #
+themes/catching-the-spirit/.vscode/*

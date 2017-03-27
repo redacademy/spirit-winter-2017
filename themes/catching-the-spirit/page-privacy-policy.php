@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<h1 class="page-title">Privacy Policy</h1>
+<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
 
   <?php $fields = CFS()->get('privacy_policy_loop'); ?>
 
