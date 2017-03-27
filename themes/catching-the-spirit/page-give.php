@@ -7,7 +7,8 @@
 
 get_header(); ?>
 
-	<h1> Give </h1>
+	<!--<h1> Give </h1>-->
+	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 	<img src="<?php echo CFS()->get( 'give_main_image' ); ?>"/>
 

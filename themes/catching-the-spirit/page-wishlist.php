@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<h1 class="page-title">Our Wishlist</h1>
+<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
 
 <p> <?php echo CFS()->get('wishlist_opening_text');?> </p>
 

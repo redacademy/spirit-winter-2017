@@ -7,7 +7,7 @@
 get_header(); ?>
 
 <section class="faq-page">
-	<h1 class="page-title">FAQ's</h1>
+	<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
 	<p class="we-have-answers">You Have Question We Have Answers</p>
 
 	<div class="btn-container">

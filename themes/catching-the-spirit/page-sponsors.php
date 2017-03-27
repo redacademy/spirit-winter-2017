@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<h1 class="page-title">Sponsors<h1>
+<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
 
 <h1 class="sponsor-thanks">Thank You</h1>
 

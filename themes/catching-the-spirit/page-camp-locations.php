@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<h1 class="page-title">Camp Locations</h1>
+<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
 
 <div class="multi-map">
 <?php echo do_shortcode('[put_wpgm id=1]'); ?>

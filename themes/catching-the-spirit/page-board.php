@@ -7,7 +7,8 @@
 
 get_header(); ?>
 
-<h1 class="page-title board-title">Board Members</h1>
+
+<?php the_title( '<h1 class="page-title board-title">', '</h1>' ); ?>
 
 <h2 class="strong meet-board">Meet Our Board</h2>
 

@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<h1 class="page-title"> Membership </h1>
+	<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
 
 	<img src="<?php echo CFS()->get( 'membership_hero_image' ); ?>"/>
 
