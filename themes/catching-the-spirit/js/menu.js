@@ -25,11 +25,11 @@
         if ($(window).width() > 642) {
             // $('.sub-menu', this).slideToggle(200);
 
-            if($('.sub-menu').is(':visible')){
+            if($('.sub-menu', this).is(':visible')){
                 console.log('Im visible');
-                $('.sub-menu', this).slideUp(200);
+                $('.sub-menu', this).slideToggle(100);
             }else{
-                $('.sub-menu', this).slideDown(200);
+                $('.sub-menu', this).slideDown(100);
                 console.log('nope');
             }
            
