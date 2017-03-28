@@ -63,12 +63,21 @@
         h4{
             background-color: white;
             border: none;
+            margin-bottom: 0 !important;
         }
         .TotalSoftcalEvent_Title{
             background-color: white !important;
         }
         .totalsoft-times:before{
                 content: "x";
+        }
+    }
+    .contact-ca{
+        margin-top: 2rem;
+        a{
+            color: $color__blue !important;
+            font-weight: 100;
+            font-size: 20px;
         }
     }
 }

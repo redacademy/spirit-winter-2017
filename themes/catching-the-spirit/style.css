@@ -1431,11 +1431,19 @@ img {
   border-radius: 10px; }
   .page-id-78 .custom-content-reveal h4 {
     background-color: white;
-    border: none; }
+    border: none;
+    margin-bottom: 0 !important; }
   .page-id-78 .custom-content-reveal .TotalSoftcalEvent_Title {
     background-color: white !important; }
   .page-id-78 .custom-content-reveal .totalsoft-times:before {
     content: "x"; }
+
+.page-id-78 .contact-ca {
+  margin-top: 2rem; }
+  .page-id-78 .contact-ca a {
+    color: #006BBC !important;
+    font-weight: 100;
+    font-size: 20px; }
 
 .wishlist-contact-us {
   text-align: center; }

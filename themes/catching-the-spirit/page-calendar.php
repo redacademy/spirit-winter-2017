@@ -13,6 +13,10 @@ get_header(); ?>
             <div class="calendar-container">
                 <?php echo do_shortcode('[Total_Soft_Cal id="8"]');?>
             </div>
+
+            <div class="contact-ca">
+                <a href="mailto:<?php echo antispambot( 'info@catchingthespirit.com' ); ?>"><?php echo ( 'Contact Us to RSVP' ); ?></a>
+            </div>
 	
 
         </main><!-- #main -->
