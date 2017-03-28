@@ -76,7 +76,7 @@ get_header(); ?>
 					<a href="<?php echo esc_url( home_url( '/membership' ) ); ?>" class="red-btn">Join</a>
 
 					<h2>Questions?</h2>
-					<a href="<?php echo esc_url( home_url( '/faq' ) ); ?>" class="blue-btn faq-parents">FAQ for Parents</a> <a href="<?php echo esc_url( home_url( '/faq' ) ); ?>" class="blue-btn">FAQ for Youth</a>
+					<a href="<?php echo esc_url( home_url( '/faq' ) ); ?>" class="blue-btn">FAQ</a>
 				</div>
 			</section>
 					
