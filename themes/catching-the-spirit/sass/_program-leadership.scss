@@ -1,9 +1,12 @@
 .page-template-page-program-leadership {
     @extend .page-template-page-program-seasonal;
     .site-main {
-        p,
-        .green-box p {
+        p {
             text-align: left;
+        }
+        .green-box p,
+        .green-box ul {
+            color: white;
         }
         .program-header {
             .blue-btn {
@@ -13,7 +16,9 @@
         .program-header-image {
             margin: 3rem 0;
         }
-        
+        .program-leaders-wrapper {
+            margin-bottom: 2rem;
+        }
     }
     a.apply-btn {
         @extend .red-btn;
