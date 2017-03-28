@@ -2,6 +2,10 @@
     .site-main {
         h1.entry-title {
             @extend .page-title;
+            padding-bottom: 2rem;
+            @include desktop {
+                padding-bottom: 0;
+            }
         }
         form {
             padding: 5%;
