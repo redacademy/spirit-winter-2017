@@ -28,7 +28,7 @@ get_header(); ?>
 					<h2 class="subheading">What Do We Charge?</h2>
 					<p class="emphasis">Nothing!</p>
 					<p>Find out how we do that:</p>
-					<a href="" class="blue-btn">Learn More</a>
+					<a href="<?php echo esc_url( home_url( '/our-story' ) ); ?>" class="blue-btn">Learn More</a>
 				</div>
 
 				<div class="green-box for-youth-green">
@@ -48,7 +48,7 @@ get_header(); ?>
                             <p>Age: 19+</p>
                         </div>
                     </div>
-                        <a href="" class="blue-btn">Learn More</a>
+                        <a href="<?php echo esc_url( home_url( '/programs/leadership' ) ); ?>" class="blue-btn">Learn More</a>
 				</div>
 				
                 <div>
@@ -63,17 +63,20 @@ get_header(); ?>
                         </div>
                     </div>
 					<p>We have events throughout Metro Vancouver. Check our Calendar page for events information.</p>
-					<div>
-                        <a href="" class="blue-btn">Calendar</a>
+					<div class="btn-container">
+                        <a href="<?php echo esc_url( home_url( '/calendar' ) ); ?>" class="blue-btn">Calendar</a>
+                        <a href="<?php echo esc_url( home_url( '/camp-locations' ) ); ?>" class="blue-btn">Locations</a>
                     </div>
 				</div>
 
 				<div class="program-registration">
-					<a href="" class="register-btn">Register</a>
+					<a href="<?php echo esc_url( home_url( '/registration' ) ); ?>" class="register-btn">Register</a>
+
 					<h2>Join our membership to get early registration</h2>
 					<a href="" class="red-btn">Join</a>
+
 					<h2>Questions?</h2>
-					<a href="" class="blue-btn faq-parents">FAQ for Parents</a> <a href="" class="blue-btn">FAQ for Youth</a>
+					<a href="<?php echo esc_url( home_url( '/faq' ) ); ?>" class="blue-btn faq-parents">FAQ for Parents</a> <a href="<?php echo esc_url( home_url( '/faq' ) ); ?>" class="blue-btn">FAQ for Youth</a>
 				</div>
 			</section>
 					
