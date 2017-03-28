@@ -319,7 +319,10 @@ body {
       font-size: 18px; } }
 
 .site-content {
-  min-height: calc(100vh - 145px); }
+  min-height: calc(100vh - 255px); }
+  @media (min-width: 642px) {
+    .site-content {
+      min-height: calc(100vh - 486px); } }
 
 a {
   font-weight: bold;
