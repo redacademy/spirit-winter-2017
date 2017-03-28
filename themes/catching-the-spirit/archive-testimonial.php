@@ -28,7 +28,7 @@ get_header(); ?>
                         <?php the_post_thumbnail( 'large' ); ?>
                     <?php endif; ?>
 
-                    <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+                    <?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
                 </header><!-- .entry-header -->
 
                 <div class="entry-content">
@@ -46,7 +46,10 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-		</main><!-- #main -->
+
+        <a href="<?php echo esc_url( home_url( '/testimonials' ) ); ?>" class="blue-btn">Write Testimonial</a>
+		
+        </main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
