@@ -1,11 +1,6 @@
- 
-(function ($) {
+ (function ($) {
 
    
-
-    $(window).onLoad(function(){
-         $(this).scrollTop(0);
-    });
 
 
 //set color of first drop select item
@@ -21,6 +16,7 @@
 
 
     $('.show-medical-consent').on('click',function(){
+        console.log('show medical consent clicked');
         $('.medical-consent-info').toggleClass('consent-hide');
     });
 
@@ -30,6 +26,10 @@
 
     $('.show-transportation-consent').on('click',function(){
         $('.transportation-consent-info').toggleClass('consent-hide');
+    });
+
+     $(window).onLoad(function(){
+         $(this).scrollTop(0);
     });
 
     })(jQuery);

@@ -21,9 +21,20 @@
     });
 
     $('.menu-item').on('hover', function () {
+        console.log('HOVERING');
         if ($(window).width() > 642) {
-            $('.sub-menu', this).slideToggle(200);
+            // $('.sub-menu', this).slideToggle(200);
+
+            if($('.sub-menu').is(':visible')){
+                console.log('Im visible');
+                $('.sub-menu', this).slideUp(200);
+            }else{
+                $('.sub-menu', this).slideDown(200);
+                console.log('nope');
+            }
+           
         }
+       
     });
 
     $('.menu-item').on('click', function () {

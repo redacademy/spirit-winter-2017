@@ -24,7 +24,7 @@ get_header(); ?>
 					<div><?php echo CFS()->get('front_page_who_we_are'); ?></div>
 				</div>
 				<div class="front-page-btn-wrapper">
-					<a href="" class="blue-btn">Learn More</a>
+					<a href="<?php echo esc_url( home_url( '/our-story' ) ); ?>" class="blue-btn">Learn More</a>
 				</div>
 			</div>
 			<div class="green-box for-youth-yellow">
@@ -33,15 +33,15 @@ get_header(); ?>
 				<h2>What do we offer?</h2>
 				<div class="programs-wrapper">
 					<div class="program-summer">
-						<img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/summer')->ID); ?>"/>
+						<a href="<?php echo esc_url( home_url( '/programs/summer' ) ); ?>"><img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/summer')->ID); ?>"/></a>
 						<h3>Summer</h3>
 					</div>
 					<div class="program-fallwinter">
-						<img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/fallwinter')->ID); ?>"/>
+						<a href="<?php echo esc_url( home_url( '/programs/fallwinter' ) ); ?>"><img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/fallwinter')->ID); ?>"/></a>
 						<h3>Fall/Winter</h3>
 					</div>
 					<div class="program-leadership">
-						<img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/leadership')->ID); ?>"/>
+						<a href="<?php echo esc_url( home_url( '/programs/leadership' ) ); ?>"><img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/leadership')->ID); ?>"/></a>
 						<h3>Leadership</h3>
 					</div>
 				</div>
@@ -50,16 +50,16 @@ get_header(); ?>
 				<h2>Our programs are <span class="emphasis">free</span></h2>
 				<div class="text-container"><?php echo CFS()->get('front_page_programs_free'); ?>
 					<div class="btn-container">
-						<a href="" class="red-btn">Volunteer</a>
-						<a href="" class="red-btn">Give</a>
+						<a href="<?php echo esc_url( home_url( '/volunteer' ) ); ?>"class="red-btn">Volunteer</a>
+						<a href="<?php echo esc_url( home_url( '/give' ) ); ?>" class="red-btn">Give</a>
 					</div>
 				</div>
 			</div>
 			<div class="front-page-social-media">
 				<h2>Follow us on social media!</h2>
-				<i class="fa fa-facebook-square" aria-hidden="true"></i>
-				<i class="fa fa-instagram" aria-hidden="true"></i>
-				<i class="fa fa-twitter-square" aria-hidden="true"></i>
+				<a class= "blue-social" href="https://www.facebook.com/Catching-the-Spirit-Youth-Society-54652314785/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+				<a class= "blue-social" href="https://www.instagram.com/catchingthespirit"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a class= "blue-social" href="https://twitter.com/CTSProgram"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
 			</div>
 			<div class="front-page-testimonials green-box">
 				<h2>Testimonials</h2>
@@ -90,7 +90,7 @@ get_header(); ?>
 								</li> <!-- latest-posts-->
 					<?php endforeach; wp_reset_postdata(); ?>
 					</ul> <!-- latest-testimonials -->
-				<a href="" class="blue-btn">See More</a>
+				<a href="<?php echo esc_url( home_url( '/testimonials' ) ); ?>" class="blue-btn">See More</a>
 			</div>
 			<div class="front-page-sponsors">
 				<h2>A big thanks to our sponsors</h2>

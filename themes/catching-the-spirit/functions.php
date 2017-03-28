@@ -83,7 +83,7 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 /**
  * Enqueue scripts and styles.
  */
-function red_starter_scripts() {
+function spirit_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'font-awesome-cdn', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.4.0' ); // font awesome 
 
@@ -91,28 +91,28 @@ function red_starter_scripts() {
 
 	//  if(is_page( 'faq' ) || is_404() || is_page('registration')){
 	if(is_page( 'faq' )){
-	wp_enqueue_script('faq-scripts', get_template_directory_uri() . '/build/js/faq-scripts.min.js', array('jquery'), '1', true);
+	wp_enqueue_script('spirit-faq-scripts', get_template_directory_uri() . '/build/js/faq-scripts.min.js', array('jquery'), '1', true);
 
 	}
 
 	if(is_page('registration')){
-		wp_enqueue_script('form-scripts', get_template_directory_uri() . '/build/js/form-scripts.min.js', array('jquery'), '1', true);
+		wp_enqueue_script('spirit-form-scripts', get_template_directory_uri() . '/build/js/form-scripts.min.js', array('jquery'), '1', true);
 	}
 
 	if(is_page( 'privacy-policy' ) || is_page( 'camp-locations' )){
-	wp_enqueue_script('smooth-scroll', get_template_directory_uri() . '/build/js/smooth-scroll.min.js', array('jquery'), '1', true);
+	wp_enqueue_script('spirit-smooth-scroll', get_template_directory_uri() . '/build/js/smooth-scroll.min.js', array('jquery'), '1', true);
 	}
 
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
-	wp_enqueue_script( 'menu', get_template_directory_uri() . '/build/js/menu.min.js', array('jquery'), '2', true );
+	wp_enqueue_script( 'spirit-menu', get_template_directory_uri() . '/build/js/menu.min.js', array('jquery'), '2', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
+add_action( 'wp_enqueue_scripts', 'spirit_scripts' );
 
 /**
  * Custom template tags for this theme.
