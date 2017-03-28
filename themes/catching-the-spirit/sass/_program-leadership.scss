@@ -10,12 +10,16 @@
                 margin-bottom: 0;
             }
         }
+        .program-header-image {
+            margin: 3rem 0;
+        }
+        
     }
     a.apply-btn {
         @extend .red-btn;
         text-transform: uppercase;
         margin: 2rem 0;
-        width: 90vw;
+        width: 90%;
         @include desktop {
             width: 500px;
         }

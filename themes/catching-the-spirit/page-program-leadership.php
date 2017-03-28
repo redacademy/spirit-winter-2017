@@ -12,6 +12,9 @@ get_header(); ?>
 
 			<header class="program-header">
 				<h1 class="page-title"><?php echo CFS()->get('program_type'); ?></h1>
+				<div class="program-header-image">
+                    <img src="<?php echo CFS()->get( 'program_image' ); ?>"/>
+                </div>
 				<span class="program-description"><?php echo CFS()->get('program_description'); ?></span>
 				<a href="" class="blue-btn">Peer Leaders</a> <a href="" class="blue-btn">Supervisors</a>
 			</header>
