@@ -30,9 +30,11 @@
      console.log('Im loading');
 
      
-$(window).onLoad(function(){
-         $(this).scrollTop(0);
-    });
+// $(window).onLoad(function(){
+    setTimeout(function() {
+        $(this).scrollTop(0);
+    }, 100);
+    // });
    
 
     })(jQuery);
