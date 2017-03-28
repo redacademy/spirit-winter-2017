@@ -1513,6 +1513,8 @@ img {
       border: none; }
       .logged-in .site-content #login .button:hover {
         box-shadow: 2px 2px 2px #888888; }
+  .logged-in .portal-message {
+    text-align: center; }
 
 #login {
   width: 100%;
@@ -1546,6 +1548,12 @@ img {
     border: none; }
     #login .button:hover {
       box-shadow: 2px 2px 2px #888888; }
+
+.portal-message {
+  text-align: center; }
+
+body {
+  background-color: white; }
 
 .gform_fields {
   padding: 0 20px !important; }
