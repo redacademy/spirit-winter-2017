@@ -45,7 +45,7 @@ get_header(); ?>
                         </li><!-- latest-posts -->
                     <?php endforeach; wp_reset_postdata(); ?>
                 </ul>
-                <a href="<?php echo esc_url( home_url( '/testimonial' ) ); ?>" class="register-btn">See More</a>
+                <a href="<?php echo esc_url( home_url( '/testimonial' ) ); ?>" class="blue-btn">See More</a>
 
             </section><!-- testimonials -->
 
