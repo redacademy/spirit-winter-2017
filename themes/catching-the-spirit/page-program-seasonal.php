@@ -73,7 +73,7 @@ get_header(); ?>
 					<a href="<?php echo esc_url( home_url( '/registration' ) ); ?>" class="register-btn">Register</a>
 
 					<h2>Join our membership to get early registration</h2>
-					<a href="" class="red-btn">Join</a>
+					<a href="<?php echo esc_url( home_url( '/membership' ) ); ?>" class="red-btn">Join</a>
 
 					<h2>Questions?</h2>
 					<a href="<?php echo esc_url( home_url( '/faq' ) ); ?>" class="blue-btn faq-parents">FAQ for Parents</a> <a href="<?php echo esc_url( home_url( '/faq' ) ); ?>" class="blue-btn">FAQ for Youth</a>
