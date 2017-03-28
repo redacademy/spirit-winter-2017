@@ -16,7 +16,6 @@
 
 
     $('.show-medical-consent').on('click',function(){
-        console.log('show medical consent clicked');
         $('.medical-consent-info').toggleClass('consent-hide');
     });
 
@@ -28,8 +27,16 @@
         $('.transportation-consent-info').toggleClass('consent-hide');
     });
 
-     $(window).onLoad(function(){
-         $(this).scrollTop(0);
-    });
+     console.log('Im loading');
+
+     
+// $(window).onLoad(function(){
+    setTimeout(function() {
+        $(this).scrollTop(0);
+    }, 100);
+    // });
+   
 
     })(jQuery);
+
+    

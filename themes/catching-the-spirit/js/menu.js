@@ -21,20 +21,13 @@
     });
 
     $('.menu-item').on('hover', function () {
-        console.log('HOVERING');
         if ($(window).width() > 642) {
-            // $('.sub-menu', this).slideToggle(200);
-
-            if($('.sub-menu').is(':visible')){
-                console.log('Im visible');
-                $('.sub-menu', this).slideUp(200);
+            if($('.sub-menu', this).is(':visible')){
+                $('.sub-menu', this).slideUp(100);
             }else{
-                $('.sub-menu', this).slideDown(200);
-                console.log('nope');
-            }
-           
+                $('.sub-menu', this).slideDown(100);
+            }  
         }
-       
     });
 
     $('.menu-item').on('click', function () {
