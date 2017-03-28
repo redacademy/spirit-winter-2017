@@ -49,7 +49,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
    License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1,
+.page-template-page-program-seasonal .site-main .subtitle,
+.page-template-page-program-leadership .site-main .subtitle, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -145,7 +147,7 @@ strong {
 dfn {
   font-style: italic; }
 
-h1 {
+h1, .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-leadership .site-main .subtitle {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -325,7 +327,7 @@ a {
   font-weight: bold;
   color: #52AA8A; }
 
-h1 {
+h1, .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-leadership .site-main .subtitle {
   font-size: 2rem;
   color: #52AA8A;
   text-align: center;
@@ -488,7 +490,7 @@ textarea {
     right: 0;
     height: 80px;
     width: 100%;
-    padding-left: 2.4rem;
+    padding-left: 2.45rem;
     -webkit-transform: translate3d(0, 0, 0); }
   .main-navigation .nav-mobile {
     padding: 0 2rem 0 2rem;
@@ -609,6 +611,9 @@ img {
 
 .text-container {
   padding: 3%; }
+  @media (min-width: 642px) {
+    .text-container {
+      padding: 0 2rem; } }
 
 .green-box {
   background-color: #52AA8A;
@@ -621,7 +626,7 @@ img {
       border-radius: 10px; } }
 
 .red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
-#gform_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main input[type=submit], .page-id-80 .site-main .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main input[type=file]:before, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .register-btn, .page-template-page-program-leadership .apply-btn {
+#gform_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main input[type=submit], .page-id-80 .site-main .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main input[type=file]:before, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .register-btn, .page-template-page-program-leadership a.apply-btn {
   display: inline-block;
   text-align: center;
   width: 250px;
@@ -638,14 +643,14 @@ img {
   margin: 5px 0; }
   @media (min-width: 642px) {
     .red-btn, .blue-btn, #gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
-    #gform_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main input[type=submit], .page-id-80 .site-main .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main input[type=file]:before, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .register-btn, .page-template-page-program-leadership .apply-btn {
-      margin: 0;
+    #gform_2 input[type=button], .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main input[type=submit], .page-id-80 .site-main .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main input[type=file]:before, .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-leadership .site-main .register-btn, .page-template-page-program-leadership a.apply-btn {
+      margin: 0 0 2rem 0;
       width: 180px; } }
   .red-btn:hover, .blue-btn:hover, #gform_2 input[type=submit]:hover, #gform_2 .gform_fields input[type=file]:hover:before, .gform_fields #gform_2 input[type=file]:hover:before,
-  #gform_2 input[type=button]:hover, .page-id-80 .site-main input[type=submit]:hover, .page-id-80 .site-main .gform_fields input[type=file]:hover:before, .gform_fields .page-id-80 .site-main input[type=file]:hover:before, .page-template-page-program-seasonal .site-main .register-btn:hover, .page-template-page-program-leadership .site-main .register-btn:hover, .page-template-page-program-leadership .apply-btn:hover {
+  #gform_2 input[type=button]:hover, .page-id-80 .site-main input[type=submit]:hover, .page-id-80 .site-main .gform_fields input[type=file]:hover:before, .gform_fields .page-id-80 .site-main input[type=file]:hover:before, .page-template-page-program-seasonal .site-main .register-btn:hover, .page-template-page-program-leadership .site-main .register-btn:hover, .page-template-page-program-leadership a.apply-btn:hover {
     box-shadow: 2px 2px 2px #888888; }
   .red-btn:active, .blue-btn:active, #gform_2 input[type=submit]:active, #gform_2 .gform_fields input[type=file]:active:before, .gform_fields #gform_2 input[type=file]:active:before,
-  #gform_2 input[type=button]:active, .page-id-80 .site-main input[type=submit]:active, .page-id-80 .site-main .gform_fields input[type=file]:active:before, .gform_fields .page-id-80 .site-main input[type=file]:active:before, .page-template-page-program-seasonal .site-main .register-btn:active, .page-template-page-program-leadership .site-main .register-btn:active, .page-template-page-program-leadership .apply-btn:active {
+  #gform_2 input[type=button]:active, .page-id-80 .site-main input[type=submit]:active, .page-id-80 .site-main .gform_fields input[type=file]:active:before, .gform_fields .page-id-80 .site-main input[type=file]:active:before, .page-template-page-program-seasonal .site-main .register-btn:active, .page-template-page-program-leadership .site-main .register-btn:active, .page-template-page-program-leadership a.apply-btn:active {
     box-shadow: none; }
 
 .blue-btn, #gform_2 input[type=submit], #gform_2 .gform_fields input[type=file]:before, .gform_fields #gform_2 input[type=file]:before,
@@ -689,7 +694,7 @@ img {
   width: 100%;
   margin: 3rem auto; }
   @media (min-width: 642px) {
-    .page-template-front-page .site-main h1 {
+    .page-template-front-page .site-main h1, .page-template-front-page .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .page-template-front-page .site-main .subtitle, .page-template-front-page .page-template-page-program-leadership .site-main .subtitle, .page-template-page-program-leadership .page-template-front-page .site-main .subtitle {
       display: none; } }
 
 .page-template-front-page .front-page-hero {
@@ -745,8 +750,14 @@ img {
 
 .page-template-front-page .green-box {
   margin: 3rem 0;
-  padding: 2rem;
+  padding: 3rem 2rem;
   border-radius: 0; }
+
+.page-template-front-page .red-btn, .page-template-front-page .blue-btn, .page-template-front-page #gform_2 input[type=submit], #gform_2 .page-template-front-page input[type=submit], .page-template-front-page #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .page-template-front-page input[type=file]:before, .page-template-front-page .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .page-template-front-page input[type=file]:before, .page-template-front-page
+#gform_2 input[type=button],
+#gform_2 .page-template-front-page input[type=button], .page-template-front-page .page-id-80 .site-main input[type=submit], .page-id-80 .site-main .page-template-front-page input[type=submit], .page-template-front-page .page-id-80 .site-main .gform_fields input[type=file]:before, .page-id-80 .site-main .gform_fields .page-template-front-page input[type=file]:before, .page-template-front-page .gform_fields .page-id-80 .site-main input[type=file]:before, .gform_fields .page-id-80 .site-main .page-template-front-page input[type=file]:before, .page-template-front-page .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .page-template-front-page .register-btn, .page-template-front-page .page-template-page-program-leadership .site-main .register-btn, .page-template-page-program-leadership .site-main .page-template-front-page .register-btn, .page-template-front-page .page-template-page-program-leadership a.apply-btn, .page-template-page-program-leadership .page-template-front-page a.apply-btn,
+.page-template-front-page .btn-container {
+  margin-bottom: 0; }
 
 .page-template-front-page .for-youth-yellow {
   background: #52AA8A url("../../images/foryouthbyyouth_yellow.svg") no-repeat center center;
@@ -865,7 +876,7 @@ img {
           font-family: "capriola";
           margin-top: 0.7rem; } }
       @media (min-width: 642px) {
-        .site-header .header-desktop .container-desk .title-desktop h1 {
+        .site-header .header-desktop .container-desk .title-desktop h1, .site-header .header-desktop .container-desk .title-desktop .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .site-header .header-desktop .container-desk .title-desktop .subtitle, .site-header .header-desktop .container-desk .title-desktop .page-template-page-program-leadership .site-main .subtitle, .page-template-page-program-leadership .site-main .site-header .header-desktop .container-desk .title-desktop .subtitle {
           color: white;
           font-size: 37px;
           font-weight: 100;
@@ -960,10 +971,12 @@ img {
           font-weight: 100;
           font-size: 16px; } }
   .site-footer .social-icon-footer {
-    margin: 0.5rem;
-    font-size: 32px; }
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    font-size: 30px; }
     .site-footer .social-icon-footer a {
-      color: white; }
+      color: white;
+      margin-bottom: 0;
+      padding-bottom: 0; }
     @media (min-width: 642px) {
       .site-footer .social-icon-footer {
         font-size: 50px; } }
@@ -1023,14 +1036,7 @@ img {
           flex-basis: 100%;
       margin-bottom: 30px; }
 
-@media (min-width: 642px) {
-  .page-template-page-program-seasonal .site-main, .page-template-page-program-leadership .site-main {
-    width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    margin: 3rem 0; } }
-
-.page-template-page-program-seasonal .site-main h1, .page-template-page-program-leadership .site-main h1 {
+.page-template-page-program-seasonal .site-main h1, .page-template-page-program-leadership .site-main h1, .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-leadership .site-main .subtitle {
   padding-bottom: 0;
   margin-bottom: .8rem; }
 
@@ -1051,10 +1057,13 @@ img {
   height: 175px; }
 
 .page-template-page-program-seasonal .site-main .green-box, .page-template-page-program-leadership .site-main .green-box {
-  padding: 2rem 2rem;
-  margin: 3rem 0; }
+  margin: 3rem 0;
+  padding: 2rem 0; }
   .page-template-page-program-seasonal .site-main .green-box p, .page-template-page-program-leadership .site-main .green-box p {
     text-align: center; }
+  @media (min-width: 642px) {
+    .page-template-page-program-seasonal .site-main .green-box, .page-template-page-program-leadership .site-main .green-box {
+      padding: 2rem 2rem 1rem 2rem; } }
 
 .page-template-page-program-seasonal .site-main .program-leaders-wrapper, .page-template-page-program-leadership .site-main .program-leaders-wrapper, .page-template-page-program-seasonal .site-main .program-details-wrapper, .page-template-page-program-leadership .site-main .program-details-wrapper {
   margin-top: 1rem;
@@ -1091,10 +1100,22 @@ img {
 .page-template-page-program-seasonal .site-main .faq-parents, .page-template-page-program-leadership .site-main .faq-parents {
   margin-bottom: 0; }
 
-.page-template-page-program-leadership .apply-btn {
+.page-template-page-program-leadership .site-main p,
+.page-template-page-program-leadership .site-main .green-box p {
+  text-align: left; }
+
+.page-template-page-program-leadership .site-main .program-header .blue-btn, .page-template-page-program-leadership .site-main .program-header #gform_2 input[type=submit], #gform_2 .page-template-page-program-leadership .site-main .program-header input[type=submit], .page-template-page-program-leadership .site-main .program-header #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .page-template-page-program-leadership .site-main .program-header input[type=file]:before, .page-template-page-program-leadership .site-main .program-header .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .page-template-page-program-leadership .site-main .program-header input[type=file]:before, .page-template-page-program-leadership .site-main .program-header
+#gform_2 input[type=button],
+#gform_2 .page-template-page-program-leadership .site-main .program-header input[type=button], .page-template-page-program-leadership .page-id-80 .site-main .program-header input[type=submit], .page-id-80 .page-template-page-program-leadership .site-main .program-header input[type=submit], .page-template-page-program-leadership .page-id-80 .site-main .program-header .gform_fields input[type=file]:before, .page-id-80 .page-template-page-program-leadership .site-main .program-header .gform_fields input[type=file]:before, .page-template-page-program-leadership .page-id-80 .site-main .gform_fields .program-header input[type=file]:before, .page-id-80 .page-template-page-program-leadership .site-main .gform_fields .program-header input[type=file]:before, .page-template-page-program-leadership .gform_fields .page-id-80 .site-main .program-header input[type=file]:before, .gform_fields .page-id-80 .page-template-page-program-leadership .site-main .program-header input[type=file]:before {
+  margin-bottom: 0; }
+
+.page-template-page-program-leadership a.apply-btn {
   text-transform: uppercase;
-  width: 90vw;
-  text-align: center; }
+  margin: 2rem 0;
+  width: 90vw; }
+  @media (min-width: 642px) {
+    .page-template-page-program-leadership a.apply-btn {
+      width: 500px; } }
 
 .board-title {
   margin-top: 40px; }
@@ -1174,6 +1195,10 @@ img {
 .page-id-135 p {
   text-align: left; }
 
+.page-id-135 .our-story-logo img {
+  height: 200px;
+  margin-bottom: 2rem; }
+
 .page-id-135 .our-mission-image {
   height: 220px;
   width: 100%; }
@@ -1187,8 +1212,12 @@ img {
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-top: 0;
+  margin: 0 0 2rem 0;
   height: 220px; }
+
+@media (min-width: 642px) {
+  .page-id-135 .how-we-run .green-box {
+    border-radius: 10px; } }
 
 .camp-location-map {
   display: -ms-flexbox;
@@ -1245,17 +1274,13 @@ img {
   margin: 2rem; }
 
 @media (min-width: 642px) {
-  .page-id-139 .site-content {
-    width: 800px; }
   .page-id-139 .volunteering-for-cts {
-    margin: 2rem 7rem;
-    width: 600px; }
+    margin: 2rem 0 2rem 0; }
     .page-id-139 .volunteering-for-cts h2 {
       font-size: 2rem; }
     .page-id-139 .volunteering-for-cts p {
       font-size: 1.3rem; }
   .page-id-139 .the-board {
-    width: 800px;
     border-radius: 10px; }
     .page-id-139 .the-board h2, .page-id-139 .the-board p {
       padding-left: 5rem; }
@@ -1264,7 +1289,6 @@ img {
     .page-id-139 .the-board img {
       width: 80%; }
   .page-id-139 .mentorvisors {
-    width: 800px;
     margin-top: 2rem; }
     .page-id-139 .mentorvisors h2, .page-id-139 .mentorvisors p {
       padding-left: 5rem; }
@@ -1275,12 +1299,7 @@ img {
   padding-bottom: 2rem;
   margin-bottom: 2rem; }
 
-.page-id-137 .blue-btn, .page-id-137 #gform_2 input[type=submit], #gform_2 .page-id-137 input[type=submit], .page-id-137 #gform_2 .gform_fields input[type=file]:before, #gform_2 .gform_fields .page-id-137 input[type=file]:before, .page-id-137 .gform_fields #gform_2 input[type=file]:before, .gform_fields #gform_2 .page-id-137 input[type=file]:before, .page-id-137
-#gform_2 input[type=button],
-#gform_2 .page-id-137 input[type=button], .page-id-137 .page-id-80 .site-main input[type=submit], .page-id-80 .site-main .page-id-137 input[type=submit], .page-id-137 .page-id-80 .site-main .gform_fields input[type=file]:before, .page-id-80 .site-main .gform_fields .page-id-137 input[type=file]:before, .page-id-137 .gform_fields .page-id-80 .site-main input[type=file]:before, .gform_fields .page-id-80 .site-main .page-id-137 input[type=file]:before, .page-id-137 .btns {
-  margin: 2rem; }
-
-.page-id-137 h1 {
+.page-id-137 h1, .page-id-137 .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .page-id-137 .subtitle, .page-id-137 .page-template-page-program-leadership .site-main .subtitle, .page-template-page-program-leadership .site-main .page-id-137 .subtitle {
   margin-bottom: 3rem; }
 
 .page-id-137 h2 {
@@ -1289,8 +1308,11 @@ img {
 .page-id-137 .youth-council {
   margin-top: 2rem; }
 
+.page-id-137 .peer-leaders.bloc {
+  padding-bottom: 0.1rem; }
+
 .page-id-137 .youth-council-image img, .page-id-137 .board-directors-image img {
-  margin-bottom: 1rem; }
+  margin-bottom: 2rem; }
 
 .page-id-137 .youth-council, .page-id-137 .peer-leaders {
   background-color: #52AA8A; }
@@ -1303,10 +1325,8 @@ img {
     padding-top: 2rem; }
 
 @media (min-width: 642px) {
-  .page-id-137 .site-content {
-    width: 800px; }
-    .page-id-137 .site-content img {
-      width: 80%; } }
+  .page-id-137 .site-content img {
+    width: 80%; } }
 
 .error-404 {
   display: -ms-flexbox;
@@ -1326,7 +1346,11 @@ img {
 .page-template-page-resources-conversations .site-main {
   margin: 3rem 0; }
   .page-template-page-resources-learning .site-main h1, .page-template-page-resources-opportunities .site-main h1,
-  .page-template-page-resources-conversations .site-main h1 {
+  .page-template-page-resources-conversations .site-main h1, .page-template-page-resources-learning .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .page-template-page-resources-learning .site-main .subtitle, .page-template-page-resources-opportunities .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .page-template-page-resources-opportunities .site-main .subtitle,
+  .page-template-page-resources-conversations .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal
+  .page-template-page-resources-conversations .site-main .subtitle, .page-template-page-resources-learning .page-template-page-program-leadership .site-main .subtitle, .page-template-page-program-leadership .page-template-page-resources-learning .site-main .subtitle, .page-template-page-resources-opportunities .page-template-page-program-leadership .site-main .subtitle, .page-template-page-program-leadership .page-template-page-resources-opportunities .site-main .subtitle,
+  .page-template-page-resources-conversations .page-template-page-program-leadership .site-main .subtitle, .page-template-page-program-leadership
+  .page-template-page-resources-conversations .site-main .subtitle {
     padding-bottom: 1.5rem;
     margin: 0; }
   .page-template-page-resources-learning .site-main ul, .page-template-page-resources-opportunities .site-main ul,
@@ -1457,7 +1481,7 @@ img {
 
 .logged-in {
   background-color: white; }
-  .logged-in .site-content h1 {
+  .logged-in .site-content h1, .logged-in .site-content .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .logged-in .site-content .subtitle, .logged-in .site-content .page-template-page-program-leadership .site-main .subtitle, .page-template-page-program-leadership .site-main .logged-in .site-content .subtitle {
     margin-top: 0;
     padding-top: 0.8rem;
     width: 100%;
@@ -1465,15 +1489,15 @@ img {
     background-color: #006BBC;
     color: white;
     font-weight: 100; }
-    .logged-in .site-content h1 a {
+    .logged-in .site-content h1 a, .logged-in .site-content .page-template-page-program-seasonal .site-main .subtitle a, .page-template-page-program-seasonal .site-main .logged-in .site-content .subtitle a, .logged-in .site-content .page-template-page-program-leadership .site-main .subtitle a, .page-template-page-program-leadership .site-main .logged-in .site-content .subtitle a {
       text-decoration: none;
       color: white;
       font-weight: 100; }
       @media (min-width: 642px) {
-        .logged-in .site-content h1 a {
+        .logged-in .site-content h1 a, .logged-in .site-content .page-template-page-program-seasonal .site-main .subtitle a, .page-template-page-program-seasonal .site-main .logged-in .site-content .subtitle a, .logged-in .site-content .page-template-page-program-leadership .site-main .subtitle a, .page-template-page-program-leadership .site-main .logged-in .site-content .subtitle a {
           color: #52AA8A; } }
     @media (min-width: 642px) {
-      .logged-in .site-content h1 {
+      .logged-in .site-content h1, .logged-in .site-content .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .logged-in .site-content .subtitle, .logged-in .site-content .page-template-page-program-leadership .site-main .subtitle, .page-template-page-program-leadership .site-main .logged-in .site-content .subtitle {
         padding-top: 2rem;
         padding-bottom: 4rem;
         background-color: white;
@@ -1486,7 +1510,7 @@ img {
     width: 100%;
     padding: 0;
     margin-top: 2rem; }
-    .logged-in .site-content #login h1 {
+    .logged-in .site-content #login h1, .logged-in .site-content #login .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .logged-in .site-content #login .subtitle, .logged-in .site-content #login .page-template-page-program-leadership .site-main .subtitle, .page-template-page-program-leadership .site-main .logged-in .site-content #login .subtitle {
       display: none; }
     .logged-in .site-content #login p a {
       font-weight: 100; }
@@ -1517,7 +1541,7 @@ img {
   width: 100%;
   padding: 0;
   margin-top: 2rem; }
-  #login h1 {
+  #login h1, #login .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main #login .subtitle, #login .page-template-page-program-leadership .site-main .subtitle, .page-template-page-program-leadership .site-main #login .subtitle {
     display: none; }
   #login p {
     text-align: center; }
@@ -1554,7 +1578,7 @@ img {
     color: #a9a9a9; }
   .gform_fields ::placeholder {
     color: #a9a9a9; }
-  .gform_fields h1 {
+  .gform_fields h1, .gform_fields .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .gform_fields .subtitle, .gform_fields .page-template-page-program-leadership .site-main .subtitle, .page-template-page-program-leadership .site-main .gform_fields .subtitle {
     background: none !important;
     color: #52AA8A !important; }
   .gform_fields input {
@@ -1722,7 +1746,13 @@ img {
   font-weight: bold !important; }
 
 #gf_progressbar_wrapper_2 {
-  background: none; }
+  background: none;
+  width: 94vw !important;
+  margin: 0 auto !important;
+  padding-top: 50px !important; }
+  @media (min-width: 642px) {
+    #gf_progressbar_wrapper_2 {
+      width: 80% !important; } }
   #gf_progressbar_wrapper_2 .gf_progressbar_percentage,
   #gf_progressbar_wrapper_2 .percentbar_100 {
     background: #52AA8A !important; }
@@ -1749,7 +1779,7 @@ img {
 
 @media (min-width: 642px) {
   .page-id-80 .site-main .gform_footer input[type=submit], .page-id-80 .site-main .gform_footer .gform_fields input[type=file]:before, .gform_fields .page-id-80 .site-main .gform_footer input[type=file]:before {
-    width: 450px;
+    width: 500px;
     height: 55px; } }
 
 .page-id-80 .site-main .ginput_container_post_image {
@@ -1795,6 +1825,18 @@ img {
 
 .page-id-80 .site-main .latest-posts .entry-content {
   margin-bottom: 2rem; }
+
+@media (min-width: 642px) {
+  .page-id-80 .site-main .latest-posts {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2.5rem; }
+    .page-id-80 .site-main .latest-posts .post-name {
+      -ms-flex: 1 1 33%;
+          flex: 1 1 33%; }
+    .page-id-80 .site-main .latest-posts .entry-content {
+      -ms-flex: 2 1 66%;
+          flex: 2 1 66%; } }
 
 @media (min-width: 642px) {
   #gform_3 {

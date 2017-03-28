@@ -75,9 +75,13 @@
     }
     .green-box {
         margin: 3rem 0;
-        padding: 2rem;
+        padding: 3rem 2rem;
         border-radius: 0;
     }
+    .red-btn,
+    .btn-container {
+            margin-bottom: 0;
+        }
     .for-youth-yellow {
         background: $color__green url('../../images/foryouthbyyouth_yellow.svg') no-repeat center center;
         background-size: 95vw;
