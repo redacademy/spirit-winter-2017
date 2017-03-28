@@ -3,7 +3,7 @@
         .subtitle {
             @extend h1;
         }
-        h1 {
+        h1.page-title {
             padding-bottom: 0;
             margin-bottom: .8rem;
         }
@@ -48,11 +48,13 @@
             }
         }
         .program-details-wrapper {
-            @extend .program-leaders-wrapper;
-            margin: 0;
-            .program-details-when,
-            .program-details-where {
-                flex: 1 1 50%;
+            @include desktop {
+                display: flex;
+                margin: 0;
+                .program-details-when,
+                .program-details-where {
+                    flex: 1 1 50%;
+                }
             }
         }
         a {
@@ -61,9 +63,10 @@
         .register-btn {
             @extend .red-btn;
             text-transform: uppercase;
-            margin-bottom: 2rem;
             width: 86%;
+            margin-bottom: 2rem;
             @include desktop {
+                margin: 2rem 0;
                 width: 50%;
             }
         }

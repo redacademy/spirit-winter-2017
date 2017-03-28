@@ -56,16 +56,13 @@ get_header(); ?>
                         <div class="program-details-when">
                             <h2>When?</h2>
                             <p><?php echo CFS()->get('program_details_when'); ?></p>
+							<a href="<?php echo esc_url( home_url( '/calendar' ) ); ?>" class="blue-btn">Calendar</a>
                         </div>
                         <div class="program-details-where">
                             <h2>Where?</h2>
                             <p><?php echo CFS()->get('program_details_where'); ?></p>
+							<a href="<?php echo esc_url( home_url( '/camp-locations' ) ); ?>" class="blue-btn">Locations</a>
                         </div>
-                    </div>
-					<p>We have events throughout Metro Vancouver. Check our Calendar page for events information.</p>
-					<div class="btn-container">
-                        <a href="<?php echo esc_url( home_url( '/calendar' ) ); ?>" class="blue-btn">Calendar</a>
-                        <a href="<?php echo esc_url( home_url( '/camp-locations' ) ); ?>" class="blue-btn">Locations</a>
                     </div>
 				</div>
 
