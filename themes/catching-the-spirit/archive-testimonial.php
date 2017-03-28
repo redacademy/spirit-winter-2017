@@ -15,21 +15,21 @@ get_header(); ?>
 			<header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <header class="entry-header">
-                    <?php if ( has_post_thumbnail() ) : ?>
-                        <?php the_post_thumbnail( 'large' ); ?>
-                    <?php endif; ?>
-
-                    <?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
-                </header><!-- .entry-header -->
+            <article id="post-<?php the_ID(); ?>" class="latest-posts">
+                <div class="post-thumbnail">
+                    <?php if ( has_post_thumbnail() ) {
+                        the_post_thumbnail('large');
+                        } else { ?>
+                        <img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/leadership')->ID); ?>" alt="Image of testimonial writer" />
+                    <?php } ?>
+                    <?php the_title( sprintf( '<h3 class="post-name">', esc_url( get_permalink() ) ), '</h3>' ); ?>
+                </div><!-- .post-thumbnail -->
 
                 <div class="entry-content">
                     <?php the_content(); ?>

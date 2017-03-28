@@ -89,3 +89,20 @@
      margin-top:-80px;
     }
 }
+
+.post-type-archive-testimonial {
+    @extend .page-id-80;
+    h1.page-title {
+        height: auto;
+        margin-bottom: 3rem;
+        @include desktop {
+            margin-bottom: 0;
+        }
+    }
+    .blue-btn {
+        @include desktop {
+            width: 500px;
+            margin-top: 2rem;
+        }
+    }
+}
