@@ -29,7 +29,7 @@ get_header(); ?>
                 <div class="mentorvisors-image">
                 <img src="<?php echo CFS()->get( 'volunteer_mentorvisors_image' ); ?>"/>
                 </div>
-                <a href="" class="blue-btn">Learn More</a>
+                <a href="<?php echo home_url( '/leadership' ); ?>" class="blue-btn">Learn More</a>
             </div>
 	
 

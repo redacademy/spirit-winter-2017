@@ -17,7 +17,7 @@ get_header(); ?>
                 <div class="youth-council-image">
                 <img src="<?php echo CFS()->get( 'our_people_youth_council_image' ); ?>"/>
                 </div>
-                <a href="" class="blue-btn">Learn More</a>
+                <a href="<?php echo home_url( '/leadership' ); ?>" class="blue-btn">Learn More</a>
             </div>
 
             <div class="board-directors bloc">
@@ -35,7 +35,7 @@ get_header(); ?>
                 <div class="peer-leaders-image">
                 <img src="<?php echo CFS()->get( 'our_people_peer_leaders_image' ); ?>"/>
                 </div>
-                <div class= "btn-container"><a href="<?php echo home_url( '/leadership' ); ?>" class="blue-btn">Learn More</a><a href="" class="red-btn">Apply</a></div>
+                <div class= "btn-container"><a href="<?php echo home_url( '/leadership' ); ?>" class="blue-btn">Learn More</a><a href="<?php echo CFS()->get('apply_peer_leaders', get_page_by_path('programs/leadership')->ID); ?>" class="red-btn">Apply</a></div>
             </div>
 
             <div class="supervisors bloc">
@@ -44,7 +44,7 @@ get_header(); ?>
                 <div class="supervisors-image">
                 <img src="<?php echo CFS()->get( 'our_people_supervisors_image' ); ?>"/>
                 </div>
-                <div class="btn-container"><a href="<?php echo home_url( '/leadership' ); ?>" class="blue-btn">Learn More</a><a href="" class="red-btn">Apply</a></div>
+                <div class="btn-container"><a href="<?php echo home_url( '/leadership' ); ?>" class="blue-btn">Learn More</a><a href="<?php echo CFS()->get('apply_supervisors', get_page_by_path('programs/leadership')->ID); ?>" class="red-btn">Apply</a></div>
             </div>
             
 	
