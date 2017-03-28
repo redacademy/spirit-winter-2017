@@ -1482,10 +1482,8 @@ img {
         padding-bottom: 4rem;
         background-color: white;
         color: #52AA8A; } }
-  .logged-in .site-content p {
-    text-align: center; }
-    .logged-in .site-content p a {
-      text-decoration: none; }
+  .logged-in .site-content p a {
+    text-decoration: none; }
   .logged-in .site-content #login {
     width: 100%;
     padding: 0;
