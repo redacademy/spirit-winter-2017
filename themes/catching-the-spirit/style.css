@@ -830,6 +830,9 @@ img {
         .page-template-front-page .front-page-sponsors-list li img {
           height: 80px; } }
 
+.blue-social {
+  color: #006BBC; }
+
 .site-header {
   height: 60px; }
   @media (min-width: 642px) {
