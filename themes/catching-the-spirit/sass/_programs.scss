@@ -2,6 +2,7 @@
     .site-main {
         .subtitle {
             @extend h1;
+            @extend .page-title;
         }
         h1.page-title {
             padding-bottom: 0;
