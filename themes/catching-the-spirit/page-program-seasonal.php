@@ -12,7 +12,12 @@ get_header(); ?>
 
 			<header class="program-header">
 				<h1 class="page-title"><?php echo CFS()->get('program_type'); ?></h1>
-				<span class="subtitle"><?php echo CFS()->get('program_name'); ?></span>
+				<?php 
+					$field = CFS()->get('program_name');
+					if ( !empty( $field ) ) : 
+					?>
+					<span class="subtitle"><?php echo CFS()->get('program_name'); ?></span>
+				<?php endif; ?>
 				<div class="program-header-image">
                     <img src="<?php echo CFS()->get( 'program_image' ); ?>"/>
                 </div>
