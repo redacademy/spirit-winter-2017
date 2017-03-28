@@ -21,9 +21,11 @@
     });
 
     $('.menu-item').on('hover', function () {
+
         if ($(window).width() > 642) {
             $('.sub-menu', this).slideToggle(200);
         }
+       
     });
 
     $('.menu-item').on('click', function () {
