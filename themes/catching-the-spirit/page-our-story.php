@@ -27,7 +27,7 @@ get_header(); ?>
             </div>
             <dv class="how-we-run">
                 <div class="green-box">
-                    <h2>How we run</h2>
+                    <h2>How We Run</h2>
                     <p><?php echo CFS()->get('our_story_how_we_run'); ?></p>
                     <a href="<?php echo home_url( '/sponsors' ); ?>" class="blue-btn">See Our Sponsors</a>
                     <p><?php echo CFS()->get('our_story_how_we_run_2'); ?></p>

@@ -90,7 +90,7 @@ get_header(); ?>
 								</li> <!-- latest-posts-->
 					<?php endforeach; wp_reset_postdata(); ?>
 					</ul> <!-- latest-testimonials -->
-				<a href="<?php echo esc_url( home_url( '/testimonials' ) ); ?>" class="blue-btn">See More</a>
+				<a href="<?php echo esc_url( home_url( '/testimonial' ) ); ?>" class="blue-btn">See More</a>
 			</div>
 			<div class="front-page-sponsors">
 				<h2>A big thanks to our sponsors</h2>
