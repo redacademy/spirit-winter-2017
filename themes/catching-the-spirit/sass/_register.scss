@@ -42,33 +42,58 @@
              padding: 4px 2px !important;
          }
      }
-     .ginput_container_fileupload {
-         display: flex;
-         justify-content: center;
-         margin-left: -10px;
-     }
-     input[type=text] {
+
+
+
+
+input[type=text] {
          color: black;
          @include desktop {
              width: 100% !important;
          }
      }
-     input[type=file] {
-         width: 300px !important;
-         margin-left: -30px !important;
-         height: 50px !important;
-         box-sizing: border-box !important;
-         outline: none;
-         &:before {
-             @extend input[type=submit];
-             content: "Upload a Photo";
-             position: relative;
-             top: 10px;
-             margin-left: 20px !important;
-             width: 100% !important;
-             height: 40px !important;
-         }
+
+
+
+
+     .ginput_container_fileupload {
+        //  display: flex;
+        //  justify-content: center;
+        //  margin-left: -10px;
+        // background:green;
      }
+    
+//      input[type=file]{
+//          background:black;
+
+//          input[type=button]{
+//              color:red !important;
+//          }
+// }
+
+.form-upload-button{
+    background:red;
+
+    input{
+        background:blue;
+       input[type=button]{
+           background: red !important;
+           color:green !important;
+           #shadow-root{
+               color:red !important;
+           }
+       }
+    }
+}
+ 
+
+
+
+
+
+
+
+
      .gfield_radio,
      .gfield_checkbox {
          label {
