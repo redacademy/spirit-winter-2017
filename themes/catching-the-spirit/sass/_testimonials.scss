@@ -28,8 +28,15 @@
         }
         .gform_footer input[type=submit] {
             @extend .blue-btn;
+
+            height:50px !important;
+            padding: 0 0 4px 0;
+            width:90% !important;
+            margin-top: 60px;
+
             @include desktop {
-                width: 500px;
+                margin-top: 80px;
+                width: 200px !important;
                 height: 55px;
             }
         }
@@ -95,6 +102,19 @@
     @include desktop{
      margin-top:-80px;
     }
+    
+      .NFI-wrapper {
+display:flex !important;
+ flex-direction:row !important;
+ width: 100% !important;
+ height: 50px !important;
+ 
+@include desktop{
+width:500px !important;
+margin-left:16px !important;
+height: 40px !important;
+}
+      }
 }
 
 .post-type-archive-testimonial {
@@ -112,4 +132,13 @@
             margin-top: 2rem;
         }
     }
+}
+
+
+.test-image-upload{
+    font-size:1.4rem;
+    font-weight:bold;
+    text-align: center !important;
+    margin-top:40px;
+    margin-bottom: -40px;
 }
