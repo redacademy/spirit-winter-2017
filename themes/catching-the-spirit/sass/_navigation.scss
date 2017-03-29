@@ -1,189 +1,192 @@
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 
+
 /* Links */
 
-.main-navigation{
-        background-color: $color__lightblue;
+.main-navigation {
+    background-color: $color__lightblue;
+    @include desktop {
+        background-color: $color__blue;
+    }
+    // navigation desktop
+    .nav-desktop {
+        display: none;
+        position: relative;
         @include desktop {
-            // height: 80px;
-            background-color: $color__blue;
-        }
-// navigation desktop
-        .nav-desktop{
-            display: none;
-            @include container;
-            @include desktop{
-                height: 80px;
-                display: flex;
-                justify-content: space-between;
-                .menu{
-                    display: flex;
-                    padding-left: 3rem;
-                    .give{
-                        background-color: $color__red;
-                        color: white;
-                        height: 80px;
-                        width: 180px;
-                        display:table;
-                        margin: 0 0 0 7rem;
-                        // might need to find another solution not user friendly if menu items change.
-                        a{
-                            font-size: 26px;
-                            font-weight: 100;
-                            display: table-cell;
-                            vertical-align: middle;
-                            text-decoration: none;
-                        }
-                    }
-                }
-                .menu-item{
-                        margin: 2rem 0;
-                        width: 8.2rem;
-                        a{
-                            text-decoration: none;
-                            font-size: 18px;
-                            font-weight: 100;
-                            color: white;
-                        }
-                    }
-                // sub navigation desktop
-                        .sub-menu{
-                            background-color: $color__blue;
-                            position: absolute;
-                            text-align: left;
-                            margin-top: 0.1rem;
-                            display: none;
-                            :last-child{
-                                margin-bottom: 0.7rem;
-                            }
-                            a{
-                                display: block;
-                                font-size: 14px;
-                                font-weight: 100;
-                                margin-left: 1.4rem;
-                                line-height: 1rem;
-                                
-                            }
-                        }
-            .portal{
-                display: none;
-            }
-            }
-        }
-         .nav-desktop.fixed{
-                    position: fixed;
-                    background-color: $color__blue;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    height: 80px;
-                    width: 100%;
-                    padding-left: 2.45rem;
-                    -webkit-transform: translate3d(0, 0, 0);
-                }
-// navigation mobile
-        .nav-mobile{
-            padding: 0 2rem 0 2rem;
+            height: 80px;
+            margin: 0 auto;
             display: flex;
-            justify-content: space-between;
-            position: fixed;
-            background-color: $color__lightblue;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 60px;
-            width: 100%;
-            -webkit-transform: translate3d(0, 0, 0);
-            @include desktop {
-                display: none;
-            }
-            .menu-toggle{
-                height: 57px;
-                margin: 0.3rem 0 0.3rem 0.5rem;
-                position: relative;
-                background-color: transparent;
-                background-repeat:no-repeat;
-                border: none;
-                cursor:pointer;
-                overflow: hidden;
-                outline:none;
-                box-shadow: none;
-            }
-            .menu-toggle:before{
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0.8em;
-                width: 100%;
-                height: 0.37em;
-                background: white;
-                border-radius: 5px;
-                box-shadow: 
-                0 1em 0 0 white,
-                0 2em 0 0 white;
-            }
-            }
-            .header-logo{
-                height: 50px;
-                width: 50px;
-                margin-top: 0.3rem;
-            }
-            .fa-phone{
-                transform: rotate(-90deg);
-                margin-top: 0.6rem;
-                font-size: 35px;
-                color: white;
-            }
-        .responsive-menu{
-                position: fixed;
-                top: 3rem;
-                left: 0;
-                width: 100%;
-                height:100% !important;
-                z-index: -1;
-                background-color: $color__lightblue;
-                content: "";
-                clear: both;
-                display: none;
-                overflow-y:auto;
-                padding-bottom:3rem !important;
-                @include desktop {
-                display: none !important;
+            justify-content: center;
+            .menu {
+                display: flex;
+                .give {
+                    background-color: $color__red;
+                    color: white;
+                    height: 80px;
+                    width: 180px;
+                    display: table;
+                    margin: 0 0 0 7rem;
+                    a {
+                        font-size: 26px;
+                        font-weight: 100;
+                        display: table-cell;
+                        vertical-align: middle;
+                        text-decoration: none;
+                        &:after {
+                            content: "";
+                        }
+                    }
                 }
-            .menu-header{
-                padding-top: 1rem;
-                padding-left: 2.5rem;
-                .menu-item{
+            }
+            .menu-item {
+                margin: 2rem 0;
+                width: 8.2rem;
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 100;
+                    color: white;
+                    &:after {
+                        content: " 0000000000";
+                        opacity: 0
+                    }
+                }
+            }
+            // sub navigation desktop
+            .sub-menu {
+                background-color: $color__blue;
+                position: absolute;
+                text-align: left;
+                display: none;
+                 :last-child {
+                    margin-bottom: 0.7rem;
+                }
+                a {
+                    display: block;
+                    font-size: 14px;
+                    font-weight: 100;
+                    margin-left: 1.4rem;
+                    line-height: 1rem;
+                    &:after {
+                        content: "";
+                    }
+                }
+            }
+            .portal {
+                display: none;
+            }
+        }
+    }
+    .fixed {
+        position: fixed;
+        background-color: $color__blue;
+        top: 0;
+        width: 100vw;
+        margin: 0 auto !important;
+    }
+    // navigation mobile
+    .nav-mobile {
+        padding: 0 2rem 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        background-color: $color__lightblue;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        width: 100%;
+        -webkit-transform: translate3d(0, 0, 0);
+        @include desktop {
+            display: none;
+        }
+        .menu-toggle {
+            height: 57px;
+            margin: 0.3rem 0 0.3rem 0.5rem;
+            position: relative;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            border: none;
+            cursor: pointer;
+            overflow: hidden;
+            outline: none;
+            box-shadow: none;
+        }
+        .menu-toggle:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.8em;
+            width: 100%;
+            height: 0.37em;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 1em 0 0 white, 0 2em 0 0 white;
+        }
+    }
+    .header-logo {
+        height: 50px;
+        width: 50px;
+        margin-top: 0.3rem;
+    }
+    .fa-phone {
+        transform: rotate(-90deg);
+        margin-top: 0.6rem;
+        font-size: 35px;
+        color: white;
+    }
+    .responsive-menu {
+        position: fixed;
+        top: 3rem;
+        left: 0;
+        width: 100%;
+        height: 100% !important;
+        z-index: -1;
+        background-color: $color__lightblue;
+        content: "";
+        clear: both;
+        display: none;
+        overflow-y: auto;
+        padding-bottom: 3rem !important;
+        @include desktop {
+            display: none !important;
+        }
+        .menu-header {
+            // padding-top: 1rem;
+            // padding-left: 2.5rem;
+            .menu-item {
                 text-align: left;
                 margin-top: 2rem;
-                a{
+                a {
                     color: white;
                     text-decoration: none;
                 }
-// sub navigation mobile
-                }
-                 .sub-menu{
-                    .menu-item{
-                        margin-left: 2rem;
-                        line-height: 0.5rem;
-                        a{
-                            font-weight: 100;
-                        }
+                // sub navigation mobile
+            }
+            .sub-menu {
+                .menu-item {
+                    margin-left: 2rem;
+                    line-height: 0.5rem;
+                    a {
+                        font-weight: 100;
                     }
                 }
             }
-            .fa{
-                margin: 2rem 1rem;
-                color: white;
-                font-size: 55px;
-            }
-            .portal{
-                    display: none;
-                }
-         }
+        }
+        .fa {
+            margin: 2rem 1rem;
+            color: white;
+            font-size: 55px;
+        }
+        .portal {
+            display: none;
+        }
+    }
 }
-.no-overflow{
-    overflow:hidden;
+
+.no-overflow {
+    overflow: hidden;
 }
