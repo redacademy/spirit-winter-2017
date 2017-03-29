@@ -27,15 +27,15 @@
         $('.transportation-consent-info').toggleClass('consent-hide');
     });
 
-     console.log('Im loading');
-
-     
-// $(window).onLoad(function(){
     setTimeout(function() {
         $(this).scrollTop(0);
     }, 100);
-    // });
    
+
+$('.ginput_container_fileupload').click(function() {
+    $('input[type="file"]').click();
+});
+
 
     })(jQuery);
 

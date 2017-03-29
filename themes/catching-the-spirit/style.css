@@ -1614,7 +1614,8 @@ body {
     position: absolute;
     left: calc(100vw - 60px) !important;
     top: 40px;
-    visibility: visible; }
+    visibility: visible;
+    z-index: 9999 !important; }
     @media (min-width: 642px) {
       .gform_fields label > .gfield_required {
         left: 546px !important;
@@ -1637,15 +1638,6 @@ body {
     @media (min-width: 642px) {
       .gform_fields input[type=text] {
         width: 100% !important; } }
-  .gform_fields .form-upload-button {
-    background: red; }
-    .gform_fields .form-upload-button input {
-      background: blue; }
-      .gform_fields .form-upload-button input input[type=button] {
-        background: red !important;
-        color: green !important; }
-        .gform_fields .form-upload-button input input[type=button] #shadow-root {
-          color: red !important; }
   .gform_fields .gfield_radio label,
   .gform_fields .gfield_checkbox label {
     visibility: visible !important; }
@@ -1767,6 +1759,49 @@ body {
   #gf_progressbar_wrapper_2 .percentbar_100 {
     background: #52AA8A !important; }
 
+.NFI-wrapper {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-direction: row !important;
+      flex-direction: row !important;
+  width: 100% !important;
+  height: 50px !important; }
+  @media (min-width: 642px) {
+    .NFI-wrapper {
+      width: 560px !important;
+      height: 40px !important; } }
+
+.NFI-button {
+  background: #006BBC;
+  color: white;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-align: center !important;
+      align-items: center !important;
+  -ms-flex-pack: center !important;
+      justify-content: center !important;
+  width: 200px !important;
+  margin-right: 10px !important;
+  border-radius: 10px !important;
+  font-weight: lighter !important; }
+  @media (min-width: 642px) {
+    .NFI-button {
+      height: 40px !important; } }
+  .NFI-button:hover {
+    box-shadow: 2px 2px 2px #888888; }
+  .NFI-button:active {
+    box-shadow: none; }
+
+.NFI-filename {
+  color: black;
+  width: 100% !important; }
+
+.image-upload-banner {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center !important;
+  margin-top: -10px; }
+
 .page-id-80 .site-main h1.entry-title, .post-type-archive-testimonial .site-main h1.entry-title, .page-id-80 .page-template-page-program-seasonal .site-main .entry-title.subtitle, .page-template-page-program-seasonal .page-id-80 .site-main .entry-title.subtitle, .post-type-archive-testimonial .page-template-page-program-seasonal .site-main .entry-title.subtitle, .page-template-page-program-seasonal .post-type-archive-testimonial .site-main .entry-title.subtitle, .page-id-80 .page-template-page-program-leadership .site-main .entry-title.subtitle, .page-template-page-program-leadership .page-id-80 .site-main .entry-title.subtitle, .post-type-archive-testimonial .page-template-page-program-leadership .site-main .entry-title.subtitle, .page-template-page-program-leadership .post-type-archive-testimonial .site-main .entry-title.subtitle {
   padding-bottom: 2rem; }
   @media (min-width: 642px) {
@@ -1793,10 +1828,16 @@ body {
       justify-content: center;
   margin-top: -20px; }
 
-@media (min-width: 642px) {
-  .page-id-80 .site-main .gform_footer input[type=submit], .post-type-archive-testimonial .site-main .gform_footer input[type=submit] {
-    width: 500px;
-    height: 55px; } }
+.page-id-80 .site-main .gform_footer input[type=submit], .post-type-archive-testimonial .site-main .gform_footer input[type=submit] {
+  height: 50px !important;
+  padding: 0 0 4px 0;
+  width: 90% !important;
+  margin-top: 60px; }
+  @media (min-width: 642px) {
+    .page-id-80 .site-main .gform_footer input[type=submit], .post-type-archive-testimonial .site-main .gform_footer input[type=submit] {
+      margin-top: 80px;
+      width: 200px !important;
+      height: 55px; } }
 
 .page-id-80 .site-main .ginput_container_post_image, .post-type-archive-testimonial .site-main .ginput_container_post_image {
   display: -ms-flexbox !important;
@@ -1858,6 +1899,19 @@ body {
   #gform_3 {
     margin-top: -80px; } }
 
+#gform_3 .NFI-wrapper {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-direction: row !important;
+      flex-direction: row !important;
+  width: 100% !important;
+  height: 50px !important; }
+  @media (min-width: 642px) {
+    #gform_3 .NFI-wrapper {
+      width: 500px !important;
+      margin-left: 16px !important;
+      height: 40px !important; } }
+
 .post-type-archive-testimonial h1.page-title, .post-type-archive-testimonial .page-template-page-program-seasonal .site-main .subtitle, .page-template-page-program-seasonal .site-main .post-type-archive-testimonial .subtitle, .post-type-archive-testimonial .page-template-page-program-leadership .site-main .subtitle, .page-template-page-program-leadership .site-main .post-type-archive-testimonial .subtitle, .page-id-80 .site-main .post-type-archive-testimonial h1.entry-title, .post-type-archive-testimonial .site-main h1.entry-title, .page-template-page-program-seasonal .post-type-archive-testimonial .site-main .entry-title.subtitle, .page-template-page-program-leadership .post-type-archive-testimonial .site-main .entry-title.subtitle {
   height: auto;
   margin-bottom: 3rem; }
@@ -1871,3 +1925,10 @@ body {
   #gform_2 .post-type-archive-testimonial input[type=button], .post-type-archive-testimonial .site-main .gform_footer input[type=submit], .page-id-80 .site-main .post-type-archive-testimonial input[type=submit], .post-type-archive-testimonial .site-main input[type=submit] {
     width: 500px;
     margin-top: 2rem; } }
+
+.test-image-upload {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center !important;
+  margin-top: 40px;
+  margin-bottom: -40px; }
