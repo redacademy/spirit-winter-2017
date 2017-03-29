@@ -34,6 +34,6 @@ get_header(); ?>
     <p>  <?php echo CFS()->get('board_get_involved'); ?> </p>
 </div>
 
-<a href="#" class="red-btn">Join</a>
+<a href="<?php echo CFS()->get('join_board'); ?>" class="red-btn">Join</a>
 
 <?php get_footer(); ?>
