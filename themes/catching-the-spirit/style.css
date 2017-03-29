@@ -456,6 +456,8 @@ textarea {
               display: table-cell;
               vertical-align: middle;
               text-decoration: none; }
+              .main-navigation .nav-desktop .menu .give a:after {
+                content: ""; }
         .main-navigation .nav-desktop .menu-item {
           margin: 2rem 0;
           width: 8.2rem; }
@@ -464,11 +466,13 @@ textarea {
             font-size: 18px;
             font-weight: 100;
             color: white; }
+            .main-navigation .nav-desktop .menu-item a:after {
+              content: " 0000000000";
+              opacity: 0; }
         .main-navigation .nav-desktop .sub-menu {
           background-color: #006BBC;
           position: absolute;
           text-align: left;
-          margin-top: 0.1rem;
           display: none; }
           .main-navigation .nav-desktop .sub-menu :last-child {
             margin-bottom: 0.7rem; }
@@ -478,6 +482,8 @@ textarea {
             font-weight: 100;
             margin-left: 1.4rem;
             line-height: 1rem; }
+            .main-navigation .nav-desktop .sub-menu a:after {
+              content: ""; }
         .main-navigation .nav-desktop .portal {
           display: none; } }
   .main-navigation .fixed {

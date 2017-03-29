@@ -22,11 +22,12 @@
 
     $('.menu-item').on('hover', function () {
         if ($(window).width() > 642) {
-            if($('.sub-menu', this).is(':visible')){
-                $('.sub-menu', this).slideUp(100);
-            }else{
-                $('.sub-menu', this).slideDown(100);
-            }  
+            $('.sub-menu', this).slideToggle(100);
+            // if($('.sub-menu', this).is(':visible')){
+            //     $('.sub-menu', this).slideUp(100);
+            // }else{
+            //     $('.sub-menu', this).slideDown(100);
+            // }  
         }
     });
 
