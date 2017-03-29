@@ -13,7 +13,7 @@ Catching the Spirit Youth Society is a non-profit organization in Vancouver, BC 
 * Task-Runner: Gulp
 * Pre-Processor: Sass
 
-##### Plugins:
+### Plugins:
 * Calendar Event
 * Catching the Spirit Functionality (Custom Plugin)
 * Custom Field Suite
@@ -27,26 +27,26 @@ Catching the Spirit Youth Society is a non-profit organization in Vancouver, BC 
 * Wrap Form Fields In Gravity Forms
 
 ## The Features
-##### Navigation Menu:
+### Navigation Menu:
 Sub-menu drop-downs toggle with jQuery on click for mobile, and on hover for desktop.
 
-##### Custom Camp Registration Form:
+### Custom Camp Registration Form:
 Used Gravity Forms plugin to create a convenient online form for parents/guardians wishing to register their children at camp. 
 
-##### Custom Testimonial Form with Custom Post Type and Archive:
+### Custom Testimonial Form with Custom Post Type and Archive:
 Used Gravity Forms and Gravity Forms + Custom Post Type plugins to create a testimonials page for youth and parents to share their experiences with CTS. Content is saved into a custom testimonial post type and stored as Pending. Once approved by an administrator, the post displays on the testimonials page as well as the corresponding archive.
 
-##### Monthly Calendar:
+### Monthly Calendar:
 Used Calendar Event plugin so client may update the Calendar page with monthly CTS events.
 
-##### Camp Locations:
+### Camp Locations:
 Used WP Google Maps Plugin to locate and display CTS campsites.
 
 ## The Team
-##### Developers:
+### Developers:
 Padli, Shirley, Iris
 from RED Academy's *Web Developer Professional Program (Winter 2017)*
 
-##### Designers:
+### Designers:
 Lindsay, Vanessa, Ellen, James
 from RED Academy's *UX and UI Professional Programs (Winter 2017)*
