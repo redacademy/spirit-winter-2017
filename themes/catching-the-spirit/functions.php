@@ -89,7 +89,6 @@ function spirit_scripts() {
 
 	wp_enqueue_script('jquery');
 
-	//  if(is_page( 'faq' ) || is_404() || is_page('registration')){
 	if(is_page( 'faq' )){
 	wp_enqueue_script('spirit-faq-scripts', get_template_directory_uri() . '/build/js/faq-scripts.min.js', array('jquery'), '1', true);
 
@@ -97,9 +96,10 @@ function spirit_scripts() {
 
 	if(is_page('registration')){
 		wp_enqueue_script('spirit-form-scripts', get_template_directory_uri() . '/build/js/form-scripts.min.js', array('jquery'), '1', true);
+		wp_enqueue_script('spirit-nice-file-input', get_template_directory_uri() . '/vendor/js/NiceFileInput.js', array('jquery'), '1', true);
 	}
 
-	if(is_page( 'privacy-policy' ) || is_page( 'camp-locations' )){
+	if(is_page( 'privacy-policy' ) || is_page( 'camp-locations' ) || is_page( 'leadership' )){
 	wp_enqueue_script('spirit-smooth-scroll', get_template_directory_uri() . '/build/js/smooth-scroll.min.js', array('jquery'), '1', true);
 	}
 

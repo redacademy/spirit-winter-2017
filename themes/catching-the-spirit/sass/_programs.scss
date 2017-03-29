@@ -1,12 +1,10 @@
 .page-template-page-program-seasonal {
     .site-main {
-        @include desktop {
-            width: 600px;
-            margin: 0 auto;
-            text-align: center;
-            margin: 3rem 0;
+        .subtitle {
+            @extend h1;
+            @extend .page-title;
         }
-        h1 {
+        h1.page-title {
             padding-bottom: 0;
             margin-bottom: .8rem;
         }
@@ -27,10 +25,13 @@
             height: 175px;
         }
         .green-box {
-            padding: 2rem 2rem;
             margin: 3rem 0;
+            padding: 2rem 0;
             & p {
             text-align: center;
+            }
+            @include desktop {
+                padding: 2rem 2rem 1rem 2rem;
             }
         }
         .program-leaders-wrapper {
@@ -48,11 +49,13 @@
             }
         }
         .program-details-wrapper {
-            @extend .program-leaders-wrapper;
-            margin: 0;
-            .program-details-when,
-            .program-details-where {
-                flex: 1 1 50%;
+            @include desktop {
+                display: flex;
+                margin: 0;
+                .program-details-when,
+                .program-details-where {
+                    flex: 1 1 50%;
+                }
             }
         }
         a {
@@ -61,9 +64,10 @@
         .register-btn {
             @extend .red-btn;
             text-transform: uppercase;
-            margin-bottom: 2rem;
             width: 86%;
+            margin-bottom: 2rem;
             @include desktop {
+                margin: 2rem 0;
                 width: 50%;
             }
         }

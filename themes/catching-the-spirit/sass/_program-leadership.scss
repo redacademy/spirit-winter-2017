@@ -1,9 +1,32 @@
 .page-template-page-program-leadership {
     @extend .page-template-page-program-seasonal;
-    .apply-btn {
+    .site-main {
+        p {
+            text-align: left;
+        }
+        .green-box p,
+        .green-box ul {
+            color: white;
+        }
+        .program-header {
+            .blue-btn {
+                margin-bottom: 0;
+            }
+        }
+        .program-header-image {
+            margin: 3rem 0;
+        }
+        .program-leaders-wrapper {
+            margin-bottom: 2rem;
+        }
+    }
+    a.apply-btn {
         @extend .red-btn;
         text-transform: uppercase;
-        width: 90vw;
-        text-align: center;
+        margin: 2rem 0;
+        width: 90%;
+        @include desktop {
+            width: 500px;
+        }
     }
 }

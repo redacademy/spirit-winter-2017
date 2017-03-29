@@ -11,19 +11,23 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<header>
-            <h1 class="page-title"><?php echo CFS()->get('resource_page_title'); ?></h1>
-            <p>We want to help connect you to all of the scholarship opportunities we can find. Please Contact Us if you have any additional questions.</p>
+            <h1 class="page-title"><?php echo esc_html(CFS()->get('resource_page_title')); ?></h1>
+            <?php $content = CFS()->get('resource_page_description') ?>
+            <?php $allowed_html = array('br' => array()); ?>                                        
+            <p><?php echo wp_kses($content, $allowed_html); ?></p>
+            <p>Please <a href="mailto:info@catchingthespirit.com">Contact Us</a> if you have any additional questions.</p>
         </header>
+
         <section>
             <ul>
-            <?php 
-                $fields = CFS()->get( 'opportunities_resource_loop' ); ?>
-            <?php foreach ( $fields as $field ): ?>
-                <li>
-					<h2><?php echo $field['opportunity_type']; ?></h2>
-					<p><?php echo $field['opportunity_description']; ?> <?php echo $field['opportunity_application_link']; ?></p>
-				</li>
-            <?php endforeach ?>
+                <?php 
+                    $fields = CFS()->get( 'opportunities_resource_loop' ); ?>
+                <?php foreach ( $fields as $field ): ?>
+                    <li>
+                        <h2><?php echo $field['opportunity_type']; ?></h2>
+                        <p><?php echo $field['opportunity_description']; ?> <?php echo $field['opportunity_application_link']; ?>.</p>
+                    </li>
+                <?php endforeach ?>
             </ul>
         </section>
 

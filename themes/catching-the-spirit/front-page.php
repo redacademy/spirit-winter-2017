@@ -12,16 +12,24 @@ get_header(); ?>
 			
 			<h1 class="page-title">Catching the Spirit</h1>
 			<div class="front-page-hero">
-				<img src="<?php echo CFS()->get('front_page_hero_image'); ?>"/>
+				<img src="<?php echo esc_html(CFS()->get('front_page_hero_image')); ?>"/>
 			</div>
 			<div class="about-section-wrapper">
 				<div class="front-page-mission">
 					<h2>Our mission</h2>
-					<div><?php echo CFS()->get('front_page_our_mission'); ?></div>
+					<div>
+						<?php $content = CFS()->get('front_page_our_mission') ?>
+						<?php $allowed_html = array('br' => array()); ?>                                        
+						<p><?php echo wp_kses($content, $allowed_html); ?></p>
+					</div>
 				</div>
 				<div class="front-page-about">
 					<h2>Who we are?</h2>
-					<div><?php echo CFS()->get('front_page_who_we_are'); ?></div>
+					<div>
+						<?php $content = CFS()->get('front_page_who_we_are') ?>
+						<?php $allowed_html = array('br' => array()); ?>                                        
+						<p><?php echo wp_kses($content, $allowed_html); ?></p>					
+					</div>
 				</div>
 				<div class="front-page-btn-wrapper">
 					<a href="<?php echo esc_url( home_url( '/our-story' ) ); ?>" class="blue-btn">Learn More</a>
@@ -33,22 +41,25 @@ get_header(); ?>
 				<h2>What do we offer?</h2>
 				<div class="programs-wrapper">
 					<div class="program-summer">
-						<a href="<?php echo esc_url( home_url( '/programs/summer' ) ); ?>"><img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/summer')->ID); ?>"/></a>
+						<a href="<?php echo esc_url( home_url( '/programs/summer' ) ); ?>"><img src="<?php echo esc_html(CFS()->get('program_image', get_page_by_path('programs/summer')->ID)); ?>"/></a>
 						<h3>Summer</h3>
 					</div>
 					<div class="program-fallwinter">
-						<a href="<?php echo esc_url( home_url( '/programs/fallwinter' ) ); ?>"><img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/fallwinter')->ID); ?>"/></a>
+						<a href="<?php echo esc_url( home_url( '/programs/fallwinter' ) ); ?>"><img src="<?php echo esc_html(CFS()->get('program_image', get_page_by_path('programs/fallwinter')->ID)); ?>"/></a>
 						<h3>Fall/Winter</h3>
 					</div>
 					<div class="program-leadership">
-						<a href="<?php echo esc_url( home_url( '/programs/leadership' ) ); ?>"><img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/leadership')->ID); ?>"/></a>
+						<a href="<?php echo esc_url( home_url( '/programs/leadership' ) ); ?>"><img src="<?php echo esc_html(CFS()->get('program_image', get_page_by_path('programs/leadership')->ID)); ?>"/></a>
 						<h3>Leadership</h3>
 					</div>
 				</div>
 			</div>
 			<div class="front-page-programs-free green-box">
 				<h2>Our programs are <span class="emphasis">free</span></h2>
-				<div class="text-container"><?php echo CFS()->get('front_page_programs_free'); ?>
+				<div class="text-container">
+					<?php $content = CFS()->get('front_page_programs_free') ?>
+					<?php $allowed_html = array('br' => array()); ?>                                        
+					<p><?php echo wp_kses($content, $allowed_html); ?></p>									
 					<div class="btn-container">
 						<a href="<?php echo esc_url( home_url( '/volunteer' ) ); ?>"class="red-btn">Volunteer</a>
 						<a href="<?php echo esc_url( home_url( '/give' ) ); ?>" class="red-btn">Give</a>
@@ -80,7 +91,7 @@ get_header(); ?>
 									<?php if ( has_post_thumbnail() ) {
 										the_post_thumbnail('large');
 										} else { ?>
-										<img src="<?php echo CFS()->get('program_image', get_page_by_path('programs/leadership')->ID); ?>" alt="Image of testimonial writer" />
+										<img src="<?php echo esc_html(CFS()->get('program_image', get_page_by_path('programs/leadership')->ID)); ?>" alt="Image of testimonial writer" />
 										<?php } ?>
 										<h3 class="post-name"><?php the_title(); ?></h3>
 									</div>                                    
@@ -90,19 +101,18 @@ get_header(); ?>
 								</li> <!-- latest-posts-->
 					<?php endforeach; wp_reset_postdata(); ?>
 					</ul> <!-- latest-testimonials -->
-				<a href="<?php echo esc_url( home_url( '/testimonials' ) ); ?>" class="blue-btn">See More</a>
+				<a href="<?php echo esc_url( home_url( '/testimonial' ) ); ?>" class="blue-btn">See More</a>
 			</div>
 			<div class="front-page-sponsors">
 				<h2>A big thanks to our sponsors</h2>
-
-			<ul class="front-page-sponsors-list">
-				<?php $fields = CFS()->get('sponsors_list', get_page_by_path('sponsors')->ID); ?>
-				<?php foreach ( $fields as $field ): ?>
-					<li>
-						<img src="<?php echo $field['sponsor_logo']; ?>"/>
-					</li>
-				<?php endforeach ?>
-			</ul>
+				<ul class="front-page-sponsors-list">
+					<?php $fields = CFS()->get('sponsors_list', get_page_by_path('sponsors')->ID); ?>
+					<?php foreach ( $fields as $field ): ?>
+						<li>
+							<img src="<?php echo esc_html($field['sponsor_logo']); ?>"/>
+						</li>
+					<?php endforeach ?>
+				</ul>
 			</div>
 
 		</main><!-- #main -->

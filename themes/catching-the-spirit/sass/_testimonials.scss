@@ -1,5 +1,12 @@
 .page-id-80 {
     .site-main {
+        h1.entry-title {
+            @extend .page-title;
+            padding-bottom: 2rem;
+            @include desktop {
+                padding-bottom: 0;
+            }
+        }
         form {
             padding: 5%;
         }
@@ -11,7 +18,6 @@
             &:focus {
                 border-width: 2px;
                 outline: none;
-                
             }
         }
 
@@ -23,28 +29,27 @@
         .gform_footer input[type=submit] {
             @extend .blue-btn;
             @include desktop {
-                width: 450px;
+                width: 500px;
                 height: 55px;
             }
         }
-.ginput_container_post_image{
-         display: flex !important;
-         justify-content: center !important;
-
-         margin-top:30px !important;
-     }
-    
-     input[type=submit] {
-         box-shadow: none;
-         text-shadow: none;
-         width: 170px;
-         padding: 0;
-         margin: 16px auto;
-         @extend .blue-btn;
-         @include desktop {
-             padding: 10px;
-         }
-     }
+        .ginput_container_post_image{
+            display: flex !important;
+            justify-content: center !important;
+            margin-top:30px !important;
+        }
+        
+        input[type=submit] {
+            box-shadow: none;
+            text-shadow: none;
+            width: 170px;
+            padding: 0;
+            margin: 16px auto;
+            @extend .blue-btn;
+            @include desktop {
+                padding: 10px;
+            }
+        }
         #field_3_1,
         #field_3_2 {
             padding: 0;
@@ -73,12 +78,38 @@
             .entry-content {
                 margin-bottom: 2rem;
             }
+            @include desktop {
+                display: flex;
+                margin-bottom: 2.5rem;
+                .post-name {
+                    flex: 1 1 33%;
+                }
+                .entry-content {
+                    flex: 2 1 66%;
+                }
+            }
         }
     }
 }
-
 #gform_3{
     @include desktop{
      margin-top:-80px;
+    }
+}
+
+.post-type-archive-testimonial {
+    @extend .page-id-80;
+    h1.page-title {
+        height: auto;
+        margin-bottom: 3rem;
+        @include desktop {
+            margin-bottom: 0;
+        }
+    }
+    .blue-btn {
+        @include desktop {
+            width: 500px;
+            margin-top: 2rem;
+        }
     }
 }
