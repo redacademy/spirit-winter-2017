@@ -1,21 +1,88 @@
-# RED Starter
+# Catching the Spirit Youth Society
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A custom WordPress theme built by RED Academy students for a local non-profit organization.
 
-## Installation
+## The Client
+Catching the Spirit Youth Society is a non-profit organization in Vancouver, BC dedicated to developing leadership and social responsibility in youth through environmental awareness and stewardship. 
 
-### 1. Download me (don't clone me!)
+## The Specs
+* Responsive and mobile-first
+* Languages: HTML, CSS, JavaScript/jQuery, PHP
+* Content Management System: WordPress
+* Version Control: Git
+* Task-Runner: Gulp
+* Pre-Processor: Sass
 
-Then add me to your `wp-content` directory.
+**Plugins:**
+* Calendar Event
+* Catching the Spirit Functionality (Custom Plugin)
+* Custom Field Suite
+* Gravity Forms
+* Gravity Forms + Custom Post Types
+* Gravity Forms - Start progress bar at zero percent
+* Hide Default Posts
+* SVG Support
+* WP Custom Login
+* WP Google Map Plugin
+* Wrap Form Fields In Gravity Forms
 
-### 2. Rename the `redstarter` directory
+## The Features
+**Navigation Menu:** Sub-menu drop-downs toggle with jQuery on click for mobile, and on hover for desktop.
 
-Make sure that the theme directory name is project appropriate!
+**Custom Camp Registration Form:** Used Gravity Forms plugin to create a convenient online form for parents/guardians wishing to register their children at camp. 
 
-### 3. Install the dev dependencies
+**Custom Testimonial Form with Custom Post Type and Archive:** Used Gravity Forms and Gravity Forms + Custom Post Type plugins to create a testimonials page for youth and parents to share their experiences with CTS. Content is saved into a custom testimonial post type and stored as Pending. Once approved by an administrator, the post displays on the testimonials page as well as the corresponding archive.
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+**Monthly Calendar:** Used Calendar Event plugin so client may update the Calendar page with monthly CTS events.
 
-### 4. Update the proxy in `gulpfile.js`
+**Camp Locations:** Used WP Google Maps Plugin to locate and display CTS campsites.
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `inhabitent.dev` to the appropriate localhost URL).
+## The Team
+**Developers:** Padli, Shirley, Iris
+from RED Academy's *Web Developer Professional Program (Winter 2017)*
+**Designers:** Lindsay, Vanessa, Ellen, James
+from RED Academy's *UX and UI Professional Programs (Winter 2017)*
+# Catching the Spirit Youth Society
+
+A custom WordPress theme built by RED Academy students for a local non-profit organization.
+
+## The Client
+Catching the Spirit Youth Society is a non-profit organization in Vancouver, BC dedicated to developing leadership and social responsibility in youth through environmental awareness and stewardship. 
+
+## The Specs
+* Responsive and mobile-first
+* Languages: HTML, CSS, JavaScript/jQuery, PHP
+* Content Management System: WordPress
+* Version Control: Git
+* Task-Runner: Gulp
+* Pre-Processor: Sass
+
+**Plugins:**
+* Calendar Event
+* Catching the Spirit Functionality (Custom Plugin)
+* Custom Field Suite
+* Gravity Forms
+* Gravity Forms + Custom Post Types
+* Gravity Forms - Start progress bar at zero percent
+* Hide Default Posts
+* SVG Support
+* WP Custom Login
+* WP Google Map Plugin
+* Wrap Form Fields In Gravity Forms
+
+## The Features
+**Navigation Menu:** Sub-menu drop-downs toggle with jQuery on click for mobile, and on hover for desktop.
+
+**Custom Camp Registration Form:** Used Gravity Forms plugin to create a convenient online form for parents/guardians wishing to register their children at camp. 
+
+**Custom Testimonial Form with Custom Post Type and Archive:** Used Gravity Forms and Gravity Forms + Custom Post Type plugins to create a testimonials page for youth and parents to share their experiences with CTS. Content is saved into a custom testimonial post type and stored as Pending. Once approved by an administrator, the post displays on the testimonials page as well as the corresponding archive.
+
+**Monthly Calendar:** Used Calendar Event plugin so client may update the Calendar page with monthly CTS events.
+
+**Camp Locations:** Used WP Google Maps Plugin to locate and display CTS campsites.
+
+## The Team
+**Developers:** Padli, Shirley, Iris
+from RED Academy's *Web Developer Professional Program (Winter 2017)*
+**Designers:** Lindsay, Vanessa, Ellen, James
+from RED Academy's *UX and UI Professional Programs (Winter 2017)*
