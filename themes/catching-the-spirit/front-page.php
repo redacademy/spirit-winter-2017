@@ -52,7 +52,7 @@ get_header(); ?>
 						<a href="<?php echo esc_url( home_url( '/programs/leadership' ) ); ?>"><img src="<?php echo esc_html(CFS()->get('program_image', get_page_by_path('programs/leadership')->ID)); ?>"/></a>
 						<h3>Leadership</h3>
 					</div>
-				</div>
+				</div>					
 			</div>
 			<div class="front-page-programs-free green-box">
 				<h2>Our programs are <span class="emphasis">free</span></h2>
@@ -101,7 +101,7 @@ get_header(); ?>
 								</li> <!-- latest-posts-->
 					<?php endforeach; wp_reset_postdata(); ?>
 					</ul> <!-- latest-testimonials -->
-				<a href="<?php echo esc_url( home_url( '/testimonial' ) ); ?>" class="blue-btn">See More</a>
+				<a href="<?php echo esc_url( home_url( '/testimonials' ) ); ?>" class="blue-btn">See More</a>
 			</div>
 			<div class="front-page-sponsors">
 				<h2>A big thanks to our sponsors</h2>
