@@ -15,7 +15,7 @@ get_header(); ?>
             </div>
 
             <div class="contact-ca">
-                <a href="mailto:<?php echo antispambot( 'info@catchingthespirit.com' ); ?>"><?php echo ( 'Contact Us to RSVP' ); ?></a>
+                <a href="<?php echo CFS()->get('contact_us_calendar', get_page_by_path('calendar')->ID); ?>"><?php echo ( 'Contact Us to RSVP' ); ?></a>
             </div>
 	
 
