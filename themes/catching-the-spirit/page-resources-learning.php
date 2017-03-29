@@ -11,8 +11,10 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
         <header>
-            <h1 class="page-title"><?php echo CFS()->get('resource_page_title'); ?></h1>
-            <p><?php echo CFS()->get('resource_page_description'); ?></p>
+            <h1 class="page-title"><?php echo esc_html(CFS()->get('resource_page_title')); ?></h1>
+            <?php $content = CFS()->get('resource_page_description') ?>
+            <?php $allowed_html = array('br' => array()); ?>                                        
+            <p><?php echo wp_kses($content, $allowed_html); ?></p>	            
         </header>
         <section>
             <ul>
