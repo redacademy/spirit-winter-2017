@@ -47,7 +47,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-        <a href="<?php echo esc_url( home_url( '/testimonials' ) ); ?>" class="blue-btn">Write Testimonial</a>
+        <a href="<?php echo esc_url( home_url( '/testimonials' ) ); ?>" class="blue-btn">Add Testimonial</a>
 		
         </main><!-- #main -->
 	</div><!-- #primary -->
