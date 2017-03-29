@@ -1,6 +1,6 @@
  (function ($) {
 
-   
+   $('input[type=file]').nicefileinput();
 
 
 //set color of first drop select item
