@@ -1759,8 +1759,11 @@ body {
         margin-top: -6px !important;
         height: 30px; } }
 
-#gform_confirmation_wrapper_2 a {
-  margin: 30px 0; }
+#gform_confirmation_wrapper_2 {
+  color: green;
+  line-height: 1.5; }
+  #gform_confirmation_wrapper_2 a {
+    margin: 30px 0; }
 
 .form-info-heading p {
   margin-top: 40px;
