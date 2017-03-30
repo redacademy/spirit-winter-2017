@@ -576,6 +576,10 @@ textarea {
 .no-overflow {
   overflow: hidden; }
 
+@media (min-width: 642px) {
+  .testimonial-header {
+    padding-bottom: 40px !important; } }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
