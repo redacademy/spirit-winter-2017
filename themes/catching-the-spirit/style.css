@@ -2057,3 +2057,12 @@ body {
   text-align: center !important;
   margin-top: 40px;
   margin-bottom: -40px; }
+
+.testimonial-heading {
+  margin-top: 40px !important; }
+
+.gform_confirmation_message_3 {
+  padding: 40px 10px;
+  color: #52AA8A;
+  font-weight: bold;
+  font-size: 1.3rem; }
