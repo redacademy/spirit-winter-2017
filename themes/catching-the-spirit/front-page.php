@@ -108,7 +108,7 @@ get_header(); ?>
 				<h2>Our programs are <span class="emphasis">free</span></h2>
 				<div class="text-container">
 					<?php $content = CFS()->get('front_page_programs_free') ?>
-					<?php $allowed_html = array('br' => array()); ?>                                        
+					<?php $allowed_html = array('p' => array()); ?>                                        
 					<p><?php echo wp_kses($content, $allowed_html); ?></p>									
 					<div class="btn-container">
 						<a href="<?php echo esc_url( home_url( '/volunteer' ) ); ?>"class="red-btn">Volunteer</a>
