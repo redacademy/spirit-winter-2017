@@ -756,6 +756,11 @@ img {
   #gform_2 input[type=button]:last-child,
   #gform_2 .page-template-front-page input[type=button]:last-child, .page-template-front-page .page-id-80 .site-main input[type=submit]:last-child, .page-id-80 .site-main .page-template-front-page input[type=submit]:last-child, .page-template-front-page .post-type-archive-testimonial .site-main input[type=submit]:last-child, .post-type-archive-testimonial .site-main .page-template-front-page input[type=submit]:last-child, .page-template-front-page .page-template-page-program-seasonal .site-main .register-btn:last-child, .page-template-page-program-seasonal .site-main .page-template-front-page .register-btn:last-child, .page-template-front-page .page-template-page-program-leadership .site-main .register-btn:last-child, .page-template-page-program-leadership .site-main .page-template-front-page .register-btn:last-child, .page-template-front-page .page-template-page-program-leadership a.apply-btn:last-child, .page-template-page-program-leadership .page-template-front-page a.apply-btn:last-child {
     margin-bottom: 0; }
+    @media (min-width: 642px) {
+      .page-template-front-page .red-btn:last-child, .page-template-front-page .blue-btn:last-child, .page-template-front-page #gform_2 input[type=submit]:last-child, #gform_2 .page-template-front-page input[type=submit]:last-child, .page-template-front-page
+      #gform_2 input[type=button]:last-child,
+      #gform_2 .page-template-front-page input[type=button]:last-child, .page-template-front-page .page-id-80 .site-main input[type=submit]:last-child, .page-id-80 .site-main .page-template-front-page input[type=submit]:last-child, .page-template-front-page .post-type-archive-testimonial .site-main input[type=submit]:last-child, .post-type-archive-testimonial .site-main .page-template-front-page input[type=submit]:last-child, .page-template-front-page .page-template-page-program-seasonal .site-main .register-btn:last-child, .page-template-page-program-seasonal .site-main .page-template-front-page .register-btn:last-child, .page-template-front-page .page-template-page-program-leadership .site-main .register-btn:last-child, .page-template-page-program-leadership .site-main .page-template-front-page .register-btn:last-child, .page-template-front-page .page-template-page-program-leadership a.apply-btn:last-child, .page-template-page-program-leadership .page-template-front-page a.apply-btn:last-child {
+        margin-bottom: 20px; } }
 
 .page-template-front-page .for-youth-yellow {
   background: #52AA8A url("../../images/foryouthbyyouth_yellow.svg") no-repeat center center;
@@ -786,6 +791,56 @@ img {
   height: 150px;
   object-fit: cover;
   border-radius: 100px; }
+
+.page-template-front-page .icons-camp-activities {
+  width: 75%;
+  margin: 0 auto; }
+  .page-template-front-page .icons-camp-activities .camp-activity {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2rem; }
+  .page-template-front-page .icons-camp-activities .camp-activity-text {
+    margin-left: 1rem; }
+  .page-template-front-page .icons-camp-activities .strong {
+    text-transform: uppercase; }
+  .page-template-front-page .icons-camp-activities .small-text {
+    font-size: .9rem;
+    font-weight: 100;
+    color: #52AA8A; }
+  .page-template-front-page .icons-camp-activities img {
+    width: 50px;
+    height: 50px;
+    border-radius: 0; }
+  .page-template-front-page .icons-camp-activities p {
+    padding: 0;
+    text-align: left; }
+  @media (min-width: 642px) {
+    .page-template-front-page .icons-camp-activities {
+      width: 80%;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0 auto;
+      padding-top: 2.5rem; }
+      .page-template-front-page .icons-camp-activities .camp-activities-right,
+      .page-template-front-page .icons-camp-activities .camp-activities-left {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%; }
+        .page-template-front-page .icons-camp-activities .camp-activities-right div,
+        .page-template-front-page .icons-camp-activities .camp-activities-left div {
+          -ms-flex: 1 1 33%;
+              flex: 1 1 33%; }
+      .page-template-front-page .icons-camp-activities .camp-activity {
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-align: center;
+            align-items: center;
+        margin: 0; }
+      .page-template-front-page .icons-camp-activities p {
+        text-align: center; }
+      .page-template-front-page .icons-camp-activities .camp-activity-text {
+        margin: .5rem 0 0 0; } }
 
 @media (min-width: 642px) {
   .page-template-front-page .front-page-programs-free .text-container {
@@ -1043,6 +1098,52 @@ img {
 
 .page-template-page-program-seasonal .site-main .program-header-image, .page-template-page-program-leadership .site-main .program-header-image {
   margin: 3rem 0; }
+
+.page-template-page-program-seasonal .site-main .icons-camp-activities, .page-template-page-program-leadership .site-main .icons-camp-activities {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem; }
+  .page-template-page-program-seasonal .site-main .icons-camp-activities .camp-activity, .page-template-page-program-leadership .site-main .icons-camp-activities .camp-activity {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2rem; }
+  .page-template-page-program-seasonal .site-main .icons-camp-activities .camp-activity-text, .page-template-page-program-leadership .site-main .icons-camp-activities .camp-activity-text {
+    margin-left: 1rem; }
+  .page-template-page-program-seasonal .site-main .icons-camp-activities .strong, .page-template-page-program-leadership .site-main .icons-camp-activities .strong {
+    text-transform: uppercase; }
+  .page-template-page-program-seasonal .site-main .icons-camp-activities .small-text, .page-template-page-program-leadership .site-main .icons-camp-activities .small-text {
+    font-size: .9rem;
+    font-weight: 100;
+    color: #52AA8A; }
+  .page-template-page-program-seasonal .site-main .icons-camp-activities img, .page-template-page-program-leadership .site-main .icons-camp-activities img {
+    width: 50px;
+    height: 50px;
+    border-radius: 0; }
+  .page-template-page-program-seasonal .site-main .icons-camp-activities p, .page-template-page-program-leadership .site-main .icons-camp-activities p {
+    padding: 0;
+    text-align: left; }
+  @media (min-width: 642px) {
+    .page-template-page-program-seasonal .site-main .icons-camp-activities, .page-template-page-program-leadership .site-main .icons-camp-activities {
+      display: -ms-flexbox;
+      display: flex;
+      padding-top: 3rem; }
+      .page-template-page-program-seasonal .site-main .icons-camp-activities .camp-activities-right, .page-template-page-program-leadership .site-main .icons-camp-activities .camp-activities-right,
+      .page-template-page-program-seasonal .site-main .icons-camp-activities .camp-activities-left, .page-template-page-program-leadership .site-main .icons-camp-activities .camp-activities-left {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+        margin: 0 1rem; }
+        .page-template-page-program-seasonal .site-main .icons-camp-activities .camp-activities-right div, .page-template-page-program-leadership .site-main .icons-camp-activities .camp-activities-right div,
+        .page-template-page-program-seasonal .site-main .icons-camp-activities .camp-activities-left div, .page-template-page-program-leadership .site-main .icons-camp-activities .camp-activities-left div {
+          -ms-flex: 1 1 33%;
+              flex: 1 1 33%; }
+      .page-template-page-program-seasonal .site-main .icons-camp-activities .camp-activity, .page-template-page-program-leadership .site-main .icons-camp-activities .camp-activity {
+        -ms-flex-align: center;
+            align-items: center;
+        margin-bottom: 1rem; } }
 
 .page-template-page-program-seasonal .site-main ul, .page-template-page-program-leadership .site-main ul {
   list-style: disc outside none;
@@ -1759,8 +1860,11 @@ body {
         margin-top: -6px !important;
         height: 30px; } }
 
-#gform_confirmation_wrapper_2 a {
-  margin: 30px 0; }
+#gform_confirmation_wrapper_2 {
+  color: green;
+  line-height: 1.5; }
+  #gform_confirmation_wrapper_2 a {
+    margin: 30px 0; }
 
 .form-info-heading p {
   margin-top: 40px;
@@ -1953,3 +2057,12 @@ body {
   text-align: center !important;
   margin-top: 40px;
   margin-bottom: -40px; }
+
+.testimonial-heading {
+  margin-top: 40px !important; }
+
+.gform_confirmation_message_3 {
+  padding: 40px 10px;
+  color: #52AA8A;
+  font-weight: bold;
+  font-size: 1.3rem; }

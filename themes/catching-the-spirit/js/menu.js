@@ -41,5 +41,10 @@
     });
 
 
+    if($('.gform_confirmation_message_3').length){
+        $('.testimonial-heading').hide();
+    }
+
+
 
 })(jQuery);
