@@ -52,13 +52,63 @@ get_header(); ?>
 						<a href="<?php echo esc_url( home_url( '/programs/leadership' ) ); ?>"><img src="<?php echo esc_html(CFS()->get('program_image', get_page_by_path('programs/leadership')->ID)); ?>"/></a>
 						<h3>Leadership</h3>
 					</div>
-				</div>					
-			</div>
+				</div><!-- .programs-wrapper -->
+
+				<div class="icons-camp-activities">
+					<div class="camp-activities-right">
+						<div class="camp-activity">
+							<img src="wp-content/themes/catching-the-spirit/images/icons_camp-activities/protecting_frog.svg" alt="Icon of frog"/>
+							<div class="camp-activity-text">
+								<p class="strong">Protecting</p>
+								<p class="small-text">environmentally sensitive areas</span>
+							</div>
+						</div>
+						<div class="camp-activity">
+							<img src="wp-content/themes/catching-the-spirit/images/icons_camp-activities/giving_handshake.svg" alt="Icon of handshake"/>
+							<div class="camp-activity-text">
+								<p class="strong">Giving</p>
+								<p class="small-text">back to your community</span>
+							</div>
+						</div>
+						<div class="camp-activity">
+							<img src="wp-content/themes/catching-the-spirit/images/icons_camp-activities/growing_carrots.svg" alt="Icon of carrots"/>
+							<div class="camp-activity-text">
+								<p class="strong">Growing</p>
+								<p class="small-text">a community garden</span>
+							</div>
+						</div>
+					</div>
+					<div class="camp-activities-left">
+						<div class="camp-activity">
+							<img src="wp-content/themes/catching-the-spirit/images/icons_camp-activities/taking_recycle.svg" alt="Icon of recycling symbol"/>
+							<div class="camp-activity-text">
+								<p class="strong">Taking</p>
+								<p class="small-text">the zero-waste challenge</span>
+							</div>
+						</div>
+						<div class="camp-activity">
+							<img src="wp-content/themes/catching-the-spirit/images/icons_camp-activities/building_shovel.svg" alt="Icon of shovel"/>
+							<div class="camp-activity-text">
+								<p class="strong">Building</p>
+								<p class="small-text">fences and trails</span>
+							</div>
+						</div>
+						<div class="camp-activity">
+							<img src="wp-content/themes/catching-the-spirit/images/icons_camp-activities/restoring_fish.svg" alt="Icon of fish"/>
+							<div class="camp-activity-text">
+								<p class="strong">Restoring</p>
+								<p class="small-text">waterways</span>
+							</div>
+						</div>
+					</div>
+				</div><!-- .icons-camp-activities -->	
+			</div><!-- .front-page-programs-list -->
+
 			<div class="front-page-programs-free green-box">
 				<h2>Our programs are <span class="emphasis">free</span></h2>
 				<div class="text-container">
 					<?php $content = CFS()->get('front_page_programs_free') ?>
-					<?php $allowed_html = array('br' => array()); ?>                                        
+					<?php $allowed_html = array('p' => array()); ?>                                        
 					<p><?php echo wp_kses($content, $allowed_html); ?></p>									
 					<div class="btn-container">
 						<a href="<?php echo esc_url( home_url( '/volunteer' ) ); ?>"class="red-btn">Volunteer</a>

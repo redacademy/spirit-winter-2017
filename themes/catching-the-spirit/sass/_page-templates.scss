@@ -123,6 +123,59 @@
                 border-radius: 100px;
         }
     }
+    .icons-camp-activities {
+        width: 75%;
+        margin: 0 auto;
+        .camp-activity {
+            display: flex;
+            margin-bottom: 2rem;
+        }
+        .camp-activity-text {
+            margin-left: 1rem;
+        }
+        .strong {
+            text-transform: uppercase;
+        }
+        .small-text {
+            font-size: .9rem;
+            font-weight: 100;
+            color: $color__green;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 0;
+        }
+        p {
+            padding: 0;
+            text-align: left;
+        }
+        @include desktop {
+            width: 80%;
+            display: flex;
+            margin: 0 auto;
+            padding-top: 2.5rem;
+            .camp-activities-right,
+            .camp-activities-left {
+                display: flex;
+                flex: 1 1 50%;
+                div {
+                    flex: 1 1 33%;
+                }
+            }
+            .camp-activity {
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+            }
+            p {
+                text-align: center;
+            }
+            .camp-activity-text {
+                margin: .5rem 0 0 0;
+            }
+        }
+    }
     .front-page-programs-free {
         .text-container {
             @include desktop {
