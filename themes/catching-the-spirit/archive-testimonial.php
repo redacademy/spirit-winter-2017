@@ -13,7 +13,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">Testimonials</h1>
+				<h1 class="page-title testimonial-header">Testimonials</h1>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>

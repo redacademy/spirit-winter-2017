@@ -190,3 +190,10 @@
 .no-overflow {
     overflow: hidden;
 }
+
+.testimonial-header{
+
+    @include desktop{
+        padding-bottom:40px !important;
+    }
+}

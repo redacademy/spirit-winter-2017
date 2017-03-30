@@ -576,6 +576,10 @@ textarea {
 .no-overflow {
   overflow: hidden; }
 
+@media (min-width: 642px) {
+  .testimonial-header {
+    padding-bottom: 40px !important; } }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -741,11 +745,17 @@ img {
   padding: 3rem 2rem;
   border-radius: 0; }
 
-.page-template-front-page .red-btn, .page-template-front-page .blue-btn, .page-template-front-page #gform_2 input[type=submit], #gform_2 .page-template-front-page input[type=submit], .page-template-front-page
-#gform_2 input[type=button],
-#gform_2 .page-template-front-page input[type=button], .page-template-front-page .page-id-80 .site-main input[type=submit], .page-id-80 .site-main .page-template-front-page input[type=submit], .page-template-front-page .post-type-archive-testimonial .site-main input[type=submit], .post-type-archive-testimonial .site-main .page-template-front-page input[type=submit], .page-template-front-page .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .page-template-front-page .register-btn, .page-template-front-page .page-template-page-program-leadership .site-main .register-btn, .page-template-page-program-leadership .site-main .page-template-front-page .register-btn, .page-template-front-page .page-template-page-program-leadership a.apply-btn, .page-template-page-program-leadership .page-template-front-page a.apply-btn,
 .page-template-front-page .btn-container {
   margin-bottom: 0; }
+
+.page-template-front-page .red-btn, .page-template-front-page .blue-btn, .page-template-front-page #gform_2 input[type=submit], #gform_2 .page-template-front-page input[type=submit], .page-template-front-page
+#gform_2 input[type=button],
+#gform_2 .page-template-front-page input[type=button], .page-template-front-page .page-id-80 .site-main input[type=submit], .page-id-80 .site-main .page-template-front-page input[type=submit], .page-template-front-page .post-type-archive-testimonial .site-main input[type=submit], .post-type-archive-testimonial .site-main .page-template-front-page input[type=submit], .page-template-front-page .page-template-page-program-seasonal .site-main .register-btn, .page-template-page-program-seasonal .site-main .page-template-front-page .register-btn, .page-template-front-page .page-template-page-program-leadership .site-main .register-btn, .page-template-page-program-leadership .site-main .page-template-front-page .register-btn, .page-template-front-page .page-template-page-program-leadership a.apply-btn, .page-template-page-program-leadership .page-template-front-page a.apply-btn {
+  margin-bottom: 20px; }
+  .page-template-front-page .red-btn:last-child, .page-template-front-page .blue-btn:last-child, .page-template-front-page #gform_2 input[type=submit]:last-child, #gform_2 .page-template-front-page input[type=submit]:last-child, .page-template-front-page
+  #gform_2 input[type=button]:last-child,
+  #gform_2 .page-template-front-page input[type=button]:last-child, .page-template-front-page .page-id-80 .site-main input[type=submit]:last-child, .page-id-80 .site-main .page-template-front-page input[type=submit]:last-child, .page-template-front-page .post-type-archive-testimonial .site-main input[type=submit]:last-child, .post-type-archive-testimonial .site-main .page-template-front-page input[type=submit]:last-child, .page-template-front-page .page-template-page-program-seasonal .site-main .register-btn:last-child, .page-template-page-program-seasonal .site-main .page-template-front-page .register-btn:last-child, .page-template-front-page .page-template-page-program-leadership .site-main .register-btn:last-child, .page-template-page-program-leadership .site-main .page-template-front-page .register-btn:last-child, .page-template-front-page .page-template-page-program-leadership a.apply-btn:last-child, .page-template-page-program-leadership .page-template-front-page a.apply-btn:last-child {
+    margin-bottom: 0; }
 
 .page-template-front-page .for-youth-yellow {
   background: #52AA8A url("../../images/foryouthbyyouth_yellow.svg") no-repeat center center;
@@ -1298,6 +1308,22 @@ img {
       padding-left: 5rem; }
     .page-id-139 .mentorvisors img {
       width: 80%; } }
+
+.page-id-139 .the-board ul, .page-id-139 .mentorvisors ul {
+  width: 300px;
+  margin-left: 20%; }
+  @media (min-width: 642px) {
+    .page-id-139 .the-board ul, .page-id-139 .mentorvisors ul {
+      margin-left: 160px; } }
+  .page-id-139 .the-board ul li, .page-id-139 .mentorvisors ul li {
+    margin: 8px 0;
+    text-align: left !important;
+    list-style: disc !important;
+    color: white;
+    font-weight: 100; }
+
+.page-id-139 .mentorvisors li {
+  color: #52AA8A !important; }
 
 .page-id-137 .bloc {
   padding-bottom: 2rem;

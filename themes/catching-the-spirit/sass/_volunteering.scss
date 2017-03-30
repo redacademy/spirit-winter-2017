@@ -1,4 +1,6 @@
 .page-id-139{
+
+   
     h2{
         text-align: center;
     }
@@ -49,6 +51,34 @@
             }
         }
 
+        }
+
+        .the-board, .mentorvisors{
+
+             ul{
+                
+                 width:300px;
+                 margin-left:20%;
+                @include desktop{
+                    margin-left:160px;
+               
+                }
+        li{
+            margin: 8px 0;
+            text-align:left !important;
+            list-style: disc !important;
+            color:white;
+            font-weight: 100;
+        }
+    }
+        }
+
+        .mentorvisors{
+                li{
+                     color:$color__green !important;
+                }
+            
+           
         }
     
 }
