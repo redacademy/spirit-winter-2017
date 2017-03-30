@@ -1,13 +1,21 @@
 (function ($) {
 
     $(window).scroll(function () {
-        var distanceFromTop = $(this).scrollTop();
-        if (distanceFromTop >= $('.header-desktop').height()) {
+         setStickyNav();
+    });
+
+    $(window).resize(function(){
+       setStickyNav();
+    });
+
+    function setStickyNav(){
+         var distanceFromTop = $(this).scrollTop();
+         if (distanceFromTop >= $('.header-desktop').height()) {
             $('.nav-desktop').addClass('fixed');
         } else {
             $('.nav-desktop').removeClass('fixed');
         }
-    });
+    }
 
     // nav mobile toggle 
     $('.responsive-menu').hide(); // hide nav
