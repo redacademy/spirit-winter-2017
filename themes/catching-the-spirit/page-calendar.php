@@ -15,7 +15,7 @@ get_header(); ?>
             </div>
 
             <div class="contact-ca">
-                <a href="<?php echo CFS()->get('contact_us_calendar', get_page_by_path('calendar')->ID); ?>"><?php echo ( 'Contact Us to RSVP' ); ?></a>
+                <a href="mailto:<?php echo CFS()->get('contact_us_calendar', get_page_by_path('calendar')->ID); ?>?subject=RSVP%20for%20an%20Event"><?php echo ( 'Contact Us to RSVP' ); ?></a>
             </div>
 	
 
